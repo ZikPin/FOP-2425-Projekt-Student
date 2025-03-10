@@ -1,0 +1,2929 @@
+[ {
+  "invoked" : 1371644728,
+  "entryPoint" : "hProjekt.model.HexGridImpl#getRails(hProjekt.model.Player)",
+  "arguments" : [ 1238016017 ],
+  "calls" : [ {
+    "id" : 1246169190,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 132277583,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 478143468,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1291485960,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 132277583,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1165005897,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1737594434,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 621850696,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 82406489,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 348862702,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 621850696,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1860290444,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1268288109,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 132277583,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1894485427,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 930069786,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 132277583,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 2008388706,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 891564306,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 2023673314,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 793869455,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 471024980,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 132277583,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1455372724,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 190462899,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 132277583,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1418617515,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1714746542,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 621850696,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1961040159,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1489123129,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 132277583,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 2059408461,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1674407377,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 132277583,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1034697555,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.HexGridImpl",
+    "fields" : [ {
+      "name" : "cities",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.model.TilePosition",
+        "fields" : [ {
+          "name" : "r",
+          "type" : "java.lang.Integer",
+          "value" : "0",
+          "id" : 528280723
+        }, {
+          "name" : "q",
+          "id" : 528280723
+        } ],
+        "id" : 2096556807
+      }, {
+        "type" : "hProjekt.model.CityImpl",
+        "fields" : [ {
+          "name" : "isStartingCity",
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 185544081
+        }, {
+          "name" : "name",
+          "type" : "java.lang.String",
+          "value" : "Wilhelmstal",
+          "id" : 2051550839
+        }, {
+          "name" : "position",
+          "id" : 2096556807
+        } ],
+        "id" : 904931234
+      } ] ],
+      "id" : 2102357288
+    }, {
+      "name" : "edges",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "type" : "java.lang.Integer",
+            "value" : "-1",
+            "id" : 1484177113
+          } ],
+          "id" : 529268830
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "type" : "java.lang.Integer",
+            "value" : "1",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 1484177113
+          } ],
+          "id" : 858901214
+        } ],
+        "id" : 555765860
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "type" : "null",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ ],
+            "id" : 132277583
+          }, {
+            "name" : "name",
+            "type" : "java.lang.String",
+            "value" : "",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 2008388706
+        }, {
+          "name" : "position2",
+          "id" : 858901214
+        }, {
+          "name" : "position1",
+          "id" : 529268830
+        } ],
+        "id" : 930069786
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "id" : 382441865
+          } ],
+          "id" : 1785604368
+        }, {
+          "id" : 2096556807
+        } ],
+        "id" : 772706989
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "type" : "java.lang.Integer",
+                "value" : "20",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "id" : 528280723
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player0",
+                "id" : 1172745450
+              } ],
+              "id" : 557402326
+            } ],
+            "id" : 621850696
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 82406489
+        }, {
+          "name" : "position2",
+          "id" : 2096556807
+        }, {
+          "name" : "position1",
+          "id" : 1785604368
+        } ],
+        "id" : 1737594434
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 2096556807
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 1484177113
+          }, {
+            "name" : "q",
+            "id" : 382441865
+          } ],
+          "id" : 2041492943
+        } ],
+        "id" : 1425079876
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 132277583
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 2059408461
+        }, {
+          "name" : "position2",
+          "id" : 2041492943
+        }, {
+          "name" : "position1",
+          "id" : 2096556807
+        } ],
+        "id" : 1489123129
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1785604368
+        }, {
+          "id" : 2041492943
+        } ],
+        "id" : 222375242
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 132277583
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 478143468
+        }, {
+          "name" : "position2",
+          "id" : 2041492943
+        }, {
+          "name" : "position1",
+          "id" : 1785604368
+        } ],
+        "id" : 1246169190
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 1484177113
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1834174236
+        }, {
+          "id" : 529268830
+        } ],
+        "id" : 676171560
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 132277583
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1455372724
+        }, {
+          "name" : "position2",
+          "id" : 529268830
+        }, {
+          "name" : "position1",
+          "id" : 1834174236
+        } ],
+        "id" : 471024980
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 2096556807
+        }, {
+          "id" : 529268830
+        } ],
+        "id" : 800126121
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 132277583
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1165005897
+        }, {
+          "name" : "position2",
+          "id" : 529268830
+        }, {
+          "name" : "position1",
+          "id" : 2096556807
+        } ],
+        "id" : 1291485960
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1834174236
+        }, {
+          "id" : 2096556807
+        } ],
+        "id" : 2011546833
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "id" : 382441865
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player1",
+                "id" : 671530474
+              } ],
+              "id" : 8698270
+            }, {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "type" : "java.lang.Integer",
+                "value" : "2",
+                "id" : 865072353
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player2",
+                "id" : 1733339186
+              } ],
+              "id" : 2126979361
+            } ],
+            "id" : 2023673314
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 793869455
+        }, {
+          "name" : "position2",
+          "id" : 2096556807
+        }, {
+          "name" : "position1",
+          "id" : 1834174236
+        } ],
+        "id" : 891564306
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1834174236
+        }, {
+          "id" : 2041492943
+        } ],
+        "id" : 1488684416
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 132277583
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1894485427
+        }, {
+          "name" : "position2",
+          "id" : 2041492943
+        }, {
+          "name" : "position1",
+          "id" : 1834174236
+        } ],
+        "id" : 1268288109
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 2096556807
+        }, {
+          "id" : 858901214
+        } ],
+        "id" : 1184145066
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 132277583
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1418617515
+        }, {
+          "name" : "position2",
+          "id" : 858901214
+        }, {
+          "name" : "position1",
+          "id" : 2096556807
+        } ],
+        "id" : 190462899
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 2096556807
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 750261401
+        } ],
+        "id" : 1499820041
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 132277583
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1034697555
+        }, {
+          "name" : "position2",
+          "id" : 750261401
+        }, {
+          "name" : "position1",
+          "id" : 2096556807
+        } ],
+        "id" : 1674407377
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 750261401
+        }, {
+          "id" : 858901214
+        } ],
+        "id" : 692606185
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 621850696
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1860290444
+        }, {
+          "name" : "position2",
+          "id" : 858901214
+        }, {
+          "name" : "position1",
+          "id" : 750261401
+        } ],
+        "id" : 348862702
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1785604368
+        }, {
+          "id" : 750261401
+        } ],
+        "id" : 2090276377
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 621850696
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1961040159
+        }, {
+          "name" : "position2",
+          "id" : 750261401
+        }, {
+          "name" : "position1",
+          "id" : 1785604368
+        } ],
+        "id" : 1714746542
+      } ] ],
+      "id" : 1893852874
+    }, {
+      "name" : "tiles",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "id" : 2096556807
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "type" : "hProjekt.model.Tile$Type",
+          "value" : "PLAIN",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 2096556807
+        } ],
+        "id" : 1078249024
+      } ], [ {
+        "id" : 750261401
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 750261401
+        } ],
+        "id" : 884495649
+      } ], [ {
+        "id" : 2041492943
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 2041492943
+        } ],
+        "id" : 1560782408
+      } ], [ {
+        "id" : 529268830
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 529268830
+        } ],
+        "id" : 1222512132
+      } ], [ {
+        "id" : 1785604368
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1785604368
+        } ],
+        "id" : 443567138
+      } ], [ {
+        "id" : 1834174236
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1834174236
+        } ],
+        "id" : 1312329543
+      } ], [ {
+        "id" : 858901214
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 858901214
+        } ],
+        "id" : 1705392504
+      } ] ],
+      "id" : 1604794420
+    } ],
+    "id" : 1371644728
+  }, {
+    "type" : "hProjekt.model.PlayerImpl",
+    "fields" : [ {
+      "name" : "credits",
+      "id" : 78081168
+    }, {
+      "name" : "id",
+      "id" : 528280723
+    }, {
+      "name" : "name",
+      "id" : 1172745450
+    } ],
+    "id" : 1238016017
+  } ],
+  "expected" : {
+    "type" : "java.util.Collections$UnmodifiableMap",
+    "value" : [ ],
+    "id" : 293552592
+  }
+}, {
+  "invoked" : 488486803,
+  "entryPoint" : "hProjekt.model.HexGridImpl#getRails(hProjekt.model.Player)",
+  "arguments" : [ 690840203 ],
+  "calls" : [ {
+    "id" : 470785982,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1900722530,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1126447127,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1717848086,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1900722530,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1897164643,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 531010626,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1900722530,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 2124515851,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1980813957,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1900722530,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 266079322,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 525118794,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1900722530,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 537042237,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1436151871,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1900722530,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1221839906,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1152579013,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 287915023,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1062991947,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1951062304,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1900722530,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1434965087,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 33649642,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1900722530,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 18613659,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1438983048,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 287915023,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 980366864,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 589393036,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1062423046,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 861014144,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1886558892,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 287915023,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 642533684,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.HexGridImpl",
+    "fields" : [ {
+      "name" : "cities",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.model.TilePosition",
+        "fields" : [ {
+          "name" : "r",
+          "type" : "java.lang.Integer",
+          "value" : "0",
+          "id" : 528280723
+        }, {
+          "name" : "q",
+          "id" : 528280723
+        } ],
+        "id" : 1142857510
+      }, {
+        "type" : "hProjekt.model.CityImpl",
+        "fields" : [ {
+          "name" : "isStartingCity",
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 185544081
+        }, {
+          "name" : "name",
+          "type" : "java.lang.String",
+          "value" : "Wilhelmstal",
+          "id" : 2051550839
+        }, {
+          "name" : "position",
+          "id" : 1142857510
+        } ],
+        "id" : 439776264
+      } ] ],
+      "id" : 16344219
+    }, {
+      "name" : "edges",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1142857510
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "type" : "java.lang.Integer",
+            "value" : "1",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1666346875
+        } ],
+        "id" : 167999361
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "type" : "null",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ ],
+            "id" : 1900722530
+          }, {
+            "name" : "name",
+            "type" : "java.lang.String",
+            "value" : "",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1126447127
+        }, {
+          "name" : "position2",
+          "id" : 1666346875
+        }, {
+          "name" : "position1",
+          "id" : 1142857510
+        } ],
+        "id" : 470785982
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "id" : 382441865
+          } ],
+          "id" : 305549858
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "type" : "java.lang.Integer",
+            "value" : "-1",
+            "id" : 1484177113
+          }, {
+            "name" : "q",
+            "id" : 382441865
+          } ],
+          "id" : 58057931
+        } ],
+        "id" : 1658469305
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1900722530
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 2124515851
+        }, {
+          "name" : "position2",
+          "id" : 58057931
+        }, {
+          "name" : "position1",
+          "id" : 305549858
+        } ],
+        "id" : 531010626
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1142857510
+        }, {
+          "id" : 58057931
+        } ],
+        "id" : 615031877
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1900722530
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1221839906
+        }, {
+          "name" : "position2",
+          "id" : 58057931
+        }, {
+          "name" : "position1",
+          "id" : 1142857510
+        } ],
+        "id" : 1436151871
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 305549858
+        }, {
+          "id" : 1666346875
+        } ],
+        "id" : 1954697353
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "type" : "java.lang.Integer",
+                "value" : "20",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "id" : 528280723
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player0",
+                "id" : 1172745450
+              } ],
+              "id" : 30128593
+            } ],
+            "id" : 287915023
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 642533684
+        }, {
+          "name" : "position2",
+          "id" : 1666346875
+        }, {
+          "name" : "position1",
+          "id" : 305549858
+        } ],
+        "id" : 1886558892
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1666346875
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 1484177113
+          } ],
+          "id" : 850056461
+        } ],
+        "id" : 2037116028
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 287915023
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1062991947
+        }, {
+          "name" : "position2",
+          "id" : 850056461
+        }, {
+          "name" : "position1",
+          "id" : 1666346875
+        } ],
+        "id" : 1152579013
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1142857510
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "id" : 1484177113
+          } ],
+          "id" : 611256437
+        } ],
+        "id" : 343606759
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1900722530
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 18613659
+        }, {
+          "name" : "position2",
+          "id" : 611256437
+        }, {
+          "name" : "position1",
+          "id" : 1142857510
+        } ],
+        "id" : 33649642
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 1484177113
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1851822511
+        }, {
+          "id" : 1142857510
+        } ],
+        "id" : 1791346486
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "id" : 382441865
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player1",
+                "id" : 671530474
+              } ],
+              "id" : 2100674719
+            }, {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "type" : "java.lang.Integer",
+                "value" : "2",
+                "id" : 865072353
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player2",
+                "id" : 1733339186
+              } ],
+              "id" : 1400961849
+            } ],
+            "id" : 1062423046
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 861014144
+        }, {
+          "name" : "position2",
+          "id" : 1142857510
+        }, {
+          "name" : "position1",
+          "id" : 1851822511
+        } ],
+        "id" : 589393036
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1142857510
+        }, {
+          "id" : 850056461
+        } ],
+        "id" : 468783629
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1900722530
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 537042237
+        }, {
+          "name" : "position2",
+          "id" : 850056461
+        }, {
+          "name" : "position1",
+          "id" : 1142857510
+        } ],
+        "id" : 525118794
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1851822511
+        }, {
+          "id" : 611256437
+        } ],
+        "id" : 804775060
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1900722530
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1897164643
+        }, {
+          "name" : "position2",
+          "id" : 611256437
+        }, {
+          "name" : "position1",
+          "id" : 1851822511
+        } ],
+        "id" : 1717848086
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 611256437
+        }, {
+          "id" : 850056461
+        } ],
+        "id" : 350273854
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1900722530
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1434965087
+        }, {
+          "name" : "position2",
+          "id" : 850056461
+        }, {
+          "name" : "position1",
+          "id" : 611256437
+        } ],
+        "id" : 1951062304
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 305549858
+        }, {
+          "id" : 1142857510
+        } ],
+        "id" : 431866343
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 287915023
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 980366864
+        }, {
+          "name" : "position2",
+          "id" : 1142857510
+        }, {
+          "name" : "position1",
+          "id" : 305549858
+        } ],
+        "id" : 1438983048
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1851822511
+        }, {
+          "id" : 58057931
+        } ],
+        "id" : 134529230
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1900722530
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 266079322
+        }, {
+          "name" : "position2",
+          "id" : 58057931
+        }, {
+          "name" : "position1",
+          "id" : 1851822511
+        } ],
+        "id" : 1980813957
+      } ] ],
+      "id" : 1136076153
+    }, {
+      "name" : "tiles",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "id" : 305549858
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "type" : "hProjekt.model.Tile$Type",
+          "value" : "PLAIN",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 305549858
+        } ],
+        "id" : 882604249
+      } ], [ {
+        "id" : 850056461
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 850056461
+        } ],
+        "id" : 1669062257
+      } ], [ {
+        "id" : 1142857510
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1142857510
+        } ],
+        "id" : 681424662
+      } ], [ {
+        "id" : 1666346875
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1666346875
+        } ],
+        "id" : 976068559
+      } ], [ {
+        "id" : 611256437
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 611256437
+        } ],
+        "id" : 6262987
+      } ], [ {
+        "id" : 58057931
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 58057931
+        } ],
+        "id" : 887942558
+      } ], [ {
+        "id" : 1851822511
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1851822511
+        } ],
+        "id" : 1980369202
+      } ] ],
+      "id" : 815543284
+    } ],
+    "id" : 488486803
+  }, {
+    "type" : "hProjekt.model.PlayerImpl",
+    "fields" : [ {
+      "name" : "credits",
+      "id" : 78081168
+    }, {
+      "name" : "id",
+      "id" : 382441865
+    }, {
+      "name" : "name",
+      "id" : 671530474
+    } ],
+    "id" : 690840203
+  } ],
+  "expected" : {
+    "type" : "java.util.Collections$UnmodifiableMap",
+    "value" : [ ],
+    "id" : 307755791
+  }
+}, {
+  "invoked" : 1671864091,
+  "entryPoint" : "hProjekt.model.HexGridImpl#getRails(hProjekt.model.Player)",
+  "arguments" : [ 644069747 ],
+  "calls" : [ {
+    "id" : 2043160616,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1098139050,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1135284791,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 2075552342,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 2042027473,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1990342884,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1691718869,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 2042027473,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1282696769,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 924595278,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1294196782,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 253332430,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 288468690,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 2042027473,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 579392796,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 495638350,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1098139050,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1689300121,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1395772820,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1098139050,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 182775733,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 454265045,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1098139050,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 66546932,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 387644653,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1098139050,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 336054500,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 887741425,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1098139050,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 147551376,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 96289248,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1098139050,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1094399698,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 2093980736,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 1098139050,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1535248594,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.HexGridImpl",
+    "fields" : [ {
+      "name" : "cities",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.model.TilePosition",
+        "fields" : [ {
+          "name" : "r",
+          "type" : "java.lang.Integer",
+          "value" : "0",
+          "id" : 528280723
+        }, {
+          "name" : "q",
+          "id" : 528280723
+        } ],
+        "id" : 531244762
+      }, {
+        "type" : "hProjekt.model.CityImpl",
+        "fields" : [ {
+          "name" : "isStartingCity",
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 185544081
+        }, {
+          "name" : "name",
+          "type" : "java.lang.String",
+          "value" : "Wilhelmstal",
+          "id" : 2051550839
+        }, {
+          "name" : "position",
+          "id" : 531244762
+        } ],
+        "id" : 1021843818
+      } ] ],
+      "id" : 2127071782
+    }, {
+      "name" : "edges",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "type" : "java.lang.Integer",
+            "value" : "1",
+            "id" : 382441865
+          } ],
+          "id" : 1310801534
+        }, {
+          "id" : 531244762
+        } ],
+        "id" : 552575777
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "type" : "null",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "type" : "java.lang.Integer",
+                "value" : "20",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "id" : 528280723
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player0",
+                "id" : 1172745450
+              } ],
+              "id" : 2029849352
+            } ],
+            "id" : 2042027473
+          }, {
+            "name" : "name",
+            "type" : "java.lang.String",
+            "value" : "",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 579392796
+        }, {
+          "name" : "position2",
+          "id" : 531244762
+        }, {
+          "name" : "position1",
+          "id" : 1310801534
+        } ],
+        "id" : 288468690
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "type" : "java.lang.Integer",
+            "value" : "-1",
+            "id" : 1484177113
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1476446537
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "id" : 1484177113
+          } ],
+          "id" : 1699279380
+        } ],
+        "id" : 1389496518
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ ],
+            "id" : 1098139050
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 147551376
+        }, {
+          "name" : "position2",
+          "id" : 1699279380
+        }, {
+          "name" : "position1",
+          "id" : 1476446537
+        } ],
+        "id" : 887741425
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 531244762
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 1484177113
+          } ],
+          "id" : 674554369
+        } ],
+        "id" : 1107127531
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1098139050
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1535248594
+        }, {
+          "name" : "position2",
+          "id" : 674554369
+        }, {
+          "name" : "position1",
+          "id" : 531244762
+        } ],
+        "id" : 2093980736
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 531244762
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1225988846
+        } ],
+        "id" : 1019912285
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1098139050
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 182775733
+        }, {
+          "name" : "position2",
+          "id" : 1225988846
+        }, {
+          "name" : "position1",
+          "id" : 531244762
+        } ],
+        "id" : 1395772820
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1310801534
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 1484177113
+          }, {
+            "name" : "q",
+            "id" : 382441865
+          } ],
+          "id" : 840381744
+        } ],
+        "id" : 379787968
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1098139050
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 66546932
+        }, {
+          "name" : "position2",
+          "id" : 840381744
+        }, {
+          "name" : "position1",
+          "id" : 1310801534
+        } ],
+        "id" : 454265045
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1310801534
+        }, {
+          "id" : 1225988846
+        } ],
+        "id" : 1985504392
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 2042027473
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1282696769
+        }, {
+          "name" : "position2",
+          "id" : 1225988846
+        }, {
+          "name" : "position1",
+          "id" : 1310801534
+        } ],
+        "id" : 1691718869
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1225988846
+        }, {
+          "id" : 674554369
+        } ],
+        "id" : 674436956
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 2042027473
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1990342884
+        }, {
+          "name" : "position2",
+          "id" : 674554369
+        }, {
+          "name" : "position1",
+          "id" : 1225988846
+        } ],
+        "id" : 2075552342
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1699279380
+        }, {
+          "id" : 674554369
+        } ],
+        "id" : 663504925
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1098139050
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1094399698
+        }, {
+          "name" : "position2",
+          "id" : 674554369
+        }, {
+          "name" : "position1",
+          "id" : 1699279380
+        } ],
+        "id" : 96289248
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1476446537
+        }, {
+          "id" : 531244762
+        } ],
+        "id" : 1868032458
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "id" : 382441865
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player1",
+                "id" : 671530474
+              } ],
+              "id" : 473490941
+            }, {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "type" : "java.lang.Integer",
+                "value" : "2",
+                "id" : 865072353
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player2",
+                "id" : 1733339186
+              } ],
+              "id" : 1140163725
+            } ],
+            "id" : 1294196782
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 253332430
+        }, {
+          "name" : "position2",
+          "id" : 531244762
+        }, {
+          "name" : "position1",
+          "id" : 1476446537
+        } ],
+        "id" : 924595278
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 531244762
+        }, {
+          "id" : 840381744
+        } ],
+        "id" : 1669254275
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1098139050
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1689300121
+        }, {
+          "name" : "position2",
+          "id" : 840381744
+        }, {
+          "name" : "position1",
+          "id" : 531244762
+        } ],
+        "id" : 495638350
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 531244762
+        }, {
+          "id" : 1699279380
+        } ],
+        "id" : 20549563
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1098139050
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1135284791
+        }, {
+          "name" : "position2",
+          "id" : 1699279380
+        }, {
+          "name" : "position1",
+          "id" : 531244762
+        } ],
+        "id" : 2043160616
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1476446537
+        }, {
+          "id" : 840381744
+        } ],
+        "id" : 1130146367
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1098139050
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 336054500
+        }, {
+          "name" : "position2",
+          "id" : 840381744
+        }, {
+          "name" : "position1",
+          "id" : 1476446537
+        } ],
+        "id" : 387644653
+      } ] ],
+      "id" : 1554748227
+    }, {
+      "name" : "tiles",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "id" : 531244762
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "type" : "hProjekt.model.Tile$Type",
+          "value" : "PLAIN",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 531244762
+        } ],
+        "id" : 1184057198
+      } ], [ {
+        "id" : 674554369
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 674554369
+        } ],
+        "id" : 1825875268
+      } ], [ {
+        "id" : 840381744
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 840381744
+        } ],
+        "id" : 1740369819
+      } ], [ {
+        "id" : 1476446537
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1476446537
+        } ],
+        "id" : 1589030791
+      } ], [ {
+        "id" : 1699279380
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1699279380
+        } ],
+        "id" : 1553503962
+      } ], [ {
+        "id" : 1225988846
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1225988846
+        } ],
+        "id" : 918959987
+      } ], [ {
+        "id" : 1310801534
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1310801534
+        } ],
+        "id" : 399284053
+      } ] ],
+      "id" : 1906295164
+    } ],
+    "id" : 1671864091
+  }, {
+    "type" : "hProjekt.model.PlayerImpl",
+    "fields" : [ {
+      "name" : "credits",
+      "id" : 78081168
+    }, {
+      "name" : "id",
+      "id" : 865072353
+    }, {
+      "name" : "name",
+      "id" : 1733339186
+    } ],
+    "id" : 644069747
+  } ],
+  "expected" : {
+    "type" : "java.util.Collections$UnmodifiableMap",
+    "value" : [ ],
+    "id" : 1370785341
+  }
+} ]

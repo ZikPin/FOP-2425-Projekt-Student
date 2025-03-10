@@ -1,0 +1,96 @@
+[ {
+  "entries" : [ {
+    "player" : "player0",
+    "ai" : true,
+    "timestamp" : "2024-12-09 18:55:01",
+    "score" : 71
+  }, {
+    "player" : "player1",
+    "ai" : false,
+    "timestamp" : "2025-03-23 16:38:15",
+    "score" : 0
+  }, {
+    "player" : "player2",
+    "ai" : false,
+    "timestamp" : "2025-02-06 02:55:09",
+    "score" : 94
+  }, {
+    "player" : "player3",
+    "ai" : true,
+    "timestamp" : "2025-01-17 09:56:51",
+    "score" : 83
+  }, {
+    "player" : "player4",
+    "ai" : true,
+    "timestamp" : "2024-12-20 13:44:53",
+    "score" : 2
+  } ]
+}, {
+  "entries" : [ {
+    "player" : "player0",
+    "ai" : false,
+    "timestamp" : "2024-11-17 09:56:36",
+    "score" : 83
+  }, {
+    "player" : "player1",
+    "ai" : true,
+    "timestamp" : "2025-03-19 17:28:31",
+    "score" : 6
+  }, {
+    "player" : "player2",
+    "ai" : false,
+    "timestamp" : "2024-12-21 10:11:05",
+    "score" : 63
+  }, {
+    "player" : "player3",
+    "ai" : true,
+    "timestamp" : "2025-02-25 08:26:53",
+    "score" : 96
+  }, {
+    "player" : "player4",
+    "ai" : false,
+    "timestamp" : "2025-02-12 18:57:02",
+    "score" : 12
+  } ]
+}, {
+  "entries" : [ {
+    "player" : "player0",
+    "ai" : false,
+    "timestamp" : "2024-10-31 09:45:38",
+    "score" : 19
+  } ]
+}, {
+  "entries" : [ {
+    "player" : "player0",
+    "ai" : false,
+    "timestamp" : "2024-10-07 00:36:45",
+    "score" : 36
+  }, {
+    "player" : "player1",
+    "ai" : false,
+    "timestamp" : "2024-11-17 12:20:51",
+    "score" : 74
+  } ]
+}, {
+  "entries" : [ {
+    "player" : "player0",
+    "ai" : false,
+    "timestamp" : "2024-12-18 19:12:29",
+    "score" : 75
+  }, {
+    "player" : "player1",
+    "ai" : true,
+    "timestamp" : "2025-01-08 08:14:02",
+    "score" : 65
+  }, {
+    "player" : "player2",
+    "ai" : false,
+    "timestamp" : "2024-11-01 11:20:52",
+    "score" : 69
+  }, {
+    "player" : "player3",
+    "ai" : true,
+    "timestamp" : "2025-03-28 07:34:16",
+    "score" : 90
+  } ]
+} ]

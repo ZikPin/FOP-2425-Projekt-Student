@@ -1,0 +1,767 @@
+[ {
+  "invoked" : 1483236233,
+  "entryPoint" : "hProjekt.model.HexGridImpl#getConnectedCities()",
+  "arguments" : [ ],
+  "calls" : [ ],
+  "objects" : [ {
+    "type" : "hProjekt.model.HexGridImpl",
+    "fields" : [ {
+      "name" : "cities",
+      "type" : "java.util.HashMap",
+      "value" : [ ],
+      "id" : 1426758793
+    }, {
+      "name" : "edges",
+      "id" : 1426758793
+    }, {
+      "name" : "tiles",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.model.TilePosition",
+        "fields" : [ {
+          "name" : "r",
+          "type" : "java.lang.Integer",
+          "value" : "0",
+          "id" : 528280723
+        }, {
+          "name" : "q",
+          "id" : 528280723
+        } ],
+        "id" : 886701907
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "type" : "hProjekt.model.Tile$Type",
+          "value" : "PLAIN",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 886701907
+        } ],
+        "id" : 815731112
+      } ] ],
+      "id" : 1189844543
+    } ],
+    "id" : 1483236233
+  } ],
+  "expected" : {
+    "type" : "java.util.Collections$UnmodifiableMap",
+    "value" : [ ],
+    "id" : 336446025
+  }
+}, {
+  "invoked" : 1148487411,
+  "entryPoint" : "hProjekt.model.HexGridImpl#getConnectedCities()",
+  "arguments" : [ ],
+  "calls" : [ {
+    "id" : 1484046482,
+    "methodCalls" : [ {
+      "methodName" : "getAdjacentTilePositions",
+      "invocations" : [ {
+        "return" : 469786660,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 2145834646,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition1",
+      "invocations" : [ {
+        "return" : 420854303,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition2",
+      "invocations" : [ {
+        "return" : 825580492,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.HexGridImpl",
+    "fields" : [ {
+      "name" : "cities",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.model.TilePosition",
+        "fields" : [ {
+          "name" : "r",
+          "type" : "java.lang.Integer",
+          "value" : "1",
+          "id" : 382441865
+        }, {
+          "name" : "q",
+          "type" : "java.lang.Integer",
+          "value" : "0",
+          "id" : 528280723
+        } ],
+        "id" : 825580492
+      }, {
+        "type" : "hProjekt.model.CityImpl",
+        "fields" : [ {
+          "name" : "isStartingCity",
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 185544081
+        }, {
+          "name" : "name",
+          "type" : "java.lang.String",
+          "value" : "Käfertal",
+          "id" : 1098861476
+        }, {
+          "name" : "position",
+          "id" : 825580492
+        } ],
+        "id" : 1376312479
+      } ] ],
+      "id" : 2007371021
+    }, {
+      "name" : "edges",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 420854303
+        }, {
+          "id" : 825580492
+        } ],
+        "id" : 469786660
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "type" : "null",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "type" : "java.lang.Integer",
+                "value" : "20",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "id" : 528280723
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player0",
+                "id" : 1787472662
+              } ],
+              "id" : 1904891724
+            } ],
+            "id" : 1595518315
+          }, {
+            "name" : "name",
+            "type" : "java.lang.String",
+            "value" : "",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 2145834646
+        }, {
+          "name" : "position2",
+          "id" : 825580492
+        }, {
+          "name" : "position1",
+          "id" : 420854303
+        } ],
+        "id" : 1484046482
+      } ] ],
+      "id" : 999354576
+    }, {
+      "name" : "tiles",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "id" : 825580492
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "type" : "hProjekt.model.Tile$Type",
+          "value" : "PLAIN",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 825580492
+        } ],
+        "id" : 909428089
+      } ], [ {
+        "id" : 420854303
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 420854303
+        } ],
+        "id" : 1974006054
+      } ] ],
+      "id" : 226926138
+    } ],
+    "id" : 1148487411
+  } ],
+  "expected" : {
+    "type" : "java.util.Collections$UnmodifiableMap",
+    "value" : [ [ {
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "1",
+        "id" : 382441865
+      }, {
+        "name" : "q",
+        "type" : "java.lang.Integer",
+        "value" : "0",
+        "id" : 528280723
+      } ],
+      "id" : 825580492
+    }, {
+      "type" : "hProjekt.model.CityImpl",
+      "fields" : [ {
+        "name" : "isStartingCity",
+        "type" : "java.lang.Boolean",
+        "value" : "true",
+        "id" : 185544081
+      }, {
+        "name" : "name",
+        "type" : "java.lang.String",
+        "value" : "Käfertal",
+        "id" : 1098861476
+      }, {
+        "name" : "position",
+        "id" : 825580492
+      } ],
+      "id" : 1376312479
+    } ] ],
+    "id" : 980138289
+  }
+}, {
+  "invoked" : 905779753,
+  "entryPoint" : "hProjekt.model.HexGridImpl#getConnectedCities()",
+  "arguments" : [ ],
+  "calls" : [ {
+    "id" : 1741394959,
+    "methodCalls" : [ {
+      "methodName" : "getAdjacentTilePositions",
+      "invocations" : [ {
+        "return" : 820201335,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1494499244,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition1",
+      "invocations" : [ {
+        "return" : 971882578,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition2",
+      "invocations" : [ {
+        "return" : 120404042,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1593105328,
+    "methodCalls" : [ {
+      "methodName" : "getAdjacentTilePositions",
+      "invocations" : [ {
+        "return" : 365647361,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1183852351,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition1",
+      "invocations" : [ {
+        "return" : 1930541017,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition2",
+      "invocations" : [ {
+        "return" : 971882578,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1964987474,
+    "methodCalls" : [ {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 1529159609,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1523368529,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.HexGridImpl",
+    "fields" : [ {
+      "name" : "cities",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.model.TilePosition",
+        "fields" : [ {
+          "name" : "r",
+          "type" : "java.lang.Integer",
+          "value" : "2",
+          "id" : 865072353
+        }, {
+          "name" : "q",
+          "type" : "java.lang.Integer",
+          "value" : "0",
+          "id" : 528280723
+        } ],
+        "id" : 450795662
+      }, {
+        "type" : "hProjekt.model.CityImpl",
+        "fields" : [ {
+          "name" : "isStartingCity",
+          "type" : "java.lang.Boolean",
+          "value" : "false",
+          "id" : 1529159609
+        }, {
+          "name" : "name",
+          "type" : "java.lang.String",
+          "value" : "Sengotta",
+          "id" : 266701308
+        }, {
+          "name" : "position",
+          "id" : 450795662
+        } ],
+        "id" : 179372882
+      } ], [ {
+        "type" : "hProjekt.model.TilePosition",
+        "fields" : [ {
+          "name" : "r",
+          "type" : "java.lang.Integer",
+          "value" : "-1",
+          "id" : 1484177113
+        }, {
+          "name" : "q",
+          "id" : 528280723
+        } ],
+        "id" : 1930541017
+      }, {
+        "type" : "hProjekt.model.CityImpl",
+        "fields" : [ {
+          "name" : "isStartingCity",
+          "id" : 1529159609
+        }, {
+          "name" : "name",
+          "type" : "java.lang.String",
+          "value" : "Martinstein",
+          "id" : 1535192585
+        }, {
+          "name" : "position",
+          "id" : 1930541017
+        } ],
+        "id" : 238834651
+      } ], [ {
+        "type" : "hProjekt.model.TilePosition",
+        "fields" : [ {
+          "name" : "r",
+          "type" : "java.lang.Integer",
+          "value" : "1",
+          "id" : 382441865
+        }, {
+          "name" : "q",
+          "id" : 528280723
+        } ],
+        "id" : 120404042
+      }, {
+        "type" : "hProjekt.model.CityImpl",
+        "fields" : [ {
+          "name" : "isStartingCity",
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 185544081
+        }, {
+          "name" : "name",
+          "type" : "java.lang.String",
+          "value" : "Dornbach 21",
+          "id" : 1470516949
+        }, {
+          "name" : "position",
+          "id" : 120404042
+        } ],
+        "id" : 1548331270
+      } ] ],
+      "id" : 535621007
+    }, {
+      "name" : "edges",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1930541017
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 971882578
+        } ],
+        "id" : 365647361
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "type" : "null",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "type" : "java.lang.Integer",
+                "value" : "20",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "id" : 382441865
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player1",
+                "id" : 922750392
+              } ],
+              "id" : 563526613
+            } ],
+            "id" : 1622324345
+          }, {
+            "name" : "name",
+            "type" : "java.lang.String",
+            "value" : "",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1183852351
+        }, {
+          "name" : "position2",
+          "id" : 971882578
+        }, {
+          "name" : "position1",
+          "id" : 1930541017
+        } ],
+        "id" : 1593105328
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 971882578
+        }, {
+          "id" : 120404042
+        } ],
+        "id" : 820201335
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ {
+              "type" : "hProjekt.model.PlayerImpl",
+              "fields" : [ {
+                "name" : "credits",
+                "id" : 78081168
+              }, {
+                "name" : "id",
+                "id" : 528280723
+              }, {
+                "name" : "name",
+                "type" : "java.lang.String",
+                "value" : "Player0",
+                "id" : 2039546086
+              } ],
+              "id" : 245974950
+            } ],
+            "id" : 1740196994
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1494499244
+        }, {
+          "name" : "position2",
+          "id" : 120404042
+        }, {
+          "name" : "position1",
+          "id" : 971882578
+        } ],
+        "id" : 1741394959
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 120404042
+        }, {
+          "id" : 450795662
+        } ],
+        "id" : 2047409862
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "java.util.ArrayList",
+            "value" : [ ],
+            "id" : 458510007
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1523368529
+        }, {
+          "name" : "position2",
+          "id" : 450795662
+        }, {
+          "name" : "position1",
+          "id" : 120404042
+        } ],
+        "id" : 1964987474
+      } ] ],
+      "id" : 659404166
+    }, {
+      "name" : "tiles",
+      "type" : "java.util.HashMap",
+      "value" : [ [ {
+        "id" : 450795662
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "type" : "hProjekt.model.Tile$Type",
+          "value" : "PLAIN",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 450795662
+        } ],
+        "id" : 198592765
+      } ], [ {
+        "id" : 1930541017
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 1930541017
+        } ],
+        "id" : 245018620
+      } ], [ {
+        "id" : 120404042
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 120404042
+        } ],
+        "id" : 1807933688
+      } ], [ {
+        "id" : 971882578
+      }, {
+        "type" : "hProjekt.model.TileImpl",
+        "fields" : [ {
+          "name" : "type",
+          "id" : 1691185247
+        }, {
+          "name" : "position",
+          "id" : 971882578
+        } ],
+        "id" : 725388324
+      } ] ],
+      "id" : 485191909
+    } ],
+    "id" : 905779753
+  } ],
+  "expected" : {
+    "type" : "java.util.Collections$UnmodifiableMap",
+    "value" : [ [ {
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "1",
+        "id" : 382441865
+      }, {
+        "name" : "q",
+        "type" : "java.lang.Integer",
+        "value" : "0",
+        "id" : 528280723
+      } ],
+      "id" : 120404042
+    }, {
+      "type" : "hProjekt.model.CityImpl",
+      "fields" : [ {
+        "name" : "isStartingCity",
+        "type" : "java.lang.Boolean",
+        "value" : "true",
+        "id" : 185544081
+      }, {
+        "name" : "name",
+        "type" : "java.lang.String",
+        "value" : "Dornbach 21",
+        "id" : 1470516949
+      }, {
+        "name" : "position",
+        "id" : 120404042
+      } ],
+      "id" : 1548331270
+    } ], [ {
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "-1",
+        "id" : 1484177113
+      }, {
+        "name" : "q",
+        "id" : 528280723
+      } ],
+      "id" : 1930541017
+    }, {
+      "type" : "hProjekt.model.CityImpl",
+      "fields" : [ {
+        "name" : "isStartingCity",
+        "type" : "java.lang.Boolean",
+        "value" : "false",
+        "id" : 1529159609
+      }, {
+        "name" : "name",
+        "type" : "java.lang.String",
+        "value" : "Martinstein",
+        "id" : 1535192585
+      }, {
+        "name" : "position",
+        "id" : 1930541017
+      } ],
+      "id" : 238834651
+    } ] ],
+    "id" : 1164737645
+  }
+} ]

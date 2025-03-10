@@ -1,0 +1,5142 @@
+[ {
+  "invoked" : 3393941,
+  "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
+  "arguments" : [ 1791738317 ],
+  "calls" : [ {
+    "id" : 216670731,
+    "methodCalls" : [ {
+      "methodName" : "getState",
+      "invocations" : [ {
+        "return" : 124013999,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 3393941,
+    "methodCalls" : [ {
+      "methodName" : "canDrive",
+      "invocations" : [ {
+        "return" : 1529159609,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 124013999,
+    "methodCalls" : [ {
+      "methodName" : "getGamePhaseProperty",
+      "invocations" : [ {
+        "return" : 629007339,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.controller.PlayerController",
+    "fields" : [ {
+      "name" : "hasConfirmedPath",
+      "type" : "java.lang.Boolean",
+      "value" : "false",
+      "id" : 1529159609
+    }, {
+      "name" : "hasPath",
+      "id" : 1529159609
+    }, {
+      "name" : "rentedEdges",
+      "type" : "hProjekt.mocking.ArraySet",
+      "value" : [ ],
+      "id" : 55100252
+    }, {
+      "name" : "buildingBudget",
+      "type" : "java.lang.Integer",
+      "value" : "0",
+      "id" : 528280723
+    }, {
+      "name" : "playerObjective",
+      "type" : "hProjekt.controller.PlayerObjective",
+      "value" : "IDLE",
+      "id" : 2143108725
+    }, {
+      "name" : "playerStateProperty",
+      "type" : "javafx.beans.property.SimpleObjectProperty",
+      "fields" : [ {
+        "name" : "helper",
+        "type" : "null",
+        "id" : 0
+      }, {
+        "name" : "valid",
+        "type" : "java.lang.Boolean",
+        "value" : "true",
+        "id" : 185544081
+      }, {
+        "name" : "listener",
+        "id" : 0
+      }, {
+        "name" : "observable",
+        "id" : 0
+      }, {
+        "name" : "value",
+        "type" : "hProjekt.model.PlayerState",
+        "fields" : [ {
+          "name" : "buildingBudget",
+          "id" : 528280723
+        }, {
+          "name" : "drivableTiles",
+          "type" : "java.util.HashMap",
+          "value" : [ ],
+          "id" : 846134047
+        }, {
+          "name" : "hasPath",
+          "id" : 1529159609
+        }, {
+          "name" : "rentedEdges",
+          "id" : 55100252
+        }, {
+          "name" : "choosableEdges",
+          "id" : 55100252
+        }, {
+          "name" : "playerObjective",
+          "id" : 2143108725
+        }, {
+          "name" : "buildableRailEdges",
+          "id" : 55100252
+        } ],
+        "id" : 1984822351
+      }, {
+        "name" : "name",
+        "type" : "java.lang.String",
+        "value" : "",
+        "id" : 1643345873
+      }, {
+        "name" : "bean",
+        "id" : 0
+      } ],
+      "id" : 1984839051
+    }, {
+      "name" : "actions",
+      "type" : "java.util.concurrent.LinkedBlockingDeque",
+      "fields" : [ {
+        "name" : "notFull",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
+          "fields" : [ {
+            "name" : "state",
+            "id" : 528280723
+          } ],
+          "id" : 1441950301
+        } ],
+        "id" : 960211118
+      }, {
+        "name" : "notEmpty",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "id" : 1441950301
+        } ],
+        "id" : 2096408293
+      }, {
+        "name" : "lock",
+        "type" : "java.util.concurrent.locks.ReentrantLock",
+        "fields" : [ {
+          "name" : "sync",
+          "id" : 1441950301
+        } ],
+        "id" : 890806240
+      }, {
+        "name" : "capacity",
+        "type" : "java.lang.Integer",
+        "value" : "2147483647",
+        "id" : 2091659956
+      } ],
+      "id" : 462292593
+    }, {
+      "name" : "gameController",
+      "type" : "hProjekt.controller.GameController",
+      "fields" : [ {
+        "name" : "stopped",
+        "id" : 1529159609
+      }, {
+        "name" : "activePlayerController",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 0
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 823674306
+      }, {
+        "name" : "chosenCitiesProperty",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "type" : "javafx.util.Pair",
+          "fields" : [ {
+            "name" : "value",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Salzbergen",
+              "id" : 358011147
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "type" : "java.lang.Integer",
+                "value" : "1",
+                "id" : 382441865
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 319089826
+            } ],
+            "id" : 1567973903
+          }, {
+            "name" : "key",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Pächeralp",
+              "id" : 1448753057
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "id" : 528280723
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 238634461
+            } ],
+            "id" : 523477200
+          } ],
+          "id" : 1572571126
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1348417880
+      }, {
+        "name" : "roundCounter",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 528280723
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1574497454
+      }, {
+        "name" : "currentDiceRoll",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 528280723
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1224170796
+      }, {
+        "name" : "dice",
+        "type" : "java.lang.Object",
+        "fields" : [ ],
+        "id" : 1092577368
+      }, {
+        "name" : "aiControllers",
+        "type" : "java.util.ArrayList",
+        "value" : [ ],
+        "id" : 2044787682
+      }, {
+        "name" : "playerControllers",
+        "id" : 846134047
+      }, {
+        "name" : "state",
+        "type" : "hProjekt.model.GameState",
+        "fields" : [ {
+          "name" : "chosenCities",
+          "id" : 55100252
+        }, {
+          "name" : "gamePhaseProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "hProjekt.controller.GamePhase",
+            "value" : "BUILDING_PHASE",
+            "id" : 243596165
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 629007339
+        }, {
+          "name" : "winnerProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 0
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 610184948
+        }, {
+          "name" : "playerPointSurplus",
+          "id" : 846134047
+        }, {
+          "name" : "playerPositions",
+          "type" : "java.util.HashMap",
+          "value" : [ [ {
+            "type" : "hProjekt.model.PlayerImpl",
+            "fields" : [ {
+              "name" : "credits",
+              "type" : "java.lang.Integer",
+              "value" : "20",
+              "id" : 78081168
+            }, {
+              "name" : "id",
+              "id" : 528280723
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Player0",
+              "id" : 890079231
+            } ],
+            "id" : 236207198
+          }, {
+            "id" : 238634461
+          } ] ],
+          "id" : 713344013
+        }, {
+          "name" : "drivingPlayers",
+          "id" : 2044787682
+        }, {
+          "name" : "players",
+          "type" : "java.util.ArrayList",
+          "value" : [ {
+            "id" : 236207198
+          } ],
+          "id" : 190024076
+        }, {
+          "name" : "grid",
+          "type" : "hProjekt.model.HexGridImpl",
+          "fields" : [ {
+            "name" : "cities",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 238634461
+            }, {
+              "id" : 523477200
+            } ], [ {
+              "id" : 319089826
+            }, {
+              "id" : 1567973903
+            } ] ],
+            "id" : 1157460567
+          }, {
+            "name" : "edges",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "type" : "hProjekt.mocking.ArraySet",
+              "value" : [ {
+                "id" : 238634461
+              }, {
+                "id" : 319089826
+              } ],
+              "id" : 2015891766
+            }, {
+              "type" : "hProjekt.model.EdgeImpl",
+              "fields" : [ {
+                "name" : "railOwners",
+                "type" : "javafx.beans.property.SimpleObjectProperty",
+                "fields" : [ {
+                  "name" : "helper",
+                  "id" : 0
+                }, {
+                  "name" : "valid",
+                  "id" : 185544081
+                }, {
+                  "name" : "listener",
+                  "id" : 0
+                }, {
+                  "name" : "observable",
+                  "id" : 0
+                }, {
+                  "name" : "value",
+                  "id" : 2044787682
+                }, {
+                  "name" : "name",
+                  "id" : 1643345873
+                }, {
+                  "name" : "bean",
+                  "id" : 0
+                } ],
+                "id" : 1715798094
+              }, {
+                "name" : "position2",
+                "id" : 319089826
+              }, {
+                "name" : "position1",
+                "id" : 238634461
+              } ],
+              "id" : 1148879529
+            } ] ],
+            "id" : 1729222558
+          }, {
+            "name" : "tiles",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 238634461
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 871205112
+              }, {
+                "name" : "type",
+                "type" : "hProjekt.model.Tile$Type",
+                "value" : "PLAIN",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 238634461
+              } ],
+              "id" : 915814803
+            } ], [ {
+              "id" : 319089826
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 871205112
+              }, {
+                "name" : "type",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 319089826
+              } ],
+              "id" : 2098652030
+            } ] ],
+            "id" : 2113196809
+          } ],
+          "id" : 871205112
+        } ],
+        "id" : 124013999
+      } ],
+      "id" : 216670731
+    }, {
+      "name" : "player",
+      "id" : 236207198
+    } ],
+    "id" : 3393941
+  }, {
+    "type" : "hProjekt.model.TileImpl",
+    "fields" : [ {
+      "name" : "hexGrid",
+      "type" : "hProjekt.model.HexGridImpl",
+      "fields" : [ {
+        "name" : "cities",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1055425881
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 1448753057
+          }, {
+            "name" : "position",
+            "id" : 1055425881
+          } ],
+          "id" : 382747190
+        } ], [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1218428556
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 358011147
+          }, {
+            "name" : "position",
+            "id" : 1218428556
+          } ],
+          "id" : 1286322615
+        } ] ],
+        "id" : 1118158707
+      }, {
+        "name" : "edges",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.mocking.ArraySet",
+          "value" : [ {
+            "id" : 1055425881
+          }, {
+            "id" : 1218428556
+          } ],
+          "id" : 1549123571
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "id" : 185544081
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "type" : "java.util.ArrayList",
+              "value" : [ ],
+              "id" : 713542181
+            }, {
+              "name" : "name",
+              "id" : 1643345873
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 2093052732
+          }, {
+            "name" : "position2",
+            "id" : 1218428556
+          }, {
+            "name" : "position1",
+            "id" : 1055425881
+          } ],
+          "id" : 624407636
+        } ] ],
+        "id" : 218845755
+      }, {
+        "name" : "tiles",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "id" : 1055425881
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 2134821209
+          }, {
+            "name" : "type",
+            "id" : 1691185247
+          }, {
+            "name" : "position",
+            "id" : 1055425881
+          } ],
+          "id" : 1301855673
+        } ], [ {
+          "id" : 1218428556
+        }, {
+          "id" : 1791738317
+        } ] ],
+        "id" : 2097285
+      } ],
+      "id" : 2134821209
+    }, {
+      "name" : "type",
+      "id" : 1691185247
+    }, {
+      "name" : "position",
+      "id" : 1218428556
+    } ],
+    "id" : 1791738317
+  } ],
+  "expected" : {
+    "type" : "hProjekt.controller.actions.IllegalActionException",
+    "fields" : [ {
+      "name" : "suppressedExceptions",
+      "type" : "java.util.Collections$EmptyList",
+      "value" : [ ],
+      "id" : 136778400
+    }, {
+      "name" : "cause",
+      "id" : 128660045
+    }, {
+      "name" : "detailMessage",
+      "type" : "java.lang.String",
+      "value" : "Player cannot drive",
+      "id" : 1392489382
+    } ],
+    "id" : 128660045
+  }
+}, {
+  "invoked" : 1529809712,
+  "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
+  "arguments" : [ 661817745 ],
+  "calls" : [ {
+    "id" : 1886481626,
+    "methodCalls" : [ {
+      "methodName" : "getState",
+      "invocations" : [ {
+        "return" : 1358747345,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1358747345,
+    "methodCalls" : [ {
+      "methodName" : "getGamePhaseProperty",
+      "invocations" : [ {
+        "return" : 1800458278,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getDrivingPlayers",
+      "invocations" : [ {
+        "return" : 976563662,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1529809712,
+    "methodCalls" : [ {
+      "methodName" : "canDrive",
+      "invocations" : [ {
+        "return" : 1529159609,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.controller.PlayerController",
+    "fields" : [ {
+      "name" : "hasConfirmedPath",
+      "type" : "java.lang.Boolean",
+      "value" : "false",
+      "id" : 1529159609
+    }, {
+      "name" : "hasPath",
+      "id" : 1529159609
+    }, {
+      "name" : "rentedEdges",
+      "type" : "hProjekt.mocking.ArraySet",
+      "value" : [ ],
+      "id" : 285402439
+    }, {
+      "name" : "buildingBudget",
+      "type" : "java.lang.Integer",
+      "value" : "0",
+      "id" : 528280723
+    }, {
+      "name" : "playerObjective",
+      "type" : "hProjekt.controller.PlayerObjective",
+      "value" : "IDLE",
+      "id" : 2143108725
+    }, {
+      "name" : "playerStateProperty",
+      "type" : "javafx.beans.property.SimpleObjectProperty",
+      "fields" : [ {
+        "name" : "helper",
+        "type" : "null",
+        "id" : 0
+      }, {
+        "name" : "valid",
+        "type" : "java.lang.Boolean",
+        "value" : "true",
+        "id" : 185544081
+      }, {
+        "name" : "listener",
+        "id" : 0
+      }, {
+        "name" : "observable",
+        "id" : 0
+      }, {
+        "name" : "value",
+        "type" : "hProjekt.model.PlayerState",
+        "fields" : [ {
+          "name" : "buildingBudget",
+          "id" : 528280723
+        }, {
+          "name" : "drivableTiles",
+          "type" : "java.util.HashMap",
+          "value" : [ ],
+          "id" : 504137216
+        }, {
+          "name" : "hasPath",
+          "id" : 1529159609
+        }, {
+          "name" : "rentedEdges",
+          "id" : 285402439
+        }, {
+          "name" : "choosableEdges",
+          "id" : 285402439
+        }, {
+          "name" : "playerObjective",
+          "id" : 2143108725
+        }, {
+          "name" : "buildableRailEdges",
+          "id" : 285402439
+        } ],
+        "id" : 1550272181
+      }, {
+        "name" : "name",
+        "type" : "java.lang.String",
+        "value" : "",
+        "id" : 1643345873
+      }, {
+        "name" : "bean",
+        "id" : 0
+      } ],
+      "id" : 1709728619
+    }, {
+      "name" : "actions",
+      "type" : "java.util.concurrent.LinkedBlockingDeque",
+      "fields" : [ {
+        "name" : "notFull",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
+          "fields" : [ {
+            "name" : "state",
+            "id" : 528280723
+          } ],
+          "id" : 1608994274
+        } ],
+        "id" : 282826705
+      }, {
+        "name" : "notEmpty",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "id" : 1608994274
+        } ],
+        "id" : 421435977
+      }, {
+        "name" : "lock",
+        "type" : "java.util.concurrent.locks.ReentrantLock",
+        "fields" : [ {
+          "name" : "sync",
+          "id" : 1608994274
+        } ],
+        "id" : 851674436
+      }, {
+        "name" : "capacity",
+        "type" : "java.lang.Integer",
+        "value" : "2147483647",
+        "id" : 1026528109
+      } ],
+      "id" : 905498480
+    }, {
+      "name" : "gameController",
+      "type" : "hProjekt.controller.GameController",
+      "fields" : [ {
+        "name" : "stopped",
+        "id" : 1529159609
+      }, {
+        "name" : "activePlayerController",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 0
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1115837309
+      }, {
+        "name" : "chosenCitiesProperty",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "type" : "javafx.util.Pair",
+          "fields" : [ {
+            "name" : "value",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Buchsbaum",
+              "id" : 1269152512
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "type" : "java.lang.Integer",
+                "value" : "1",
+                "id" : 382441865
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 646193786
+            } ],
+            "id" : 276071630
+          }, {
+            "name" : "key",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Grumannsbrücken",
+              "id" : 1258585001
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "id" : 528280723
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 1279268162
+            } ],
+            "id" : 1203388421
+          } ],
+          "id" : 924506248
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 540623456
+      }, {
+        "name" : "roundCounter",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 528280723
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 2040888281
+      }, {
+        "name" : "currentDiceRoll",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 528280723
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 863260676
+      }, {
+        "name" : "dice",
+        "type" : "java.lang.Object",
+        "fields" : [ ],
+        "id" : 249296123
+      }, {
+        "name" : "aiControllers",
+        "type" : "java.util.ArrayList",
+        "value" : [ ],
+        "id" : 976563662
+      }, {
+        "name" : "playerControllers",
+        "id" : 504137216
+      }, {
+        "name" : "state",
+        "type" : "hProjekt.model.GameState",
+        "fields" : [ {
+          "name" : "chosenCities",
+          "id" : 285402439
+        }, {
+          "name" : "gamePhaseProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 1529159609
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "hProjekt.controller.GamePhase",
+            "value" : "DRIVING_PHASE",
+            "id" : 1099026593
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1800458278
+        }, {
+          "name" : "winnerProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 0
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1769001016
+        }, {
+          "name" : "playerPointSurplus",
+          "id" : 504137216
+        }, {
+          "name" : "playerPositions",
+          "type" : "java.util.HashMap",
+          "value" : [ [ {
+            "type" : "hProjekt.model.PlayerImpl",
+            "fields" : [ {
+              "name" : "credits",
+              "type" : "java.lang.Integer",
+              "value" : "20",
+              "id" : 78081168
+            }, {
+              "name" : "id",
+              "id" : 528280723
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Player0",
+              "id" : 1102868688
+            } ],
+            "id" : 1251805301
+          }, {
+            "id" : 1279268162
+          } ] ],
+          "id" : 606428353
+        }, {
+          "name" : "drivingPlayers",
+          "id" : 976563662
+        }, {
+          "name" : "players",
+          "type" : "java.util.ArrayList",
+          "value" : [ {
+            "id" : 1251805301
+          } ],
+          "id" : 1196461484
+        }, {
+          "name" : "grid",
+          "type" : "hProjekt.model.HexGridImpl",
+          "fields" : [ {
+            "name" : "cities",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1279268162
+            }, {
+              "id" : 1203388421
+            } ], [ {
+              "id" : 646193786
+            }, {
+              "id" : 276071630
+            } ] ],
+            "id" : 1422134402
+          }, {
+            "name" : "edges",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "type" : "hProjekt.mocking.ArraySet",
+              "value" : [ {
+                "id" : 1279268162
+              }, {
+                "id" : 646193786
+              } ],
+              "id" : 1640882647
+            }, {
+              "type" : "hProjekt.model.EdgeImpl",
+              "fields" : [ {
+                "name" : "railOwners",
+                "type" : "javafx.beans.property.SimpleObjectProperty",
+                "fields" : [ {
+                  "name" : "helper",
+                  "id" : 0
+                }, {
+                  "name" : "valid",
+                  "id" : 185544081
+                }, {
+                  "name" : "listener",
+                  "id" : 0
+                }, {
+                  "name" : "observable",
+                  "id" : 0
+                }, {
+                  "name" : "value",
+                  "id" : 976563662
+                }, {
+                  "name" : "name",
+                  "id" : 1643345873
+                }, {
+                  "name" : "bean",
+                  "id" : 0
+                } ],
+                "id" : 826035163
+              }, {
+                "name" : "position2",
+                "id" : 646193786
+              }, {
+                "name" : "position1",
+                "id" : 1279268162
+              } ],
+              "id" : 1738976330
+            } ] ],
+            "id" : 2012312640
+          }, {
+            "name" : "tiles",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1279268162
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 2064104981
+              }, {
+                "name" : "type",
+                "type" : "hProjekt.model.Tile$Type",
+                "value" : "PLAIN",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1279268162
+              } ],
+              "id" : 353079854
+            } ], [ {
+              "id" : 646193786
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 2064104981
+              }, {
+                "name" : "type",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 646193786
+              } ],
+              "id" : 1177759812
+            } ] ],
+            "id" : 1063154395
+          } ],
+          "id" : 2064104981
+        } ],
+        "id" : 1358747345
+      } ],
+      "id" : 1886481626
+    }, {
+      "name" : "player",
+      "id" : 1251805301
+    } ],
+    "id" : 1529809712
+  }, {
+    "type" : "hProjekt.model.TileImpl",
+    "fields" : [ {
+      "name" : "hexGrid",
+      "type" : "hProjekt.model.HexGridImpl",
+      "fields" : [ {
+        "name" : "cities",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1189930221
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 1269152512
+          }, {
+            "name" : "position",
+            "id" : 1189930221
+          } ],
+          "id" : 1323760698
+        } ], [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1406558416
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 1258585001
+          }, {
+            "name" : "position",
+            "id" : 1406558416
+          } ],
+          "id" : 2063150081
+        } ] ],
+        "id" : 960406525
+      }, {
+        "name" : "edges",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.mocking.ArraySet",
+          "value" : [ {
+            "id" : 1406558416
+          }, {
+            "id" : 1189930221
+          } ],
+          "id" : 1810620257
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "id" : 185544081
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "type" : "java.util.ArrayList",
+              "value" : [ ],
+              "id" : 1582871081
+            }, {
+              "name" : "name",
+              "id" : 1643345873
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 527041655
+          }, {
+            "name" : "position2",
+            "id" : 1189930221
+          }, {
+            "name" : "position1",
+            "id" : 1406558416
+          } ],
+          "id" : 1758417265
+        } ] ],
+        "id" : 1961289584
+      }, {
+        "name" : "tiles",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "id" : 1189930221
+        }, {
+          "id" : 661817745
+        } ], [ {
+          "id" : 1406558416
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 57093449
+          }, {
+            "name" : "type",
+            "id" : 1691185247
+          }, {
+            "name" : "position",
+            "id" : 1406558416
+          } ],
+          "id" : 1037171648
+        } ] ],
+        "id" : 1321951836
+      } ],
+      "id" : 57093449
+    }, {
+      "name" : "type",
+      "id" : 1691185247
+    }, {
+      "name" : "position",
+      "id" : 1189930221
+    } ],
+    "id" : 661817745
+  } ],
+  "expected" : {
+    "type" : "hProjekt.controller.actions.IllegalActionException",
+    "fields" : [ {
+      "name" : "suppressedExceptions",
+      "type" : "java.util.Collections$EmptyList",
+      "value" : [ ],
+      "id" : 136778400
+    }, {
+      "name" : "cause",
+      "id" : 1400026881
+    }, {
+      "name" : "detailMessage",
+      "type" : "java.lang.String",
+      "value" : "Player cannot drive",
+      "id" : 1392489382
+    } ],
+    "id" : 1400026881
+  }
+}, {
+  "invoked" : 1497524116,
+  "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
+  "arguments" : [ 1329880841 ],
+  "calls" : [ {
+    "id" : 1148477684,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 2139188295,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 124696619,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 811618177,
+    "methodCalls" : [ {
+      "methodName" : "getTileAt",
+      "invocations" : [ {
+        "return" : 843542304,
+        "parameter" : [ 1604806840 ]
+      } ]
+    }, {
+      "methodName" : "getTiles",
+      "invocations" : [ {
+        "return" : 139023450,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRails",
+      "invocations" : [ {
+        "return" : 1239397493,
+        "parameter" : [ 1723624235 ]
+      } ]
+    } ]
+  }, {
+    "id" : 1497524116,
+    "methodCalls" : [ {
+      "methodName" : "getDrivableTiles",
+      "invocations" : [ {
+        "return" : 2116541335,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPlayer",
+      "invocations" : [ {
+        "return" : 1723624235,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "canDrive",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 843542304,
+    "methodCalls" : [ {
+      "methodName" : "getConnectedNeighbours",
+      "invocations" : [ {
+        "return" : 402673222,
+        "parameter" : [ 1552762918 ]
+      } ]
+    }, {
+      "methodName" : "getNeighbours",
+      "invocations" : [ {
+        "return" : 402673222,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getHexGrid",
+      "invocations" : [ {
+        "return" : 811618177,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition",
+      "invocations" : [ {
+        "return" : 1604806840,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 373502196,
+    "methodCalls" : [ {
+      "methodName" : "getGrid",
+      "invocations" : [ {
+        "return" : 811618177,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getGamePhaseProperty",
+      "invocations" : [ {
+        "return" : 1795636323,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPlayerPositions",
+      "invocations" : [ {
+        "return" : 1532150507,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getDrivingPlayers",
+      "invocations" : [ {
+        "return" : 2139188295,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 637841768,
+    "methodCalls" : [ {
+      "methodName" : "getState",
+      "invocations" : [ {
+        "return" : 373502196,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.controller.PlayerController",
+    "fields" : [ {
+      "name" : "hasConfirmedPath",
+      "type" : "java.lang.Boolean",
+      "value" : "false",
+      "id" : 1529159609
+    }, {
+      "name" : "hasPath",
+      "id" : 1529159609
+    }, {
+      "name" : "rentedEdges",
+      "type" : "hProjekt.mocking.ArraySet",
+      "value" : [ ],
+      "id" : 402673222
+    }, {
+      "name" : "buildingBudget",
+      "type" : "java.lang.Integer",
+      "value" : "0",
+      "id" : 528280723
+    }, {
+      "name" : "playerObjective",
+      "type" : "hProjekt.controller.PlayerObjective",
+      "value" : "IDLE",
+      "id" : 2143108725
+    }, {
+      "name" : "playerStateProperty",
+      "type" : "javafx.beans.property.SimpleObjectProperty",
+      "fields" : [ {
+        "name" : "helper",
+        "type" : "null",
+        "id" : 0
+      }, {
+        "name" : "valid",
+        "type" : "java.lang.Boolean",
+        "value" : "true",
+        "id" : 185544081
+      }, {
+        "name" : "listener",
+        "id" : 0
+      }, {
+        "name" : "observable",
+        "id" : 0
+      }, {
+        "name" : "value",
+        "type" : "hProjekt.model.PlayerState",
+        "fields" : [ {
+          "name" : "buildingBudget",
+          "id" : 528280723
+        }, {
+          "name" : "drivableTiles",
+          "type" : "java.util.HashMap",
+          "value" : [ ],
+          "id" : 2116541335
+        }, {
+          "name" : "hasPath",
+          "id" : 1529159609
+        }, {
+          "name" : "rentedEdges",
+          "id" : 402673222
+        }, {
+          "name" : "choosableEdges",
+          "id" : 402673222
+        }, {
+          "name" : "playerObjective",
+          "id" : 2143108725
+        }, {
+          "name" : "buildableRailEdges",
+          "id" : 402673222
+        } ],
+        "id" : 1719973775
+      }, {
+        "name" : "name",
+        "type" : "java.lang.String",
+        "value" : "",
+        "id" : 1643345873
+      }, {
+        "name" : "bean",
+        "id" : 0
+      } ],
+      "id" : 2145644462
+    }, {
+      "name" : "actions",
+      "type" : "java.util.concurrent.LinkedBlockingDeque",
+      "fields" : [ {
+        "name" : "notFull",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
+          "fields" : [ {
+            "name" : "state",
+            "id" : 528280723
+          } ],
+          "id" : 1281389748
+        } ],
+        "id" : 1842439662
+      }, {
+        "name" : "notEmpty",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "id" : 1281389748
+        } ],
+        "id" : 2091798092
+      }, {
+        "name" : "lock",
+        "type" : "java.util.concurrent.locks.ReentrantLock",
+        "fields" : [ {
+          "name" : "sync",
+          "id" : 1281389748
+        } ],
+        "id" : 2137020320
+      }, {
+        "name" : "capacity",
+        "type" : "java.lang.Integer",
+        "value" : "2147483647",
+        "id" : 618208458
+      } ],
+      "id" : 2026879956
+    }, {
+      "name" : "gameController",
+      "type" : "hProjekt.controller.GameController",
+      "fields" : [ {
+        "name" : "stopped",
+        "id" : 1529159609
+      }, {
+        "name" : "activePlayerController",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 0
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1386722351
+      }, {
+        "name" : "chosenCitiesProperty",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "type" : "javafx.util.Pair",
+          "fields" : [ {
+            "name" : "value",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Armstroffmeiler",
+              "id" : 1175869221
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "type" : "java.lang.Integer",
+                "value" : "1",
+                "id" : 382441865
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 1042956212
+            } ],
+            "id" : 347866006
+          }, {
+            "name" : "key",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Gunkeln",
+              "id" : 1080580658
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "id" : 528280723
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 1604806840
+            } ],
+            "id" : 901059501
+          } ],
+          "id" : 682385753
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 332077674
+      }, {
+        "name" : "roundCounter",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 528280723
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 902890872
+      }, {
+        "name" : "currentDiceRoll",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 528280723
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 105788581
+      }, {
+        "name" : "dice",
+        "type" : "java.lang.Object",
+        "fields" : [ ],
+        "id" : 1743329597
+      }, {
+        "name" : "aiControllers",
+        "type" : "java.util.ArrayList",
+        "value" : [ ],
+        "id" : 1222995895
+      }, {
+        "name" : "playerControllers",
+        "id" : 2116541335
+      }, {
+        "name" : "state",
+        "type" : "hProjekt.model.GameState",
+        "fields" : [ {
+          "name" : "chosenCities",
+          "id" : 402673222
+        }, {
+          "name" : "gamePhaseProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 1529159609
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "hProjekt.controller.GamePhase",
+            "value" : "DRIVING_PHASE",
+            "id" : 1099026593
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1795636323
+        }, {
+          "name" : "winnerProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 0
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1492019662
+        }, {
+          "name" : "playerPointSurplus",
+          "id" : 2116541335
+        }, {
+          "name" : "playerPositions",
+          "type" : "java.util.HashMap",
+          "value" : [ [ {
+            "type" : "hProjekt.model.PlayerImpl",
+            "fields" : [ {
+              "name" : "credits",
+              "type" : "java.lang.Integer",
+              "value" : "20",
+              "id" : 78081168
+            }, {
+              "name" : "id",
+              "id" : 528280723
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Player0",
+              "id" : 1738729261
+            } ],
+            "id" : 1723624235
+          }, {
+            "id" : 1604806840
+          } ] ],
+          "id" : 1532150507
+        }, {
+          "name" : "drivingPlayers",
+          "type" : "java.util.ArrayList",
+          "value" : [ {
+            "id" : 1723624235
+          } ],
+          "id" : 2139188295
+        }, {
+          "name" : "players",
+          "id" : 2139188295
+        }, {
+          "name" : "grid",
+          "type" : "hProjekt.model.HexGridImpl",
+          "fields" : [ {
+            "name" : "cities",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1042956212
+            }, {
+              "id" : 347866006
+            } ], [ {
+              "id" : 1604806840
+            }, {
+              "id" : 901059501
+            } ] ],
+            "id" : 66113711
+          }, {
+            "name" : "edges",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "type" : "hProjekt.mocking.ArraySet",
+              "value" : [ {
+                "id" : 1604806840
+              }, {
+                "id" : 1042956212
+              } ],
+              "id" : 796739539
+            }, {
+              "type" : "hProjekt.model.EdgeImpl",
+              "fields" : [ {
+                "name" : "railOwners",
+                "type" : "javafx.beans.property.SimpleObjectProperty",
+                "fields" : [ {
+                  "name" : "helper",
+                  "id" : 0
+                }, {
+                  "name" : "valid",
+                  "id" : 185544081
+                }, {
+                  "name" : "listener",
+                  "id" : 0
+                }, {
+                  "name" : "observable",
+                  "id" : 0
+                }, {
+                  "name" : "value",
+                  "id" : 2139188295
+                }, {
+                  "name" : "name",
+                  "id" : 1643345873
+                }, {
+                  "name" : "bean",
+                  "id" : 0
+                } ],
+                "id" : 124696619
+              }, {
+                "name" : "position2",
+                "id" : 1042956212
+              }, {
+                "name" : "position1",
+                "id" : 1604806840
+              } ],
+              "id" : 1148477684
+            } ] ],
+            "id" : 1239397493
+          }, {
+            "name" : "tiles",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1042956212
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 811618177
+              }, {
+                "name" : "type",
+                "type" : "hProjekt.model.Tile$Type",
+                "value" : "PLAIN",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1042956212
+              } ],
+              "id" : 78114429
+            } ], [ {
+              "id" : 1604806840
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 811618177
+              }, {
+                "name" : "type",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1604806840
+              } ],
+              "id" : 843542304
+            } ] ],
+            "id" : 139023450
+          } ],
+          "id" : 811618177
+        } ],
+        "id" : 373502196
+      } ],
+      "id" : 637841768
+    }, {
+      "name" : "player",
+      "id" : 1723624235
+    } ],
+    "id" : 1497524116
+  }, {
+    "type" : "hProjekt.model.TileImpl",
+    "fields" : [ {
+      "name" : "hexGrid",
+      "type" : "hProjekt.model.HexGridImpl",
+      "fields" : [ {
+        "name" : "cities",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 548065470
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 1175869221
+          }, {
+            "name" : "position",
+            "id" : 548065470
+          } ],
+          "id" : 1457938300
+        } ], [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 528280723
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1427608682
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 1080580658
+          }, {
+            "name" : "position",
+            "id" : 1427608682
+          } ],
+          "id" : 760610010
+        } ] ],
+        "id" : 1942476064
+      }, {
+        "name" : "edges",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.mocking.ArraySet",
+          "value" : [ {
+            "id" : 1427608682
+          }, {
+            "id" : 548065470
+          } ],
+          "id" : 1286580955
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "id" : 185544081
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "type" : "java.util.ArrayList",
+              "value" : [ {
+                "type" : "hProjekt.model.PlayerImpl",
+                "fields" : [ {
+                  "name" : "credits",
+                  "id" : 78081168
+                }, {
+                  "name" : "id",
+                  "id" : 528280723
+                }, {
+                  "name" : "name",
+                  "id" : 1738729261
+                } ],
+                "id" : 1838156060
+              } ],
+              "id" : 475671389
+            }, {
+              "name" : "name",
+              "id" : 1643345873
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 506785390
+          }, {
+            "name" : "position2",
+            "id" : 548065470
+          }, {
+            "name" : "position1",
+            "id" : 1427608682
+          } ],
+          "id" : 113556557
+        } ] ],
+        "id" : 1318000903
+      }, {
+        "name" : "tiles",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "id" : 548065470
+        }, {
+          "id" : 1329880841
+        } ], [ {
+          "id" : 1427608682
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 1566276603
+          }, {
+            "name" : "type",
+            "id" : 1691185247
+          }, {
+            "name" : "position",
+            "id" : 1427608682
+          } ],
+          "id" : 320421072
+        } ] ],
+        "id" : 1391118248
+      } ],
+      "id" : 1566276603
+    }, {
+      "name" : "type",
+      "id" : 1691185247
+    }, {
+      "name" : "position",
+      "id" : 548065470
+    } ],
+    "id" : 1329880841
+  }, {
+    "type" : "java.util.HashSet",
+    "value" : [ {
+      "id" : 1148477684
+    } ],
+    "id" : 1552762918
+  } ],
+  "expected" : {
+    "type" : "hProjekt.controller.actions.IllegalActionException",
+    "fields" : [ {
+      "name" : "suppressedExceptions",
+      "type" : "java.util.Collections$EmptyList",
+      "value" : [ ],
+      "id" : 136778400
+    }, {
+      "name" : "cause",
+      "id" : 1985898722
+    }, {
+      "name" : "detailMessage",
+      "type" : "java.lang.String",
+      "value" : "Player cannot drive to the target tile",
+      "id" : 2068808303
+    } ],
+    "id" : 1985898722
+  }
+}, {
+  "invoked" : 109894324,
+  "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
+  "arguments" : [ 573869428 ],
+  "calls" : [ {
+    "id" : 1344105356,
+    "methodCalls" : [ {
+      "methodName" : "getState",
+      "invocations" : [ {
+        "return" : 532577965,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 532577965,
+    "methodCalls" : [ {
+      "methodName" : "getGrid",
+      "invocations" : [ {
+        "return" : 2147202609,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getGamePhaseProperty",
+      "invocations" : [ {
+        "return" : 1535336292,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPlayerPositions",
+      "invocations" : [ {
+        "return" : 845047636,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getDrivingPlayers",
+      "invocations" : [ {
+        "return" : 282783183,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 457467041,
+    "methodCalls" : [ {
+      "methodName" : "getConnectedNeighbours",
+      "invocations" : [ {
+        "return" : 1116178134,
+        "parameter" : [ 534451490 ]
+      } ]
+    }, {
+      "methodName" : "getNeighbours",
+      "invocations" : [ {
+        "return" : 1116178134,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getHexGrid",
+      "invocations" : [ {
+        "return" : 2147202609,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition",
+      "invocations" : [ {
+        "return" : 1536218485,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 109894324,
+    "methodCalls" : [ {
+      "methodName" : "getDrivableTiles",
+      "invocations" : [ {
+        "return" : 1184451857,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPlayer",
+      "invocations" : [ {
+        "return" : 1219214126,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "canDrive",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 872404870,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 282783183,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1453201697,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 2147202609,
+    "methodCalls" : [ {
+      "methodName" : "getTileAt",
+      "invocations" : [ {
+        "return" : 457467041,
+        "parameter" : [ 1536218485 ]
+      } ]
+    }, {
+      "methodName" : "getTiles",
+      "invocations" : [ {
+        "return" : 1655197281,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRails",
+      "invocations" : [ {
+        "return" : 487486229,
+        "parameter" : [ 1219214126 ]
+      } ]
+    } ]
+  }, {
+    "id" : 1092888431,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 282783183,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 866577030,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.controller.PlayerController",
+    "fields" : [ {
+      "name" : "hasConfirmedPath",
+      "type" : "java.lang.Boolean",
+      "value" : "false",
+      "id" : 1529159609
+    }, {
+      "name" : "hasPath",
+      "id" : 1529159609
+    }, {
+      "name" : "rentedEdges",
+      "type" : "hProjekt.mocking.ArraySet",
+      "value" : [ ],
+      "id" : 1116178134
+    }, {
+      "name" : "buildingBudget",
+      "type" : "java.lang.Integer",
+      "value" : "0",
+      "id" : 528280723
+    }, {
+      "name" : "playerObjective",
+      "type" : "hProjekt.controller.PlayerObjective",
+      "value" : "IDLE",
+      "id" : 2143108725
+    }, {
+      "name" : "playerStateProperty",
+      "type" : "javafx.beans.property.SimpleObjectProperty",
+      "fields" : [ {
+        "name" : "helper",
+        "type" : "null",
+        "id" : 0
+      }, {
+        "name" : "valid",
+        "type" : "java.lang.Boolean",
+        "value" : "true",
+        "id" : 185544081
+      }, {
+        "name" : "listener",
+        "id" : 0
+      }, {
+        "name" : "observable",
+        "id" : 0
+      }, {
+        "name" : "value",
+        "type" : "hProjekt.model.PlayerState",
+        "fields" : [ {
+          "name" : "buildingBudget",
+          "id" : 528280723
+        }, {
+          "name" : "drivableTiles",
+          "type" : "java.util.HashMap",
+          "value" : [ ],
+          "id" : 1184451857
+        }, {
+          "name" : "hasPath",
+          "id" : 1529159609
+        }, {
+          "name" : "rentedEdges",
+          "id" : 1116178134
+        }, {
+          "name" : "choosableEdges",
+          "id" : 1116178134
+        }, {
+          "name" : "playerObjective",
+          "id" : 2143108725
+        }, {
+          "name" : "buildableRailEdges",
+          "id" : 1116178134
+        } ],
+        "id" : 983248599
+      }, {
+        "name" : "name",
+        "type" : "java.lang.String",
+        "value" : "",
+        "id" : 1643345873
+      }, {
+        "name" : "bean",
+        "id" : 0
+      } ],
+      "id" : 192127158
+    }, {
+      "name" : "actions",
+      "type" : "java.util.concurrent.LinkedBlockingDeque",
+      "fields" : [ {
+        "name" : "notFull",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
+          "fields" : [ {
+            "name" : "state",
+            "id" : 528280723
+          } ],
+          "id" : 204666043
+        } ],
+        "id" : 132163727
+      }, {
+        "name" : "notEmpty",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "id" : 204666043
+        } ],
+        "id" : 8384063
+      }, {
+        "name" : "lock",
+        "type" : "java.util.concurrent.locks.ReentrantLock",
+        "fields" : [ {
+          "name" : "sync",
+          "id" : 204666043
+        } ],
+        "id" : 1668361008
+      }, {
+        "name" : "capacity",
+        "type" : "java.lang.Integer",
+        "value" : "2147483647",
+        "id" : 1839558058
+      } ],
+      "id" : 204567531
+    }, {
+      "name" : "gameController",
+      "type" : "hProjekt.controller.GameController",
+      "fields" : [ {
+        "name" : "stopped",
+        "id" : 1529159609
+      }, {
+        "name" : "activePlayerController",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 0
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 912289096
+      }, {
+        "name" : "chosenCitiesProperty",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "type" : "javafx.util.Pair",
+          "fields" : [ {
+            "name" : "value",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "St. Martini",
+              "id" : 2112731446
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "type" : "java.lang.Integer",
+                "value" : "1",
+                "id" : 382441865
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 1128407310
+            } ],
+            "id" : 743169820
+          }, {
+            "name" : "key",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Châteauprix",
+              "id" : 1575441677
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "type" : "java.lang.Integer",
+                "value" : "-1",
+                "id" : 1484177113
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 1536218485
+            } ],
+            "id" : 1861222969
+          } ],
+          "id" : 1802302718
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1720376450
+      }, {
+        "name" : "roundCounter",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 528280723
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 452245282
+      }, {
+        "name" : "currentDiceRoll",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 1529159609
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 382441865
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 838705205
+      }, {
+        "name" : "dice",
+        "type" : "java.lang.Object",
+        "fields" : [ ],
+        "id" : 2019868997
+      }, {
+        "name" : "aiControllers",
+        "type" : "java.util.ArrayList",
+        "value" : [ ],
+        "id" : 364615676
+      }, {
+        "name" : "playerControllers",
+        "id" : 1184451857
+      }, {
+        "name" : "state",
+        "type" : "hProjekt.model.GameState",
+        "fields" : [ {
+          "name" : "chosenCities",
+          "id" : 1116178134
+        }, {
+          "name" : "gamePhaseProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 1529159609
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "hProjekt.controller.GamePhase",
+            "value" : "DRIVING_PHASE",
+            "id" : 1099026593
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1535336292
+        }, {
+          "name" : "winnerProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 0
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 703042796
+        }, {
+          "name" : "playerPointSurplus",
+          "id" : 1184451857
+        }, {
+          "name" : "playerPositions",
+          "type" : "java.util.HashMap",
+          "value" : [ [ {
+            "type" : "hProjekt.model.PlayerImpl",
+            "fields" : [ {
+              "name" : "credits",
+              "type" : "java.lang.Integer",
+              "value" : "20",
+              "id" : 78081168
+            }, {
+              "name" : "id",
+              "id" : 528280723
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Player0",
+              "id" : 792357752
+            } ],
+            "id" : 1219214126
+          }, {
+            "id" : 1536218485
+          } ] ],
+          "id" : 845047636
+        }, {
+          "name" : "drivingPlayers",
+          "type" : "java.util.ArrayList",
+          "value" : [ {
+            "id" : 1219214126
+          } ],
+          "id" : 282783183
+        }, {
+          "name" : "players",
+          "id" : 282783183
+        }, {
+          "name" : "grid",
+          "type" : "hProjekt.model.HexGridImpl",
+          "fields" : [ {
+            "name" : "cities",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1128407310
+            }, {
+              "id" : 743169820
+            } ], [ {
+              "id" : 1536218485
+            }, {
+              "id" : 1861222969
+            } ] ],
+            "id" : 900479069
+          }, {
+            "name" : "edges",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "type" : "hProjekt.mocking.ArraySet",
+              "value" : [ {
+                "type" : "hProjekt.model.TilePosition",
+                "fields" : [ {
+                  "name" : "r",
+                  "id" : 528280723
+                }, {
+                  "name" : "q",
+                  "id" : 528280723
+                } ],
+                "id" : 1367611594
+              }, {
+                "id" : 1128407310
+              } ],
+              "id" : 2146072608
+            }, {
+              "type" : "hProjekt.model.EdgeImpl",
+              "fields" : [ {
+                "name" : "railOwners",
+                "type" : "javafx.beans.property.SimpleObjectProperty",
+                "fields" : [ {
+                  "name" : "helper",
+                  "id" : 0
+                }, {
+                  "name" : "valid",
+                  "id" : 185544081
+                }, {
+                  "name" : "listener",
+                  "id" : 0
+                }, {
+                  "name" : "observable",
+                  "id" : 0
+                }, {
+                  "name" : "value",
+                  "id" : 282783183
+                }, {
+                  "name" : "name",
+                  "id" : 1643345873
+                }, {
+                  "name" : "bean",
+                  "id" : 0
+                } ],
+                "id" : 866577030
+              }, {
+                "name" : "position2",
+                "id" : 1128407310
+              }, {
+                "name" : "position1",
+                "id" : 1367611594
+              } ],
+              "id" : 1092888431
+            } ], [ {
+              "type" : "hProjekt.mocking.ArraySet",
+              "value" : [ {
+                "id" : 1536218485
+              }, {
+                "id" : 1367611594
+              } ],
+              "id" : 800396078
+            }, {
+              "type" : "hProjekt.model.EdgeImpl",
+              "fields" : [ {
+                "name" : "railOwners",
+                "type" : "javafx.beans.property.SimpleObjectProperty",
+                "fields" : [ {
+                  "name" : "helper",
+                  "id" : 0
+                }, {
+                  "name" : "valid",
+                  "id" : 185544081
+                }, {
+                  "name" : "listener",
+                  "id" : 0
+                }, {
+                  "name" : "observable",
+                  "id" : 0
+                }, {
+                  "name" : "value",
+                  "id" : 282783183
+                }, {
+                  "name" : "name",
+                  "id" : 1643345873
+                }, {
+                  "name" : "bean",
+                  "id" : 0
+                } ],
+                "id" : 1453201697
+              }, {
+                "name" : "position2",
+                "id" : 1367611594
+              }, {
+                "name" : "position1",
+                "id" : 1536218485
+              } ],
+              "id" : 872404870
+            } ] ],
+            "id" : 487486229
+          }, {
+            "name" : "tiles",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1128407310
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 2147202609
+              }, {
+                "name" : "type",
+                "type" : "hProjekt.model.Tile$Type",
+                "value" : "PLAIN",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1128407310
+              } ],
+              "id" : 1460138039
+            } ], [ {
+              "id" : 1536218485
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 2147202609
+              }, {
+                "name" : "type",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1536218485
+              } ],
+              "id" : 457467041
+            } ], [ {
+              "id" : 1367611594
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 2147202609
+              }, {
+                "name" : "type",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1367611594
+              } ],
+              "id" : 746358466
+            } ] ],
+            "id" : 1655197281
+          } ],
+          "id" : 2147202609
+        } ],
+        "id" : 532577965
+      } ],
+      "id" : 1344105356
+    }, {
+      "name" : "player",
+      "id" : 1219214126
+    } ],
+    "id" : 109894324
+  }, {
+    "type" : "hProjekt.model.TileImpl",
+    "fields" : [ {
+      "name" : "hexGrid",
+      "type" : "hProjekt.model.HexGridImpl",
+      "fields" : [ {
+        "name" : "cities",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 1484177113
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 871165114
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 1575441677
+          }, {
+            "name" : "position",
+            "id" : 871165114
+          } ],
+          "id" : 322528388
+        } ], [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1689666809
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 2112731446
+          }, {
+            "name" : "position",
+            "id" : 1689666809
+          } ],
+          "id" : 1507618884
+        } ] ],
+        "id" : 860629799
+      }, {
+        "name" : "edges",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.mocking.ArraySet",
+          "value" : [ {
+            "id" : 871165114
+          }, {
+            "type" : "hProjekt.model.TilePosition",
+            "fields" : [ {
+              "name" : "r",
+              "id" : 528280723
+            }, {
+              "name" : "q",
+              "id" : 528280723
+            } ],
+            "id" : 1411255721
+          } ],
+          "id" : 577652113
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "id" : 185544081
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "type" : "java.util.ArrayList",
+              "value" : [ {
+                "type" : "hProjekt.model.PlayerImpl",
+                "fields" : [ {
+                  "name" : "credits",
+                  "id" : 78081168
+                }, {
+                  "name" : "id",
+                  "id" : 528280723
+                }, {
+                  "name" : "name",
+                  "id" : 792357752
+                } ],
+                "id" : 1922346441
+              } ],
+              "id" : 982233234
+            }, {
+              "name" : "name",
+              "id" : 1643345873
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 1986301043
+          }, {
+            "name" : "position2",
+            "id" : 1411255721
+          }, {
+            "name" : "position1",
+            "id" : 871165114
+          } ],
+          "id" : 289933148
+        } ], [ {
+          "type" : "hProjekt.mocking.ArraySet",
+          "value" : [ {
+            "id" : 1411255721
+          }, {
+            "id" : 1689666809
+          } ],
+          "id" : 1191501217
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "id" : 185544081
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "id" : 982233234
+            }, {
+              "name" : "name",
+              "id" : 1643345873
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 305410472
+          }, {
+            "name" : "position2",
+            "id" : 1689666809
+          }, {
+            "name" : "position1",
+            "id" : 1411255721
+          } ],
+          "id" : 1813657252
+        } ] ],
+        "id" : 244049600
+      }, {
+        "name" : "tiles",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "id" : 871165114
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 311946782
+          }, {
+            "name" : "type",
+            "id" : 1691185247
+          }, {
+            "name" : "position",
+            "id" : 871165114
+          } ],
+          "id" : 1138120874
+        } ], [ {
+          "id" : 1411255721
+        }, {
+          "id" : 573869428
+        } ], [ {
+          "id" : 1689666809
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 311946782
+          }, {
+            "name" : "type",
+            "id" : 1691185247
+          }, {
+            "name" : "position",
+            "id" : 1689666809
+          } ],
+          "id" : 7919441
+        } ] ],
+        "id" : 882075078
+      } ],
+      "id" : 311946782
+    }, {
+      "name" : "type",
+      "id" : 1691185247
+    }, {
+      "name" : "position",
+      "id" : 1411255721
+    } ],
+    "id" : 573869428
+  }, {
+    "type" : "java.util.HashSet",
+    "value" : [ {
+      "id" : 872404870
+    }, {
+      "id" : 1092888431
+    } ],
+    "id" : 534451490
+  } ],
+  "expected" : {
+    "type" : "hProjekt.controller.actions.IllegalActionException",
+    "fields" : [ {
+      "name" : "suppressedExceptions",
+      "type" : "java.util.Collections$EmptyList",
+      "value" : [ ],
+      "id" : 136778400
+    }, {
+      "name" : "cause",
+      "id" : 2140899122
+    }, {
+      "name" : "detailMessage",
+      "type" : "java.lang.String",
+      "value" : "Player cannot drive to the target tile",
+      "id" : 2068808303
+    } ],
+    "id" : 2140899122
+  }
+}, {
+  "invoked" : 1810332371,
+  "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
+  "arguments" : [ 1053895707 ],
+  "calls" : [ {
+    "id" : 1795200850,
+    "methodCalls" : [ {
+      "methodName" : "getTileAt",
+      "invocations" : [ {
+        "return" : 1593952280,
+        "parameter" : [ 1660690176 ]
+      } ]
+    }, {
+      "methodName" : "getTiles",
+      "invocations" : [ {
+        "return" : 867354832,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRails",
+      "invocations" : [ {
+        "return" : 1255545148,
+        "parameter" : [ 802581781 ]
+      } ]
+    } ]
+  }, {
+    "id" : 1810332371,
+    "methodCalls" : [ {
+      "methodName" : "getDrivableTiles",
+      "invocations" : [ {
+        "return" : 298033384,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPlayer",
+      "invocations" : [ {
+        "return" : 802581781,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "canDrive",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 702060720,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 313222265,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 616355147,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1593952280,
+    "methodCalls" : [ {
+      "methodName" : "getConnectedNeighbours",
+      "invocations" : [ {
+        "return" : 739788963,
+        "parameter" : [ 699090149 ]
+      } ]
+    }, {
+      "methodName" : "getNeighbours",
+      "invocations" : [ {
+        "return" : 739788963,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getHexGrid",
+      "invocations" : [ {
+        "return" : 1795200850,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition",
+      "invocations" : [ {
+        "return" : 1660690176,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 2094809623,
+    "methodCalls" : [ {
+      "methodName" : "getState",
+      "invocations" : [ {
+        "return" : 266599903,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 266599903,
+    "methodCalls" : [ {
+      "methodName" : "getGrid",
+      "invocations" : [ {
+        "return" : 1795200850,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getGamePhaseProperty",
+      "invocations" : [ {
+        "return" : 1825513973,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPlayerPositions",
+      "invocations" : [ {
+        "return" : 332481679,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getDrivingPlayers",
+      "invocations" : [ {
+        "return" : 313222265,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 961549982,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 313222265,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 150743850,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.controller.PlayerController",
+    "fields" : [ {
+      "name" : "hasConfirmedPath",
+      "type" : "java.lang.Boolean",
+      "value" : "false",
+      "id" : 1529159609
+    }, {
+      "name" : "hasPath",
+      "id" : 1529159609
+    }, {
+      "name" : "rentedEdges",
+      "type" : "hProjekt.mocking.ArraySet",
+      "value" : [ ],
+      "id" : 739788963
+    }, {
+      "name" : "buildingBudget",
+      "type" : "java.lang.Integer",
+      "value" : "0",
+      "id" : 528280723
+    }, {
+      "name" : "playerObjective",
+      "type" : "hProjekt.controller.PlayerObjective",
+      "value" : "IDLE",
+      "id" : 2143108725
+    }, {
+      "name" : "playerStateProperty",
+      "type" : "javafx.beans.property.SimpleObjectProperty",
+      "fields" : [ {
+        "name" : "helper",
+        "type" : "null",
+        "id" : 0
+      }, {
+        "name" : "valid",
+        "type" : "java.lang.Boolean",
+        "value" : "true",
+        "id" : 185544081
+      }, {
+        "name" : "listener",
+        "id" : 0
+      }, {
+        "name" : "observable",
+        "id" : 0
+      }, {
+        "name" : "value",
+        "type" : "hProjekt.model.PlayerState",
+        "fields" : [ {
+          "name" : "buildingBudget",
+          "id" : 528280723
+        }, {
+          "name" : "drivableTiles",
+          "type" : "java.util.HashMap",
+          "value" : [ ],
+          "id" : 298033384
+        }, {
+          "name" : "hasPath",
+          "id" : 1529159609
+        }, {
+          "name" : "rentedEdges",
+          "id" : 739788963
+        }, {
+          "name" : "choosableEdges",
+          "id" : 739788963
+        }, {
+          "name" : "playerObjective",
+          "id" : 2143108725
+        }, {
+          "name" : "buildableRailEdges",
+          "id" : 739788963
+        } ],
+        "id" : 268976948
+      }, {
+        "name" : "name",
+        "type" : "java.lang.String",
+        "value" : "",
+        "id" : 1643345873
+      }, {
+        "name" : "bean",
+        "id" : 0
+      } ],
+      "id" : 766461717
+    }, {
+      "name" : "actions",
+      "type" : "java.util.concurrent.LinkedBlockingDeque",
+      "fields" : [ {
+        "name" : "notFull",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
+          "fields" : [ {
+            "name" : "state",
+            "id" : 528280723
+          } ],
+          "id" : 259182957
+        } ],
+        "id" : 1508092216
+      }, {
+        "name" : "notEmpty",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "id" : 259182957
+        } ],
+        "id" : 1561847896
+      }, {
+        "name" : "lock",
+        "type" : "java.util.concurrent.locks.ReentrantLock",
+        "fields" : [ {
+          "name" : "sync",
+          "id" : 259182957
+        } ],
+        "id" : 2028793262
+      }, {
+        "name" : "capacity",
+        "type" : "java.lang.Integer",
+        "value" : "2147483647",
+        "id" : 1537816363
+      } ],
+      "id" : 1328313755
+    }, {
+      "name" : "gameController",
+      "type" : "hProjekt.controller.GameController",
+      "fields" : [ {
+        "name" : "stopped",
+        "id" : 1529159609
+      }, {
+        "name" : "activePlayerController",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 0
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 238931590
+      }, {
+        "name" : "chosenCitiesProperty",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "type" : "javafx.util.Pair",
+          "fields" : [ {
+            "name" : "value",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "h_da",
+              "id" : 520666536
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "type" : "java.lang.Integer",
+                "value" : "1",
+                "id" : 382441865
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 1102173610
+            } ],
+            "id" : 1358508331
+          }, {
+            "name" : "key",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "TU Darmstadt",
+              "id" : 491835973
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "type" : "java.lang.Integer",
+                "value" : "-1",
+                "id" : 1484177113
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 1660690176
+            } ],
+            "id" : 1773663982
+          } ],
+          "id" : 1676240574
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 194782473
+      }, {
+        "name" : "roundCounter",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 528280723
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1494034148
+      }, {
+        "name" : "currentDiceRoll",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 1529159609
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 382441865
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 610705410
+      }, {
+        "name" : "dice",
+        "type" : "java.lang.Object",
+        "fields" : [ ],
+        "id" : 479252680
+      }, {
+        "name" : "aiControllers",
+        "type" : "java.util.ArrayList",
+        "value" : [ ],
+        "id" : 48801278
+      }, {
+        "name" : "playerControllers",
+        "id" : 298033384
+      }, {
+        "name" : "state",
+        "type" : "hProjekt.model.GameState",
+        "fields" : [ {
+          "name" : "chosenCities",
+          "id" : 739788963
+        }, {
+          "name" : "gamePhaseProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 1529159609
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "hProjekt.controller.GamePhase",
+            "value" : "DRIVING_PHASE",
+            "id" : 1099026593
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1825513973
+        }, {
+          "name" : "winnerProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 0
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 658389621
+        }, {
+          "name" : "playerPointSurplus",
+          "id" : 298033384
+        }, {
+          "name" : "playerPositions",
+          "type" : "java.util.HashMap",
+          "value" : [ [ {
+            "type" : "hProjekt.model.PlayerImpl",
+            "fields" : [ {
+              "name" : "credits",
+              "type" : "java.lang.Integer",
+              "value" : "20",
+              "id" : 78081168
+            }, {
+              "name" : "id",
+              "id" : 528280723
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Player0",
+              "id" : 598332920
+            } ],
+            "id" : 802581781
+          }, {
+            "id" : 1660690176
+          } ] ],
+          "id" : 332481679
+        }, {
+          "name" : "drivingPlayers",
+          "type" : "java.util.ArrayList",
+          "value" : [ {
+            "id" : 802581781
+          } ],
+          "id" : 313222265
+        }, {
+          "name" : "players",
+          "id" : 313222265
+        }, {
+          "name" : "grid",
+          "type" : "hProjekt.model.HexGridImpl",
+          "fields" : [ {
+            "name" : "cities",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1660690176
+            }, {
+              "id" : 1773663982
+            } ], [ {
+              "id" : 1102173610
+            }, {
+              "id" : 1358508331
+            } ] ],
+            "id" : 2128647002
+          }, {
+            "name" : "edges",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "type" : "hProjekt.mocking.ArraySet",
+              "value" : [ {
+                "id" : 1660690176
+              }, {
+                "type" : "hProjekt.model.TilePosition",
+                "fields" : [ {
+                  "name" : "r",
+                  "id" : 528280723
+                }, {
+                  "name" : "q",
+                  "id" : 528280723
+                } ],
+                "id" : 474459896
+              } ],
+              "id" : 1810895419
+            }, {
+              "type" : "hProjekt.model.EdgeImpl",
+              "fields" : [ {
+                "name" : "railOwners",
+                "type" : "javafx.beans.property.SimpleObjectProperty",
+                "fields" : [ {
+                  "name" : "helper",
+                  "id" : 0
+                }, {
+                  "name" : "valid",
+                  "id" : 185544081
+                }, {
+                  "name" : "listener",
+                  "id" : 0
+                }, {
+                  "name" : "observable",
+                  "id" : 0
+                }, {
+                  "name" : "value",
+                  "id" : 313222265
+                }, {
+                  "name" : "name",
+                  "id" : 1643345873
+                }, {
+                  "name" : "bean",
+                  "id" : 0
+                } ],
+                "id" : 616355147
+              }, {
+                "name" : "position2",
+                "id" : 474459896
+              }, {
+                "name" : "position1",
+                "id" : 1660690176
+              } ],
+              "id" : 702060720
+            } ], [ {
+              "type" : "hProjekt.mocking.ArraySet",
+              "value" : [ {
+                "id" : 474459896
+              }, {
+                "id" : 1102173610
+              } ],
+              "id" : 1723602194
+            }, {
+              "type" : "hProjekt.model.EdgeImpl",
+              "fields" : [ {
+                "name" : "railOwners",
+                "type" : "javafx.beans.property.SimpleObjectProperty",
+                "fields" : [ {
+                  "name" : "helper",
+                  "id" : 0
+                }, {
+                  "name" : "valid",
+                  "id" : 185544081
+                }, {
+                  "name" : "listener",
+                  "id" : 0
+                }, {
+                  "name" : "observable",
+                  "id" : 0
+                }, {
+                  "name" : "value",
+                  "id" : 313222265
+                }, {
+                  "name" : "name",
+                  "id" : 1643345873
+                }, {
+                  "name" : "bean",
+                  "id" : 0
+                } ],
+                "id" : 150743850
+              }, {
+                "name" : "position2",
+                "id" : 1102173610
+              }, {
+                "name" : "position1",
+                "id" : 474459896
+              } ],
+              "id" : 961549982
+            } ] ],
+            "id" : 1255545148
+          }, {
+            "name" : "tiles",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1660690176
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 1795200850
+              }, {
+                "name" : "type",
+                "type" : "hProjekt.model.Tile$Type",
+                "value" : "PLAIN",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1660690176
+              } ],
+              "id" : 1593952280
+            } ], [ {
+              "id" : 1102173610
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 1795200850
+              }, {
+                "name" : "type",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1102173610
+              } ],
+              "id" : 1949129899
+            } ], [ {
+              "id" : 474459896
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 1795200850
+              }, {
+                "name" : "type",
+                "type" : "hProjekt.model.Tile$Type",
+                "value" : "MOUNTAIN",
+                "id" : 153245266
+              }, {
+                "name" : "position",
+                "id" : 474459896
+              } ],
+              "id" : 429974500
+            } ] ],
+            "id" : 867354832
+          } ],
+          "id" : 1795200850
+        } ],
+        "id" : 266599903
+      } ],
+      "id" : 2094809623
+    }, {
+      "name" : "player",
+      "id" : 802581781
+    } ],
+    "id" : 1810332371
+  }, {
+    "type" : "hProjekt.model.TileImpl",
+    "fields" : [ {
+      "name" : "hexGrid",
+      "type" : "hProjekt.model.HexGridImpl",
+      "fields" : [ {
+        "name" : "cities",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 750690811
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 520666536
+          }, {
+            "name" : "position",
+            "id" : 750690811
+          } ],
+          "id" : 1277744765
+        } ], [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 1484177113
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1741107573
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 491835973
+          }, {
+            "name" : "position",
+            "id" : 1741107573
+          } ],
+          "id" : 1607130878
+        } ] ],
+        "id" : 902321803
+      }, {
+        "name" : "edges",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.mocking.ArraySet",
+          "value" : [ {
+            "id" : 1741107573
+          }, {
+            "type" : "hProjekt.model.TilePosition",
+            "fields" : [ {
+              "name" : "r",
+              "id" : 528280723
+            }, {
+              "name" : "q",
+              "id" : 528280723
+            } ],
+            "id" : 1568556252
+          } ],
+          "id" : 1301030728
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "id" : 185544081
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "type" : "java.util.ArrayList",
+              "value" : [ {
+                "type" : "hProjekt.model.PlayerImpl",
+                "fields" : [ {
+                  "name" : "credits",
+                  "id" : 78081168
+                }, {
+                  "name" : "id",
+                  "id" : 528280723
+                }, {
+                  "name" : "name",
+                  "id" : 598332920
+                } ],
+                "id" : 1431003631
+              } ],
+              "id" : 1004329288
+            }, {
+              "name" : "name",
+              "id" : 1643345873
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 597844135
+          }, {
+            "name" : "position2",
+            "id" : 1568556252
+          }, {
+            "name" : "position1",
+            "id" : 1741107573
+          } ],
+          "id" : 398126601
+        } ], [ {
+          "type" : "hProjekt.mocking.ArraySet",
+          "value" : [ {
+            "id" : 1568556252
+          }, {
+            "id" : 750690811
+          } ],
+          "id" : 1377175572
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "id" : 185544081
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "id" : 1004329288
+            }, {
+              "name" : "name",
+              "id" : 1643345873
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 1718513368
+          }, {
+            "name" : "position2",
+            "id" : 750690811
+          }, {
+            "name" : "position1",
+            "id" : 1568556252
+          } ],
+          "id" : 1472216636
+        } ] ],
+        "id" : 1653471091
+      }, {
+        "name" : "tiles",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "id" : 750690811
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 120081472
+          }, {
+            "name" : "type",
+            "id" : 1691185247
+          }, {
+            "name" : "position",
+            "id" : 750690811
+          } ],
+          "id" : 558976656
+        } ], [ {
+          "id" : 1741107573
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 120081472
+          }, {
+            "name" : "type",
+            "id" : 1691185247
+          }, {
+            "name" : "position",
+            "id" : 1741107573
+          } ],
+          "id" : 244879524
+        } ], [ {
+          "id" : 1568556252
+        }, {
+          "id" : 1053895707
+        } ] ],
+        "id" : 1837901782
+      } ],
+      "id" : 120081472
+    }, {
+      "name" : "type",
+      "id" : 153245266
+    }, {
+      "name" : "position",
+      "id" : 1568556252
+    } ],
+    "id" : 1053895707
+  }, {
+    "type" : "java.util.HashSet",
+    "value" : [ {
+      "id" : 702060720
+    }, {
+      "id" : 961549982
+    } ],
+    "id" : 699090149
+  } ],
+  "expected" : {
+    "type" : "hProjekt.controller.actions.IllegalActionException",
+    "fields" : [ {
+      "name" : "suppressedExceptions",
+      "type" : "java.util.Collections$EmptyList",
+      "value" : [ ],
+      "id" : 136778400
+    }, {
+      "name" : "cause",
+      "id" : 383308882
+    }, {
+      "name" : "detailMessage",
+      "type" : "java.lang.String",
+      "value" : "Player cannot drive to the target tile",
+      "id" : 2068808303
+    } ],
+    "id" : 383308882
+  }
+}, {
+  "invoked" : 799921442,
+  "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
+  "arguments" : [ 1479892739 ],
+  "calls" : [ {
+    "id" : 1839230146,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 601623959,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 39450227,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 2093308246,
+    "methodCalls" : [ {
+      "methodName" : "getGrid",
+      "invocations" : [ {
+        "return" : 1777338378,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getGamePhaseProperty",
+      "invocations" : [ {
+        "return" : 1359195609,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPlayerPositions",
+      "invocations" : [ {
+        "return" : 473709389,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getDrivingPlayers",
+      "invocations" : [ {
+        "return" : 601623959,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1346344522,
+    "methodCalls" : [ {
+      "methodName" : "getConnectedNeighbours",
+      "invocations" : [ {
+        "return" : 1819840204,
+        "parameter" : [ 880582760 ]
+      } ]
+    }, {
+      "methodName" : "getNeighbours",
+      "invocations" : [ {
+        "return" : 1819840204,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getHexGrid",
+      "invocations" : [ {
+        "return" : 1777338378,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition",
+      "invocations" : [ {
+        "return" : 533270339,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 324180231,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwners",
+      "invocations" : [ {
+        "return" : 601623959,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "hasRail",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 990482229,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 620039987,
+    "methodCalls" : [ {
+      "methodName" : "getState",
+      "invocations" : [ {
+        "return" : 2093308246,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1777338378,
+    "methodCalls" : [ {
+      "methodName" : "getTileAt",
+      "invocations" : [ {
+        "return" : 1346344522,
+        "parameter" : [ 533270339 ]
+      } ]
+    }, {
+      "methodName" : "getTiles",
+      "invocations" : [ {
+        "return" : 385429832,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRails",
+      "invocations" : [ {
+        "return" : 370565694,
+        "parameter" : [ 1428129251 ]
+      } ]
+    } ]
+  }, {
+    "id" : 799921442,
+    "methodCalls" : [ {
+      "methodName" : "getDrivableTiles",
+      "invocations" : [ {
+        "return" : 128936933,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPlayer",
+      "invocations" : [ {
+        "return" : 1428129251,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "canDrive",
+      "invocations" : [ {
+        "return" : 185544081,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.controller.PlayerController",
+    "fields" : [ {
+      "name" : "hasConfirmedPath",
+      "type" : "java.lang.Boolean",
+      "value" : "false",
+      "id" : 1529159609
+    }, {
+      "name" : "hasPath",
+      "id" : 1529159609
+    }, {
+      "name" : "rentedEdges",
+      "type" : "hProjekt.mocking.ArraySet",
+      "value" : [ ],
+      "id" : 1819840204
+    }, {
+      "name" : "buildingBudget",
+      "type" : "java.lang.Integer",
+      "value" : "0",
+      "id" : 528280723
+    }, {
+      "name" : "playerObjective",
+      "type" : "hProjekt.controller.PlayerObjective",
+      "value" : "IDLE",
+      "id" : 2143108725
+    }, {
+      "name" : "playerStateProperty",
+      "type" : "javafx.beans.property.SimpleObjectProperty",
+      "fields" : [ {
+        "name" : "helper",
+        "type" : "null",
+        "id" : 0
+      }, {
+        "name" : "valid",
+        "type" : "java.lang.Boolean",
+        "value" : "true",
+        "id" : 185544081
+      }, {
+        "name" : "listener",
+        "id" : 0
+      }, {
+        "name" : "observable",
+        "id" : 0
+      }, {
+        "name" : "value",
+        "type" : "hProjekt.model.PlayerState",
+        "fields" : [ {
+          "name" : "buildingBudget",
+          "id" : 528280723
+        }, {
+          "name" : "drivableTiles",
+          "type" : "java.util.HashMap",
+          "value" : [ ],
+          "id" : 128936933
+        }, {
+          "name" : "hasPath",
+          "id" : 1529159609
+        }, {
+          "name" : "rentedEdges",
+          "id" : 1819840204
+        }, {
+          "name" : "choosableEdges",
+          "id" : 1819840204
+        }, {
+          "name" : "playerObjective",
+          "id" : 2143108725
+        }, {
+          "name" : "buildableRailEdges",
+          "id" : 1819840204
+        } ],
+        "id" : 373239459
+      }, {
+        "name" : "name",
+        "type" : "java.lang.String",
+        "value" : "",
+        "id" : 1643345873
+      }, {
+        "name" : "bean",
+        "id" : 0
+      } ],
+      "id" : 811853260
+    }, {
+      "name" : "actions",
+      "type" : "java.util.concurrent.LinkedBlockingDeque",
+      "fields" : [ {
+        "name" : "notFull",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
+          "fields" : [ {
+            "name" : "state",
+            "id" : 528280723
+          } ],
+          "id" : 1972789411
+        } ],
+        "id" : 1671585276
+      }, {
+        "name" : "notEmpty",
+        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+        "fields" : [ {
+          "name" : "this$0",
+          "id" : 1972789411
+        } ],
+        "id" : 1840490979
+      }, {
+        "name" : "lock",
+        "type" : "java.util.concurrent.locks.ReentrantLock",
+        "fields" : [ {
+          "name" : "sync",
+          "id" : 1972789411
+        } ],
+        "id" : 1565183326
+      }, {
+        "name" : "capacity",
+        "type" : "java.lang.Integer",
+        "value" : "2147483647",
+        "id" : 421054383
+      } ],
+      "id" : 1771327007
+    }, {
+      "name" : "gameController",
+      "type" : "hProjekt.controller.GameController",
+      "fields" : [ {
+        "name" : "stopped",
+        "id" : 1529159609
+      }, {
+        "name" : "activePlayerController",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 0
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1008688797
+      }, {
+        "name" : "chosenCitiesProperty",
+        "type" : "javafx.beans.property.SimpleObjectProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "type" : "javafx.util.Pair",
+          "fields" : [ {
+            "name" : "value",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Winterberg",
+              "id" : 1623589233
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "type" : "java.lang.Integer",
+                "value" : "1",
+                "id" : 382441865
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 1458425269
+            } ],
+            "id" : 1530869835
+          }, {
+            "name" : "key",
+            "type" : "hProjekt.model.CityImpl",
+            "fields" : [ {
+              "name" : "isStartingCity",
+              "id" : 1529159609
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Kosseneck",
+              "id" : 1672555346
+            }, {
+              "name" : "position",
+              "type" : "hProjekt.model.TilePosition",
+              "fields" : [ {
+                "name" : "r",
+                "type" : "java.lang.Integer",
+                "value" : "-1",
+                "id" : 1484177113
+              }, {
+                "name" : "q",
+                "id" : 528280723
+              } ],
+              "id" : 533270339
+            } ],
+            "id" : 1057833416
+          } ],
+          "id" : 1999408371
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 358216710
+      }, {
+        "name" : "roundCounter",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 185544081
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "id" : 528280723
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1309450386
+      }, {
+        "name" : "currentDiceRoll",
+        "type" : "javafx.beans.property.SimpleIntegerProperty",
+        "fields" : [ {
+          "name" : "helper",
+          "id" : 0
+        }, {
+          "name" : "valid",
+          "id" : 1529159609
+        }, {
+          "name" : "listener",
+          "id" : 0
+        }, {
+          "name" : "observable",
+          "id" : 0
+        }, {
+          "name" : "value",
+          "type" : "java.lang.Integer",
+          "value" : "6",
+          "id" : 1654875294
+        }, {
+          "name" : "name",
+          "id" : 1643345873
+        }, {
+          "name" : "bean",
+          "id" : 0
+        } ],
+        "id" : 1181809300
+      }, {
+        "name" : "dice",
+        "type" : "java.lang.Object",
+        "fields" : [ ],
+        "id" : 593038995
+      }, {
+        "name" : "aiControllers",
+        "type" : "java.util.ArrayList",
+        "value" : [ ],
+        "id" : 231868382
+      }, {
+        "name" : "playerControllers",
+        "id" : 128936933
+      }, {
+        "name" : "state",
+        "type" : "hProjekt.model.GameState",
+        "fields" : [ {
+          "name" : "chosenCities",
+          "id" : 1819840204
+        }, {
+          "name" : "gamePhaseProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 1529159609
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "type" : "hProjekt.controller.GamePhase",
+            "value" : "DRIVING_PHASE",
+            "id" : 1099026593
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1359195609
+        }, {
+          "name" : "winnerProperty",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 185544081
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 0
+          }, {
+            "name" : "name",
+            "id" : 1643345873
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1555486365
+        }, {
+          "name" : "playerPointSurplus",
+          "id" : 128936933
+        }, {
+          "name" : "playerPositions",
+          "type" : "java.util.HashMap",
+          "value" : [ [ {
+            "type" : "hProjekt.model.PlayerImpl",
+            "fields" : [ {
+              "name" : "credits",
+              "type" : "java.lang.Integer",
+              "value" : "20",
+              "id" : 78081168
+            }, {
+              "name" : "id",
+              "id" : 528280723
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "Player0",
+              "id" : 664106508
+            } ],
+            "id" : 1428129251
+          }, {
+            "id" : 533270339
+          } ] ],
+          "id" : 473709389
+        }, {
+          "name" : "drivingPlayers",
+          "type" : "java.util.ArrayList",
+          "value" : [ {
+            "id" : 1428129251
+          } ],
+          "id" : 601623959
+        }, {
+          "name" : "players",
+          "id" : 601623959
+        }, {
+          "name" : "grid",
+          "type" : "hProjekt.model.HexGridImpl",
+          "fields" : [ {
+            "name" : "cities",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1458425269
+            }, {
+              "id" : 1530869835
+            } ], [ {
+              "id" : 533270339
+            }, {
+              "id" : 1057833416
+            } ] ],
+            "id" : 1348789437
+          }, {
+            "name" : "edges",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "type" : "hProjekt.mocking.ArraySet",
+              "value" : [ {
+                "id" : 533270339
+              }, {
+                "type" : "hProjekt.model.TilePosition",
+                "fields" : [ {
+                  "name" : "r",
+                  "id" : 528280723
+                }, {
+                  "name" : "q",
+                  "id" : 528280723
+                } ],
+                "id" : 1644735760
+              } ],
+              "id" : 495023833
+            }, {
+              "type" : "hProjekt.model.EdgeImpl",
+              "fields" : [ {
+                "name" : "railOwners",
+                "type" : "javafx.beans.property.SimpleObjectProperty",
+                "fields" : [ {
+                  "name" : "helper",
+                  "id" : 0
+                }, {
+                  "name" : "valid",
+                  "id" : 185544081
+                }, {
+                  "name" : "listener",
+                  "id" : 0
+                }, {
+                  "name" : "observable",
+                  "id" : 0
+                }, {
+                  "name" : "value",
+                  "id" : 601623959
+                }, {
+                  "name" : "name",
+                  "id" : 1643345873
+                }, {
+                  "name" : "bean",
+                  "id" : 0
+                } ],
+                "id" : 39450227
+              }, {
+                "name" : "position2",
+                "id" : 1644735760
+              }, {
+                "name" : "position1",
+                "id" : 533270339
+              } ],
+              "id" : 1839230146
+            } ], [ {
+              "type" : "hProjekt.mocking.ArraySet",
+              "value" : [ {
+                "id" : 1644735760
+              }, {
+                "id" : 1458425269
+              } ],
+              "id" : 454904994
+            }, {
+              "type" : "hProjekt.model.EdgeImpl",
+              "fields" : [ {
+                "name" : "railOwners",
+                "type" : "javafx.beans.property.SimpleObjectProperty",
+                "fields" : [ {
+                  "name" : "helper",
+                  "id" : 0
+                }, {
+                  "name" : "valid",
+                  "id" : 185544081
+                }, {
+                  "name" : "listener",
+                  "id" : 0
+                }, {
+                  "name" : "observable",
+                  "id" : 0
+                }, {
+                  "name" : "value",
+                  "id" : 601623959
+                }, {
+                  "name" : "name",
+                  "id" : 1643345873
+                }, {
+                  "name" : "bean",
+                  "id" : 0
+                } ],
+                "id" : 990482229
+              }, {
+                "name" : "position2",
+                "id" : 1458425269
+              }, {
+                "name" : "position1",
+                "id" : 1644735760
+              } ],
+              "id" : 324180231
+            } ] ],
+            "id" : 370565694
+          }, {
+            "name" : "tiles",
+            "type" : "java.util.HashMap",
+            "value" : [ [ {
+              "id" : 1644735760
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 1777338378
+              }, {
+                "name" : "type",
+                "type" : "hProjekt.model.Tile$Type",
+                "value" : "PLAIN",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1644735760
+              } ],
+              "id" : 1984535508
+            } ], [ {
+              "id" : 1458425269
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 1777338378
+              }, {
+                "name" : "type",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 1458425269
+              } ],
+              "id" : 589719954
+            } ], [ {
+              "id" : 533270339
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 1777338378
+              }, {
+                "name" : "type",
+                "id" : 1691185247
+              }, {
+                "name" : "position",
+                "id" : 533270339
+              } ],
+              "id" : 1346344522
+            } ] ],
+            "id" : 385429832
+          } ],
+          "id" : 1777338378
+        } ],
+        "id" : 2093308246
+      } ],
+      "id" : 620039987
+    }, {
+      "name" : "player",
+      "id" : 1428129251
+    } ],
+    "id" : 799921442
+  }, {
+    "type" : "hProjekt.model.TileImpl",
+    "fields" : [ {
+      "name" : "hexGrid",
+      "type" : "hProjekt.model.HexGridImpl",
+      "fields" : [ {
+        "name" : "cities",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 1484177113
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1175194972
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 1672555346
+          }, {
+            "name" : "position",
+            "id" : 1175194972
+          } ],
+          "id" : 920048769
+        } ], [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 382441865
+          }, {
+            "name" : "q",
+            "id" : 528280723
+          } ],
+          "id" : 1846361769
+        }, {
+          "type" : "hProjekt.model.CityImpl",
+          "fields" : [ {
+            "name" : "isStartingCity",
+            "id" : 1529159609
+          }, {
+            "name" : "name",
+            "id" : 1623589233
+          }, {
+            "name" : "position",
+            "id" : 1846361769
+          } ],
+          "id" : 1874728973
+        } ] ],
+        "id" : 106921944
+      }, {
+        "name" : "edges",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "type" : "hProjekt.mocking.ArraySet",
+          "value" : [ {
+            "type" : "hProjekt.model.TilePosition",
+            "fields" : [ {
+              "name" : "r",
+              "id" : 528280723
+            }, {
+              "name" : "q",
+              "id" : 528280723
+            } ],
+            "id" : 1103925850
+          }, {
+            "id" : 1846361769
+          } ],
+          "id" : 78757500
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "id" : 185544081
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "type" : "java.util.ArrayList",
+              "value" : [ {
+                "type" : "hProjekt.model.PlayerImpl",
+                "fields" : [ {
+                  "name" : "credits",
+                  "id" : 78081168
+                }, {
+                  "name" : "id",
+                  "id" : 528280723
+                }, {
+                  "name" : "name",
+                  "id" : 664106508
+                } ],
+                "id" : 1835419738
+              } ],
+              "id" : 583983289
+            }, {
+              "name" : "name",
+              "id" : 1643345873
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 1831441913
+          }, {
+            "name" : "position2",
+            "id" : 1846361769
+          }, {
+            "name" : "position1",
+            "id" : 1103925850
+          } ],
+          "id" : 1547249729
+        } ], [ {
+          "type" : "hProjekt.mocking.ArraySet",
+          "value" : [ {
+            "id" : 1175194972
+          }, {
+            "id" : 1103925850
+          } ],
+          "id" : 497930154
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "id" : 185544081
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "id" : 583983289
+            }, {
+              "name" : "name",
+              "id" : 1643345873
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 2038476263
+          }, {
+            "name" : "position2",
+            "id" : 1103925850
+          }, {
+            "name" : "position1",
+            "id" : 1175194972
+          } ],
+          "id" : 70448142
+        } ] ],
+        "id" : 1466555097
+      }, {
+        "name" : "tiles",
+        "type" : "java.util.HashMap",
+        "value" : [ [ {
+          "id" : 1175194972
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 332415591
+          }, {
+            "name" : "type",
+            "id" : 1691185247
+          }, {
+            "name" : "position",
+            "id" : 1175194972
+          } ],
+          "id" : 1015002166
+        } ], [ {
+          "id" : 1846361769
+        }, {
+          "id" : 1479892739
+        } ], [ {
+          "id" : 1103925850
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 332415591
+          }, {
+            "name" : "type",
+            "id" : 1691185247
+          }, {
+            "name" : "position",
+            "id" : 1103925850
+          } ],
+          "id" : 1038885913
+        } ] ],
+        "id" : 1252949851
+      } ],
+      "id" : 332415591
+    }, {
+      "name" : "type",
+      "id" : 1691185247
+    }, {
+      "name" : "position",
+      "id" : 1846361769
+    } ],
+    "id" : 1479892739
+  }, {
+    "type" : "java.util.HashSet",
+    "value" : [ {
+      "id" : 1839230146
+    }, {
+      "id" : 324180231
+    } ],
+    "id" : 880582760
+  } ],
+  "expected" : {
+    "type" : "hProjekt.controller.actions.IllegalActionException",
+    "fields" : [ {
+      "name" : "suppressedExceptions",
+      "type" : "java.util.Collections$EmptyList",
+      "value" : [ ],
+      "id" : 136778400
+    }, {
+      "name" : "cause",
+      "id" : 906040621
+    }, {
+      "name" : "detailMessage",
+      "type" : "java.lang.String",
+      "value" : "Player cannot drive to the target tile",
+      "id" : 2068808303
+    } ],
+    "id" : 906040621
+  }
+} ]
