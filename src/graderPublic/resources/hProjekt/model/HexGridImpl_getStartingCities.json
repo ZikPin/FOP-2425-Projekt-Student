@@ -1,22 +1,22 @@
 [ {
-  "invoked" : 320850799,
+  "invoked" : 690630265,
   "entryPoint" : "hProjekt.model.HexGridImpl#getStartingCities()",
   "arguments" : [ ],
   "calls" : [ {
-    "id" : 320850799,
+    "id" : 690630265,
     "methodCalls" : [ {
       "methodName" : "getCities",
       "invocations" : [ {
-        "return" : 648303898,
+        "return" : 1263433742,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1238339624,
+    "id" : 1282657061,
     "methodCalls" : [ {
       "methodName" : "isStartingCity",
       "invocations" : [ {
-        "return" : 1775897362,
+        "return" : 875865328,
         "parameter" : [ ]
       } ]
     } ]
@@ -32,38 +32,38 @@
           "name" : "r",
           "type" : "java.lang.Integer",
           "value" : "1",
-          "id" : 1410456976
+          "id" : 791563230
         }, {
           "name" : "q",
           "type" : "java.lang.Integer",
           "value" : "0",
-          "id" : 1940737740
+          "id" : 114012533
         } ],
-        "id" : 828535871
+        "id" : 1427528383
       }, {
         "type" : "hProjekt.model.CityImpl",
         "fields" : [ {
           "name" : "isStartingCity",
           "type" : "java.lang.Boolean",
           "value" : "false",
-          "id" : 1775897362
+          "id" : 875865328
         }, {
           "name" : "name",
           "type" : "java.lang.String",
           "value" : "Buchsbaum",
-          "id" : 660915526
+          "id" : 325274365
         }, {
           "name" : "position",
-          "id" : 828535871
+          "id" : 1427528383
         } ],
-        "id" : 1238339624
+        "id" : 1282657061
       } ] ],
-      "id" : 648303898
+      "id" : 1263433742
     }, {
       "name" : "edges",
       "type" : "java.util.HashMap",
       "value" : [ ],
-      "id" : 1497983329
+      "id" : 701780911
     }, {
       "name" : "tiles",
       "type" : "java.util.HashMap",
@@ -71,92 +71,92 @@
         "type" : "hProjekt.model.TilePosition",
         "fields" : [ {
           "name" : "r",
-          "id" : 1940737740
+          "id" : 114012533
         }, {
           "name" : "q",
-          "id" : 1940737740
+          "id" : 114012533
         } ],
-        "id" : 1232703108
+        "id" : 125815365
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
           "type" : "hProjekt.model.Tile$Type",
           "value" : "PLAIN",
-          "id" : 776700275
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1232703108
+          "id" : 125815365
         } ],
-        "id" : 869005911
+        "id" : 1285172648
       } ] ],
-      "id" : 173197870
+      "id" : 934944898
     } ],
-    "id" : 320850799
+    "id" : 690630265
   } ],
   "expected" : {
     "type" : "java.util.HashMap",
     "value" : [ ],
-    "id" : 1757933443
+    "id" : 1231485503
   }
 }, {
-  "invoked" : 1813525162,
+  "invoked" : 1957072258,
   "entryPoint" : "hProjekt.model.HexGridImpl#getStartingCities()",
   "arguments" : [ ],
   "calls" : [ {
-    "id" : 2054997292,
+    "id" : 1258364757,
     "methodCalls" : [ {
       "methodName" : "isStartingCity",
       "invocations" : [ {
-        "return" : 1775897362,
+        "return" : 875865328,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1380593659,
+    "id" : 1093941808,
     "methodCalls" : [ {
       "methodName" : "isStartingCity",
       "invocations" : [ {
-        "return" : 1775897362,
+        "return" : 817614737,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition",
+      "invocations" : [ {
+        "return" : 2005242116,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1813525162,
+    "id" : 1957072258,
     "methodCalls" : [ {
       "methodName" : "getCities",
       "invocations" : [ {
-        "return" : 794940817,
+        "return" : 628110070,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1763872389,
+    "id" : 464047987,
     "methodCalls" : [ {
       "methodName" : "isStartingCity",
       "invocations" : [ {
-        "return" : 858267892,
+        "return" : 875865328,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 40601047,
+    "methodCalls" : [ {
+      "methodName" : "isStartingCity",
+      "invocations" : [ {
+        "return" : 817614737,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition",
       "invocations" : [ {
-        "return" : 571928572,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1481853275,
-    "methodCalls" : [ {
-      "methodName" : "isStartingCity",
-      "invocations" : [ {
-        "return" : 858267892,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition",
-      "invocations" : [ {
-        "return" : 302059473,
+        "return" : 797485219,
         "parameter" : [ ]
       } ]
     } ]
@@ -172,125 +172,125 @@
           "name" : "r",
           "type" : "java.lang.Integer",
           "value" : "1",
-          "id" : 1410456976
+          "id" : 791563230
         }, {
           "name" : "q",
           "type" : "java.lang.Integer",
           "value" : "0",
-          "id" : 1940737740
+          "id" : 114012533
         } ],
-        "id" : 302059473
+        "id" : 2005242116
       }, {
         "type" : "hProjekt.model.CityImpl",
         "fields" : [ {
           "name" : "isStartingCity",
           "type" : "java.lang.Boolean",
           "value" : "true",
-          "id" : 858267892
+          "id" : 817614737
         }, {
           "name" : "name",
           "type" : "java.lang.String",
           "value" : "Kaufungen",
-          "id" : 1903406683
+          "id" : 1939616658
         }, {
           "name" : "position",
-          "id" : 302059473
+          "id" : 2005242116
         } ],
-        "id" : 1481853275
+        "id" : 1093941808
       } ], [ {
         "type" : "hProjekt.model.TilePosition",
         "fields" : [ {
           "name" : "r",
           "type" : "java.lang.Integer",
           "value" : "2",
-          "id" : 1917149817
+          "id" : 1210019106
         }, {
           "name" : "q",
-          "id" : 1940737740
+          "id" : 114012533
         } ],
-        "id" : 1429133319
+        "id" : 285850699
       }, {
         "type" : "hProjekt.model.CityImpl",
         "fields" : [ {
           "name" : "isStartingCity",
           "type" : "java.lang.Boolean",
           "value" : "false",
-          "id" : 1775897362
+          "id" : 875865328
         }, {
           "name" : "name",
           "type" : "java.lang.String",
           "value" : "Eimannstetten",
-          "id" : 1403649277
+          "id" : 685415046
         }, {
           "name" : "position",
-          "id" : 1429133319
+          "id" : 285850699
         } ],
-        "id" : 1380593659
+        "id" : 1258364757
       } ], [ {
         "type" : "hProjekt.model.TilePosition",
         "fields" : [ {
           "name" : "r",
           "type" : "java.lang.Integer",
           "value" : "-1",
-          "id" : 569661948
+          "id" : 1749524107
         }, {
           "name" : "q",
-          "id" : 1940737740
+          "id" : 114012533
         } ],
-        "id" : 571928572
+        "id" : 797485219
       }, {
         "type" : "hProjekt.model.CityImpl",
         "fields" : [ {
           "name" : "isStartingCity",
-          "id" : 858267892
+          "id" : 817614737
         }, {
           "name" : "name",
           "type" : "java.lang.String",
           "value" : "Christophsburg",
-          "id" : 1293495023
+          "id" : 32192196
         }, {
           "name" : "position",
-          "id" : 571928572
+          "id" : 797485219
         } ],
-        "id" : 1763872389
+        "id" : 40601047
       } ], [ {
         "type" : "hProjekt.model.TilePosition",
         "fields" : [ {
           "name" : "r",
-          "id" : 1940737740
+          "id" : 114012533
         }, {
           "name" : "q",
-          "id" : 1940737740
+          "id" : 114012533
         } ],
-        "id" : 114990534
+        "id" : 626124362
       }, {
         "type" : "hProjekt.model.CityImpl",
         "fields" : [ {
           "name" : "isStartingCity",
-          "id" : 1775897362
+          "id" : 875865328
         }, {
           "name" : "name",
           "type" : "java.lang.String",
           "value" : "Nicodemingen",
-          "id" : 337039263
+          "id" : 1982877229
         }, {
           "name" : "position",
-          "id" : 114990534
+          "id" : 626124362
         } ],
-        "id" : 2054997292
+        "id" : 464047987
       } ] ],
-      "id" : 794940817
+      "id" : 628110070
     }, {
       "name" : "edges",
       "type" : "java.util.HashMap",
       "value" : [ [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 114990534
+          "id" : 285850699
         }, {
-          "id" : 302059473
+          "id" : 2005242116
         } ],
-        "id" : 201069753
+        "id" : 349280639
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -302,7 +302,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 858267892
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -313,33 +313,33 @@
             "name" : "value",
             "type" : "java.util.ArrayList",
             "value" : [ ],
-            "id" : 19467337
+            "id" : 128617507
           }, {
             "name" : "name",
             "type" : "java.lang.String",
             "value" : "",
-            "id" : 1440332016
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1899609393
+          "id" : 784716363
         }, {
           "name" : "position2",
-          "id" : 302059473
+          "id" : 285850699
         }, {
           "name" : "position1",
-          "id" : 114990534
+          "id" : 2005242116
         } ],
-        "id" : 1955049794
+        "id" : 1912040851
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 571928572
+          "id" : 2005242116
         }, {
-          "id" : 114990534
+          "id" : 626124362
         } ],
-        "id" : 173115411
+        "id" : 584286773
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -350,7 +350,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 858267892
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -359,31 +359,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 19467337
+            "id" : 128617507
           }, {
             "name" : "name",
-            "id" : 1440332016
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 333085360
+          "id" : 1156608834
         }, {
           "name" : "position2",
-          "id" : 114990534
+          "id" : 2005242116
         }, {
           "name" : "position1",
-          "id" : 571928572
+          "id" : 626124362
         } ],
-        "id" : 1048842522
+        "id" : 1072568676
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 302059473
+          "id" : 626124362
         }, {
-          "id" : 1429133319
+          "id" : 797485219
         } ],
-        "id" : 1137935956
+        "id" : 1163422570
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -394,7 +394,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 858267892
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -403,82 +403,82 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 19467337
+            "id" : 128617507
           }, {
             "name" : "name",
-            "id" : 1440332016
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 41633258
+          "id" : 1256928805
         }, {
           "name" : "position2",
-          "id" : 1429133319
+          "id" : 626124362
         }, {
           "name" : "position1",
-          "id" : 302059473
+          "id" : 797485219
         } ],
-        "id" : 1262477422
+        "id" : 1464975790
       } ] ],
-      "id" : 138708980
+      "id" : 184180309
     }, {
       "name" : "tiles",
       "type" : "java.util.HashMap",
       "value" : [ [ {
-        "id" : 302059473
+        "id" : 2005242116
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
           "type" : "hProjekt.model.Tile$Type",
           "value" : "PLAIN",
-          "id" : 776700275
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 302059473
+          "id" : 2005242116
         } ],
-        "id" : 130564501
+        "id" : 1257179858
       } ], [ {
-        "id" : 1429133319
+        "id" : 285850699
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 776700275
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1429133319
+          "id" : 285850699
         } ],
-        "id" : 963768574
+        "id" : 1235171770
       } ], [ {
-        "id" : 571928572
+        "id" : 797485219
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 776700275
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 571928572
+          "id" : 797485219
         } ],
-        "id" : 1952194564
+        "id" : 998791341
       } ], [ {
-        "id" : 114990534
+        "id" : 626124362
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 776700275
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 114990534
+          "id" : 626124362
         } ],
-        "id" : 134048221
+        "id" : 2074762440
       } ] ],
-      "id" : 1966480630
+      "id" : 41173230
     } ],
-    "id" : 1813525162
+    "id" : 1957072258
   } ],
   "expected" : {
     "type" : "java.util.HashMap",
@@ -488,59 +488,59 @@
         "name" : "r",
         "type" : "java.lang.Integer",
         "value" : "1",
-        "id" : 1410456976
+        "id" : 791563230
       }, {
         "name" : "q",
         "type" : "java.lang.Integer",
         "value" : "0",
-        "id" : 1940737740
+        "id" : 114012533
       } ],
-      "id" : 302059473
+      "id" : 2005242116
     }, {
       "type" : "hProjekt.model.CityImpl",
       "fields" : [ {
         "name" : "isStartingCity",
         "type" : "java.lang.Boolean",
         "value" : "true",
-        "id" : 858267892
+        "id" : 817614737
       }, {
         "name" : "name",
         "type" : "java.lang.String",
         "value" : "Kaufungen",
-        "id" : 1903406683
+        "id" : 1939616658
       }, {
         "name" : "position",
-        "id" : 302059473
+        "id" : 2005242116
       } ],
-      "id" : 1481853275
+      "id" : 1093941808
     } ], [ {
       "type" : "hProjekt.model.TilePosition",
       "fields" : [ {
         "name" : "r",
         "type" : "java.lang.Integer",
         "value" : "-1",
-        "id" : 569661948
+        "id" : 1749524107
       }, {
         "name" : "q",
-        "id" : 1940737740
+        "id" : 114012533
       } ],
-      "id" : 571928572
+      "id" : 797485219
     }, {
       "type" : "hProjekt.model.CityImpl",
       "fields" : [ {
         "name" : "isStartingCity",
-        "id" : 858267892
+        "id" : 817614737
       }, {
         "name" : "name",
         "type" : "java.lang.String",
         "value" : "Christophsburg",
-        "id" : 1293495023
+        "id" : 32192196
       }, {
         "name" : "position",
-        "id" : 571928572
+        "id" : 797485219
       } ],
-      "id" : 1763872389
+      "id" : 40601047
     } ] ],
-    "id" : 1831875736
+    "id" : 894394134
   }
 } ]

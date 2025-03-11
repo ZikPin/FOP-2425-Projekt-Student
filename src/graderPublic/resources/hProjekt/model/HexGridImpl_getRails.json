@@ -1,184 +1,184 @@
 [ {
-  "invoked" : 1371644728,
+  "invoked" : 2044607348,
   "entryPoint" : "hProjekt.model.HexGridImpl#getRails(hProjekt.model.Player)",
-  "arguments" : [ 1238016017 ],
+  "arguments" : [ 1499526471 ],
   "calls" : [ {
-    "id" : 1246169190,
+    "id" : 1819188655,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 132277583,
+        "return" : 1724430940,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 478143468,
+        "return" : 1635883083,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1291485960,
+    "id" : 704564538,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 132277583,
+        "return" : 1724430940,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1165005897,
+        "return" : 234965269,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1737594434,
+    "id" : 1972422438,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 621850696,
+        "return" : 1724430940,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 82406489,
+        "return" : 951282269,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 348862702,
+    "id" : 1853909430,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 621850696,
+        "return" : 1597122437,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1860290444,
+        "return" : 2041613565,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1268288109,
+    "id" : 548962366,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 132277583,
+        "return" : 544988626,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1894485427,
+        "return" : 1233226555,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 930069786,
+    "id" : 1334599796,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 132277583,
+        "return" : 1724430940,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 2008388706,
+        "return" : 1528877694,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 891564306,
+    "id" : 419938703,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 2023673314,
+        "return" : 1724430940,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 793869455,
+        "return" : 1727007715,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 471024980,
+    "id" : 349059223,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 132277583,
+        "return" : 1724430940,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1455372724,
+        "return" : 304070902,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 190462899,
+    "id" : 951057909,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 132277583,
+        "return" : 1724430940,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1418617515,
+        "return" : 1111743168,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1714746542,
+    "id" : 1524636394,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 621850696,
+        "return" : 544988626,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1961040159,
+        "return" : 1182481526,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1489123129,
+    "id" : 250271936,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 132277583,
+        "return" : 1724430940,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 2059408461,
+        "return" : 1940418879,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1674407377,
+    "id" : 1047492002,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 132277583,
+        "return" : 544988626,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1034697555,
+        "return" : 259467824,
         "parameter" : [ ]
       } ]
     } ]
@@ -194,31 +194,31 @@
           "name" : "r",
           "type" : "java.lang.Integer",
           "value" : "0",
-          "id" : 528280723
+          "id" : 114012533
         }, {
           "name" : "q",
-          "id" : 528280723
+          "id" : 114012533
         } ],
-        "id" : 2096556807
+        "id" : 637922586
       }, {
         "type" : "hProjekt.model.CityImpl",
         "fields" : [ {
           "name" : "isStartingCity",
           "type" : "java.lang.Boolean",
           "value" : "true",
-          "id" : 185544081
+          "id" : 817614737
         }, {
           "name" : "name",
           "type" : "java.lang.String",
           "value" : "Wilhelmstal",
-          "id" : 2051550839
+          "id" : 1197197346
         }, {
           "name" : "position",
-          "id" : 2096556807
+          "id" : 637922586
         } ],
-        "id" : 904931234
+        "id" : 1099005313
       } ] ],
-      "id" : 2102357288
+      "id" : 197724590
     }, {
       "name" : "edges",
       "type" : "java.util.HashMap",
@@ -228,28 +228,20 @@
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 528280723
+            "type" : "java.lang.Integer",
+            "value" : "1",
+            "id" : 791563230
           }, {
             "name" : "q",
             "type" : "java.lang.Integer",
             "value" : "-1",
-            "id" : 1484177113
+            "id" : 1749524107
           } ],
-          "id" : 529268830
+          "id" : 1222068307
         }, {
-          "type" : "hProjekt.model.TilePosition",
-          "fields" : [ {
-            "name" : "r",
-            "type" : "java.lang.Integer",
-            "value" : "1",
-            "id" : 382441865
-          }, {
-            "name" : "q",
-            "id" : 1484177113
-          } ],
-          "id" : 858901214
+          "id" : 637922586
         } ],
-        "id" : 555765860
+        "id" : 616750485
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -261,7 +253,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -272,41 +264,41 @@
             "name" : "value",
             "type" : "java.util.ArrayList",
             "value" : [ ],
-            "id" : 132277583
+            "id" : 1724430940
           }, {
             "name" : "name",
             "type" : "java.lang.String",
             "value" : "",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 2008388706
+          "id" : 1940418879
         }, {
           "name" : "position2",
-          "id" : 858901214
+          "id" : 1222068307
         }, {
           "name" : "position1",
-          "id" : 529268830
+          "id" : 637922586
         } ],
-        "id" : 930069786
+        "id" : 250271936
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 528280723
+            "id" : 791563230
           }, {
             "name" : "q",
-            "id" : 382441865
+            "id" : 114012533
           } ],
-          "id" : 1785604368
+          "id" : 1084873380
         }, {
-          "id" : 2096556807
+          "id" : 637922586
         } ],
-        "id" : 772706989
+        "id" : 1944560371
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -317,7 +309,111 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1724430940
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 234965269
+        }, {
+          "name" : "position2",
+          "id" : 1084873380
+        }, {
+          "name" : "position1",
+          "id" : 637922586
+        } ],
+        "id" : 704564538
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1222068307
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 114012533
+          }, {
+            "name" : "q",
+            "id" : 1749524107
+          } ],
+          "id" : 298164507
+        } ],
+        "id" : 326175214
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1724430940
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 304070902
+        }, {
+          "name" : "position2",
+          "id" : 1222068307
+        }, {
+          "name" : "position1",
+          "id" : 298164507
+        } ],
+        "id" : 349059223
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 1084873380
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 114012533
+          }, {
+            "name" : "q",
+            "id" : 791563230
+          } ],
+          "id" : 1331346574
+        } ],
+        "id" : 247127906
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -333,51 +429,139 @@
                 "name" : "credits",
                 "type" : "java.lang.Integer",
                 "value" : "20",
-                "id" : 78081168
+                "id" : 451046489
               }, {
                 "name" : "id",
-                "id" : 528280723
+                "id" : 114012533
               }, {
                 "name" : "name",
                 "type" : "java.lang.String",
                 "value" : "Player0",
-                "id" : 1172745450
+                "id" : 2123980650
               } ],
-              "id" : 557402326
+              "id" : 1349016797
             } ],
-            "id" : 621850696
+            "id" : 544988626
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 82406489
+          "id" : 259467824
         }, {
           "name" : "position2",
-          "id" : 2096556807
+          "id" : 1084873380
         }, {
           "name" : "position1",
-          "id" : 1785604368
+          "id" : 1331346574
         } ],
-        "id" : 1737594434
+        "id" : 1047492002
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 2096556807
+          "id" : 1222068307
+        }, {
+          "id" : 1084873380
+        } ],
+        "id" : 1494731755
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 544988626
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1233226555
+        }, {
+          "name" : "position2",
+          "id" : 1222068307
+        }, {
+          "name" : "position1",
+          "id" : 1084873380
+        } ],
+        "id" : 548962366
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 637922586
+        }, {
+          "id" : 1331346574
+        } ],
+        "id" : 26216259
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 544988626
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1182481526
+        }, {
+          "name" : "position2",
+          "id" : 637922586
+        }, {
+          "name" : "position1",
+          "id" : 1331346574
+        } ],
+        "id" : 1524636394
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 637922586
         }, {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1484177113
+            "id" : 1749524107
           }, {
             "name" : "q",
-            "id" : 382441865
+            "id" : 114012533
           } ],
-          "id" : 2041492943
+          "id" : 250297790
         } ],
-        "id" : 1425079876
+        "id" : 2021542209
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -388,191 +572,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "id" : 132277583
-          }, {
-            "name" : "name",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 2059408461
-        }, {
-          "name" : "position2",
-          "id" : 2041492943
-        }, {
-          "name" : "position1",
-          "id" : 2096556807
-        } ],
-        "id" : 1489123129
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "id" : 1785604368
-        }, {
-          "id" : 2041492943
-        } ],
-        "id" : 222375242
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "id" : 132277583
-          }, {
-            "name" : "name",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 478143468
-        }, {
-          "name" : "position2",
-          "id" : 2041492943
-        }, {
-          "name" : "position1",
-          "id" : 1785604368
-        } ],
-        "id" : 1246169190
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "type" : "hProjekt.model.TilePosition",
-          "fields" : [ {
-            "name" : "r",
-            "id" : 1484177113
-          }, {
-            "name" : "q",
-            "id" : 528280723
-          } ],
-          "id" : 1834174236
-        }, {
-          "id" : 529268830
-        } ],
-        "id" : 676171560
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "id" : 132277583
-          }, {
-            "name" : "name",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 1455372724
-        }, {
-          "name" : "position2",
-          "id" : 529268830
-        }, {
-          "name" : "position1",
-          "id" : 1834174236
-        } ],
-        "id" : 471024980
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "id" : 2096556807
-        }, {
-          "id" : 529268830
-        } ],
-        "id" : 800126121
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "id" : 132277583
-          }, {
-            "name" : "name",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 1165005897
-        }, {
-          "name" : "position2",
-          "id" : 529268830
-        }, {
-          "name" : "position1",
-          "id" : 2096556807
-        } ],
-        "id" : 1291485960
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "id" : 1834174236
-        }, {
-          "id" : 2096556807
-        } ],
-        "id" : 2011546833
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -586,60 +586,60 @@
               "type" : "hProjekt.model.PlayerImpl",
               "fields" : [ {
                 "name" : "credits",
-                "id" : 78081168
+                "id" : 451046489
               }, {
                 "name" : "id",
-                "id" : 382441865
+                "id" : 791563230
               }, {
                 "name" : "name",
                 "type" : "java.lang.String",
                 "value" : "Player1",
-                "id" : 671530474
+                "id" : 1842220218
               } ],
-              "id" : 8698270
+              "id" : 674359332
             }, {
               "type" : "hProjekt.model.PlayerImpl",
               "fields" : [ {
                 "name" : "credits",
-                "id" : 78081168
+                "id" : 451046489
               }, {
                 "name" : "id",
                 "type" : "java.lang.Integer",
                 "value" : "2",
-                "id" : 865072353
+                "id" : 1210019106
               }, {
                 "name" : "name",
                 "type" : "java.lang.String",
                 "value" : "Player2",
-                "id" : 1733339186
+                "id" : 1990424343
               } ],
-              "id" : 2126979361
+              "id" : 1226552989
             } ],
-            "id" : 2023673314
+            "id" : 1597122437
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 793869455
+          "id" : 2041613565
         }, {
           "name" : "position2",
-          "id" : 2096556807
+          "id" : 637922586
         }, {
           "name" : "position1",
-          "id" : 1834174236
+          "id" : 250297790
         } ],
-        "id" : 891564306
+        "id" : 1853909430
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1834174236
+          "id" : 298164507
         }, {
-          "id" : 2041492943
+          "id" : 250297790
         } ],
-        "id" : 1488684416
+        "id" : 1682063382
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -650,7 +650,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -659,83 +659,39 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 132277583
+            "id" : 1724430940
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1894485427
+          "id" : 1727007715
         }, {
           "name" : "position2",
-          "id" : 2041492943
+          "id" : 298164507
         }, {
           "name" : "position1",
-          "id" : 1834174236
+          "id" : 250297790
         } ],
-        "id" : 1268288109
+        "id" : 419938703
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 2096556807
-        }, {
-          "id" : 858901214
-        } ],
-        "id" : 1184145066
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "id" : 132277583
-          }, {
-            "name" : "name",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 1418617515
-        }, {
-          "name" : "position2",
-          "id" : 858901214
-        }, {
-          "name" : "position1",
-          "id" : 2096556807
-        } ],
-        "id" : 190462899
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "id" : 2096556807
-        }, {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 382441865
+            "id" : 1749524107
           }, {
             "name" : "q",
-            "id" : 528280723
+            "id" : 791563230
           } ],
-          "id" : 750261401
+          "id" : 1478055563
+        }, {
+          "id" : 637922586
         } ],
-        "id" : 1499820041
+        "id" : 702125877
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -746,7 +702,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -755,31 +711,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 132277583
+            "id" : 1724430940
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1034697555
+          "id" : 1635883083
         }, {
           "name" : "position2",
-          "id" : 750261401
+          "id" : 1478055563
         }, {
           "name" : "position1",
-          "id" : 2096556807
+          "id" : 637922586
         } ],
-        "id" : 1674407377
+        "id" : 1819188655
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 750261401
+          "id" : 1478055563
         }, {
-          "id" : 858901214
+          "id" : 1331346574
         } ],
-        "id" : 692606185
+        "id" : 1804809127
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -790,7 +746,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -799,31 +755,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 621850696
+            "id" : 1724430940
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1860290444
+          "id" : 1528877694
         }, {
           "name" : "position2",
-          "id" : 858901214
+          "id" : 1478055563
         }, {
           "name" : "position1",
-          "id" : 750261401
+          "id" : 1331346574
         } ],
-        "id" : 348862702
+        "id" : 1334599796
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1785604368
+          "id" : 1478055563
         }, {
-          "id" : 750261401
+          "id" : 250297790
         } ],
-        "id" : 2090276377
+        "id" : 286392094
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -834,7 +790,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -843,318 +799,362 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 621850696
+            "id" : 1724430940
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1961040159
+          "id" : 951282269
         }, {
           "name" : "position2",
-          "id" : 750261401
+          "id" : 1478055563
         }, {
           "name" : "position1",
-          "id" : 1785604368
+          "id" : 250297790
         } ],
-        "id" : 1714746542
+        "id" : 1972422438
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 298164507
+        }, {
+          "id" : 637922586
+        } ],
+        "id" : 607456544
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1724430940
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1111743168
+        }, {
+          "name" : "position2",
+          "id" : 298164507
+        }, {
+          "name" : "position1",
+          "id" : 637922586
+        } ],
+        "id" : 951057909
       } ] ],
-      "id" : 1893852874
+      "id" : 1761981408
     }, {
       "name" : "tiles",
       "type" : "java.util.HashMap",
       "value" : [ [ {
-        "id" : 2096556807
+        "id" : 1478055563
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
           "type" : "hProjekt.model.Tile$Type",
           "value" : "PLAIN",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 2096556807
+          "id" : 1478055563
         } ],
-        "id" : 1078249024
+        "id" : 712192881
       } ], [ {
-        "id" : 750261401
+        "id" : 1331346574
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 750261401
+          "id" : 1331346574
         } ],
-        "id" : 884495649
+        "id" : 1050803200
       } ], [ {
-        "id" : 2041492943
+        "id" : 1222068307
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 2041492943
+          "id" : 1222068307
         } ],
-        "id" : 1560782408
+        "id" : 707759204
       } ], [ {
-        "id" : 529268830
+        "id" : 250297790
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 529268830
+          "id" : 250297790
         } ],
-        "id" : 1222512132
+        "id" : 535964631
       } ], [ {
-        "id" : 1785604368
+        "id" : 1084873380
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1785604368
+          "id" : 1084873380
         } ],
-        "id" : 443567138
+        "id" : 1336177308
       } ], [ {
-        "id" : 1834174236
+        "id" : 298164507
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1834174236
+          "id" : 298164507
         } ],
-        "id" : 1312329543
+        "id" : 1738540220
       } ], [ {
-        "id" : 858901214
+        "id" : 637922586
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 858901214
+          "id" : 637922586
         } ],
-        "id" : 1705392504
+        "id" : 50168294
       } ] ],
-      "id" : 1604794420
+      "id" : 1362333834
     } ],
-    "id" : 1371644728
+    "id" : 2044607348
   }, {
     "type" : "hProjekt.model.PlayerImpl",
     "fields" : [ {
       "name" : "credits",
-      "id" : 78081168
+      "id" : 451046489
     }, {
       "name" : "id",
-      "id" : 528280723
+      "id" : 114012533
     }, {
       "name" : "name",
-      "id" : 1172745450
+      "id" : 2123980650
     } ],
-    "id" : 1238016017
+    "id" : 1499526471
   } ],
   "expected" : {
     "type" : "java.util.Collections$UnmodifiableMap",
     "value" : [ ],
-    "id" : 293552592
+    "id" : 581987493
   }
 }, {
-  "invoked" : 488486803,
+  "invoked" : 261245026,
   "entryPoint" : "hProjekt.model.HexGridImpl#getRails(hProjekt.model.Player)",
-  "arguments" : [ 690840203 ],
+  "arguments" : [ 675222970 ],
   "calls" : [ {
-    "id" : 470785982,
+    "id" : 1911765059,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1900722530,
+        "return" : 1100335576,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1126447127,
+        "return" : 1909758069,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1717848086,
+    "id" : 1784596430,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1900722530,
+        "return" : 2079071430,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1897164643,
+        "return" : 2054594043,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 531010626,
+    "id" : 29090367,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1900722530,
+        "return" : 1100335576,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 2124515851,
+        "return" : 1506732109,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1980813957,
+    "id" : 1275621261,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1900722530,
+        "return" : 1100335576,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 266079322,
+        "return" : 58057931,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 525118794,
+    "id" : 412557792,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1900722530,
+        "return" : 1100335576,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 537042237,
+        "return" : 1780003876,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1436151871,
+    "id" : 2021216929,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1900722530,
+        "return" : 1100335576,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1221839906,
+        "return" : 2044875977,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1152579013,
+    "id" : 1077690693,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 287915023,
+        "return" : 673905049,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1062991947,
+        "return" : 1568301855,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1951062304,
+    "id" : 288678413,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1900722530,
+        "return" : 2079071430,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1434965087,
+        "return" : 2088622970,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 33649642,
+    "id" : 886007956,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1900722530,
+        "return" : 1100335576,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 18613659,
+        "return" : 1469540337,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1438983048,
+    "id" : 1627245878,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 287915023,
+        "return" : 2079071430,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 980366864,
+        "return" : 1403632213,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 589393036,
+    "id" : 635618269,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1062423046,
+        "return" : 1100335576,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 861014144,
+        "return" : 1098937136,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1886558892,
+    "id" : 1697151495,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 287915023,
+        "return" : 1100335576,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 642533684,
+        "return" : 1889682916,
         "parameter" : [ ]
       } ]
     } ]
@@ -1170,52 +1170,60 @@
           "name" : "r",
           "type" : "java.lang.Integer",
           "value" : "0",
-          "id" : 528280723
+          "id" : 114012533
         }, {
           "name" : "q",
-          "id" : 528280723
+          "id" : 114012533
         } ],
-        "id" : 1142857510
+        "id" : 694173461
       }, {
         "type" : "hProjekt.model.CityImpl",
         "fields" : [ {
           "name" : "isStartingCity",
           "type" : "java.lang.Boolean",
           "value" : "true",
-          "id" : 185544081
+          "id" : 817614737
         }, {
           "name" : "name",
           "type" : "java.lang.String",
           "value" : "Wilhelmstal",
-          "id" : 2051550839
+          "id" : 1197197346
         }, {
           "name" : "position",
-          "id" : 1142857510
+          "id" : 694173461
         } ],
-        "id" : 439776264
+        "id" : 1414911253
       } ] ],
-      "id" : 16344219
+      "id" : 361577356
     }, {
       "name" : "edges",
       "type" : "java.util.HashMap",
       "value" : [ [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1142857510
-        }, {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
             "type" : "java.lang.Integer",
             "value" : "1",
-            "id" : 382441865
+            "id" : 791563230
           }, {
             "name" : "q",
-            "id" : 528280723
+            "id" : 114012533
           } ],
-          "id" : 1666346875
+          "id" : 1838956115
+        }, {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 114012533
+          }, {
+            "name" : "q",
+            "id" : 791563230
+          } ],
+          "id" : 322915864
         } ],
-        "id" : 167999361
+        "id" : 91156646
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -1227,161 +1235,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "type" : "java.util.ArrayList",
-            "value" : [ ],
-            "id" : 1900722530
-          }, {
-            "name" : "name",
-            "type" : "java.lang.String",
-            "value" : "",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 1126447127
-        }, {
-          "name" : "position2",
-          "id" : 1666346875
-        }, {
-          "name" : "position1",
-          "id" : 1142857510
-        } ],
-        "id" : 470785982
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "type" : "hProjekt.model.TilePosition",
-          "fields" : [ {
-            "name" : "r",
-            "id" : 528280723
-          }, {
-            "name" : "q",
-            "id" : 382441865
-          } ],
-          "id" : 305549858
-        }, {
-          "type" : "hProjekt.model.TilePosition",
-          "fields" : [ {
-            "name" : "r",
-            "type" : "java.lang.Integer",
-            "value" : "-1",
-            "id" : 1484177113
-          }, {
-            "name" : "q",
-            "id" : 382441865
-          } ],
-          "id" : 58057931
-        } ],
-        "id" : 1658469305
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "id" : 1900722530
-          }, {
-            "name" : "name",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 2124515851
-        }, {
-          "name" : "position2",
-          "id" : 58057931
-        }, {
-          "name" : "position1",
-          "id" : 305549858
-        } ],
-        "id" : 531010626
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "id" : 1142857510
-        }, {
-          "id" : 58057931
-        } ],
-        "id" : 615031877
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "id" : 1900722530
-          }, {
-            "name" : "name",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 1221839906
-        }, {
-          "name" : "position2",
-          "id" : 58057931
-        }, {
-          "name" : "position1",
-          "id" : 1142857510
-        } ],
-        "id" : 1436151871
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "id" : 305549858
-        }, {
-          "id" : 1666346875
-        } ],
-        "id" : 1954697353
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -1397,51 +1251,55 @@
                 "name" : "credits",
                 "type" : "java.lang.Integer",
                 "value" : "20",
-                "id" : 78081168
+                "id" : 451046489
               }, {
                 "name" : "id",
-                "id" : 528280723
+                "id" : 114012533
               }, {
                 "name" : "name",
                 "type" : "java.lang.String",
                 "value" : "Player0",
-                "id" : 1172745450
+                "id" : 2123980650
               } ],
-              "id" : 30128593
+              "id" : 2010374295
             } ],
-            "id" : 287915023
+            "id" : 2079071430
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "type" : "java.lang.String",
+            "value" : "",
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 642533684
+          "id" : 1403632213
         }, {
           "name" : "position2",
-          "id" : 1666346875
+          "id" : 1838956115
         }, {
           "name" : "position1",
-          "id" : 305549858
+          "id" : 322915864
         } ],
-        "id" : 1886558892
+        "id" : 1627245878
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1666346875
-        }, {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 382441865
+            "type" : "java.lang.Integer",
+            "value" : "-1",
+            "id" : 1749524107
           }, {
             "name" : "q",
-            "id" : 1484177113
+            "id" : 791563230
           } ],
-          "id" : 850056461
+          "id" : 374121747
+        }, {
+          "id" : 322915864
         } ],
-        "id" : 2037116028
+        "id" : 1132823430
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -1452,7 +1310,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -1461,39 +1319,49 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 287915023
+            "type" : "java.util.ArrayList",
+            "value" : [ ],
+            "id" : 1100335576
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1062991947
+          "id" : 1780003876
         }, {
           "name" : "position2",
-          "id" : 850056461
+          "id" : 374121747
         }, {
           "name" : "position1",
-          "id" : 1666346875
+          "id" : 322915864
         } ],
-        "id" : 1152579013
+        "id" : 412557792
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1142857510
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 114012533
+          }, {
+            "name" : "q",
+            "id" : 1749524107
+          } ],
+          "id" : 484565132
         }, {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 528280723
+            "id" : 1749524107
           }, {
             "name" : "q",
-            "id" : 1484177113
+            "id" : 114012533
           } ],
-          "id" : 611256437
+          "id" : 1444710243
         } ],
-        "id" : 343606759
+        "id" : 1849175193
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -1504,7 +1372,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -1513,39 +1381,39 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1900722530
+            "id" : 1100335576
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 18613659
+          "id" : 58057931
         }, {
           "name" : "position2",
-          "id" : 611256437
+          "id" : 484565132
         }, {
           "name" : "position1",
-          "id" : 1142857510
+          "id" : 1444710243
         } ],
-        "id" : 33649642
+        "id" : 1275621261
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1484177113
+            "id" : 791563230
           }, {
             "name" : "q",
-            "id" : 528280723
+            "id" : 1749524107
           } ],
-          "id" : 1851822511
+          "id" : 1514456573
         }, {
-          "id" : 1142857510
+          "id" : 1838956115
         } ],
-        "id" : 1791346486
+        "id" : 1989406186
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -1556,7 +1424,183 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 2079071430
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 2088622970
+        }, {
+          "name" : "position2",
+          "id" : 1514456573
+        }, {
+          "name" : "position1",
+          "id" : 1838956115
+        } ],
+        "id" : 288678413
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 694173461
+        }, {
+          "id" : 322915864
+        } ],
+        "id" : 2045236663
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 2079071430
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 2054594043
+        }, {
+          "name" : "position2",
+          "id" : 694173461
+        }, {
+          "name" : "position1",
+          "id" : 322915864
+        } ],
+        "id" : 1784596430
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 484565132
+        }, {
+          "id" : 694173461
+        } ],
+        "id" : 2090538116
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1100335576
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 1889682916
+        }, {
+          "name" : "position2",
+          "id" : 484565132
+        }, {
+          "name" : "position1",
+          "id" : 694173461
+        } ],
+        "id" : 1697151495
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 374121747
+        }, {
+          "id" : 694173461
+        } ],
+        "id" : 665577716
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1100335576
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
+          } ],
+          "id" : 2044875977
+        }, {
+          "name" : "position2",
+          "id" : 374121747
+        }, {
+          "name" : "position1",
+          "id" : 694173461
+        } ],
+        "id" : 2021216929
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 694173461
+        }, {
+          "id" : 1444710243
+        } ],
+        "id" : 1235330192
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -1570,60 +1614,60 @@
               "type" : "hProjekt.model.PlayerImpl",
               "fields" : [ {
                 "name" : "credits",
-                "id" : 78081168
+                "id" : 451046489
               }, {
                 "name" : "id",
-                "id" : 382441865
+                "id" : 791563230
               }, {
                 "name" : "name",
                 "type" : "java.lang.String",
                 "value" : "Player1",
-                "id" : 671530474
+                "id" : 1842220218
               } ],
-              "id" : 2100674719
+              "id" : 1198594222
             }, {
               "type" : "hProjekt.model.PlayerImpl",
               "fields" : [ {
                 "name" : "credits",
-                "id" : 78081168
+                "id" : 451046489
               }, {
                 "name" : "id",
                 "type" : "java.lang.Integer",
                 "value" : "2",
-                "id" : 865072353
+                "id" : 1210019106
               }, {
                 "name" : "name",
                 "type" : "java.lang.String",
                 "value" : "Player2",
-                "id" : 1733339186
+                "id" : 1990424343
               } ],
-              "id" : 1400961849
+              "id" : 418022663
             } ],
-            "id" : 1062423046
+            "id" : 673905049
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 861014144
+          "id" : 1568301855
         }, {
           "name" : "position2",
-          "id" : 1142857510
+          "id" : 694173461
         }, {
           "name" : "position1",
-          "id" : 1851822511
+          "id" : 1444710243
         } ],
-        "id" : 589393036
+        "id" : 1077690693
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1142857510
+          "id" : 1838956115
         }, {
-          "id" : 850056461
+          "id" : 694173461
         } ],
-        "id" : 468783629
+        "id" : 1803215403
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -1634,7 +1678,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -1643,31 +1687,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1900722530
+            "id" : 1100335576
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 537042237
+          "id" : 1506732109
         }, {
           "name" : "position2",
-          "id" : 850056461
+          "id" : 1838956115
         }, {
           "name" : "position1",
-          "id" : 1142857510
+          "id" : 694173461
         } ],
-        "id" : 525118794
+        "id" : 29090367
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1851822511
+          "id" : 1514456573
         }, {
-          "id" : 611256437
+          "id" : 694173461
         } ],
-        "id" : 804775060
+        "id" : 504324797
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -1678,7 +1722,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -1687,31 +1731,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1900722530
+            "id" : 1100335576
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1897164643
+          "id" : 1909758069
         }, {
           "name" : "position2",
-          "id" : 611256437
+          "id" : 1514456573
         }, {
           "name" : "position1",
-          "id" : 1851822511
+          "id" : 694173461
         } ],
-        "id" : 1717848086
+        "id" : 1911765059
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 611256437
+          "id" : 1514456573
         }, {
-          "id" : 850056461
+          "id" : 484565132
         } ],
-        "id" : 350273854
+        "id" : 85731716
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -1722,7 +1766,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -1731,31 +1775,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1900722530
+            "id" : 1100335576
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1434965087
+          "id" : 1469540337
         }, {
           "name" : "position2",
-          "id" : 850056461
+          "id" : 1514456573
         }, {
           "name" : "position1",
-          "id" : 611256437
+          "id" : 484565132
         } ],
-        "id" : 1951062304
+        "id" : 886007956
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 305549858
+          "id" : 374121747
         }, {
-          "id" : 1142857510
+          "id" : 1444710243
         } ],
-        "id" : 431866343
+        "id" : 677370150
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -1766,7 +1810,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -1775,362 +1819,318 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 287915023
+            "id" : 1100335576
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 980366864
+          "id" : 1098937136
         }, {
           "name" : "position2",
-          "id" : 1142857510
+          "id" : 374121747
         }, {
           "name" : "position1",
-          "id" : 305549858
+          "id" : 1444710243
         } ],
-        "id" : 1438983048
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "id" : 1851822511
-        }, {
-          "id" : 58057931
-        } ],
-        "id" : 134529230
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "id" : 1900722530
-          }, {
-            "name" : "name",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 266079322
-        }, {
-          "name" : "position2",
-          "id" : 58057931
-        }, {
-          "name" : "position1",
-          "id" : 1851822511
-        } ],
-        "id" : 1980813957
+        "id" : 635618269
       } ] ],
-      "id" : 1136076153
+      "id" : 1405085047
     }, {
       "name" : "tiles",
       "type" : "java.util.HashMap",
       "value" : [ [ {
-        "id" : 305549858
+        "id" : 694173461
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
           "type" : "hProjekt.model.Tile$Type",
           "value" : "PLAIN",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 305549858
+          "id" : 694173461
         } ],
-        "id" : 882604249
+        "id" : 1926161911
       } ], [ {
-        "id" : 850056461
+        "id" : 322915864
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 850056461
+          "id" : 322915864
         } ],
-        "id" : 1669062257
+        "id" : 1274903050
       } ], [ {
-        "id" : 1142857510
+        "id" : 1514456573
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1142857510
+          "id" : 1514456573
         } ],
-        "id" : 681424662
+        "id" : 2120136172
       } ], [ {
-        "id" : 1666346875
+        "id" : 484565132
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1666346875
+          "id" : 484565132
         } ],
-        "id" : 976068559
+        "id" : 1509952547
       } ], [ {
-        "id" : 611256437
+        "id" : 1444710243
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 611256437
+          "id" : 1444710243
         } ],
-        "id" : 6262987
+        "id" : 307643084
       } ], [ {
-        "id" : 58057931
+        "id" : 1838956115
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 58057931
+          "id" : 1838956115
         } ],
-        "id" : 887942558
+        "id" : 602594177
       } ], [ {
-        "id" : 1851822511
+        "id" : 374121747
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1851822511
+          "id" : 374121747
         } ],
-        "id" : 1980369202
+        "id" : 1808251984
       } ] ],
-      "id" : 815543284
+      "id" : 1987154655
     } ],
-    "id" : 488486803
+    "id" : 261245026
   }, {
     "type" : "hProjekt.model.PlayerImpl",
     "fields" : [ {
       "name" : "credits",
-      "id" : 78081168
+      "id" : 451046489
     }, {
       "name" : "id",
-      "id" : 382441865
+      "id" : 791563230
     }, {
       "name" : "name",
-      "id" : 671530474
+      "id" : 1842220218
     } ],
-    "id" : 690840203
+    "id" : 675222970
   } ],
   "expected" : {
     "type" : "java.util.Collections$UnmodifiableMap",
     "value" : [ ],
-    "id" : 307755791
+    "id" : 904112878
   }
 }, {
-  "invoked" : 1671864091,
+  "invoked" : 199886147,
   "entryPoint" : "hProjekt.model.HexGridImpl#getRails(hProjekt.model.Player)",
-  "arguments" : [ 644069747 ],
+  "arguments" : [ 496925378 ],
   "calls" : [ {
-    "id" : 2043160616,
+    "id" : 1788866255,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1098139050,
+        "return" : 1394325527,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1135284791,
+        "return" : 1405363429,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 2075552342,
+    "id" : 2083295053,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 2042027473,
+        "return" : 1394325527,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1990342884,
+        "return" : 982447879,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1691718869,
+    "id" : 1838086431,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 2042027473,
+        "return" : 1091105424,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1282696769,
+        "return" : 1483664882,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 924595278,
+    "id" : 1346431587,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1294196782,
+        "return" : 1394325527,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 253332430,
+        "return" : 840381744,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 288468690,
+    "id" : 1219678757,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 2042027473,
+        "return" : 1091105424,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 579392796,
+        "return" : 1256992326,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 495638350,
+    "id" : 107960103,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1098139050,
+        "return" : 1394325527,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1689300121,
+        "return" : 651483606,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1395772820,
+    "id" : 258591505,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1098139050,
+        "return" : 1394325527,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 182775733,
+        "return" : 1777250633,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 454265045,
+    "id" : 366257517,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1098139050,
+        "return" : 1394325527,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 66546932,
+        "return" : 721561061,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 387644653,
+    "id" : 1692670078,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1098139050,
+        "return" : 1394325527,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 336054500,
+        "return" : 621953756,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 887741425,
+    "id" : 299303689,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1098139050,
+        "return" : 1394325527,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 147551376,
+        "return" : 109146052,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 96289248,
+    "id" : 2127576798,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1098139050,
+        "return" : 1091105424,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1094399698,
+        "return" : 264911058,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 2093980736,
+    "id" : 225911160,
     "methodCalls" : [ {
       "methodName" : "getRailOwners",
       "invocations" : [ {
-        "return" : 1098139050,
+        "return" : 1520480086,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1535248594,
+        "return" : 2112346137,
         "parameter" : [ ]
       } ]
     } ]
@@ -2146,31 +2146,31 @@
           "name" : "r",
           "type" : "java.lang.Integer",
           "value" : "0",
-          "id" : 528280723
+          "id" : 114012533
         }, {
           "name" : "q",
-          "id" : 528280723
+          "id" : 114012533
         } ],
-        "id" : 531244762
+        "id" : 1177600401
       }, {
         "type" : "hProjekt.model.CityImpl",
         "fields" : [ {
           "name" : "isStartingCity",
           "type" : "java.lang.Boolean",
           "value" : "true",
-          "id" : 185544081
+          "id" : 817614737
         }, {
           "name" : "name",
           "type" : "java.lang.String",
           "value" : "Wilhelmstal",
-          "id" : 2051550839
+          "id" : 1197197346
         }, {
           "name" : "position",
-          "id" : 531244762
+          "id" : 1177600401
         } ],
-        "id" : 1021843818
+        "id" : 1785183783
       } ] ],
-      "id" : 2127071782
+      "id" : 1038282856
     }, {
       "name" : "edges",
       "type" : "java.util.HashMap",
@@ -2180,18 +2180,28 @@
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 528280723
+            "type" : "java.lang.Integer",
+            "value" : "1",
+            "id" : 791563230
           }, {
             "name" : "q",
             "type" : "java.lang.Integer",
-            "value" : "1",
-            "id" : 382441865
+            "value" : "-1",
+            "id" : 1749524107
           } ],
-          "id" : 1310801534
+          "id" : 2085944768
         }, {
-          "id" : 531244762
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 791563230
+          }, {
+            "name" : "q",
+            "id" : 114012533
+          } ],
+          "id" : 884107957
         } ],
-        "id" : 552575777
+        "id" : 809254228
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2203,7 +2213,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2219,63 +2229,53 @@
                 "name" : "credits",
                 "type" : "java.lang.Integer",
                 "value" : "20",
-                "id" : 78081168
+                "id" : 451046489
               }, {
                 "name" : "id",
-                "id" : 528280723
+                "id" : 114012533
               }, {
                 "name" : "name",
                 "type" : "java.lang.String",
                 "value" : "Player0",
-                "id" : 1172745450
+                "id" : 2123980650
               } ],
-              "id" : 2029849352
+              "id" : 1694299929
             } ],
-            "id" : 2042027473
+            "id" : 1091105424
           }, {
             "name" : "name",
             "type" : "java.lang.String",
             "value" : "",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 579392796
+          "id" : 264911058
         }, {
           "name" : "position2",
-          "id" : 531244762
+          "id" : 2085944768
         }, {
           "name" : "position1",
-          "id" : 1310801534
+          "id" : 884107957
         } ],
-        "id" : 288468690
+        "id" : 2127576798
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "type" : "java.lang.Integer",
-            "value" : "-1",
-            "id" : 1484177113
+            "id" : 1749524107
           }, {
             "name" : "q",
-            "id" : 528280723
+            "id" : 791563230
           } ],
-          "id" : 1476446537
+          "id" : 1276879118
         }, {
-          "type" : "hProjekt.model.TilePosition",
-          "fields" : [ {
-            "name" : "r",
-            "id" : 528280723
-          }, {
-            "name" : "q",
-            "id" : 1484177113
-          } ],
-          "id" : 1699279380
+          "id" : 1177600401
         } ],
-        "id" : 1389496518
+        "id" : 1024159953
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2286,7 +2286,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2297,39 +2297,39 @@
             "name" : "value",
             "type" : "java.util.ArrayList",
             "value" : [ ],
-            "id" : 1098139050
+            "id" : 1394325527
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 147551376
+          "id" : 621953756
         }, {
           "name" : "position2",
-          "id" : 1699279380
+          "id" : 1276879118
         }, {
           "name" : "position1",
-          "id" : 1476446537
+          "id" : 1177600401
         } ],
-        "id" : 887741425
+        "id" : 1692670078
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 531244762
+          "id" : 1276879118
         }, {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 382441865
+            "id" : 1749524107
           }, {
             "name" : "q",
-            "id" : 1484177113
+            "id" : 114012533
           } ],
-          "id" : 674554369
+          "id" : 224385306
         } ],
-        "id" : 1107127531
+        "id" : 929163194
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2340,7 +2340,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2349,39 +2349,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1098139050
+            "id" : 1394325527
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1535248594
+          "id" : 1777250633
         }, {
           "name" : "position2",
-          "id" : 674554369
+          "id" : 1276879118
         }, {
           "name" : "position1",
-          "id" : 531244762
+          "id" : 224385306
         } ],
-        "id" : 2093980736
+        "id" : 258591505
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 531244762
+          "id" : 2085944768
         }, {
-          "type" : "hProjekt.model.TilePosition",
-          "fields" : [ {
-            "name" : "r",
-            "id" : 382441865
-          }, {
-            "name" : "q",
-            "id" : 528280723
-          } ],
-          "id" : 1225988846
+          "id" : 1177600401
         } ],
-        "id" : 1019912285
+        "id" : 326176502
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2392,7 +2384,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2401,39 +2393,83 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1098139050
+            "id" : 1394325527
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 182775733
+          "id" : 1405363429
         }, {
           "name" : "position2",
-          "id" : 1225988846
+          "id" : 2085944768
         }, {
           "name" : "position1",
-          "id" : 531244762
+          "id" : 1177600401
         } ],
-        "id" : 1395772820
+        "id" : 1788866255
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1310801534
-        }, {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1484177113
+            "id" : 114012533
           }, {
             "name" : "q",
-            "id" : 382441865
+            "id" : 1749524107
+          } ],
+          "id" : 1527298435
+        }, {
+          "id" : 224385306
+        } ],
+        "id" : 725806418
+      }, {
+        "type" : "hProjekt.model.EdgeImpl",
+        "fields" : [ {
+          "name" : "railOwners",
+          "type" : "javafx.beans.property.SimpleObjectProperty",
+          "fields" : [ {
+            "name" : "helper",
+            "id" : 0
+          }, {
+            "name" : "valid",
+            "id" : 817614737
+          }, {
+            "name" : "listener",
+            "id" : 0
+          }, {
+            "name" : "observable",
+            "id" : 0
+          }, {
+            "name" : "value",
+            "id" : 1394325527
+          }, {
+            "name" : "name",
+            "id" : 214774813
+          }, {
+            "name" : "bean",
+            "id" : 0
           } ],
           "id" : 840381744
+        }, {
+          "name" : "position2",
+          "id" : 1527298435
+        }, {
+          "name" : "position1",
+          "id" : 224385306
         } ],
-        "id" : 379787968
+        "id" : 1346431587
+      } ], [ {
+        "type" : "hProjekt.mocking.ArraySet",
+        "value" : [ {
+          "id" : 884107957
+        }, {
+          "id" : 1177600401
+        } ],
+        "id" : 697565823
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2444,7 +2480,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2453,31 +2489,39 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1098139050
+            "id" : 1394325527
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 66546932
+          "id" : 721561061
         }, {
           "name" : "position2",
-          "id" : 840381744
+          "id" : 884107957
         }, {
           "name" : "position1",
-          "id" : 1310801534
+          "id" : 1177600401
         } ],
-        "id" : 454265045
+        "id" : 366257517
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1310801534
+          "id" : 884107957
         }, {
-          "id" : 1225988846
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "id" : 114012533
+          }, {
+            "name" : "q",
+            "id" : 791563230
+          } ],
+          "id" : 2137335466
         } ],
-        "id" : 1985504392
+        "id" : 414845714
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2488,7 +2532,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2497,31 +2541,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 2042027473
+            "id" : 1091105424
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1282696769
+          "id" : 1483664882
         }, {
           "name" : "position2",
-          "id" : 1225988846
+          "id" : 884107957
         }, {
           "name" : "position1",
-          "id" : 1310801534
+          "id" : 2137335466
         } ],
-        "id" : 1691718869
+        "id" : 1838086431
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1225988846
+          "id" : 1276879118
         }, {
-          "id" : 674554369
+          "id" : 2137335466
         } ],
-        "id" : 674436956
+        "id" : 454335748
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2532,7 +2576,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2541,31 +2585,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 2042027473
+            "id" : 1394325527
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1990342884
+          "id" : 982447879
         }, {
           "name" : "position2",
-          "id" : 674554369
+          "id" : 1276879118
         }, {
           "name" : "position1",
-          "id" : 1225988846
+          "id" : 2137335466
         } ],
-        "id" : 2075552342
+        "id" : 2083295053
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1699279380
+          "id" : 1177600401
         }, {
-          "id" : 674554369
+          "id" : 224385306
         } ],
-        "id" : 663504925
+        "id" : 2074714831
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2576,51 +2620,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
-          }, {
-            "name" : "listener",
-            "id" : 0
-          }, {
-            "name" : "observable",
-            "id" : 0
-          }, {
-            "name" : "value",
-            "id" : 1098139050
-          }, {
-            "name" : "name",
-            "id" : 1643345873
-          }, {
-            "name" : "bean",
-            "id" : 0
-          } ],
-          "id" : 1094399698
-        }, {
-          "name" : "position2",
-          "id" : 674554369
-        }, {
-          "name" : "position1",
-          "id" : 1699279380
-        } ],
-        "id" : 96289248
-      } ], [ {
-        "type" : "hProjekt.mocking.ArraySet",
-        "value" : [ {
-          "id" : 1476446537
-        }, {
-          "id" : 531244762
-        } ],
-        "id" : 1868032458
-      }, {
-        "type" : "hProjekt.model.EdgeImpl",
-        "fields" : [ {
-          "name" : "railOwners",
-          "type" : "javafx.beans.property.SimpleObjectProperty",
-          "fields" : [ {
-            "name" : "helper",
-            "id" : 0
-          }, {
-            "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2634,60 +2634,60 @@
               "type" : "hProjekt.model.PlayerImpl",
               "fields" : [ {
                 "name" : "credits",
-                "id" : 78081168
+                "id" : 451046489
               }, {
                 "name" : "id",
-                "id" : 382441865
+                "id" : 791563230
               }, {
                 "name" : "name",
                 "type" : "java.lang.String",
                 "value" : "Player1",
-                "id" : 671530474
+                "id" : 1842220218
               } ],
-              "id" : 473490941
+              "id" : 200707694
             }, {
               "type" : "hProjekt.model.PlayerImpl",
               "fields" : [ {
                 "name" : "credits",
-                "id" : 78081168
+                "id" : 451046489
               }, {
                 "name" : "id",
                 "type" : "java.lang.Integer",
                 "value" : "2",
-                "id" : 865072353
+                "id" : 1210019106
               }, {
                 "name" : "name",
                 "type" : "java.lang.String",
                 "value" : "Player2",
-                "id" : 1733339186
+                "id" : 1990424343
               } ],
-              "id" : 1140163725
+              "id" : 1183904910
             } ],
-            "id" : 1294196782
+            "id" : 1520480086
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 253332430
+          "id" : 2112346137
         }, {
           "name" : "position2",
-          "id" : 531244762
+          "id" : 1177600401
         }, {
           "name" : "position1",
-          "id" : 1476446537
+          "id" : 224385306
         } ],
-        "id" : 924595278
+        "id" : 225911160
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 531244762
+          "id" : 1527298435
         }, {
-          "id" : 840381744
+          "id" : 1177600401
         } ],
-        "id" : 1669254275
+        "id" : 259441398
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2698,7 +2698,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2707,31 +2707,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1098139050
+            "id" : 1394325527
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1689300121
+          "id" : 651483606
         }, {
           "name" : "position2",
-          "id" : 840381744
+          "id" : 1527298435
         }, {
           "name" : "position1",
-          "id" : 531244762
+          "id" : 1177600401
         } ],
-        "id" : 495638350
+        "id" : 107960103
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 531244762
+          "id" : 1177600401
         }, {
-          "id" : 1699279380
+          "id" : 2137335466
         } ],
-        "id" : 20549563
+        "id" : 915521677
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2742,7 +2742,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2751,31 +2751,31 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1098139050
+            "id" : 1091105424
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1135284791
+          "id" : 1256992326
         }, {
           "name" : "position2",
-          "id" : 1699279380
+          "id" : 1177600401
         }, {
           "name" : "position1",
-          "id" : 531244762
+          "id" : 2137335466
         } ],
-        "id" : 2043160616
+        "id" : 1219678757
       } ], [ {
         "type" : "hProjekt.mocking.ArraySet",
         "value" : [ {
-          "id" : 1476446537
+          "id" : 2085944768
         }, {
-          "id" : 840381744
+          "id" : 1527298435
         } ],
-        "id" : 1130146367
+        "id" : 437059647
       }, {
         "type" : "hProjekt.model.EdgeImpl",
         "fields" : [ {
@@ -2786,7 +2786,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 185544081
+            "id" : 817614737
           }, {
             "name" : "listener",
             "id" : 0
@@ -2795,135 +2795,135 @@
             "id" : 0
           }, {
             "name" : "value",
-            "id" : 1098139050
+            "id" : 1394325527
           }, {
             "name" : "name",
-            "id" : 1643345873
+            "id" : 214774813
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 336054500
+          "id" : 109146052
         }, {
           "name" : "position2",
-          "id" : 840381744
+          "id" : 2085944768
         }, {
           "name" : "position1",
-          "id" : 1476446537
+          "id" : 1527298435
         } ],
-        "id" : 387644653
+        "id" : 299303689
       } ] ],
-      "id" : 1554748227
+      "id" : 216463141
     }, {
       "name" : "tiles",
       "type" : "java.util.HashMap",
       "value" : [ [ {
-        "id" : 531244762
+        "id" : 1177600401
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
           "type" : "hProjekt.model.Tile$Type",
           "value" : "PLAIN",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 531244762
+          "id" : 1177600401
         } ],
-        "id" : 1184057198
+        "id" : 706231561
       } ], [ {
-        "id" : 674554369
+        "id" : 2085944768
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 674554369
+          "id" : 2085944768
         } ],
-        "id" : 1825875268
+        "id" : 1470478212
       } ], [ {
-        "id" : 840381744
+        "id" : 224385306
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 840381744
+          "id" : 224385306
         } ],
-        "id" : 1740369819
+        "id" : 1492944279
       } ], [ {
-        "id" : 1476446537
+        "id" : 1276879118
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1476446537
+          "id" : 1276879118
         } ],
-        "id" : 1589030791
+        "id" : 76436901
       } ], [ {
-        "id" : 1699279380
+        "id" : 884107957
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1699279380
+          "id" : 884107957
         } ],
-        "id" : 1553503962
+        "id" : 353309027
       } ], [ {
-        "id" : 1225988846
+        "id" : 1527298435
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1225988846
+          "id" : 1527298435
         } ],
-        "id" : 918959987
+        "id" : 1023284943
       } ], [ {
-        "id" : 1310801534
+        "id" : 2137335466
       }, {
         "type" : "hProjekt.model.TileImpl",
         "fields" : [ {
           "name" : "type",
-          "id" : 1691185247
+          "id" : 1782580546
         }, {
           "name" : "position",
-          "id" : 1310801534
+          "id" : 2137335466
         } ],
-        "id" : 399284053
+        "id" : 1357197764
       } ] ],
-      "id" : 1906295164
+      "id" : 615869833
     } ],
-    "id" : 1671864091
+    "id" : 199886147
   }, {
     "type" : "hProjekt.model.PlayerImpl",
     "fields" : [ {
       "name" : "credits",
-      "id" : 78081168
+      "id" : 451046489
     }, {
       "name" : "id",
-      "id" : 865072353
+      "id" : 1210019106
     }, {
       "name" : "name",
-      "id" : 1733339186
+      "id" : 1990424343
     } ],
-    "id" : 644069747
+    "id" : 496925378
   } ],
   "expected" : {
     "type" : "java.util.Collections$UnmodifiableMap",
     "value" : [ ],
-    "id" : 1370785341
+    "id" : 1278232050
   }
 } ]

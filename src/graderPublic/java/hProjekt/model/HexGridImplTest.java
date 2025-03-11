@@ -46,7 +46,10 @@ public class HexGridImplTest {
                 try {
                     assertTrue(
                             Class.forName("java.util.Collections$UnmodifiableMap").isAssignableFrom(
-                                    actual.call.returnValue().getClass()),
+                                    actual.call.returnValue().getClass()) ||
+                                    actual.call.returnValue().getClass().getName().contains(
+
+                                            "java.util.ImmutableCollections"),
                             context,
                             r -> "getConnectedCities() did not return immutable map! Returned Object of class " +
                                     actual.call.returnValue().getClass());
@@ -112,50 +115,6 @@ public class HexGridImplTest {
     }
 
     @ParameterizedTest
-    @MethodSource("provideGetUnconnectedCities")
-    public void testGetUnconnectedCities(ObjectNode node) throws NoSuchMethodException {
-        hProjekt.model.HexGridImpl.class.getDeclaredMethod("getUnconnectedCities");
-        Object expected = new MockConverterP().fromJsonNodeWithBackfill((ObjectNode) node.get("expected"), null);
-        List<StudentMethodCall> results = MockConverterP.recreateCallAndInvoke(node);
-
-        if (results.stream().allMatch(it -> it.exception != null)) {
-            ReflectionUtilsP.getUnsafe().throwException(results.getLast().exception);
-        }
-
-        Throwable lastCall = null;
-        for (StudentMethodCall actual : results) {
-            try {
-                Context context = contextBuilder()
-                        .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
-                        .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
-                        .build();
-
-                try {
-                    assertTrue(
-                            Class.forName("java.util.Collections$UnmodifiableMap").isAssignableFrom(
-                                    actual.call.returnValue().getClass()),
-                            context,
-                            r -> "getUnconnectedCities() did not return immutable map! Returned Object of class " +
-                                    actual.call.returnValue().getClass());
-                } catch (ClassNotFoundException e) {
-                    throw new RuntimeException(e);
-                }
-                ;
-                assertContainsAll(((Map<Object, Object>) (expected)),
-                        ((Map<Object, Object>) (actual.call.returnValue())), context);
-                return;
-            } catch (Throwable e) {
-                lastCall = e;
-            }
-        }
-        ReflectionUtilsP.getUnsafe().throwException(lastCall);
-    }
-
-    private static Stream<Arguments> provideGetUnconnectedCities() {
-        return Project_TestP.parseJsonFile("hProjekt/model/HexGridImpl_getUnconnectedCities.json");
-    }
-
-    @ParameterizedTest
     @MethodSource("provideGetStartingCities")
     public void testGetStartingCities(ObjectNode node) throws NoSuchMethodException {
         hProjekt.model.HexGridImpl.class.getDeclaredMethod("getStartingCities");
@@ -186,6 +145,53 @@ public class HexGridImplTest {
 
     private static Stream<Arguments> provideGetStartingCities() {
         return Project_TestP.parseJsonFile("hProjekt/model/HexGridImpl_getStartingCities.json");
+    }
+
+    @ParameterizedTest
+    @MethodSource("provideGetUnconnectedCities")
+    public void testGetUnconnectedCities(ObjectNode node) throws NoSuchMethodException {
+        hProjekt.model.HexGridImpl.class.getDeclaredMethod("getUnconnectedCities");
+        Object expected = new MockConverterP().fromJsonNodeWithBackfill((ObjectNode) node.get("expected"), null);
+        List<StudentMethodCall> results = MockConverterP.recreateCallAndInvoke(node);
+
+        if (results.stream().allMatch(it -> it.exception != null)) {
+            ReflectionUtilsP.getUnsafe().throwException(results.getLast().exception);
+        }
+
+        Throwable lastCall = null;
+        for (StudentMethodCall actual : results) {
+            try {
+                Context context = contextBuilder()
+                        .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
+                        .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
+                        .build();
+
+                try {
+                    assertTrue(
+                            Class.forName("java.util.Collections$UnmodifiableMap").isAssignableFrom(
+                                    actual.call.returnValue().getClass()) ||
+                                    actual.call.returnValue().getClass().getName().contains(
+
+                                            "java.util.ImmutableCollections"),
+                            context,
+                            r -> "getUnconnectedCities() did not return immutable map! Returned Object of class " +
+                                    actual.call.returnValue().getClass());
+                } catch (ClassNotFoundException e) {
+                    throw new RuntimeException(e);
+                }
+                ;
+                assertContainsAll(((Map<Object, Object>) (expected)),
+                        ((Map<Object, Object>) (actual.call.returnValue())), context);
+                return;
+            } catch (Throwable e) {
+                lastCall = e;
+            }
+        }
+        ReflectionUtilsP.getUnsafe().throwException(lastCall);
+    }
+
+    private static Stream<Arguments> provideGetUnconnectedCities() {
+        return Project_TestP.parseJsonFile("hProjekt/model/HexGridImpl_getUnconnectedCities.json");
     }
 
 }
