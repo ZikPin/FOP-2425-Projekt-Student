@@ -20,6 +20,6 @@ public class Main {
 
         System.out.println("Ya realno samiy kruteyshiy");
 
-        System.out.println("пиздёж чистой воды! ");
+        //adding something for testbranch
     }
 }
