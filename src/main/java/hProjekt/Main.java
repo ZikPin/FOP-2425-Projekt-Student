@@ -13,5 +13,11 @@ public class Main {
      */
     public static void main(String[] args) {
         Application.launch(MyApplication.class, args);
+
+        System.out.println("Changed the main branch");
+
+        System.out.println("Ya samiy krutoy");
+
+        System.out.println("Ya realno samiy kruteyshiy");
     }
 }
