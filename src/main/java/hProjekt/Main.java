@@ -17,5 +17,7 @@ public class Main {
         System.out.println("Changed the main branch");
 
         System.out.println("Ya samiy krutoy");
+
+        System.out.println("Ya realno samiy kruteyshiy");
     }
 }
