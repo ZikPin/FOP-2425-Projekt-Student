@@ -1,96 +1,81 @@
 [ {
   "entries" : [ {
     "player" : "player0",
-    "ai" : true,
-    "timestamp" : "2024-12-09 18:55:01",
-    "score" : 71
+    "ai" : false,
+    "timestamp" : "2025-03-27 19:53:17",
+    "score" : 27
   }, {
     "player" : "player1",
     "ai" : false,
-    "timestamp" : "2025-03-23 16:38:15",
-    "score" : 0
-  }, {
-    "player" : "player2",
-    "ai" : false,
-    "timestamp" : "2025-02-06 02:55:09",
-    "score" : 94
-  }, {
-    "player" : "player3",
-    "ai" : true,
-    "timestamp" : "2025-01-17 09:56:51",
-    "score" : 83
-  }, {
-    "player" : "player4",
-    "ai" : true,
-    "timestamp" : "2024-12-20 13:44:53",
+    "timestamp" : "2024-11-23 19:52:59",
     "score" : 2
   } ]
 }, {
   "entries" : [ {
     "player" : "player0",
     "ai" : false,
-    "timestamp" : "2024-11-17 09:56:36",
-    "score" : 83
+    "timestamp" : "2025-02-15 03:36:34",
+    "score" : 56
   }, {
     "player" : "player1",
     "ai" : true,
-    "timestamp" : "2025-03-19 17:28:31",
-    "score" : 6
+    "timestamp" : "2025-02-14 17:05:02",
+    "score" : 71
+  }, {
+    "player" : "player2",
+    "ai" : true,
+    "timestamp" : "2024-12-17 08:49:10",
+    "score" : 89
+  } ]
+}, {
+  "entries" : [ {
+    "player" : "player0",
+    "ai" : false,
+    "timestamp" : "2024-11-06 02:02:06",
+    "score" : 1
+  } ]
+}, {
+  "entries" : [ {
+    "player" : "player0",
+    "ai" : false,
+    "timestamp" : "2025-02-21 22:02:40",
+    "score" : 45
+  }, {
+    "player" : "player1",
+    "ai" : true,
+    "timestamp" : "2025-02-21 02:28:07",
+    "score" : 21
   }, {
     "player" : "player2",
     "ai" : false,
-    "timestamp" : "2024-12-21 10:11:05",
-    "score" : 63
+    "timestamp" : "2024-12-26 00:23:33",
+    "score" : 75
   }, {
     "player" : "player3",
     "ai" : true,
-    "timestamp" : "2025-02-25 08:26:53",
-    "score" : 96
-  }, {
-    "player" : "player4",
-    "ai" : false,
-    "timestamp" : "2025-02-12 18:57:02",
+    "timestamp" : "2025-01-26 01:53:31",
     "score" : 12
   } ]
 }, {
   "entries" : [ {
     "player" : "player0",
     "ai" : false,
-    "timestamp" : "2024-10-31 09:45:38",
-    "score" : 19
-  } ]
-}, {
-  "entries" : [ {
-    "player" : "player0",
-    "ai" : false,
-    "timestamp" : "2024-10-07 00:36:45",
-    "score" : 36
-  }, {
-    "player" : "player1",
-    "ai" : false,
-    "timestamp" : "2024-11-17 12:20:51",
-    "score" : 74
-  } ]
-}, {
-  "entries" : [ {
-    "player" : "player0",
-    "ai" : false,
-    "timestamp" : "2024-12-18 19:12:29",
-    "score" : 75
+    "timestamp" : "2024-11-11 16:29:40",
+    "score" : 12
   }, {
     "player" : "player1",
     "ai" : true,
-    "timestamp" : "2025-01-08 08:14:02",
-    "score" : 65
+    "timestamp" : "2025-03-14 10:56:21",
+    "score" : 37
   }, {
     "player" : "player2",
     "ai" : false,
-    "timestamp" : "2024-11-01 11:20:52",
-    "score" : 69
+    "timestamp" : "2025-02-07 23:31:39",
+    "score" : 31
   }, {
     "player" : "player3",
     "ai" : true,
-    "timestamp" : "2025-03-28 07:34:16",
-    "score" : 90
+    "timestamp" : "2024-11-03 11:05:13",
+    "score" : 64
   } ]
 } ]

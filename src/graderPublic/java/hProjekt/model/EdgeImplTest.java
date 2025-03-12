@@ -1,8 +1,10 @@
 package hProjekt.model;
 
+import static hProjekt.Project_TestP.assertSetEquals;
 import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.contextBuilder;
 
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Stream;
 
 import org.junit.jupiter.params.ParameterizedTest;
@@ -107,8 +109,16 @@ public class EdgeImplTest {
                         .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
                         .build();
 
-                Assertions2.assertEquals(expected, actual.call.returnValue(), context,
-                        r -> "GetConnectedEdges() did not return the expected value!");
+                assertSetEquals(
+                        ((Set<EdgeImpl>) (expected)),
+                        ((Set<EdgeImpl>) (actual.call.returnValue())), (e, a) -> {
+                            boolean sameOwners = ReflectionUtilsP.equalsForMocks(a.railOwners(), e.railOwners());
+                            boolean sameLocation = (e.position1().equals(a.getPosition1()) &&
+                                    e.position2().equals(a.getPosition2())) ||
+                                    (e.position1().equals(a.getPosition2()) && e.position2().equals(a.getPosition1()));
+                            return sameOwners && sameLocation;
+                        },
+                        context);
                 return;
             } catch (Throwable e) {
                 lastCall = e;
@@ -120,5 +130,4 @@ public class EdgeImplTest {
     private static Stream<Arguments> provideGetConnectedEdges() {
         return Project_TestP.parseJsonFile("hProjekt/model/EdgeImpl_getConnectedEdges.json");
     }
-
 }
