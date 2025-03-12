@@ -19,5 +19,7 @@ public class Main {
         System.out.println("Ya samiy krutoy");
 
         System.out.println("Ya realno samiy kruteyshiy");
+
+        System.out.println("bla bla bla");
     }
 }
