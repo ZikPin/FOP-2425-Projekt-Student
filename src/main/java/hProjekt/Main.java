@@ -15,5 +15,7 @@ public class Main {
         Application.launch(MyApplication.class, args);
 
         System.out.println("Ya samiy krutoy");
+
+        System.out.println("Ya realno samiy kruteyshiy");
     }
 }
