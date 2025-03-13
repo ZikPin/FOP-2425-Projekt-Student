@@ -82,12 +82,19 @@ public class PlayerImpl implements Player {
         credits+=amount;
     }
 
+    /**
+     * Removes given amount of credits from the current balance of the player
+     * @param amount the amount of credits to remove
+     * @return {@code true} if the credits were successfully removed,
+     *         {@code false} if player does not have enough credits to be removed
+     */
     @Override
     @StudentImplementationRequired("P1.2")
     public boolean removeCredits(int amount) {
         // TODO: P1.2
-        if (amount>credits) throw new IllegalArgumentException("Der Spieler hat nicht genug Credits!");
+        if (amount>credits) return false;
         credits-=amount;
+        return true;
     }
 
     @Override
