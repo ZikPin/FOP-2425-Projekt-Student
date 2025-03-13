@@ -10,6 +10,7 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.sourcegrade.jagr.api.rubric.TestForSubmission;
 import org.tudalgo.algoutils.tutor.general.assertions.Assertions2;
 import org.tudalgo.algoutils.tutor.general.assertions.Context;
 
@@ -20,6 +21,7 @@ import hProjekt.mocking.MockConverterP;
 import hProjekt.mocking.ReflectionUtilsP;
 import hProjekt.mocking.StudentMethodCall;
 
+@TestForSubmission
 public class EdgeImplTest {
 
     @ParameterizedTest

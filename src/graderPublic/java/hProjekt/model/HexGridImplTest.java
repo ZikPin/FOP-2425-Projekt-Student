@@ -1,23 +1,27 @@
 package hProjekt.model;
 
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import hProjekt.Project_TestP;
-import hProjekt.mocking.MockConverterP;
-import hProjekt.mocking.ReflectionUtilsP;
-import hProjekt.mocking.StudentMethodCall;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.tudalgo.algoutils.tutor.general.assertions.Context;
+import static hProjekt.Project_TestP.assertContainsAll;
+import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.assertTrue;
+import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.contextBuilder;
 
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import static hProjekt.Project_TestP.assertContainsAll;
-import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.assertTrue;
-import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.contextBuilder;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.sourcegrade.jagr.api.rubric.TestForSubmission;
+import org.tudalgo.algoutils.tutor.general.assertions.Context;
 
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
+import hProjekt.Project_TestP;
+import hProjekt.mocking.MockConverterP;
+import hProjekt.mocking.ReflectionUtilsP;
+import hProjekt.mocking.StudentMethodCall;
+
+@TestForSubmission
 public class HexGridImplTest {
 
     @ParameterizedTest
@@ -31,33 +35,34 @@ public class HexGridImplTest {
             ReflectionUtilsP.getUnsafe().throwException(results.getLast().exception);
         }
 
-
         Throwable lastCall = null;
-        for (StudentMethodCall actual: results) {
+        for (StudentMethodCall actual : results) {
             if (actual.call == null) {
                 lastCall = actual.exception;
                 continue;
             }
             try {
                 Context context = contextBuilder()
-                    .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
-                    .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
-                    .build();
+                        .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
+                        .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
+                        .build();
 
                 try {
                     assertTrue(
-                        Class.forName("java.util.Collections$UnmodifiableMap").isAssignableFrom(
-                            actual.call.returnValue().getClass()) ||
-                            actual.call.returnValue().getClass().getName().contains(
+                            Class.forName("java.util.Collections$UnmodifiableMap").isAssignableFrom(
+                                    actual.call.returnValue().getClass()) ||
+                                    actual.call.returnValue().getClass().getName().contains(
 
-                                "java.util.ImmutableCollections"),
-                        context, r ->
-                            "getConnectedCities() did not return immutable map! Returned Object of class " +
-                                actual.call.returnValue().getClass());
+                                            "java.util.ImmutableCollections"),
+                            context,
+                            r -> "getConnectedCities() did not return immutable map! Returned Object of class " +
+                                    actual.call.returnValue().getClass());
                 } catch (ClassNotFoundException e) {
                     throw new RuntimeException(e);
-                };
-                assertContainsAll(((Map<Object, Object>) (expected)), ((Map<Object, Object>) (actual.call.returnValue())), context);
+                }
+                ;
+                assertContainsAll(((Map<Object, Object>) (expected)),
+                        ((Map<Object, Object>) (actual.call.returnValue())), context);
                 return;
             } catch (Throwable e) {
                 lastCall = e;
@@ -70,7 +75,6 @@ public class HexGridImplTest {
         return Project_TestP.parseJsonFile("hProjekt/model/HexGridImpl_getConnectedCities.json");
     }
 
-
     @ParameterizedTest
     @MethodSource("provideGetRails")
     public void testGetRails(ObjectNode node) throws NoSuchMethodException {
@@ -82,32 +86,33 @@ public class HexGridImplTest {
             ReflectionUtilsP.getUnsafe().throwException(results.getLast().exception);
         }
 
-
         Throwable lastCall = null;
-        for (StudentMethodCall actual: results) {
+        for (StudentMethodCall actual : results) {
             if (actual.call == null) {
                 lastCall = actual.exception;
                 continue;
             }
             try {
                 Context context = contextBuilder()
-                    .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
-                    .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
-                    .build();
+                        .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
+                        .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
+                        .build();
 
                 try {
                     assertTrue(
-                        Class.forName("java.util.Collections$UnmodifiableMap").isAssignableFrom(
-                            actual.call.returnValue().getClass()) ||
-                            actual.call.returnValue().getClass().getName().contains(
+                            Class.forName("java.util.Collections$UnmodifiableMap").isAssignableFrom(
+                                    actual.call.returnValue().getClass()) ||
+                                    actual.call.returnValue().getClass().getName().contains(
 
-                                "java.util.ImmutableCollections"),
-                        context, r -> "getRails() did not return immutable map! Returned Object of class " +
-                            actual.call.returnValue().getClass());
+                                            "java.util.ImmutableCollections"),
+                            context, r -> "getRails() did not return immutable map! Returned Object of class " +
+                                    actual.call.returnValue().getClass());
                 } catch (ClassNotFoundException e) {
                     throw new RuntimeException(e);
-                };
-                assertContainsAll(((Map<Object, Object>) (expected)), ((Map<Object, Object>) (actual.call.returnValue())), context);
+                }
+                ;
+                assertContainsAll(((Map<Object, Object>) (expected)),
+                        ((Map<Object, Object>) (actual.call.returnValue())), context);
                 return;
             } catch (Throwable e) {
                 lastCall = e;
@@ -120,7 +125,6 @@ public class HexGridImplTest {
         return Project_TestP.parseJsonFile("hProjekt/model/HexGridImpl_getRails.json");
     }
 
-
     @ParameterizedTest
     @MethodSource("provideGetStartingCities")
     public void testGetStartingCities(ObjectNode node) throws NoSuchMethodException {
@@ -132,20 +136,20 @@ public class HexGridImplTest {
             ReflectionUtilsP.getUnsafe().throwException(results.getLast().exception);
         }
 
-
         Throwable lastCall = null;
-        for (StudentMethodCall actual: results) {
+        for (StudentMethodCall actual : results) {
             if (actual.call == null) {
                 lastCall = actual.exception;
                 continue;
             }
             try {
                 Context context = contextBuilder()
-                    .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
-                    .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
-                    .build();
+                        .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
+                        .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
+                        .build();
 
-                assertContainsAll((Map<Object, Object>) expected, (Map<Object, Object>) actual.call.returnValue(), context);
+                assertContainsAll((Map<Object, Object>) expected, (Map<Object, Object>) actual.call.returnValue(),
+                        context);
                 return;
             } catch (Throwable e) {
                 lastCall = e;
@@ -158,7 +162,6 @@ public class HexGridImplTest {
         return Project_TestP.parseJsonFile("hProjekt/model/HexGridImpl_getStartingCities.json");
     }
 
-
     @ParameterizedTest
     @MethodSource("provideGetUnconnectedCities")
     public void testGetUnconnectedCities(ObjectNode node) throws NoSuchMethodException {
@@ -170,33 +173,34 @@ public class HexGridImplTest {
             ReflectionUtilsP.getUnsafe().throwException(results.getLast().exception);
         }
 
-
         Throwable lastCall = null;
-        for (StudentMethodCall actual: results) {
+        for (StudentMethodCall actual : results) {
             if (actual.call == null) {
                 lastCall = actual.exception;
                 continue;
             }
             try {
                 Context context = contextBuilder()
-                    .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
-                    .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
-                    .build();
+                        .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
+                        .add("parameters", actual.call != null ? actual.call.arguments() : "unknown")
+                        .build();
 
                 try {
                     assertTrue(
-                        Class.forName("java.util.Collections$UnmodifiableMap").isAssignableFrom(
-                            actual.call.returnValue().getClass()) ||
-                            actual.call.returnValue().getClass().getName().contains(
+                            Class.forName("java.util.Collections$UnmodifiableMap").isAssignableFrom(
+                                    actual.call.returnValue().getClass()) ||
+                                    actual.call.returnValue().getClass().getName().contains(
 
-                                "java.util.ImmutableCollections"),
-                        context, r ->
-                            "getUnconnectedCities() did not return immutable map! Returned Object of class " +
-                                actual.call.returnValue().getClass());
+                                            "java.util.ImmutableCollections"),
+                            context,
+                            r -> "getUnconnectedCities() did not return immutable map! Returned Object of class " +
+                                    actual.call.returnValue().getClass());
                 } catch (ClassNotFoundException e) {
                     throw new RuntimeException(e);
-                };
-                assertContainsAll(((Map<Object, Object>) (expected)), ((Map<Object, Object>) (actual.call.returnValue())), context);
+                }
+                ;
+                assertContainsAll(((Map<Object, Object>) (expected)),
+                        ((Map<Object, Object>) (actual.call.returnValue())), context);
                 return;
             } catch (Throwable e) {
                 lastCall = e;
