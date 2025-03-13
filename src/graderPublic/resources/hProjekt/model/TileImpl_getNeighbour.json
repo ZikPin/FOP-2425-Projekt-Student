@@ -1,0 +1,391 @@
+[ {
+  "invoked" : 627305289,
+  "entryPoint" : "hProjekt.model.TileImpl#getNeighbour(hProjekt.model.TilePosition$EdgeDirection)",
+  "arguments" : [ 582479659 ],
+  "calls" : [ {
+    "id" : 1824814742,
+    "methodCalls" : [ {
+      "methodName" : "getTileAt",
+      "invocations" : [ {
+        "return" : 1050063672,
+        "parameter" : [ 530584649 ]
+      } ]
+    } ]
+  }, {
+    "id" : 627305289,
+    "methodCalls" : [ {
+      "methodName" : "getHexGrid",
+      "invocations" : [ {
+        "return" : 1824814742,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition",
+      "invocations" : [ {
+        "return" : 2027146282,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.TileImpl",
+    "fields" : [ {
+      "name" : "hexGrid",
+      "type" : "hProjekt.model.HexGridImpl",
+      "fields" : [ {
+        "name" : "cities",
+        "type" : "java.util.Map",
+        "value" : [ ],
+        "id" : 2029446598
+      }, {
+        "name" : "edges",
+        "type" : "java.util.Map",
+        "value" : [ [ {
+          "type" : "java.util.Set",
+          "value" : [ {
+            "type" : "hProjekt.model.TilePosition",
+            "fields" : [ {
+              "name" : "r",
+              "type" : "java.lang.Integer",
+              "value" : "0",
+              "id" : 521207494
+            }, {
+              "name" : "q",
+              "id" : 521207494
+            } ],
+            "id" : 2027146282
+          }, {
+            "type" : "hProjekt.model.TilePosition",
+            "fields" : [ {
+              "name" : "r",
+              "type" : "java.lang.Integer",
+              "value" : "-1",
+              "id" : 1898469011
+            }, {
+              "name" : "q",
+              "type" : "java.lang.Integer",
+              "value" : "1",
+              "id" : 1068781783
+            } ],
+            "id" : 1723436928
+          } ],
+          "id" : 1594246626
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "type" : "null",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "type" : "java.lang.Boolean",
+              "value" : "true",
+              "id" : 955994360
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "type" : "java.util.List",
+              "value" : [ ],
+              "id" : 784977174
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "",
+              "id" : 1075314220
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 2013654572
+          }, {
+            "name" : "position2",
+            "id" : 1723436928
+          }, {
+            "name" : "position1",
+            "id" : 2027146282
+          } ],
+          "id" : 831421513
+        } ] ],
+        "id" : 1078074825
+      }, {
+        "name" : "tiles",
+        "type" : "java.util.Map",
+        "value" : [ [ {
+          "id" : 2027146282
+        }, {
+          "id" : 627305289
+        } ], [ {
+          "id" : 1723436928
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 1824814742
+          }, {
+            "name" : "type",
+            "type" : "hProjekt.model.Tile$Type",
+            "value" : "PLAIN",
+            "id" : 154482552
+          }, {
+            "name" : "position",
+            "id" : 1723436928
+          } ],
+          "id" : 1050063672
+        } ] ],
+        "id" : 389589257
+      } ],
+      "id" : 1824814742
+    }, {
+      "name" : "type",
+      "id" : 154482552
+    }, {
+      "name" : "position",
+      "id" : 2027146282
+    } ],
+    "id" : 627305289
+  }, {
+    "type" : "hProjekt.model.TilePosition",
+    "fields" : [ {
+      "name" : "r",
+      "id" : 1898469011
+    }, {
+      "name" : "q",
+      "id" : 1068781783
+    } ],
+    "id" : 530584649
+  }, {
+    "type" : "hProjekt.model.TilePosition$EdgeDirection",
+    "value" : "NORTH_EAST",
+    "id" : 582479659
+  } ],
+  "expected" : {
+    "type" : "hProjekt.model.TileImpl",
+    "fields" : [ {
+      "name" : "hexGrid",
+      "type" : "hProjekt.model.HexGridImpl",
+      "fields" : [ {
+        "name" : "cities",
+        "type" : "java.util.Map",
+        "value" : [ ],
+        "id" : 2029446598
+      }, {
+        "name" : "edges",
+        "type" : "java.util.Map",
+        "value" : [ [ {
+          "type" : "java.util.Set",
+          "value" : [ {
+            "type" : "hProjekt.model.TilePosition",
+            "fields" : [ {
+              "name" : "r",
+              "type" : "java.lang.Integer",
+              "value" : "0",
+              "id" : 521207494
+            }, {
+              "name" : "q",
+              "id" : 521207494
+            } ],
+            "id" : 2027146282
+          }, {
+            "type" : "hProjekt.model.TilePosition",
+            "fields" : [ {
+              "name" : "r",
+              "type" : "java.lang.Integer",
+              "value" : "-1",
+              "id" : 1898469011
+            }, {
+              "name" : "q",
+              "type" : "java.lang.Integer",
+              "value" : "1",
+              "id" : 1068781783
+            } ],
+            "id" : 1723436928
+          } ],
+          "id" : 1594246626
+        }, {
+          "type" : "hProjekt.model.EdgeImpl",
+          "fields" : [ {
+            "name" : "railOwners",
+            "type" : "javafx.beans.property.SimpleObjectProperty",
+            "fields" : [ {
+              "name" : "helper",
+              "type" : "null",
+              "id" : 0
+            }, {
+              "name" : "valid",
+              "type" : "java.lang.Boolean",
+              "value" : "true",
+              "id" : 955994360
+            }, {
+              "name" : "listener",
+              "id" : 0
+            }, {
+              "name" : "observable",
+              "id" : 0
+            }, {
+              "name" : "value",
+              "type" : "java.util.List",
+              "value" : [ ],
+              "id" : 784977174
+            }, {
+              "name" : "name",
+              "type" : "java.lang.String",
+              "value" : "",
+              "id" : 1075314220
+            }, {
+              "name" : "bean",
+              "id" : 0
+            } ],
+            "id" : 2013654572
+          }, {
+            "name" : "position2",
+            "id" : 1723436928
+          }, {
+            "name" : "position1",
+            "id" : 2027146282
+          } ],
+          "id" : 831421513
+        } ] ],
+        "id" : 1078074825
+      }, {
+        "name" : "tiles",
+        "type" : "java.util.Map",
+        "value" : [ [ {
+          "id" : 2027146282
+        }, {
+          "type" : "hProjekt.model.TileImpl",
+          "fields" : [ {
+            "name" : "hexGrid",
+            "id" : 1824814742
+          }, {
+            "name" : "type",
+            "type" : "hProjekt.model.Tile$Type",
+            "value" : "PLAIN",
+            "id" : 154482552
+          }, {
+            "name" : "position",
+            "id" : 2027146282
+          } ],
+          "id" : 627305289
+        } ], [ {
+          "id" : 1723436928
+        }, {
+          "id" : 1050063672
+        } ] ],
+        "id" : 389589257
+      } ],
+      "id" : 1824814742
+    }, {
+      "name" : "type",
+      "id" : 154482552
+    }, {
+      "name" : "position",
+      "id" : 1723436928
+    } ],
+    "id" : 1050063672
+  }
+}, {
+  "invoked" : 230847647,
+  "entryPoint" : "hProjekt.model.TileImpl#getNeighbour(hProjekt.model.TilePosition$EdgeDirection)",
+  "arguments" : [ 820781338 ],
+  "calls" : [ {
+    "id" : 33699728,
+    "methodCalls" : [ {
+      "methodName" : "getTileAt",
+      "invocations" : [ {
+        "return" : 0,
+        "parameter" : [ 682994214 ]
+      } ]
+    } ]
+  }, {
+    "id" : 230847647,
+    "methodCalls" : [ {
+      "methodName" : "getHexGrid",
+      "invocations" : [ {
+        "return" : 33699728,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition",
+      "invocations" : [ {
+        "return" : 4149899,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.TileImpl",
+    "fields" : [ {
+      "name" : "hexGrid",
+      "type" : "hProjekt.model.HexGridImpl",
+      "fields" : [ {
+        "name" : "cities",
+        "type" : "java.util.Map",
+        "value" : [ ],
+        "id" : 1591899149
+      }, {
+        "name" : "edges",
+        "id" : 1591899149
+      }, {
+        "name" : "tiles",
+        "type" : "java.util.Map",
+        "value" : [ [ {
+          "type" : "hProjekt.model.TilePosition",
+          "fields" : [ {
+            "name" : "r",
+            "type" : "java.lang.Integer",
+            "value" : "0",
+            "id" : 521207494
+          }, {
+            "name" : "q",
+            "id" : 521207494
+          } ],
+          "id" : 4149899
+        }, {
+          "id" : 230847647
+        } ] ],
+        "id" : 985038580
+      } ],
+      "id" : 33699728
+    }, {
+      "name" : "type",
+      "type" : "hProjekt.model.Tile$Type",
+      "value" : "PLAIN",
+      "id" : 154482552
+    }, {
+      "name" : "position",
+      "id" : 4149899
+    } ],
+    "id" : 230847647
+  }, {
+    "type" : "hProjekt.model.TilePosition",
+    "fields" : [ {
+      "name" : "r",
+      "id" : 521207494
+    }, {
+      "name" : "q",
+      "type" : "java.lang.Integer",
+      "value" : "-1",
+      "id" : 1898469011
+    } ],
+    "id" : 682994214
+  }, {
+    "type" : "hProjekt.model.TilePosition$EdgeDirection",
+    "value" : "WEST",
+    "id" : 820781338
+  }, {
+    "type" : "null",
+    "id" : 0
+  } ],
+  "expected" : {
+    "type" : "null",
+    "id" : 0
+  }
+} ]

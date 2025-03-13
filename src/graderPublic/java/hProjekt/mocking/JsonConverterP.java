@@ -18,6 +18,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.BiFunction;
@@ -31,6 +32,7 @@ import static hProjekt.mocking.ReflectionUtilsP.getSuperClassesIncludingSelf;
 import static hProjekt.mocking.ReflectionUtilsP.methodToString;
 import static hProjekt.mocking.ReflectionUtilsP.setFieldValue;
 import static hProjekt.mocking.ReflectionUtilsP.stringToMethod;
+import static org.mockito.Mockito.CALLS_REAL_METHODS;
 import static org.mockito.Mockito.mock;
 
 public class JsonConverterP {
@@ -92,51 +94,52 @@ public class JsonConverterP {
         if (jsonNode instanceof ArrayNode arrayNode && arrayNode.isEmpty()) {
             return new ArraySet<>();
         }
-        AtomicBoolean successful = new AtomicBoolean(true);
+        List<Throwable> successful = new ArrayList<>();
         Set<T> rtn = (Set<T>) StreamSupport.stream(jsonNode.spliterator(), false)
             .map(node -> {
                 try {
                     return fromJsonNode((ObjectNode) node, defaultAnswer);
                 } catch (RuntimeException e) {
-                    successful.set(false);
+                    successful.add(e);
                 }
-                return null;
+                return new Object();
             })
             .collect(Collectors.toCollection(ArraySet::new));
-        if (successful.get()) {
+        if (successful.isEmpty()) {
             return rtn;
         }
-        throw new IllegalStateException("Could not Create Set. Inner Object failed to be created!");
+        throw new IllegalStateException("Could not Create Set. Inner Object failed to be created!", successful.getFirst());
     }
 
     public <K, V> Map<K, V> toMap(final JsonNode jsonNode, Answer<?> defaultAnswer) {
         if (jsonNode instanceof ArrayNode arrayNode && arrayNode.isEmpty()) {
-            return new hProjekt.mocking.HashMap<>();
+            return new NonHashMap<>();
         }
-        AtomicBoolean successful = new AtomicBoolean(true);
-        Map<K, V> returnMap = new hProjekt.mocking.HashMap<>();
-        StreamSupport.stream(jsonNode.spliterator(), false)
+        List<Throwable> successful = new ArrayList<>();
+        Map<K, V> returnMap = new NonHashMap<>();
+        var pairs = StreamSupport.stream(jsonNode.spliterator(), false)
             .map(node -> {
                 Object key = null;
                 Object value = null;
                 try {
                     key = fromJsonNode((ObjectNode) node.get(0), defaultAnswer);
                 } catch (RuntimeException e) {
-                    successful.set(false);
+                    successful.add(e);
                 }
                 try {
                     value = fromJsonNode((ObjectNode) node.get(1), defaultAnswer);
                 } catch (RuntimeException e) {
-                    successful.set(false);
+                    successful.add(e);
                 }
 
                 return new Pair<>(key, value);
             })
-            .forEach(entry -> returnMap.put((K) entry.component1(), (V) entry.component2()));
-        if (successful.get()) {
+            .toList();
+        pairs.forEach(entry -> returnMap.put((K) entry.component1(), (V) entry.component2()));
+        if (successful.isEmpty()) {
             return returnMap;
         }
-        throw new IllegalStateException("Could not Create Map. Inner Object failed to be created!");
+        throw new IllegalStateException("Could not Create Map. Inner Object failed to be created!", successful.getFirst());
     }
 
     public <K, V> Map.Entry<K, V> toEntry(final JsonNode jsonNode, Answer<?> defaultAnswer) {
@@ -195,13 +198,15 @@ public class JsonConverterP {
             rootNode.put("value", toMap.toString());
             return rootNode;
         } else if (getSuperClassesIncludingSelf(toMap.getClass()).stream().anyMatch(type -> typeMapperJSON.containsKey(type))) {
+            Class<?> foundClass = getSuperClassesIncludingSelf(toMap.getClass()).stream()
+                .filter(type -> typeMapperJSON.containsKey(type))
+                .findFirst()
+                .orElseThrow();
             rootNode.set(
                 "value",
-                typeMapperJSON.get(getSuperClassesIncludingSelf(toMap.getClass()).stream()
-                    .filter(type -> typeMapperJSON.containsKey(type))
-                    .findFirst()
-                    .orElseThrow()).apply(toMap)
+                typeMapperJSON.get(foundClass).apply(toMap)
             );
+            rootNode.put("type", foundClass.getName());
             return rootNode;
         }
 
@@ -250,7 +255,6 @@ public class JsonConverterP {
     }
 
     public static <T> Class<T> getTypeFromNode(ObjectNode nodeToConvert) {
-//        System.out.println(nodeToConvert);
         String className = nodeToConvert.get("type").asText();
 
         if (className.equals("null")) {
@@ -288,14 +292,17 @@ public class JsonConverterP {
             try {
                 constructed = (T) ReflectionUtilsP.getUnsafe().allocateInstance(objectClass);
             } catch (InstantiationException e) {
-                throw new RuntimeException(e);
+                constructed = mock(objectClass, CALLS_REAL_METHODS);
             }
         }
 
         for (JsonNode fieldNode : nodeToConvert.get("fields")) {
             try {
                 setFieldValues(defaultAnswer, (ObjectNode) fieldNode, constructed);
-            } catch (RuntimeException e) {}
+            } catch (RuntimeException e) {
+                System.err.println("Could not parse " + fieldNode);
+                e.printStackTrace();
+            }
         }
         return constructed;
     }

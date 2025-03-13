@@ -1,402 +1,40 @@
 [ {
-  "invoked" : 1600952154,
+  "invoked" : 1864895739,
   "entryPoint" : "hProjekt.model.EdgeImpl#connectsTo(hProjekt.model.Edge)",
-  "arguments" : [ 635982884 ],
+  "arguments" : [ 1588985936 ],
   "calls" : [ {
-    "id" : 1600952154,
+    "id" : 1864895739,
     "methodCalls" : [ {
       "methodName" : "getAdjacentTilePositions",
       "invocations" : [ {
-        "return" : 1476387129,
+        "return" : 1609606546,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition1",
       "invocations" : [ {
-        "return" : 1292038684,
+        "return" : 308280137,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition2",
       "invocations" : [ {
-        "return" : 823274598,
+        "return" : 218331955,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 635982884,
+    "id" : 1588985936,
     "methodCalls" : [ {
       "methodName" : "getPosition1",
       "invocations" : [ {
-        "return" : 1255336850,
+        "return" : 704594727,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition2",
       "invocations" : [ {
-        "return" : 93373073,
-        "parameter" : [ ]
-      } ]
-    } ]
-  } ],
-  "objects" : [ {
-    "type" : "hProjekt.model.EdgeImpl",
-    "fields" : [ {
-      "name" : "railOwners",
-      "type" : "null",
-      "id" : 0
-    }, {
-      "name" : "position2",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "type" : "java.lang.Integer",
-        "value" : "0",
-        "id" : 114012533
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 823274598
-    }, {
-      "name" : "position1",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "type" : "java.lang.Integer",
-        "value" : "-1",
-        "id" : 1749524107
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 1292038684
-    } ],
-    "id" : 1600952154
-  }, {
-    "type" : "hProjekt.model.EdgeImpl",
-    "fields" : [ {
-      "name" : "railOwners",
-      "id" : 0
-    }, {
-      "name" : "position2",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "type" : "java.lang.Integer",
-        "value" : "1",
-        "id" : 791563230
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 93373073
-    }, {
-      "name" : "position1",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "id" : 1749524107
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 1255336850
-    } ],
-    "id" : 635982884
-  }, {
-    "type" : "java.util.ImmutableCollections$Set12",
-    "value" : [ {
-      "id" : 823274598
-    }, {
-      "id" : 1292038684
-    } ],
-    "id" : 1476387129
-  } ],
-  "expected" : {
-    "type" : "java.lang.Boolean",
-    "value" : "false",
-    "id" : 875865328
-  }
-}, {
-  "invoked" : 210682850,
-  "entryPoint" : "hProjekt.model.EdgeImpl#connectsTo(hProjekt.model.Edge)",
-  "arguments" : [ 1516220813 ],
-  "calls" : [ {
-    "id" : 1516220813,
-    "methodCalls" : [ {
-      "methodName" : "getPosition1",
-      "invocations" : [ {
-        "return" : 57729855,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition2",
-      "invocations" : [ {
-        "return" : 1193560960,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 210682850,
-    "methodCalls" : [ {
-      "methodName" : "getAdjacentTilePositions",
-      "invocations" : [ {
-        "return" : 1011508508,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition1",
-      "invocations" : [ {
-        "return" : 501566265,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition2",
-      "invocations" : [ {
-        "return" : 490805574,
-        "parameter" : [ ]
-      } ]
-    } ]
-  } ],
-  "objects" : [ {
-    "type" : "hProjekt.model.EdgeImpl",
-    "fields" : [ {
-      "name" : "railOwners",
-      "type" : "null",
-      "id" : 0
-    }, {
-      "name" : "position2",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "type" : "java.lang.Integer",
-        "value" : "1",
-        "id" : 791563230
-      }, {
-        "name" : "q",
-        "type" : "java.lang.Integer",
-        "value" : "0",
-        "id" : 114012533
-      } ],
-      "id" : 490805574
-    }, {
-      "name" : "position1",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "type" : "java.lang.Integer",
-        "value" : "-1",
-        "id" : 1749524107
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 501566265
-    } ],
-    "id" : 210682850
-  }, {
-    "type" : "hProjekt.model.EdgeImpl",
-    "fields" : [ {
-      "name" : "railOwners",
-      "id" : 0
-    }, {
-      "name" : "position2",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "id" : 791563230
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 1193560960
-    }, {
-      "name" : "position1",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "id" : 114012533
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 57729855
-    } ],
-    "id" : 1516220813
-  }, {
-    "type" : "java.util.ImmutableCollections$Set12",
-    "value" : [ {
-      "id" : 490805574
-    }, {
-      "id" : 501566265
-    } ],
-    "id" : 1011508508
-  } ],
-  "expected" : {
-    "type" : "java.lang.Boolean",
-    "value" : "false",
-    "id" : 875865328
-  }
-}, {
-  "invoked" : 1575308444,
-  "entryPoint" : "hProjekt.model.EdgeImpl#connectsTo(hProjekt.model.Edge)",
-  "arguments" : [ 951300159 ],
-  "calls" : [ {
-    "id" : 1575308444,
-    "methodCalls" : [ {
-      "methodName" : "getAdjacentTilePositions",
-      "invocations" : [ {
-        "return" : 1536787063,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition1",
-      "invocations" : [ {
-        "return" : 338639078,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition2",
-      "invocations" : [ {
-        "return" : 49774805,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 951300159,
-    "methodCalls" : [ {
-      "methodName" : "getPosition1",
-      "invocations" : [ {
-        "return" : 765770459,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition2",
-      "invocations" : [ {
-        "return" : 209868252,
-        "parameter" : [ ]
-      } ]
-    } ]
-  } ],
-  "objects" : [ {
-    "type" : "hProjekt.model.EdgeImpl",
-    "fields" : [ {
-      "name" : "railOwners",
-      "type" : "null",
-      "id" : 0
-    }, {
-      "name" : "position2",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "type" : "java.lang.Integer",
-        "value" : "1",
-        "id" : 791563230
-      }, {
-        "name" : "q",
-        "type" : "java.lang.Integer",
-        "value" : "0",
-        "id" : 114012533
-      } ],
-      "id" : 49774805
-    }, {
-      "name" : "position1",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "id" : 114012533
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 338639078
-    } ],
-    "id" : 1575308444
-  }, {
-    "type" : "hProjekt.model.EdgeImpl",
-    "fields" : [ {
-      "name" : "railOwners",
-      "id" : 0
-    }, {
-      "name" : "position2",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "type" : "java.lang.Integer",
-        "value" : "2",
-        "id" : 1210019106
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 209868252
-    }, {
-      "name" : "position1",
-      "type" : "hProjekt.model.TilePosition",
-      "fields" : [ {
-        "name" : "r",
-        "type" : "java.lang.Integer",
-        "value" : "-1",
-        "id" : 1749524107
-      }, {
-        "name" : "q",
-        "id" : 114012533
-      } ],
-      "id" : 765770459
-    } ],
-    "id" : 951300159
-  }, {
-    "type" : "java.util.ImmutableCollections$Set12",
-    "value" : [ {
-      "id" : 49774805
-    }, {
-      "id" : 338639078
-    } ],
-    "id" : 1536787063
-  } ],
-  "expected" : {
-    "type" : "java.lang.Boolean",
-    "value" : "false",
-    "id" : 875865328
-  }
-}, {
-  "invoked" : 404664708,
-  "entryPoint" : "hProjekt.model.EdgeImpl#connectsTo(hProjekt.model.Edge)",
-  "arguments" : [ 1539627320 ],
-  "calls" : [ {
-    "id" : 404664708,
-    "methodCalls" : [ {
-      "methodName" : "getAdjacentTilePositions",
-      "invocations" : [ {
-        "return" : 1837764135,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition1",
-      "invocations" : [ {
-        "return" : 239030992,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition2",
-      "invocations" : [ {
-        "return" : 2071314851,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1539627320,
-    "methodCalls" : [ {
-      "methodName" : "getPosition1",
-      "invocations" : [ {
-        "return" : 472041738,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition2",
-      "invocations" : [ {
-        "return" : 965927410,
+        "return" : 1563494315,
         "parameter" : [ ]
       } ]
     } ]
@@ -414,14 +52,14 @@
         "name" : "r",
         "type" : "java.lang.Integer",
         "value" : "2",
-        "id" : 1210019106
+        "id" : 1776383017
       }, {
         "name" : "q",
         "type" : "java.lang.Integer",
         "value" : "0",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 2071314851
+      "id" : 218331955
     }, {
       "name" : "position1",
       "type" : "hProjekt.model.TilePosition",
@@ -429,14 +67,14 @@
         "name" : "r",
         "type" : "java.lang.Integer",
         "value" : "-1",
-        "id" : 1749524107
+        "id" : 1898469011
       }, {
         "name" : "q",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 239030992
+      "id" : 308280137
     } ],
-    "id" : 404664708
+    "id" : 1864895739
   }, {
     "type" : "hProjekt.model.EdgeImpl",
     "fields" : [ {
@@ -447,76 +85,78 @@
       "type" : "hProjekt.model.TilePosition",
       "fields" : [ {
         "name" : "r",
-        "id" : 1210019106
+        "type" : "java.lang.Integer",
+        "value" : "1",
+        "id" : 1068781783
       }, {
         "name" : "q",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 965927410
+      "id" : 1563494315
     }, {
       "name" : "position1",
       "type" : "hProjekt.model.TilePosition",
       "fields" : [ {
         "name" : "r",
-        "id" : 114012533
+        "id" : 1898469011
       }, {
         "name" : "q",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 472041738
+      "id" : 704594727
     } ],
-    "id" : 1539627320
+    "id" : 1588985936
   }, {
-    "type" : "java.util.ImmutableCollections$Set12",
+    "type" : "java.util.Set",
     "value" : [ {
-      "id" : 2071314851
+      "id" : 308280137
     }, {
-      "id" : 239030992
+      "id" : 218331955
     } ],
-    "id" : 1837764135
+    "id" : 1609606546
   } ],
   "expected" : {
     "type" : "java.lang.Boolean",
     "value" : "false",
-    "id" : 875865328
+    "id" : 1181763012
   }
 }, {
-  "invoked" : 649410371,
+  "invoked" : 1619769595,
   "entryPoint" : "hProjekt.model.EdgeImpl#connectsTo(hProjekt.model.Edge)",
-  "arguments" : [ 1773307395 ],
+  "arguments" : [ 238423884 ],
   "calls" : [ {
-    "id" : 1773307395,
+    "id" : 1619769595,
     "methodCalls" : [ {
+      "methodName" : "getAdjacentTilePositions",
+      "invocations" : [ {
+        "return" : 493137201,
+        "parameter" : [ ]
+      } ]
+    }, {
       "methodName" : "getPosition1",
       "invocations" : [ {
-        "return" : 1089522064,
+        "return" : 2053418282,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition2",
       "invocations" : [ {
-        "return" : 1237888407,
+        "return" : 554594031,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 649410371,
+    "id" : 238423884,
     "methodCalls" : [ {
-      "methodName" : "getAdjacentTilePositions",
-      "invocations" : [ {
-        "return" : 979848711,
-        "parameter" : [ ]
-      } ]
-    }, {
       "methodName" : "getPosition1",
       "invocations" : [ {
-        "return" : 1243392560,
+        "return" : 469022100,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition2",
       "invocations" : [ {
-        "return" : 105609456,
+        "return" : 759396206,
         "parameter" : [ ]
       } ]
     } ]
@@ -533,28 +173,30 @@
       "fields" : [ {
         "name" : "r",
         "type" : "java.lang.Integer",
-        "value" : "2",
-        "id" : 1210019106
+        "value" : "1",
+        "id" : 1068781783
       }, {
         "name" : "q",
         "type" : "java.lang.Integer",
         "value" : "0",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 105609456
+      "id" : 554594031
     }, {
       "name" : "position1",
       "type" : "hProjekt.model.TilePosition",
       "fields" : [ {
         "name" : "r",
-        "id" : 114012533
+        "type" : "java.lang.Integer",
+        "value" : "-1",
+        "id" : 1898469011
       }, {
         "name" : "q",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 1243392560
+      "id" : 2053418282
     } ],
-    "id" : 649410371
+    "id" : 1619769595
   }, {
     "type" : "hProjekt.model.EdgeImpl",
     "fields" : [ {
@@ -565,78 +207,78 @@
       "type" : "hProjekt.model.TilePosition",
       "fields" : [ {
         "name" : "r",
-        "id" : 1210019106
+        "id" : 1068781783
       }, {
         "name" : "q",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 1237888407
+      "id" : 759396206
     }, {
       "name" : "position1",
       "type" : "hProjekt.model.TilePosition",
       "fields" : [ {
         "name" : "r",
         "type" : "java.lang.Integer",
-        "value" : "1",
-        "id" : 791563230
+        "value" : "2",
+        "id" : 1776383017
       }, {
         "name" : "q",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 1089522064
+      "id" : 469022100
     } ],
-    "id" : 1773307395
+    "id" : 238423884
   }, {
-    "type" : "java.util.ImmutableCollections$Set12",
+    "type" : "java.util.Set",
     "value" : [ {
-      "id" : 105609456
+      "id" : 2053418282
     }, {
-      "id" : 1243392560
+      "id" : 554594031
     } ],
-    "id" : 979848711
+    "id" : 493137201
   } ],
   "expected" : {
     "type" : "java.lang.Boolean",
     "value" : "false",
-    "id" : 875865328
+    "id" : 1181763012
   }
 }, {
-  "invoked" : 685042896,
+  "invoked" : 1467472896,
   "entryPoint" : "hProjekt.model.EdgeImpl#connectsTo(hProjekt.model.Edge)",
-  "arguments" : [ 665699037 ],
+  "arguments" : [ 783344006 ],
   "calls" : [ {
-    "id" : 665699037,
+    "id" : 783344006,
     "methodCalls" : [ {
       "methodName" : "getPosition1",
       "invocations" : [ {
-        "return" : 2085811279,
+        "return" : 1665229225,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition2",
       "invocations" : [ {
-        "return" : 1107791701,
+        "return" : 1463415802,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 685042896,
+    "id" : 1467472896,
     "methodCalls" : [ {
       "methodName" : "getAdjacentTilePositions",
       "invocations" : [ {
-        "return" : 1621928361,
+        "return" : 1600750650,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition1",
       "invocations" : [ {
-        "return" : 2037094708,
+        "return" : 2098756887,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition2",
       "invocations" : [ {
-        "return" : 616107015,
+        "return" : 816574733,
         "parameter" : [ ]
       } ]
     } ]
@@ -653,30 +295,30 @@
       "fields" : [ {
         "name" : "r",
         "type" : "java.lang.Integer",
-        "value" : "2",
-        "id" : 1210019106
+        "value" : "1",
+        "id" : 1068781783
       }, {
         "name" : "q",
         "type" : "java.lang.Integer",
         "value" : "0",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 616107015
+      "id" : 816574733
     }, {
       "name" : "position1",
       "type" : "hProjekt.model.TilePosition",
       "fields" : [ {
         "name" : "r",
         "type" : "java.lang.Integer",
-        "value" : "1",
-        "id" : 791563230
+        "value" : "2",
+        "id" : 1776383017
       }, {
         "name" : "q",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 2037094708
+      "id" : 2098756887
     } ],
-    "id" : 685042896
+    "id" : 1467472896
   }, {
     "type" : "hProjekt.model.EdgeImpl",
     "fields" : [ {
@@ -687,12 +329,12 @@
       "type" : "hProjekt.model.TilePosition",
       "fields" : [ {
         "name" : "r",
-        "id" : 114012533
+        "id" : 521207494
       }, {
         "name" : "q",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 1107791701
+      "id" : 1463415802
     }, {
       "name" : "position1",
       "type" : "hProjekt.model.TilePosition",
@@ -700,26 +342,388 @@
         "name" : "r",
         "type" : "java.lang.Integer",
         "value" : "-1",
-        "id" : 1749524107
+        "id" : 1898469011
       }, {
         "name" : "q",
-        "id" : 114012533
+        "id" : 521207494
       } ],
-      "id" : 2085811279
+      "id" : 1665229225
     } ],
-    "id" : 665699037
+    "id" : 783344006
   }, {
-    "type" : "java.util.ImmutableCollections$Set12",
+    "type" : "java.util.Set",
     "value" : [ {
-      "id" : 616107015
+      "id" : 2098756887
     }, {
-      "id" : 2037094708
+      "id" : 816574733
     } ],
-    "id" : 1621928361
+    "id" : 1600750650
   } ],
   "expected" : {
     "type" : "java.lang.Boolean",
     "value" : "false",
-    "id" : 875865328
+    "id" : 1181763012
+  }
+}, {
+  "invoked" : 1220194759,
+  "entryPoint" : "hProjekt.model.EdgeImpl#connectsTo(hProjekt.model.Edge)",
+  "arguments" : [ 1918615712 ],
+  "calls" : [ {
+    "id" : 1918615712,
+    "methodCalls" : [ {
+      "methodName" : "getPosition1",
+      "invocations" : [ {
+        "return" : 1531341317,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition2",
+      "invocations" : [ {
+        "return" : 2134649439,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1220194759,
+    "methodCalls" : [ {
+      "methodName" : "getAdjacentTilePositions",
+      "invocations" : [ {
+        "return" : 348673401,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition1",
+      "invocations" : [ {
+        "return" : 1423346376,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition2",
+      "invocations" : [ {
+        "return" : 1177603497,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.EdgeImpl",
+    "fields" : [ {
+      "name" : "railOwners",
+      "type" : "null",
+      "id" : 0
+    }, {
+      "name" : "position2",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "0",
+        "id" : 521207494
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 1177603497
+    }, {
+      "name" : "position1",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "-1",
+        "id" : 1898469011
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 1423346376
+    } ],
+    "id" : 1220194759
+  }, {
+    "type" : "hProjekt.model.EdgeImpl",
+    "fields" : [ {
+      "name" : "railOwners",
+      "id" : 0
+    }, {
+      "name" : "position2",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "id" : 521207494
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 2134649439
+    }, {
+      "name" : "position1",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "2",
+        "id" : 1776383017
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 1531341317
+    } ],
+    "id" : 1918615712
+  }, {
+    "type" : "java.util.Set",
+    "value" : [ {
+      "id" : 1423346376
+    }, {
+      "id" : 1177603497
+    } ],
+    "id" : 348673401
+  } ],
+  "expected" : {
+    "type" : "java.lang.Boolean",
+    "value" : "false",
+    "id" : 1181763012
+  }
+}, {
+  "invoked" : 1031451059,
+  "entryPoint" : "hProjekt.model.EdgeImpl#connectsTo(hProjekt.model.Edge)",
+  "arguments" : [ 1975999834 ],
+  "calls" : [ {
+    "id" : 1031451059,
+    "methodCalls" : [ {
+      "methodName" : "getAdjacentTilePositions",
+      "invocations" : [ {
+        "return" : 218643025,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition1",
+      "invocations" : [ {
+        "return" : 30299913,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition2",
+      "invocations" : [ {
+        "return" : 203604201,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1975999834,
+    "methodCalls" : [ {
+      "methodName" : "getPosition1",
+      "invocations" : [ {
+        "return" : 932028929,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition2",
+      "invocations" : [ {
+        "return" : 1877621410,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.EdgeImpl",
+    "fields" : [ {
+      "name" : "railOwners",
+      "type" : "null",
+      "id" : 0
+    }, {
+      "name" : "position2",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "0",
+        "id" : 521207494
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 203604201
+    }, {
+      "name" : "position1",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "2",
+        "id" : 1776383017
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 30299913
+    } ],
+    "id" : 1031451059
+  }, {
+    "type" : "hProjekt.model.EdgeImpl",
+    "fields" : [ {
+      "name" : "railOwners",
+      "id" : 0
+    }, {
+      "name" : "position2",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "id" : 521207494
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 1877621410
+    }, {
+      "name" : "position1",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "1",
+        "id" : 1068781783
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 932028929
+    } ],
+    "id" : 1975999834
+  }, {
+    "type" : "java.util.Set",
+    "value" : [ {
+      "id" : 30299913
+    }, {
+      "id" : 203604201
+    } ],
+    "id" : 218643025
+  } ],
+  "expected" : {
+    "type" : "java.lang.Boolean",
+    "value" : "false",
+    "id" : 1181763012
+  }
+}, {
+  "invoked" : 776980124,
+  "entryPoint" : "hProjekt.model.EdgeImpl#connectsTo(hProjekt.model.Edge)",
+  "arguments" : [ 1312870747 ],
+  "calls" : [ {
+    "id" : 776980124,
+    "methodCalls" : [ {
+      "methodName" : "getAdjacentTilePositions",
+      "invocations" : [ {
+        "return" : 1607587707,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition1",
+      "invocations" : [ {
+        "return" : 724451893,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition2",
+      "invocations" : [ {
+        "return" : 470989036,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1312870747,
+    "methodCalls" : [ {
+      "methodName" : "getPosition1",
+      "invocations" : [ {
+        "return" : 121867891,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition2",
+      "invocations" : [ {
+        "return" : 774140675,
+        "parameter" : [ ]
+      } ]
+    } ]
+  } ],
+  "objects" : [ {
+    "type" : "hProjekt.model.EdgeImpl",
+    "fields" : [ {
+      "name" : "railOwners",
+      "type" : "null",
+      "id" : 0
+    }, {
+      "name" : "position2",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "0",
+        "id" : 521207494
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 470989036
+    }, {
+      "name" : "position1",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "1",
+        "id" : 1068781783
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 724451893
+    } ],
+    "id" : 776980124
+  }, {
+    "type" : "hProjekt.model.EdgeImpl",
+    "fields" : [ {
+      "name" : "railOwners",
+      "id" : 0
+    }, {
+      "name" : "position2",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "2",
+        "id" : 1776383017
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 774140675
+    }, {
+      "name" : "position1",
+      "type" : "hProjekt.model.TilePosition",
+      "fields" : [ {
+        "name" : "r",
+        "type" : "java.lang.Integer",
+        "value" : "-1",
+        "id" : 1898469011
+      }, {
+        "name" : "q",
+        "id" : 521207494
+      } ],
+      "id" : 121867891
+    } ],
+    "id" : 1312870747
+  }, {
+    "type" : "java.util.Set",
+    "value" : [ {
+      "id" : 724451893
+    }, {
+      "id" : 470989036
+    } ],
+    "id" : 1607587707
+  } ],
+  "expected" : {
+    "type" : "java.lang.Boolean",
+    "value" : "false",
+    "id" : 1181763012
   }
 } ]

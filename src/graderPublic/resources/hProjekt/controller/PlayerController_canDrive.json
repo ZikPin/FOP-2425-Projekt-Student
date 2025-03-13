@@ -1,22 +1,22 @@
 [ {
-  "invoked" : 46398269,
+  "invoked" : 1568804220,
   "entryPoint" : "hProjekt.controller.PlayerController#canDrive()",
   "arguments" : [ ],
   "calls" : [ {
-    "id" : 1832804752,
+    "id" : 431934712,
     "methodCalls" : [ {
       "methodName" : "getGamePhaseProperty",
       "invocations" : [ {
-        "return" : 1810975589,
+        "return" : 1157650743,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 609201600,
+    "id" : 585733249,
     "methodCalls" : [ {
       "methodName" : "getState",
       "invocations" : [ {
-        "return" : 1832804752,
+        "return" : 431934712,
         "parameter" : [ ]
       } ]
     } ]
@@ -27,25 +27,25 @@
       "name" : "hasConfirmedPath",
       "type" : "java.lang.Boolean",
       "value" : "false",
-      "id" : 875865328
+      "id" : 1181763012
     }, {
       "name" : "hasPath",
-      "id" : 875865328
+      "id" : 1181763012
     }, {
       "name" : "rentedEdges",
-      "type" : "hProjekt.mocking.ArraySet",
+      "type" : "java.util.Set",
       "value" : [ ],
-      "id" : 1668566759
+      "id" : 1576800053
     }, {
       "name" : "buildingBudget",
       "type" : "java.lang.Integer",
       "value" : "0",
-      "id" : 114012533
+      "id" : 521207494
     }, {
       "name" : "playerObjective",
       "type" : "hProjekt.controller.PlayerObjective",
       "value" : "IDLE",
-      "id" : 1372646511
+      "id" : 1677544922
     }, {
       "name" : "playerStateProperty",
       "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -57,7 +57,7 @@
         "name" : "valid",
         "type" : "java.lang.Boolean",
         "value" : "true",
-        "id" : 817614737
+        "id" : 955994360
       }, {
         "name" : "listener",
         "id" : 0
@@ -69,39 +69,39 @@
         "type" : "hProjekt.model.PlayerState",
         "fields" : [ {
           "name" : "buildingBudget",
-          "id" : 114012533
+          "id" : 521207494
         }, {
           "name" : "drivableTiles",
-          "type" : "java.util.HashMap",
+          "type" : "java.util.Map",
           "value" : [ ],
-          "id" : 1707293820
+          "id" : 1465503878
         }, {
           "name" : "hasPath",
-          "id" : 875865328
+          "id" : 1181763012
         }, {
           "name" : "rentedEdges",
-          "id" : 1668566759
+          "id" : 1576800053
         }, {
           "name" : "choosableEdges",
-          "id" : 1668566759
+          "id" : 1576800053
         }, {
           "name" : "playerObjective",
-          "id" : 1372646511
+          "id" : 1677544922
         }, {
           "name" : "buildableRailEdges",
-          "id" : 1668566759
+          "id" : 1576800053
         } ],
-        "id" : 1026319673
+        "id" : 1096892914
       }, {
         "name" : "name",
         "type" : "java.lang.String",
         "value" : "",
-        "id" : 214774813
+        "id" : 1075314220
       }, {
         "name" : "bean",
         "id" : 0
       } ],
-      "id" : 1679749851
+      "id" : 1071847802
     }, {
       "name" : "actions",
       "type" : "java.util.concurrent.LinkedBlockingDeque",
@@ -113,40 +113,40 @@
           "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
           "fields" : [ {
             "name" : "state",
-            "id" : 114012533
+            "id" : 521207494
           } ],
-          "id" : 1596566186
+          "id" : 521260362
         } ],
-        "id" : 283426727
+        "id" : 318595157
       }, {
         "name" : "notEmpty",
         "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
         "fields" : [ {
           "name" : "this$0",
-          "id" : 1596566186
+          "id" : 521260362
         } ],
-        "id" : 1733706397
+        "id" : 2063730085
       }, {
         "name" : "lock",
         "type" : "java.util.concurrent.locks.ReentrantLock",
         "fields" : [ {
           "name" : "sync",
-          "id" : 1596566186
+          "id" : 521260362
         } ],
-        "id" : 1161834266
+        "id" : 1709193484
       }, {
         "name" : "capacity",
         "type" : "java.lang.Integer",
         "value" : "2147483647",
-        "id" : 1289424033
+        "id" : 1543207874
       } ],
-      "id" : 113008914
+      "id" : 2050655623
     }, {
       "name" : "gameController",
       "type" : "hProjekt.controller.GameController",
       "fields" : [ {
         "name" : "stopped",
-        "id" : 875865328
+        "id" : 1181763012
       }, {
         "name" : "activePlayerController",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -155,7 +155,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -167,12 +167,12 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 404718226
+        "id" : 589665359
       }, {
         "name" : "chosenCitiesProperty",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -181,7 +181,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -193,12 +193,12 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 556288836
+        "id" : 1345743107
       }, {
         "name" : "roundCounter",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -207,7 +207,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -216,15 +216,15 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 114012533
+          "id" : 521207494
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 190011025
+        "id" : 615089093
       }, {
         "name" : "currentDiceRoll",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -233,7 +233,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -242,32 +242,32 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 114012533
+          "id" : 521207494
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 262315129
+        "id" : 1407314326
       }, {
         "name" : "dice",
         "id" : 0
       }, {
         "name" : "aiControllers",
-        "type" : "java.util.ArrayList",
+        "type" : "java.util.List",
         "value" : [ ],
-        "id" : 1010009429
+        "id" : 473900034
       }, {
         "name" : "playerControllers",
-        "id" : 1707293820
+        "id" : 1465503878
       }, {
         "name" : "state",
         "type" : "hProjekt.model.GameState",
         "fields" : [ {
           "name" : "chosenCities",
-          "id" : 1668566759
+          "id" : 1576800053
         }, {
           "name" : "gamePhaseProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -276,7 +276,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 817614737
+            "id" : 955994360
           }, {
             "name" : "listener",
             "id" : 0
@@ -287,15 +287,15 @@
             "name" : "value",
             "type" : "hProjekt.controller.GamePhase",
             "value" : "BUILDING_PHASE",
-            "id" : 581364120
+            "id" : 1015539383
           }, {
             "name" : "name",
-            "id" : 214774813
+            "id" : 1075314220
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1810975589
+          "id" : 1157650743
         }, {
           "name" : "winnerProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -304,7 +304,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 817614737
+            "id" : 955994360
           }, {
             "name" : "listener",
             "id" : 0
@@ -316,86 +316,86 @@
             "id" : 0
           }, {
             "name" : "name",
-            "id" : 214774813
+            "id" : 1075314220
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1200030735
+          "id" : 1731630926
         }, {
           "name" : "playerPointSurplus",
-          "id" : 1707293820
+          "id" : 1465503878
         }, {
           "name" : "playerPositions",
-          "id" : 1707293820
+          "id" : 1465503878
         }, {
           "name" : "drivingPlayers",
-          "id" : 1010009429
+          "id" : 473900034
         }, {
           "name" : "players",
-          "type" : "java.util.ArrayList",
+          "type" : "java.util.List",
           "value" : [ {
             "type" : "hProjekt.model.PlayerImpl",
             "fields" : [ {
               "name" : "credits",
               "type" : "java.lang.Integer",
               "value" : "20",
-              "id" : 451046489
+              "id" : 1933047934
             }, {
               "name" : "id",
-              "id" : 114012533
+              "id" : 521207494
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Player0",
-              "id" : 1761365986
+              "id" : 1512193410
             } ],
-            "id" : 427599591
+            "id" : 642918347
           } ],
-          "id" : 2098766975
+          "id" : 264650072
         }, {
           "name" : "grid",
           "id" : 0
         } ],
-        "id" : 1832804752
+        "id" : 431934712
       } ],
-      "id" : 609201600
+      "id" : 585733249
     }, {
       "name" : "player",
-      "id" : 427599591
+      "id" : 642918347
     } ],
-    "id" : 46398269
+    "id" : 1568804220
   } ],
   "expected" : {
     "type" : "java.lang.Boolean",
     "value" : "false",
-    "id" : 875865328
+    "id" : 1181763012
   }
 }, {
-  "invoked" : 608657887,
+  "invoked" : 346601852,
   "entryPoint" : "hProjekt.controller.PlayerController#canDrive()",
   "arguments" : [ ],
   "calls" : [ {
-    "id" : 511980791,
-    "methodCalls" : [ {
-      "methodName" : "getState",
-      "invocations" : [ {
-        "return" : 1654844902,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1654844902,
+    "id" : 1160902415,
     "methodCalls" : [ {
       "methodName" : "getGamePhaseProperty",
       "invocations" : [ {
-        "return" : 185852572,
+        "return" : 1714481910,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getDrivingPlayers",
       "invocations" : [ {
-        "return" : 643902580,
+        "return" : 1907073421,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1226065323,
+    "methodCalls" : [ {
+      "methodName" : "getState",
+      "invocations" : [ {
+        "return" : 1160902415,
         "parameter" : [ ]
       } ]
     } ]
@@ -406,25 +406,25 @@
       "name" : "hasConfirmedPath",
       "type" : "java.lang.Boolean",
       "value" : "false",
-      "id" : 875865328
+      "id" : 1181763012
     }, {
       "name" : "hasPath",
-      "id" : 875865328
+      "id" : 1181763012
     }, {
       "name" : "rentedEdges",
-      "type" : "hProjekt.mocking.ArraySet",
+      "type" : "java.util.Set",
       "value" : [ ],
-      "id" : 1255975064
+      "id" : 1799450132
     }, {
       "name" : "buildingBudget",
       "type" : "java.lang.Integer",
       "value" : "0",
-      "id" : 114012533
+      "id" : 521207494
     }, {
       "name" : "playerObjective",
       "type" : "hProjekt.controller.PlayerObjective",
       "value" : "IDLE",
-      "id" : 1372646511
+      "id" : 1677544922
     }, {
       "name" : "playerStateProperty",
       "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -436,7 +436,7 @@
         "name" : "valid",
         "type" : "java.lang.Boolean",
         "value" : "true",
-        "id" : 817614737
+        "id" : 955994360
       }, {
         "name" : "listener",
         "id" : 0
@@ -448,39 +448,39 @@
         "type" : "hProjekt.model.PlayerState",
         "fields" : [ {
           "name" : "buildingBudget",
-          "id" : 114012533
+          "id" : 521207494
         }, {
           "name" : "drivableTiles",
-          "type" : "java.util.HashMap",
+          "type" : "java.util.Map",
           "value" : [ ],
-          "id" : 1344530149
+          "id" : 1992952506
         }, {
           "name" : "hasPath",
-          "id" : 875865328
+          "id" : 1181763012
         }, {
           "name" : "rentedEdges",
-          "id" : 1255975064
+          "id" : 1799450132
         }, {
           "name" : "choosableEdges",
-          "id" : 1255975064
+          "id" : 1799450132
         }, {
           "name" : "playerObjective",
-          "id" : 1372646511
+          "id" : 1677544922
         }, {
           "name" : "buildableRailEdges",
-          "id" : 1255975064
+          "id" : 1799450132
         } ],
-        "id" : 2006384856
+        "id" : 1505367125
       }, {
         "name" : "name",
         "type" : "java.lang.String",
         "value" : "",
-        "id" : 214774813
+        "id" : 1075314220
       }, {
         "name" : "bean",
         "id" : 0
       } ],
-      "id" : 448351290
+      "id" : 2136644151
     }, {
       "name" : "actions",
       "type" : "java.util.concurrent.LinkedBlockingDeque",
@@ -492,40 +492,40 @@
           "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
           "fields" : [ {
             "name" : "state",
-            "id" : 114012533
+            "id" : 521207494
           } ],
-          "id" : 1728198692
+          "id" : 1562976319
         } ],
-        "id" : 811470007
+        "id" : 1878943432
       }, {
         "name" : "notEmpty",
         "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
         "fields" : [ {
           "name" : "this$0",
-          "id" : 1728198692
+          "id" : 1562976319
         } ],
-        "id" : 452662601
+        "id" : 625649846
       }, {
         "name" : "lock",
         "type" : "java.util.concurrent.locks.ReentrantLock",
         "fields" : [ {
           "name" : "sync",
-          "id" : 1728198692
+          "id" : 1562976319
         } ],
-        "id" : 1689207939
+        "id" : 2136086792
       }, {
         "name" : "capacity",
         "type" : "java.lang.Integer",
         "value" : "2147483647",
-        "id" : 1989386314
+        "id" : 743139026
       } ],
-      "id" : 220290739
+      "id" : 1696600009
     }, {
       "name" : "gameController",
       "type" : "hProjekt.controller.GameController",
       "fields" : [ {
         "name" : "stopped",
-        "id" : 875865328
+        "id" : 1181763012
       }, {
         "name" : "activePlayerController",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -534,7 +534,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -546,12 +546,12 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1091297255
+        "id" : 348357971
       }, {
         "name" : "chosenCitiesProperty",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -560,7 +560,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -572,12 +572,12 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1874637305
+        "id" : 1219478986
       }, {
         "name" : "roundCounter",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -586,7 +586,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -595,15 +595,15 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 114012533
+          "id" : 521207494
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 791549643
+        "id" : 671861049
       }, {
         "name" : "currentDiceRoll",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -612,7 +612,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -621,32 +621,32 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 114012533
+          "id" : 521207494
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 69051195
+        "id" : 1283746582
       }, {
         "name" : "dice",
         "id" : 0
       }, {
         "name" : "aiControllers",
-        "type" : "java.util.ArrayList",
+        "type" : "java.util.List",
         "value" : [ ],
-        "id" : 643902580
+        "id" : 1907073421
       }, {
         "name" : "playerControllers",
-        "id" : 1344530149
+        "id" : 1992952506
       }, {
         "name" : "state",
         "type" : "hProjekt.model.GameState",
         "fields" : [ {
           "name" : "chosenCities",
-          "id" : 1255975064
+          "id" : 1799450132
         }, {
           "name" : "gamePhaseProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -655,7 +655,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 875865328
+            "id" : 1181763012
           }, {
             "name" : "listener",
             "id" : 0
@@ -666,15 +666,15 @@
             "name" : "value",
             "type" : "hProjekt.controller.GamePhase",
             "value" : "DRIVING_PHASE",
-            "id" : 36696957
+            "id" : 997916804
           }, {
             "name" : "name",
-            "id" : 214774813
+            "id" : 1075314220
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 185852572
+          "id" : 1714481910
         }, {
           "name" : "winnerProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -683,7 +683,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 817614737
+            "id" : 955994360
           }, {
             "name" : "listener",
             "id" : 0
@@ -695,86 +695,86 @@
             "id" : 0
           }, {
             "name" : "name",
-            "id" : 214774813
+            "id" : 1075314220
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 111530421
+          "id" : 311246214
         }, {
           "name" : "playerPointSurplus",
-          "id" : 1344530149
+          "id" : 1992952506
         }, {
           "name" : "playerPositions",
-          "id" : 1344530149
+          "id" : 1992952506
         }, {
           "name" : "drivingPlayers",
-          "id" : 643902580
+          "id" : 1907073421
         }, {
           "name" : "players",
-          "type" : "java.util.ArrayList",
+          "type" : "java.util.List",
           "value" : [ {
             "type" : "hProjekt.model.PlayerImpl",
             "fields" : [ {
               "name" : "credits",
               "type" : "java.lang.Integer",
               "value" : "20",
-              "id" : 451046489
+              "id" : 1933047934
             }, {
               "name" : "id",
-              "id" : 114012533
+              "id" : 521207494
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Player0",
-              "id" : 1314049674
+              "id" : 1049555058
             } ],
-            "id" : 198460430
+            "id" : 1288380444
           } ],
-          "id" : 2124851397
+          "id" : 1784212905
         }, {
           "name" : "grid",
           "id" : 0
         } ],
-        "id" : 1654844902
+        "id" : 1160902415
       } ],
-      "id" : 511980791
+      "id" : 1226065323
     }, {
       "name" : "player",
-      "id" : 198460430
+      "id" : 1288380444
     } ],
-    "id" : 608657887
+    "id" : 346601852
   } ],
   "expected" : {
     "type" : "java.lang.Boolean",
     "value" : "false",
-    "id" : 875865328
+    "id" : 1181763012
   }
 }, {
-  "invoked" : 1255567977,
+  "invoked" : 492291708,
   "entryPoint" : "hProjekt.controller.PlayerController#canDrive()",
   "arguments" : [ ],
   "calls" : [ {
-    "id" : 1719022356,
+    "id" : 2106271344,
     "methodCalls" : [ {
       "methodName" : "getGamePhaseProperty",
       "invocations" : [ {
-        "return" : 741603453,
+        "return" : 858358612,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getDrivingPlayers",
       "invocations" : [ {
-        "return" : 1973356670,
+        "return" : 1137812280,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 2014924611,
+    "id" : 2038274002,
     "methodCalls" : [ {
       "methodName" : "getState",
       "invocations" : [ {
-        "return" : 1719022356,
+        "return" : 2106271344,
         "parameter" : [ ]
       } ]
     } ]
@@ -785,25 +785,25 @@
       "name" : "hasConfirmedPath",
       "type" : "java.lang.Boolean",
       "value" : "false",
-      "id" : 875865328
+      "id" : 1181763012
     }, {
       "name" : "hasPath",
-      "id" : 875865328
+      "id" : 1181763012
     }, {
       "name" : "rentedEdges",
-      "type" : "hProjekt.mocking.ArraySet",
+      "type" : "java.util.Set",
       "value" : [ ],
-      "id" : 1962700176
+      "id" : 794751775
     }, {
       "name" : "buildingBudget",
       "type" : "java.lang.Integer",
       "value" : "0",
-      "id" : 114012533
+      "id" : 521207494
     }, {
       "name" : "playerObjective",
       "type" : "hProjekt.controller.PlayerObjective",
       "value" : "IDLE",
-      "id" : 1372646511
+      "id" : 1677544922
     }, {
       "name" : "playerStateProperty",
       "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -815,7 +815,7 @@
         "name" : "valid",
         "type" : "java.lang.Boolean",
         "value" : "true",
-        "id" : 817614737
+        "id" : 955994360
       }, {
         "name" : "listener",
         "id" : 0
@@ -827,39 +827,39 @@
         "type" : "hProjekt.model.PlayerState",
         "fields" : [ {
           "name" : "buildingBudget",
-          "id" : 114012533
+          "id" : 521207494
         }, {
           "name" : "drivableTiles",
-          "type" : "java.util.HashMap",
+          "type" : "java.util.Map",
           "value" : [ ],
-          "id" : 110275725
+          "id" : 460650709
         }, {
           "name" : "hasPath",
-          "id" : 875865328
+          "id" : 1181763012
         }, {
           "name" : "rentedEdges",
-          "id" : 1962700176
+          "id" : 794751775
         }, {
           "name" : "choosableEdges",
-          "id" : 1962700176
+          "id" : 794751775
         }, {
           "name" : "playerObjective",
-          "id" : 1372646511
+          "id" : 1677544922
         }, {
           "name" : "buildableRailEdges",
-          "id" : 1962700176
+          "id" : 794751775
         } ],
-        "id" : 1844073027
+        "id" : 1245444684
       }, {
         "name" : "name",
         "type" : "java.lang.String",
         "value" : "",
-        "id" : 214774813
+        "id" : 1075314220
       }, {
         "name" : "bean",
         "id" : 0
       } ],
-      "id" : 1605672216
+      "id" : 1797134025
     }, {
       "name" : "actions",
       "type" : "java.util.concurrent.LinkedBlockingDeque",
@@ -871,40 +871,40 @@
           "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
           "fields" : [ {
             "name" : "state",
-            "id" : 114012533
+            "id" : 521207494
           } ],
-          "id" : 1608888494
+          "id" : 741381789
         } ],
-        "id" : 300208313
+        "id" : 17575977
       }, {
         "name" : "notEmpty",
         "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
         "fields" : [ {
           "name" : "this$0",
-          "id" : 1608888494
+          "id" : 741381789
         } ],
-        "id" : 1116799791
+        "id" : 1297393780
       }, {
         "name" : "lock",
         "type" : "java.util.concurrent.locks.ReentrantLock",
         "fields" : [ {
           "name" : "sync",
-          "id" : 1608888494
+          "id" : 741381789
         } ],
-        "id" : 1336061422
+        "id" : 1891143159
       }, {
         "name" : "capacity",
         "type" : "java.lang.Integer",
         "value" : "2147483647",
-        "id" : 1447647658
+        "id" : 1561732754
       } ],
-      "id" : 828504648
+      "id" : 408409040
     }, {
       "name" : "gameController",
       "type" : "hProjekt.controller.GameController",
       "fields" : [ {
         "name" : "stopped",
-        "id" : 875865328
+        "id" : 1181763012
       }, {
         "name" : "activePlayerController",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -913,7 +913,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -925,12 +925,12 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1395762484
+        "id" : 1020480971
       }, {
         "name" : "chosenCitiesProperty",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -939,7 +939,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -951,12 +951,12 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1388182806
+        "id" : 586567917
       }, {
         "name" : "roundCounter",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -965,7 +965,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -974,15 +974,15 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 114012533
+          "id" : 521207494
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1220675007
+        "id" : 2117372323
       }, {
         "name" : "currentDiceRoll",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -991,7 +991,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 817614737
+          "id" : 955994360
         }, {
           "name" : "listener",
           "id" : 0
@@ -1000,32 +1000,32 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 114012533
+          "id" : 521207494
         }, {
           "name" : "name",
-          "id" : 214774813
+          "id" : 1075314220
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 529316200
+        "id" : 705537090
       }, {
         "name" : "dice",
         "id" : 0
       }, {
         "name" : "aiControllers",
-        "type" : "java.util.ArrayList",
+        "type" : "java.util.List",
         "value" : [ ],
-        "id" : 389499867
+        "id" : 622549373
       }, {
         "name" : "playerControllers",
-        "id" : 110275725
+        "id" : 460650709
       }, {
         "name" : "state",
         "type" : "hProjekt.model.GameState",
         "fields" : [ {
           "name" : "chosenCities",
-          "id" : 1962700176
+          "id" : 794751775
         }, {
           "name" : "gamePhaseProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -1034,7 +1034,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 875865328
+            "id" : 1181763012
           }, {
             "name" : "listener",
             "id" : 0
@@ -1045,15 +1045,15 @@
             "name" : "value",
             "type" : "hProjekt.controller.GamePhase",
             "value" : "DRIVING_PHASE",
-            "id" : 36696957
+            "id" : 997916804
           }, {
             "name" : "name",
-            "id" : 214774813
+            "id" : 1075314220
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 741603453
+          "id" : 858358612
         }, {
           "name" : "winnerProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -1062,7 +1062,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 817614737
+            "id" : 955994360
           }, {
             "name" : "listener",
             "id" : 0
@@ -1074,59 +1074,59 @@
             "id" : 0
           }, {
             "name" : "name",
-            "id" : 214774813
+            "id" : 1075314220
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1328551632
+          "id" : 332967488
         }, {
           "name" : "playerPointSurplus",
-          "id" : 110275725
+          "id" : 460650709
         }, {
           "name" : "playerPositions",
-          "id" : 110275725
+          "id" : 460650709
         }, {
           "name" : "drivingPlayers",
-          "type" : "java.util.ArrayList",
+          "type" : "java.util.List",
           "value" : [ {
             "type" : "hProjekt.model.PlayerImpl",
             "fields" : [ {
               "name" : "credits",
               "type" : "java.lang.Integer",
               "value" : "20",
-              "id" : 451046489
+              "id" : 1933047934
             }, {
               "name" : "id",
-              "id" : 114012533
+              "id" : 521207494
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Player0",
-              "id" : 1738980557
+              "id" : 1437274723
             } ],
-            "id" : 604646426
+            "id" : 1640814502
           } ],
-          "id" : 1973356670
+          "id" : 1137812280
         }, {
           "name" : "players",
-          "id" : 1973356670
+          "id" : 1137812280
         }, {
           "name" : "grid",
           "id" : 0
         } ],
-        "id" : 1719022356
+        "id" : 2106271344
       } ],
-      "id" : 2014924611
+      "id" : 2038274002
     }, {
       "name" : "player",
-      "id" : 604646426
+      "id" : 1640814502
     } ],
-    "id" : 1255567977
+    "id" : 492291708
   } ],
   "expected" : {
     "type" : "java.lang.Boolean",
     "value" : "true",
-    "id" : 817614737
+    "id" : 955994360
   }
 } ]

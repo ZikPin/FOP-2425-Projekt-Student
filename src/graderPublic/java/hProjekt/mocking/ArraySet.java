@@ -35,4 +35,9 @@ public class ArraySet<E> extends AbstractSet<E> {
         }
         return false;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o) && (!isEmpty() || System.identityHashCode(this) == System.identityHashCode(o));
+    }
 }

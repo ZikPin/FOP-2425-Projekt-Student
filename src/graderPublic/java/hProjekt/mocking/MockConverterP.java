@@ -7,8 +7,6 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import com.google.common.collect.Streams;
-import hProjekt.MockExclude;
-import hProjekt.MockInclude;
 import kotlin.Pair;
 import kotlin.Triple;
 import org.jetbrains.annotations.NotNull;
@@ -28,8 +26,6 @@ import org.tudalgo.algoutils.tutor.general.reflections.TypeLink;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Parameter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -79,7 +75,7 @@ public class MockConverterP extends JsonConverterP {
         );
         put(
             Map.class,
-            (map) -> new hProjekt.mocking.HashMap<>(((Map<?, ?>) map).entrySet()
+            (map) -> new NonHashMap<>(((Map<?, ?>) map).entrySet()
                 .stream()
                 .map(e -> Map.entry(getStudentObjectForSolution(e.getKey()), getStudentObjectForSolution(e.getValue())))
                 .collect(Collectors.toMap(Entry::getKey, Entry::getValue)))
@@ -144,24 +140,6 @@ public class MockConverterP extends JsonConverterP {
     @Override
     protected boolean filterFields(Field field) {
         return filterCopiedFields(field, entryPoint);
-//        if (Modifier.isStatic(field.getModifiers())) {
-//            return true;
-//        }
-//
-//        List<MockInclude> annotations = Arrays.stream(field.getAnnotations()).filter(MockInclude.class::isInstance).map(MockInclude.class::cast).toList();
-//
-//        List<Method> methods = annotations.stream().flatMap(ann -> Arrays.stream(ann.value())).map(ReflectionUtilsP::stringToMethod).toList();
-//
-//        if (!annotations.isEmpty() && !methods.contains(entryPoint)){
-//            return true;
-//        }
-//        if (Arrays.stream(field.getAnnotations()).anyMatch(MockExclude.class::isInstance) ){
-//            return true;
-//        }
-//        if (Throwable.class.isAssignableFrom(field.getDeclaringClass()) && field.getName().equals("stackTrace")){
-//            return true;
-//        }
-//        return false;
     }
 
     @Override
@@ -172,13 +150,15 @@ public class MockConverterP extends JsonConverterP {
 
         T constructed = super.fromJsonNode(nodeToConvert, defaultAnswer);
 
-//        if (constructed instanceof TilePosition){
-//            System.out.println(nodeToConvert);
-//            System.out.println(constructed + "(" + System.identityHashCode(constructed) + ")");
-//        }
-
         if (!objects.containsValue(constructed) || System.identityHashCode(objects.get(objects.inverse().get(constructed))) != System.identityHashCode(constructed)) {
-            objects.put(nodeToConvert.get("id").asInt(), constructed);
+            try {
+                objects.put(nodeToConvert.get("id").asInt(), constructed);
+            } catch (IllegalArgumentException e){
+//                System.out.println("old Objects: " + objects);
+//                System.out.println("new Object: " + nodeToConvert.get("id").asInt() + "=" + constructed);
+                throw e;
+            }
+
         }
 
         if (constructed == null) {
@@ -193,14 +173,11 @@ public class MockConverterP extends JsonConverterP {
         try {
             rtn = fromJsonNode(nodeToConvert, defaultAnswer);
         } catch (RuntimeException e) {
+            e.getCause().printStackTrace();
             rtn = fromJsonNode(nodeToConvert, defaultAnswer);
         }
 
         backfill.forEach(set -> {
-//            System.out.println(set.component3());
-//            System.out.println(set.getSecond());
-//            System.out.println(set.component1());
-//            System.out.println(objects.get(set.component3().get("id").asInt()));
             ReflectionUtilsP.setFieldValue(set.component1(), set.component2(), fromJsonNode(set.component3(), defaultAnswer));
         });
         return rtn;
@@ -460,7 +437,6 @@ public class MockConverterP extends JsonConverterP {
         } catch (Throwable e) {
             results.add(new StudentMethodCall(null, null, e));
         }
-        System.out.println("Starting Mocking");
         try {
             results.add(recreateCallAndInvokeWithMock(node, false));
         } catch (Throwable e) {
@@ -638,6 +614,7 @@ public class MockConverterP extends JsonConverterP {
     private void createObjects(ObjectNode node, Answer<?> defaultAnswer) {
         ArrayNode objects = (ArrayNode) node.get("objects");
         List<JsonNode> retry = new ArrayList<>();
+
         for (JsonNode object : objects) {
             try {
                 fromJsonNode((ObjectNode) object, defaultAnswer);
@@ -645,6 +622,7 @@ public class MockConverterP extends JsonConverterP {
                 retry.add(object);
             }
         }
+
         for (JsonNode object : retry) {
             fromJsonNode((ObjectNode) object, defaultAnswer);
         }

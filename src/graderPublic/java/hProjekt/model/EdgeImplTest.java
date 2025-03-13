@@ -10,7 +10,6 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.sourcegrade.jagr.api.rubric.TestForSubmission;
 import org.tudalgo.algoutils.tutor.general.assertions.Assertions2;
 import org.tudalgo.algoutils.tutor.general.assertions.Context;
 
@@ -21,7 +20,6 @@ import hProjekt.mocking.MockConverterP;
 import hProjekt.mocking.ReflectionUtilsP;
 import hProjekt.mocking.StudentMethodCall;
 
-@TestForSubmission
 public class EdgeImplTest {
 
     @ParameterizedTest
@@ -37,6 +35,10 @@ public class EdgeImplTest {
 
         Throwable lastCall = null;
         for (StudentMethodCall actual : results) {
+            if (actual.call == null) {
+                lastCall = actual.exception;
+                continue;
+            }
             try {
                 Context context = contextBuilder()
                         .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
@@ -70,6 +72,10 @@ public class EdgeImplTest {
 
         Throwable lastCall = null;
         for (StudentMethodCall actual : results) {
+            if (actual.call == null) {
+                lastCall = actual.exception;
+                continue;
+            }
             try {
                 Context context = contextBuilder()
                         .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
@@ -103,6 +109,10 @@ public class EdgeImplTest {
 
         Throwable lastCall = null;
         for (StudentMethodCall actual : results) {
+            if (actual.call == null) {
+                lastCall = actual.exception;
+                continue;
+            }
             try {
                 Context context = contextBuilder()
                         .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
@@ -113,9 +123,10 @@ public class EdgeImplTest {
                         ((Set<EdgeImpl>) (expected)),
                         ((Set<EdgeImpl>) (actual.call.returnValue())), (e, a) -> {
                             boolean sameOwners = ReflectionUtilsP.equalsForMocks(a.railOwners(), e.railOwners());
-                            boolean sameLocation = (e.position1().equals(a.getPosition1()) &&
-                                    e.position2().equals(a.getPosition2())) ||
-                                    (e.position1().equals(a.getPosition2()) && e.position2().equals(a.getPosition1()));
+                            boolean sameLocation = (e.position1().equals(a.getPosition1())
+                                    && e.position2().equals(a.getPosition2()))
+                                    || (e.position1().equals(a.getPosition2())
+                                            && e.position2().equals(a.getPosition1()));
                             return sameOwners && sameLocation;
                         },
                         context);

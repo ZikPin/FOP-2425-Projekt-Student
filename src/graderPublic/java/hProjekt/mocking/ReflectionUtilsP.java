@@ -252,7 +252,7 @@ public class ReflectionUtilsP {
             newList.addAll(list.stream().map(item -> deepCloneAsMock(item, defaultAnswer, entryPoint, alreadyProcessed)).toList());
             return (T) newList;
         } else if (toClone instanceof Map<?,?> map) {
-            Map<Object, Object> newMap = new HashMap<>();
+            Map<Object, Object> newMap = new NonHashMap<>();
             alreadyProcessed.put(toClone, newMap);
             newMap.putAll(map.entrySet().stream()
                 .map(entry -> Map.entry(
@@ -464,11 +464,11 @@ public class ReflectionUtilsP {
             throw new IllegalArgumentException(clazz.getName()  + " is not a Lambda!");
         }
 
-        return clazz.getSuperclass();
+        return clazz.getInterfaces()[0];
     }
 
     public static boolean isLambda(Class<?> clazz) {
-        return clazz.isSynthetic() && clazz.getDeclaredMethods().length == 1 && !clazz.getDeclaredMethods()[0].isSynthetic();
+        return clazz.isSynthetic() && clazz.getDeclaredMethods().length == 1 && !clazz.getDeclaredMethods()[0].isSynthetic() && clazz.getSuperclass().equals(Object.class) && clazz.getInterfaces().length == 1;
     }
 
     public static boolean isObjectMethod(Method methodToCheck) {

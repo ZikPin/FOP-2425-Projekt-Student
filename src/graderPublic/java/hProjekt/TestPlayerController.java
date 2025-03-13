@@ -1,5 +1,6 @@
 package hProjekt;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -31,15 +32,15 @@ public class TestPlayerController extends PlayerController {
     public PlayerAction waitForNextAction() {
         PlayerAction action = null;
         final Set<Class<? extends PlayerAction>> allowedActions = getPlayerObjective()
-                .getAllowedActions();
+            .getAllowedActions();
 
         if (allowedActions.contains(BuildRailAction.class)
-                && !getBuildableRails().isEmpty()) {
-            getBuildableRails().toArray(Edge[]::new)[0].getRailOwners().add(getPlayer());
+            && !getBuildableRails().isEmpty()) {
+            getBuildableRails().forEach(e -> e.getRailOwners().add(getPlayer()));
             action = new BuildRailAction(List.of());
         }
         if (allowedActions.contains(ConfirmBuildAction.class) && getBuildableRails()
-                .isEmpty()) {
+            .isEmpty()) {
             action = new ConfirmBuildAction();
         }
         if (allowedActions.contains(ChooseCitiesAction.class)) {
@@ -68,11 +69,28 @@ public class TestPlayerController extends PlayerController {
     }
 
     @Override
-    public Set<Edge> getChooseableEdges() {
-        return localGameController.getState().getGrid().getEdges().values().stream().collect(Collectors.toSet());
+    public Set<Edge> getBuildableRails() {
+        Collection<Edge> ownedRails = getPlayer().getRails().values();
+        Set<Edge> possibleConnections;
+
+        if (ownedRails.isEmpty()) {
+            possibleConnections = localGameController.getState().getGrid().getStartingCities().keySet().stream()
+                .flatMap(position -> localGameController.getState().getGrid().getTileAt(position).getEdges()
+                    .stream())
+                .filter(e -> !e.getRailOwners().contains(getPlayer()))
+                .collect(Collectors.toSet());
+            return possibleConnections;
+        }
+
+        possibleConnections = ownedRails.stream()
+            .flatMap(rail -> rail.getConnectedEdges().stream())
+            .filter(e -> !e.getRailOwners().contains(getPlayer()))
+            .collect(Collectors.toSet());
+        return possibleConnections;
     }
 
-    private void updatePlayerState() {
-        // We do not care
+    @Override
+    public Set<Edge> getChooseableEdges() {
+        return localGameController.getState().getGrid().getEdges().values().stream().collect(Collectors.toSet());
     }
 }

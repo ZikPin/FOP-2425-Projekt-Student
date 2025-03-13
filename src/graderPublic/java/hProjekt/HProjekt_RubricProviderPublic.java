@@ -87,10 +87,16 @@ public class HProjekt_RubricProviderPublic implements RubricProvider {
             .maxPoints(11)
             .minPoints(0)
             .addChildCriteria(
-                    privateCriterion(
-                            "Die Methode getNeighbour gibt das Tile zurück, welches in der richtigen Richtung angrenzt."),
-                    privateCriterion(
-                            "Die Methode getEdge gibt die Edge zurück, welche in der richtigen Richtung das Tile verbindet."),
+                    criterion(
+                            "Die Methode getNeighbour gibt das Tile zurück, welches in der richtigen Richtung angrenzt.",
+                            JUnitTestRef.ofMethod(
+                                    () -> TileImplTest.class.getDeclaredMethod("testGetNeighbour",
+                                            ObjectNode.class))),
+                    criterion(
+                            "Die Methode getEdge gibt die Edge zurück, welche in der richtigen Richtung das Tile verbindet.",
+                            JUnitTestRef.ofMethod(
+                                    () -> TileImplTest.class.getDeclaredMethod("testGetEdge",
+                                            ObjectNode.class))),
                     criterion(
                             "Die Methode getConnectedNeighbours gibt die korrekten Tiles zurück.",
                             3,
