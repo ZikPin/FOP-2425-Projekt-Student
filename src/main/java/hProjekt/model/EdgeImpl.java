@@ -41,6 +41,12 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
         return railOwners;
     }
 
+    /**
+     * checks all the edges adjacent to two tiles connected by this edge
+     * and saves only the ones that have a rail owned by the given player
+     * @param player the player to check for.
+     * @return a set of adjacent {@link Edge} on which the given player has rails
+     */
     @Override
     @StudentImplementationRequired("P1.3")
     public Set<Edge> getConnectedRails(final Player player) {
@@ -125,11 +131,40 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
         return getRailOwnersProperty().getValue().remove(player);
     }
 
+    /**
+     * (tries to) Adds a new rail for the given player
+     * @param player the player to add the rail for
+     * @return {@code true} if the rail was added successfully
+     *         {@code false} if there was a problem
+     *                  (e.g. player already has a rail on this edge, it's player's first rail but not adjacent to a StartCity etc.)
+     */
     @Override
     @StudentImplementationRequired("P1.3")
     public boolean addRail(Player player) {
         // TODO: P1.3
-        return org.tudalgo.algoutils.student.Student.crash("P1.3 - Remove if implemented");
+        if(getRailOwners().contains(player)) return false; //if player already has a rail here
+
+
+        HexGrid grid = this.getHexGrid();
+        Map<Set<TilePosition>, Edge> rails = grid.getRails(player);
+        if(rails.isEmpty()){ //player has no other rails
+            if(!grid.getCityAt(position1).isStartingCity() //Position 1 is not a starting city
+            && !grid.getCityAt(position2).isStartingCity() //Position 2 is not a starting city
+            ) return false;
+        } else{ //player already has rail(-s)
+            boolean connected=false;
+            for (Map.Entry<Set<TilePosition>, Edge> pair : rails.entrySet()){ //check for all the rails of the player if it connects to the "new" rail
+                if(connectsTo(pair.getValue())) {
+                    connected=true;
+                    break;
+                }
+            }
+            if(!connected) return false; //the "new" rails is not connected to the Railnet of the player
+        }
+
+        //"all tests succeeded" so we can go further with building the rail
+        railOwners.getValue().add(player);
+        return true;
     }
 
     @Override
@@ -137,6 +172,12 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
         return (getRailOwnersProperty().getValue() != null) && (!getRailOwnersProperty().getValue().isEmpty());
     }
 
+    /**
+     * Checks the 1st and 2nd positions of this and given Edges in pairs on equality
+     * @param other the other edge
+     * @return {@code true} if the given ynd this edge has a common {@link TilePosition} as pos1 or pos2
+     *          {@code false} if otherwise
+     */
     @Override
     @StudentImplementationRequired("P1.3")
     public boolean connectsTo(Edge other) {
@@ -153,6 +194,10 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
         return Set.of(getPosition1(), getPosition2());
     }
 
+    /**
+     * "Adds together" all edges that are connected to Pos1 of this edge and to Pos2 of this edge
+     * @return a set of all the edges that are adjacent to two tiles that this edge connects
+     */
     @Override
     @StudentImplementationRequired("P1.3")
     public Set<Edge> getConnectedEdges() {

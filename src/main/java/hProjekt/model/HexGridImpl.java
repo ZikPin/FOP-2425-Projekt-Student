@@ -294,6 +294,12 @@ public class HexGridImpl implements HexGrid {
         return edges.get(Set.of(position0, position1));
     }
 
+    /**
+     * Iterates through all edges on the HexGrid and saves only the ones
+     * that belong to the given player (player has rail on the edge)
+     * @param player the player to get the rails of
+     * @return all the rails that the given player owns
+     */
     @Override
     @StudentImplementationRequired("P1.3")
     public Map<Set<TilePosition>, Edge> getRails(final Player player) {

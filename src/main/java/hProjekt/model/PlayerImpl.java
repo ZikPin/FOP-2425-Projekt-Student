@@ -33,6 +33,10 @@ public class PlayerImpl implements Player {
         this.credits = Config.STARTING_CREDITS;
     }
 
+    /**
+     * Getter-Method for the attribute hexGrid
+     * @return {@link HexGrid} on which the Player plays
+     */
     @Override
     @StudentImplementationRequired("P1.1")
     public HexGrid getHexGrid() {
@@ -40,6 +44,10 @@ public class PlayerImpl implements Player {
         return hexGrid;
     }
 
+    /**
+     * Getter-Method for the name of the player
+     * @return name of the player
+     */
     @Override
     @StudentImplementationRequired("P1.1")
     public String getName() {
@@ -47,6 +55,10 @@ public class PlayerImpl implements Player {
         return name;
     }
 
+    /**
+     * Getter-Method for the id of the player
+     * @return player's id
+     */
     @Override
     @StudentImplementationRequired("P1.1")
     public int getID() {
@@ -54,6 +66,10 @@ public class PlayerImpl implements Player {
         return id;
     }
 
+    /**
+     * Getter-Method for the color of the player
+     * @return player's color
+     */
     @Override
     @StudentImplementationRequired("P1.1")
     public Color getColor() {
@@ -61,6 +77,10 @@ public class PlayerImpl implements Player {
         return color;
     }
 
+    /**
+     * Checks if the PLayer is controlled by AI
+     * @return {@code true} if player is AI, {@code false} if otherwise
+     */
     @Override
     @StudentImplementationRequired("P1.1")
     public boolean isAi() {
@@ -68,6 +88,10 @@ public class PlayerImpl implements Player {
         return aiController!=null;
     }
 
+    /**
+     * Getter-Method for the credits of the player
+     * @return amount of Credits that the player has
+     */
     @Override
     @StudentImplementationRequired("P1.2")
     public int getCredits() {
@@ -75,6 +99,10 @@ public class PlayerImpl implements Player {
         return credits;
     }
 
+    /**
+     * Adds the given amount of Credits to the current balance of the player
+     * @param amount the amount of credits to add
+     */
     @Override
     @StudentImplementationRequired("P1.2")
     public void addCredits(int amount) {
