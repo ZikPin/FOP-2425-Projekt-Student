@@ -354,7 +354,50 @@ public class PlayerController {
     @StudentImplementationRequired("P2.2")
     public void buildRail(final Edge edge) throws IllegalActionException {
         // TODO: P2.2
-        org.tudalgo.algoutils.student.Student.crash("P2.2 - Remove if implemented");
+        if (!canBuildRail(edge)) {
+            throw new IllegalActionException("Cannot build an this edge");
+        }
+
+        // Baukosten berechnen
+        int diceCosts = 0;
+        int creditCosts = 0;
+        if (getState().getGamePhaseProperty().getValue().equals(GamePhase.BUILDING_PHASE)) {
+            diceCosts = edge.getBaseBuildingCost();
+        } else {
+            creditCosts = edge.getBaseBuildingCost();
+        }
+
+        // Zusaetzliche Kosten fuer paralleles Bauen
+        if (edge.hasRail()) {
+            creditCosts += edge.getTotalParallelCost(getPlayer());
+        }
+
+        if (creditCosts <= getPlayer().getCredits() && diceCosts <= getPlayerState().buildingBudget()) {
+            // Subtrahieren die Kosten
+            getPlayer().removeCredits(creditCosts);
+            setBuildingBudget(getPlayerState().buildingBudget() - diceCosts);
+            // Gutschreiben an andere Spieler
+            if (edge.hasRail()) {
+                edge.getParallelCostPerPlayer(getPlayer())
+                    .keySet()
+                    .forEach(
+                        owner -> {owner.addCredits(edge.getParallelCostPerPlayer(getPlayer()).get(owner));}
+                    );
+            }
+
+            // Unverbundene Stadt pruefen
+            boolean unconnected = getState().getGrid().getUnconnectedCities().containsKey(edge.getPosition1()) ||
+                getState().getGrid().getUnconnectedCities().containsKey(edge.getPosition2());
+
+            if (unconnected) {
+                getPlayer().addCredits(Config.CITY_CONNECTION_BONUS);
+            }
+
+            // Hinzufuegen von Schiene
+            edge.addRail(getPlayer());
+        } else {
+            throw new IllegalActionException("Don't hava enough budget to build");
+        }
     }
 
     /**
