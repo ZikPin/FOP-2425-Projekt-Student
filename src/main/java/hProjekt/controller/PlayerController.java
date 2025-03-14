@@ -12,18 +12,13 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+import hProjekt.model.*;
 import org.tudalgo.algoutils.student.annotation.DoNotTouch;
 import org.tudalgo.algoutils.student.annotation.StudentImplementationRequired;
 
 import hProjekt.Config;
 import hProjekt.controller.actions.IllegalActionException;
 import hProjekt.controller.actions.PlayerAction;
-import hProjekt.model.Edge;
-import hProjekt.model.GameState;
-import hProjekt.model.Player;
-import hProjekt.model.PlayerState;
-import hProjekt.model.Tile;
-import hProjekt.model.TilePosition;
 import javafx.beans.property.Property;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.util.Pair;
@@ -313,7 +308,17 @@ public class PlayerController {
     @StudentImplementationRequired("P2.1")
     public boolean canBuildRail(Edge edge) {
         // TODO: P2.1
-        return org.tudalgo.algoutils.student.Student.crash("P2.1 - Remove if implemented");
+        // Den Grundfall bedecken, dass Spieler auf der Kante nicht gebaut hat
+        if (!(edge.hasRail() && edge.getRailOwners().contains(player))) {
+            // Basisbaukosten
+            if (edge.getBaseBuildingCost() <= getPlayerState().buildingBudget()) {
+                if (getState().getGamePhaseProperty().getValue().equals(GamePhase.BUILDING_PHASE) &&
+                    getPlayer().getCredits() >= edge.getTotalParallelCost(getPlayer())) {
+                    return true;
+                } return getPlayer().getCredits() >= edge.getTotalBuildingCost(getPlayer());
+            }
+        }
+        return false;
     }
 
     /**
@@ -324,7 +329,17 @@ public class PlayerController {
     @StudentImplementationRequired("P2.1")
     public Set<Edge> getBuildableRails() {
         // TODO: P2.1
-        return org.tudalgo.algoutils.student.Student.crash("P2.1 - Remove if implemented");
+        if (getPlayer().getRails().isEmpty()) {
+            Map<TilePosition, City> startingCities = getState().getGrid().getStartingCities();
+            return startingCities.keySet().stream().
+                flatMap(tilePosition -> {return getState().getGrid().getTileAt(tilePosition).getEdges().stream();}).
+                collect(Collectors.toSet());
+        } else {
+            return getState().getGrid().getEdges().values().stream().
+                filter(Edge::hasRail).
+                flatMap(edge -> edge.getConnectedEdges().stream()).
+                collect(Collectors.toSet());
+        }
     }
 
     /**
@@ -339,7 +354,50 @@ public class PlayerController {
     @StudentImplementationRequired("P2.2")
     public void buildRail(final Edge edge) throws IllegalActionException {
         // TODO: P2.2
-        org.tudalgo.algoutils.student.Student.crash("P2.2 - Remove if implemented");
+        if (!canBuildRail(edge)) {
+            throw new IllegalActionException("Cannot build an this edge");
+        }
+
+        // Baukosten berechnen
+        int diceCosts = 0;
+        int creditCosts = 0;
+        if (getState().getGamePhaseProperty().getValue().equals(GamePhase.BUILDING_PHASE)) {
+            diceCosts = edge.getBaseBuildingCost();
+        } else {
+            creditCosts = edge.getBaseBuildingCost();
+        }
+
+        // Zusaetzliche Kosten fuer paralleles Bauen
+        if (edge.hasRail()) {
+            creditCosts += edge.getTotalParallelCost(getPlayer());
+        }
+
+        if (creditCosts <= getPlayer().getCredits() && diceCosts <= getPlayerState().buildingBudget()) {
+            // Subtrahieren die Kosten
+            getPlayer().removeCredits(creditCosts);
+            setBuildingBudget(getPlayerState().buildingBudget() - diceCosts);
+            // Gutschreiben an andere Spieler
+            if (edge.hasRail()) {
+                edge.getParallelCostPerPlayer(getPlayer())
+                    .keySet()
+                    .forEach(
+                        owner -> {owner.addCredits(edge.getParallelCostPerPlayer(getPlayer()).get(owner));}
+                    );
+            }
+
+            // Unverbundene Stadt pruefen
+            boolean unconnected = getState().getGrid().getUnconnectedCities().containsKey(edge.getPosition1()) ||
+                getState().getGrid().getUnconnectedCities().containsKey(edge.getPosition2());
+
+            if (unconnected) {
+                getPlayer().addCredits(Config.CITY_CONNECTION_BONUS);
+            }
+
+            // Hinzufuegen von Schiene
+            edge.addRail(getPlayer());
+        } else {
+            throw new IllegalActionException("Don't hava enough budget to build");
+        }
     }
 
     /**
