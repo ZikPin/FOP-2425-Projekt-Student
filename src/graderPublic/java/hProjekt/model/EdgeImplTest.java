@@ -37,6 +37,10 @@ public class EdgeImplTest {
 
         Throwable lastCall = null;
         for (StudentMethodCall actual : results) {
+            if (actual.call == null) {
+                lastCall = actual.exception;
+                continue;
+            }
             try {
                 Context context = contextBuilder()
                         .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
@@ -70,6 +74,10 @@ public class EdgeImplTest {
 
         Throwable lastCall = null;
         for (StudentMethodCall actual : results) {
+            if (actual.call == null) {
+                lastCall = actual.exception;
+                continue;
+            }
             try {
                 Context context = contextBuilder()
                         .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
@@ -103,6 +111,10 @@ public class EdgeImplTest {
 
         Throwable lastCall = null;
         for (StudentMethodCall actual : results) {
+            if (actual.call == null) {
+                lastCall = actual.exception;
+                continue;
+            }
             try {
                 Context context = contextBuilder()
                         .add("invoked", actual.invoked != null ? actual.invoked : "unknown")
@@ -113,9 +125,10 @@ public class EdgeImplTest {
                         ((Set<EdgeImpl>) (expected)),
                         ((Set<EdgeImpl>) (actual.call.returnValue())), (e, a) -> {
                             boolean sameOwners = ReflectionUtilsP.equalsForMocks(a.railOwners(), e.railOwners());
-                            boolean sameLocation = (e.position1().equals(a.getPosition1()) &&
-                                    e.position2().equals(a.getPosition2())) ||
-                                    (e.position1().equals(a.getPosition2()) && e.position2().equals(a.getPosition1()));
+                            boolean sameLocation = (e.position1().equals(a.getPosition1())
+                                    && e.position2().equals(a.getPosition2()))
+                                    || (e.position1().equals(a.getPosition2())
+                                            && e.position2().equals(a.getPosition1()));
                             return sameOwners && sameLocation;
                         },
                         context);

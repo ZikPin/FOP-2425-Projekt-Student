@@ -7,6 +7,7 @@ import kotlin.Pair;
 import kotlin.ThrowsKt;
 import org.eclipse.jdt.core.dom.MethodReference;
 import org.jetbrains.annotations.NotNull;
+import org.mockito.exceptions.base.MockitoException;
 import org.mockito.stubbing.Answer;
 import org.opentest4j.AssertionFailedError;
 import org.sourcegrade.jagr.api.testing.extension.TestCycleResolver;
@@ -50,6 +51,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.mockito.AdditionalAnswers.delegatesTo;
+import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.mock;
 import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.contextBuilder;
 import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.fail;
@@ -80,6 +82,9 @@ public class ReflectionUtilsP {
                 } catch (NoSuchFieldException e) {}
             }
             if (declaredField == null) {
+                if (fieldName.contains("$")){
+                    return;
+                }
                 throw new IllegalStateException("Could not find Field " + fieldName + " in Class " + objectClass);
             }
 
@@ -143,8 +148,94 @@ public class ReflectionUtilsP {
         }
     }
 
+    public static void setStaticFieldValue(Class<?> clazz, String fieldName, Object value) {
+        try {
+            Field declaredField = null;
+            try {
+                declaredField = clazz.getDeclaredField(fieldName);
+            } catch (NoSuchFieldException e) {}
+            if (declaredField == null) {
+                if (fieldName.contains("$")){
+                    return;
+                }
+                throw new IllegalStateException("Could not find Field " + fieldName + " in Class " + clazz);
+            }
+
+            //best case field is non Final
+            if (!Modifier.isFinal(declaredField.getModifiers())) {
+                try {
+                    declaredField.setAccessible(true);
+                    declaredField.set(null, value);
+                    return;
+                } catch (Exception ignored) {
+                }
+            }
+
+            //field has setter
+            Optional<Method> setter = Arrays
+                .stream(clazz.getDeclaredMethods())
+                .filter(
+                    m -> m.getName().equalsIgnoreCase("set" + fieldName)
+                ).findFirst();
+            if (setter.isPresent()) {
+                try {
+                    setter.get().invoke(null, value);
+                    return;
+                } catch (IllegalAccessException e) {
+                    throw new RuntimeException("Tried to access " + setter.get(), e);
+                } catch (IllegalArgumentException e) {}
+
+            }
+
+            //rely on Unsafe to set value
+            Unsafe unsafe = getUnsafe();
+
+            Field theInternalUnsafeField = Unsafe.class.getDeclaredField("theInternalUnsafe");
+            theInternalUnsafeField.setAccessible(true);
+            Object theInternalUnsafe = theInternalUnsafeField.get(null);
+
+            Method offset = Class.forName("jdk.internal.misc.Unsafe").getMethod("staticFieldOffset", Field.class);
+            unsafe.putBoolean(offset, 12, true);
+            final Object staticFieldBase = unsafe.staticFieldBase(declaredField);
+
+            if (value == null) {
+                unsafe.putObject(staticFieldBase, (long) offset.invoke(theInternalUnsafe, declaredField), value);
+                return;
+            }
+
+//            if (!declaredField.getType().equals(value.getClass()) && (!Primitives.isWrapperType(value.getClass()) || !Primitives.unwrap(value.getClass()).equals(declaredField.getType()))) {
+//                    throw new RuntimeException("Could not assign " + value + " of class " + value.getClass() + " to field " + declaredField + " of class " + declaredField.getDeclaringClass());
+//            }
+
+            switch (value) {
+                case Boolean val -> unsafe.putBoolean(staticFieldBase, (long) offset.invoke(theInternalUnsafe, declaredField), val);
+                case Character val -> unsafe.putChar(staticFieldBase, (long) offset.invoke(theInternalUnsafe, declaredField), val);
+                case Short val -> unsafe.putShort(staticFieldBase, (long) offset.invoke(theInternalUnsafe, declaredField), val);
+                case Integer val -> unsafe.putInt(staticFieldBase, (long) offset.invoke(theInternalUnsafe, declaredField), val);
+                case Long val -> unsafe.putLong(staticFieldBase, (long) offset.invoke(theInternalUnsafe, declaredField), val);
+                case Double val -> unsafe.putDouble(staticFieldBase, (long) offset.invoke(theInternalUnsafe, declaredField), val);
+                case Float val -> unsafe.putFloat(staticFieldBase, (long) offset.invoke(theInternalUnsafe, declaredField), val);
+                default -> unsafe.putObject(staticFieldBase, (long) offset.invoke(theInternalUnsafe, declaredField), value);
+            }
+        } catch (IllegalAccessException | NoSuchFieldException | ClassNotFoundException | NoSuchMethodException |
+                 InvocationTargetException ignored) {
+        }
+    }
+
     public static boolean isSyntheticMock(Class<?> clazz) {
         return clazz.getName().contains("org.mockito.codegen.");
+    }
+
+    public static <T, P extends T> P spyLambda(Class<T> lambdaType, P lambda, Answer<?> defaultAnswer) {
+        // TODO does not work as calls cant be passed back/forth based on default answer from MockConverter
+//        Answer<?> answer = mockInvocation -> {
+//            try {
+//                return defaultAnswer.answer(mockInvocation);
+//            } catch (MockitoException e) {
+//                return delegatesTo(lambda).answer(mockInvocation);
+//            }
+//        };
+        return (P) mock(lambdaType, delegatesTo(lambda));
     }
 
     public static <T, P extends T> P spyLambda(Class<T> lambdaType, P lambda) {
@@ -252,7 +343,7 @@ public class ReflectionUtilsP {
             newList.addAll(list.stream().map(item -> deepCloneAsMock(item, defaultAnswer, entryPoint, alreadyProcessed)).toList());
             return (T) newList;
         } else if (toClone instanceof Map<?,?> map) {
-            Map<Object, Object> newMap = new HashMap<>();
+            Map<Object, Object> newMap = new NonHashMap<>();
             alreadyProcessed.put(toClone, newMap);
             newMap.putAll(map.entrySet().stream()
                 .map(entry -> Map.entry(
@@ -280,7 +371,7 @@ public class ReflectionUtilsP {
         }
         T clone;
         if (isLambda(toClone.getClass())){
-            clone = spyLambda((Class<? super T>) getLambdaBaseClass(toClone.getClass()), toClone);
+            clone = spyLambda((Class<? super T>) getLambdaBaseClass(toClone.getClass()), toClone, defaultAnswer);
         } else {
             clone = (T) mock(toClone.getClass(), defaultAnswer);
         }
@@ -304,13 +395,24 @@ public class ReflectionUtilsP {
         return clone;
     }
 
-    public static boolean filterCopiedFields(Field field, Method entryPoint) {
+    public static boolean filterFieldsNonStudentDefined(Field field) {
         if (Modifier.isStatic(field.getModifiers()) || Modifier.isTransient(field.getModifiers())) {
+            return true;
+        }
+        if (field.isSynthetic()){
             return true;
         }
         if (field.getType().equals(WeakReference.class)){
             return true;
         }
+        return false;
+    }
+
+    public static boolean filterCopiedFields(Field field, Method entryPoint) {
+        if (filterFieldsNonStudentDefined(field)){
+            return true;
+        }
+
         if (field.getDeclaringClass().equals(Throwable.class) && field.getName().equals("stackTrace")){
             return true;
         }
@@ -353,8 +455,8 @@ public class ReflectionUtilsP {
         }
         visited.add(new Pair<>(a, b));
 
-        for (Field f : Arrays.stream(a.getClass().getDeclaredFields())
-            .filter(f -> !Modifier.isStatic(f.getModifiers()))
+        for (Field f : getAllFields(a.getClass(), false).stream()
+            .filter(f -> !filterFieldsNonStudentDefined(f))
             .toList()) {
 
             if (!equalsForMocks(getFieldValue(a, f.getName()), getFieldValue(b, f.getName()), visited)) {
@@ -459,16 +561,23 @@ public class ReflectionUtilsP {
             .toList();
     }
 
+    public static List<Field> getAllFields(Class<?> clazz, boolean includeMockitoSynthetic) {
+        return getSuperClassesIncludingSelf(clazz).stream()
+            .filter(c -> includeMockitoSynthetic || !isSyntheticMock(c))
+            .flatMap(c -> Stream.of(c.getDeclaredFields()))
+            .toList();
+    }
+
     public static Class<?> getLambdaBaseClass(Class<?> clazz){
         if (!isLambda(clazz)){
             throw new IllegalArgumentException(clazz.getName()  + " is not a Lambda!");
         }
 
-        return clazz.getSuperclass();
+        return clazz.getInterfaces()[0];
     }
 
     public static boolean isLambda(Class<?> clazz) {
-        return clazz.isSynthetic() && clazz.getDeclaredMethods().length == 1 && !clazz.getDeclaredMethods()[0].isSynthetic();
+        return clazz.isSynthetic() && clazz.getDeclaredMethods().length == 1 && !clazz.getDeclaredMethods()[0].isSynthetic() && clazz.getSuperclass().equals(Object.class) && clazz.getInterfaces().length == 1;
     }
 
     public static boolean isObjectMethod(Method methodToCheck) {

@@ -39,7 +39,7 @@ import spoon.reflect.code.CtWhile;
 public class Project_TestP {
 
     public static <T> void assertContainsAll(List<T> expected, List<T> actual, Context context) {
-        assertContainsAll(expected, actual, Object::equals, context);
+        assertContainsAll(expected, actual, ReflectionUtilsP::equalsForMocks, context);
     }
 
     public static <T> void assertContainsAll(List<T> expected, List<T> actual, BiPredicate<T, T> matcher,
@@ -71,6 +71,10 @@ public class Project_TestP {
                             + finalI
                             + " was not found in expected elements!");
         }
+    }
+
+    public static <T> void assertSetEquals(Set<T> expected, Set<T> actual, Context context) {
+        assertSetEquals(expected, actual, ReflectionUtilsP::equalsForMocks, context);
     }
 
     public static <T> void assertSetEquals(Set<T> expected, Set<T> actual, BiPredicate<T, T> matcher, Context context) {
@@ -150,7 +154,7 @@ public class Project_TestP {
     }
 
     public static <T> void assertListEquals(List<T> expected, List<T> actual, Context context) {
-        assertListEquals(expected, actual, Object::equals, context);
+        assertListEquals(expected, actual, ReflectionUtilsP::equalsForMocks, context);
     }
 
     public static <T> void assertListEquals(List<T> expected, List<T> actual, BiPredicate<T, T> matcher,
@@ -182,6 +186,16 @@ public class Project_TestP {
                     r -> "Actual List does not match expected Elements. Actual at " + finalI
                             + " is not the same as expected!");
         }
+    }
+
+    public static <T> void assertEqualsWithMatcher(T expected, T actual, BiPredicate<T, T> matcher, Context context) {
+        Context contextComplete = contextBuilder()
+                .add(context)
+                .add("actual", actual)
+                .add("expected", expected)
+                .build();
+
+        assertTrue(matcher.test(expected, actual), contextComplete, r -> "Actual Object does not match expected.");
     }
 
     public static void assertNoLoopOrRecursion(Method methodToCheck) {
