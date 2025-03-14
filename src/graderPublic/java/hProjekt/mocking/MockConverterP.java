@@ -7,6 +7,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import com.google.common.collect.Streams;
+import hProjekt.DoNotMock;
+import hProjekt.model.EdgeImpl;
 import kotlin.Pair;
 import kotlin.Triple;
 import org.jetbrains.annotations.NotNull;
@@ -154,8 +156,8 @@ public class MockConverterP extends JsonConverterP {
             try {
                 objects.put(nodeToConvert.get("id").asInt(), constructed);
             } catch (IllegalArgumentException e){
-//                System.out.println("old Objects: " + objects);
-//                System.out.println("new Object: " + nodeToConvert.get("id").asInt() + "=" + constructed);
+                System.out.println("old Objects: " + objects);
+                System.out.println("new Object: " + nodeToConvert.get("id").asInt() + "=" + constructed);
                 throw e;
             }
 
@@ -212,20 +214,26 @@ public class MockConverterP extends JsonConverterP {
             if (!calledMethod.getDeclaringClass().getName().startsWith(getExercisePrefix(objectToCall.getClass()))){
                 return true;
             }
-            if (Arrays.stream(calledMethod.getDeclaringClass().getAnnotations())
-                .anyMatch(ann -> ann.annotationType() == DoNotTouch.class)) {
-                return true;
-            }
-            if (Arrays.stream(calledMethod.getAnnotations()).anyMatch(ann -> ann.annotationType() == DoNotTouch.class)) {
-                return true;
-            }
             if (calledMethod.getName().startsWith("set")
                 && calledMethod.getParameters().length == 1
                 && Arrays.stream(calledMethod.getDeclaringClass().getDeclaredFields())
                 .anyMatch(f -> f.getName().equalsIgnoreCase(calledMethod.getName().replace("set", "")))) {
                 return true;
             }
-            return false;
+            return Streams.concat(
+                Arrays.stream(calledMethod.getDeclaringClass().getAnnotations()),
+                Arrays.stream(calledMethod.getAnnotations())
+            )
+                .anyMatch(ann -> {
+                    if (ann.annotationType() == DoNotTouch.class) {
+                        return true;
+                    }
+                    if (ann instanceof DoNotMock doNotMock && (doNotMock.value().length == 0 || Arrays.stream(doNotMock.value()).map(ReflectionUtilsP::stringToMethod).anyMatch(method::equals))) {
+                        return true;
+                    }
+                    return false;
+                }
+            );
         };
 
         Answer<?> answer = invocationOnMock -> {
@@ -293,7 +301,7 @@ public class MockConverterP extends JsonConverterP {
                 "Can not invoke %s on Class %s with parameters of type %s".formatted(
                     method.getName(),
                     objectToCall.getClass(),
-                    Arrays.stream(arguments).map(Object::getClass).toList()
+                    Arrays.stream(arguments).map(java.lang.Object::getClass).toList()
                 ), e
             );
         } catch (InvocationTargetException e) {
@@ -427,15 +435,26 @@ public class MockConverterP extends JsonConverterP {
     }
 
     public static List<StudentMethodCall> recreateCallAndInvoke(ObjectNode node) {
+        return recreateCallAndInvoke(node, null);
+    }
+
+    public static List<StudentMethodCall> recreateCallAndInvoke(ObjectNode node, Runnable beforeEach) {
 
         List<StudentMethodCall> results = new ArrayList<>();
 
         Class<?> expectedType = getTypeFromNode((ObjectNode) node.get("expected"));
 
+        if (beforeEach != null){
+            beforeEach.run();
+        }
         try {
             results.add(recreateCallAndInvokeUnMocked(node));
         } catch (Throwable e) {
             results.add(new StudentMethodCall(null, null, e));
+        }
+        System.out.println("started mocking");
+        if (beforeEach != null){
+            beforeEach.run();
         }
         try {
             results.add(recreateCallAndInvokeWithMock(node, false));
@@ -443,6 +462,9 @@ public class MockConverterP extends JsonConverterP {
             results.add(new StudentMethodCall(null, null, e));
         }
         StudentMethodCall solResult;
+        if (beforeEach != null){
+            beforeEach.run();
+        }
         try {
             solResult = recreateCallAndInvokeWithMock(node, true);
         } catch (Throwable e) {
@@ -667,13 +689,11 @@ public class MockConverterP extends JsonConverterP {
     private Object callRealMethod(InvocationOnMock mockInvocation) {
         try {
             return mockInvocation.callRealMethod();
-        } catch (CrashException e) {
+        } catch (CrashException | AssertionFailedError | StudentImplementationException e) {
             throw e;
         } catch (MockitoException e) {
             System.err.println("Tried to call \"" + mockInvocation.getMethod() + "\" on class " + mockInvocation.getMock()
                 .getClass());
-            e.printStackTrace();
-        } catch (AssertionFailedError e) {
             throw e;
         } catch (Throwable e) {
             String stacktrace = formatStackTrace(e);
@@ -688,8 +708,6 @@ public class MockConverterP extends JsonConverterP {
 
             throw new StudentImplementationException(e, context, "Method " + mockInvocation.getMethod().getName() + "() threw an exception!");
         }
-        //should never happen here to appease compiler
-        throw new RuntimeException("fail did not trigger correctly!");
     }
 
     private Object replaceCallWithSolution(InvocationOnMock mockInvocation)
@@ -728,7 +746,7 @@ public class MockConverterP extends JsonConverterP {
                 .add("Object", mockInvocation.getMock())
                 .add(
                     "Parameters",
-                    Arrays.stream(mockInvocation.getArguments()).map(Object::toString).collect(Collectors.joining(", "))
+                    Arrays.stream(mockInvocation.getArguments()).map(java.lang.Object::toString).collect(Collectors.joining(", "))
                 )
                 .add("Exception Class", cause.getClass())
                 .add("Exception message", cause.getMessage())

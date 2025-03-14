@@ -245,6 +245,9 @@ public class JsonConverterP {
         if (Modifier.isStatic(field.getModifiers())) {
             return true;
         }
+        if (field.isSynthetic()){
+            return true;
+        }
         if (Arrays.stream(field.getAnnotations()).anyMatch(MockExclude.class::isInstance) ){
             return true;
         }

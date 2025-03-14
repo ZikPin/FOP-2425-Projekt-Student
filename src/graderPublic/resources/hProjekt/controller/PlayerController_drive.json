@@ -1,31 +1,22 @@
 [ {
-  "invoked" : 1276682127,
+  "invoked" : 1547991427,
   "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
-  "arguments" : [ 1548910839 ],
+  "arguments" : [ 828327704 ],
   "calls" : [ {
-    "id" : 2117712636,
-    "methodCalls" : [ {
-      "methodName" : "getState",
-      "invocations" : [ {
-        "return" : 2032105319,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1276682127,
+    "id" : 1547991427,
     "methodCalls" : [ {
       "methodName" : "canDrive",
       "invocations" : [ {
-        "return" : 1181763012,
+        "return" : 54879576,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 2032105319,
+    "id" : 1536091721,
     "methodCalls" : [ {
       "methodName" : "getGamePhaseProperty",
       "invocations" : [ {
-        "return" : 273779655,
+        "return" : 561038317,
         "parameter" : [ ]
       } ]
     } ]
@@ -36,135 +27,43 @@
       "name" : "hasConfirmedPath",
       "type" : "java.lang.Boolean",
       "value" : "false",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "hasPath",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "rentedEdges",
       "type" : "java.util.Set",
       "value" : [ ],
-      "id" : 1685722894
+      "id" : 32742142
     }, {
       "name" : "buildingBudget",
       "type" : "java.lang.Integer",
       "value" : "0",
-      "id" : 521207494
+      "id" : 388122318
     }, {
       "name" : "playerObjective",
       "type" : "hProjekt.controller.PlayerObjective",
       "value" : "IDLE",
-      "id" : 1677544922
-    }, {
-      "name" : "playerStateProperty",
-      "type" : "javafx.beans.property.SimpleObjectProperty",
-      "fields" : [ {
-        "name" : "helper",
-        "type" : "null",
-        "id" : 0
-      }, {
-        "name" : "valid",
-        "type" : "java.lang.Boolean",
-        "value" : "true",
-        "id" : 955994360
-      }, {
-        "name" : "listener",
-        "id" : 0
-      }, {
-        "name" : "observable",
-        "id" : 0
-      }, {
-        "name" : "value",
-        "type" : "hProjekt.model.PlayerState",
-        "fields" : [ {
-          "name" : "buildingBudget",
-          "id" : 521207494
-        }, {
-          "name" : "drivableTiles",
-          "type" : "java.util.Map",
-          "value" : [ ],
-          "id" : 1839255794
-        }, {
-          "name" : "hasPath",
-          "id" : 1181763012
-        }, {
-          "name" : "rentedEdges",
-          "id" : 1685722894
-        }, {
-          "name" : "choosableEdges",
-          "id" : 1685722894
-        }, {
-          "name" : "playerObjective",
-          "id" : 1677544922
-        }, {
-          "name" : "buildableRailEdges",
-          "id" : 1685722894
-        } ],
-        "id" : 30848863
-      }, {
-        "name" : "name",
-        "type" : "java.lang.String",
-        "value" : "",
-        "id" : 1075314220
-      }, {
-        "name" : "bean",
-        "id" : 0
-      } ],
-      "id" : 501893856
-    }, {
-      "name" : "actions",
-      "type" : "java.util.concurrent.LinkedBlockingDeque",
-      "fields" : [ {
-        "name" : "notFull",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
-          "fields" : [ {
-            "name" : "state",
-            "id" : 521207494
-          } ],
-          "id" : 480136046
-        } ],
-        "id" : 1679430571
-      }, {
-        "name" : "notEmpty",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "id" : 480136046
-        } ],
-        "id" : 7839593
-      }, {
-        "name" : "lock",
-        "type" : "java.util.concurrent.locks.ReentrantLock",
-        "fields" : [ {
-          "name" : "sync",
-          "id" : 480136046
-        } ],
-        "id" : 1781553537
-      }, {
-        "name" : "capacity",
-        "type" : "java.lang.Integer",
-        "value" : "2147483647",
-        "id" : 1336788493
-      } ],
-      "id" : 84255845
+      "id" : 1454922150
     }, {
       "name" : "gameController",
       "type" : "hProjekt.controller.GameController",
       "fields" : [ {
         "name" : "stopped",
-        "id" : 1181763012
+        "id" : 54879576
       }, {
         "name" : "activePlayerController",
         "type" : "javafx.beans.property.SimpleObjectProperty",
         "fields" : [ {
           "name" : "helper",
+          "type" : "null",
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -176,12 +75,14 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "type" : "java.lang.String",
+          "value" : "",
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 179238536
+        "id" : 1891616725
       }, {
         "name" : "chosenCitiesProperty",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -190,7 +91,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -205,12 +106,12 @@
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Salzbergen",
-              "id" : 81335048
+              "id" : 1004012334
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
@@ -218,48 +119,48 @@
                 "name" : "r",
                 "type" : "java.lang.Integer",
                 "value" : "1",
-                "id" : 1068781783
+                "id" : 539249566
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 1752213524
+              "id" : 1566507274
             } ],
-            "id" : 1034667841
+            "id" : 1309486557
           }, {
             "name" : "key",
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Pächeralp",
-              "id" : 4331629
+              "id" : 962671732
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
               "fields" : [ {
                 "name" : "r",
-                "id" : 521207494
+                "id" : 388122318
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 491712953
+              "id" : 486737403
             } ],
-            "id" : 1543194808
+            "id" : 747459454
           } ],
-          "id" : 1220376009
+          "id" : 397202629
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 321013539
+        "id" : 2036997329
       }, {
         "name" : "roundCounter",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -268,7 +169,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -277,15 +178,15 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 521207494
+          "id" : 388122318
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1848610675
+        "id" : 949693536
       }, {
         "name" : "currentDiceRoll",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -294,7 +195,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -303,34 +204,36 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 521207494
+          "id" : 388122318
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 890186664
+        "id" : 1442280198
       }, {
         "name" : "dice",
         "type" : "java.util.function.Supplier",
         "fields" : [ ],
-        "id" : 2029074017
+        "id" : 1659479756
       }, {
         "name" : "aiControllers",
         "type" : "java.util.List",
         "value" : [ ],
-        "id" : 1590324088
+        "id" : 1712158903
       }, {
         "name" : "playerControllers",
-        "id" : 1839255794
+        "type" : "java.util.Map",
+        "value" : [ ],
+        "id" : 594935370
       }, {
         "name" : "state",
         "type" : "hProjekt.model.GameState",
         "fields" : [ {
           "name" : "chosenCities",
-          "id" : 1685722894
+          "id" : 32742142
         }, {
           "name" : "gamePhaseProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -339,7 +242,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 955994360
+            "id" : 1664927413
           }, {
             "name" : "listener",
             "id" : 0
@@ -350,15 +253,15 @@
             "name" : "value",
             "type" : "hProjekt.controller.GamePhase",
             "value" : "BUILDING_PHASE",
-            "id" : 1015539383
+            "id" : 621432843
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 273779655
+          "id" : 561038317
         }, {
           "name" : "winnerProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -367,7 +270,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 955994360
+            "id" : 1664927413
           }, {
             "name" : "listener",
             "id" : 0
@@ -379,15 +282,15 @@
             "id" : 0
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 951716676
+          "id" : 1646977722
         }, {
           "name" : "playerPointSurplus",
-          "id" : 1839255794
+          "id" : 594935370
         }, {
           "name" : "playerPositions",
           "type" : "java.util.Map",
@@ -397,31 +300,31 @@
               "name" : "credits",
               "type" : "java.lang.Integer",
               "value" : "20",
-              "id" : 1933047934
+              "id" : 681746231
             }, {
               "name" : "id",
-              "id" : 521207494
+              "id" : 388122318
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Player0",
-              "id" : 1973190109
+              "id" : 624356803
             } ],
-            "id" : 1878023947
+            "id" : 892019677
           }, {
-            "id" : 491712953
+            "id" : 486737403
           } ] ],
-          "id" : 1719845568
+          "id" : 1577862239
         }, {
           "name" : "drivingPlayers",
-          "id" : 1590324088
+          "id" : 1712158903
         }, {
           "name" : "players",
           "type" : "java.util.List",
           "value" : [ {
-            "id" : 1878023947
+            "id" : 892019677
           } ],
-          "id" : 2000556933
+          "id" : 356827013
         }, {
           "name" : "grid",
           "type" : "hProjekt.model.HexGridImpl",
@@ -429,26 +332,26 @@
             "name" : "cities",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 1752213524
+              "id" : 1566507274
             }, {
-              "id" : 1034667841
+              "id" : 1309486557
             } ], [ {
-              "id" : 491712953
+              "id" : 486737403
             }, {
-              "id" : 1543194808
+              "id" : 747459454
             } ] ],
-            "id" : 953900736
+            "id" : 402761050
           }, {
             "name" : "edges",
             "type" : "java.util.Map",
             "value" : [ [ {
               "type" : "java.util.Set",
               "value" : [ {
-                "id" : 491712953
+                "id" : 1566507274
               }, {
-                "id" : 1752213524
+                "id" : 486737403
               } ],
-              "id" : 177764787
+              "id" : 911838493
             }, {
               "type" : "hProjekt.model.EdgeImpl",
               "fields" : [ {
@@ -459,7 +362,7 @@
                   "id" : 0
                 }, {
                   "name" : "valid",
-                  "id" : 955994360
+                  "id" : 1664927413
                 }, {
                   "name" : "listener",
                   "id" : 0
@@ -468,73 +371,73 @@
                   "id" : 0
                 }, {
                   "name" : "value",
-                  "id" : 1590324088
+                  "id" : 1712158903
                 }, {
                   "name" : "name",
-                  "id" : 1075314220
+                  "id" : 236079849
                 }, {
                   "name" : "bean",
                   "id" : 0
                 } ],
-                "id" : 2087874665
+                "id" : 409948603
               }, {
                 "name" : "position2",
-                "id" : 1752213524
+                "id" : 1566507274
               }, {
                 "name" : "position1",
-                "id" : 491712953
+                "id" : 486737403
               } ],
-              "id" : 997034262
+              "id" : 1077426980
             } ] ],
-            "id" : 699830368
+            "id" : 613627065
           }, {
             "name" : "tiles",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 1752213524
+              "id" : 1566507274
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 892905963
+                "id" : 1910175190
               }, {
                 "name" : "type",
                 "type" : "hProjekt.model.Tile$Type",
                 "value" : "PLAIN",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 1752213524
+                "id" : 1566507274
               } ],
-              "id" : 952700396
+              "id" : 2072849202
             } ], [ {
-              "id" : 491712953
+              "id" : 486737403
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 892905963
+                "id" : 1910175190
               }, {
                 "name" : "type",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 491712953
+                "id" : 486737403
               } ],
-              "id" : 1894181018
+              "id" : 1901010372
             } ] ],
-            "id" : 91768340
+            "id" : 106013892
           } ],
-          "id" : 892905963
+          "id" : 1910175190
         } ],
-        "id" : 2032105319
+        "id" : 1536091721
       } ],
-      "id" : 2117712636
+      "id" : 620301108
     }, {
       "name" : "player",
-      "id" : 1878023947
+      "id" : 892019677
     } ],
-    "id" : 1276682127
+    "id" : 1547991427
   }, {
     "type" : "hProjekt.model.TileImpl",
     "fields" : [ {
@@ -547,61 +450,61 @@
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 521207494
+            "id" : 388122318
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 1647386176
+          "id" : 384596360
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 4331629
+            "id" : 962671732
           }, {
             "name" : "position",
-            "id" : 1647386176
+            "id" : 384596360
           } ],
-          "id" : 689135945
+          "id" : 1706512519
         } ], [ {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1068781783
+            "id" : 539249566
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 157505355
+          "id" : 1638747011
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 81335048
+            "id" : 1004012334
           }, {
             "name" : "position",
-            "id" : 157505355
+            "id" : 1638747011
           } ],
-          "id" : 339973842
+          "id" : 1022400816
         } ] ],
-        "id" : 1970404803
+        "id" : 233147761
       }, {
         "name" : "edges",
         "type" : "java.util.Map",
         "value" : [ [ {
           "type" : "java.util.Set",
           "value" : [ {
-            "id" : 1647386176
+            "id" : 1638747011
           }, {
-            "id" : 157505355
+            "id" : 384596360
           } ],
-          "id" : 2093777729
+          "id" : 1344491827
         }, {
           "type" : "hProjekt.model.EdgeImpl",
           "fields" : [ {
@@ -612,7 +515,7 @@
               "id" : 0
             }, {
               "name" : "valid",
-              "id" : 955994360
+              "id" : 1664927413
             }, {
               "name" : "listener",
               "id" : 0
@@ -623,59 +526,59 @@
               "name" : "value",
               "type" : "java.util.List",
               "value" : [ ],
-              "id" : 1813464813
+              "id" : 1058951948
             }, {
               "name" : "name",
-              "id" : 1075314220
+              "id" : 236079849
             }, {
               "name" : "bean",
               "id" : 0
             } ],
-            "id" : 1959424860
+            "id" : 283269930
           }, {
             "name" : "position2",
-            "id" : 157505355
+            "id" : 1638747011
           }, {
             "name" : "position1",
-            "id" : 1647386176
+            "id" : 384596360
           } ],
-          "id" : 504297987
+          "id" : 1446654626
         } ] ],
-        "id" : 563391500
+        "id" : 516059759
       }, {
         "name" : "tiles",
         "type" : "java.util.Map",
         "value" : [ [ {
-          "id" : 1647386176
+          "id" : 384596360
         }, {
           "type" : "hProjekt.model.TileImpl",
           "fields" : [ {
             "name" : "hexGrid",
-            "id" : 257641938
+            "id" : 2037902642
           }, {
             "name" : "type",
-            "id" : 154482552
+            "id" : 1790585734
           }, {
             "name" : "position",
-            "id" : 1647386176
+            "id" : 384596360
           } ],
-          "id" : 211363124
+          "id" : 1572903882
         } ], [ {
-          "id" : 157505355
+          "id" : 1638747011
         }, {
-          "id" : 1548910839
+          "id" : 828327704
         } ] ],
-        "id" : 124696619
+        "id" : 506580891
       } ],
-      "id" : 257641938
+      "id" : 2037902642
     }, {
       "name" : "type",
-      "id" : 154482552
+      "id" : 1790585734
     }, {
       "name" : "position",
-      "id" : 157505355
+      "id" : 1638747011
     } ],
-    "id" : 1548910839
+    "id" : 828327704
   } ],
   "expected" : {
     "type" : "hProjekt.controller.actions.IllegalActionException",
@@ -683,52 +586,43 @@
       "name" : "suppressedExceptions",
       "type" : "java.util.List",
       "value" : [ ],
-      "id" : 817545888
+      "id" : 334337848
     }, {
       "name" : "cause",
-      "id" : 262807770
+      "id" : 1691423523
     }, {
       "name" : "detailMessage",
       "type" : "java.lang.String",
       "value" : "Player cannot drive",
-      "id" : 1735249620
+      "id" : 1502471871
     } ],
-    "id" : 262807770
+    "id" : 1691423523
   }
 }, {
-  "invoked" : 405419850,
+  "invoked" : 340154545,
   "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
-  "arguments" : [ 2072286676 ],
+  "arguments" : [ 1291603634 ],
   "calls" : [ {
-    "id" : 405419850,
-    "methodCalls" : [ {
-      "methodName" : "canDrive",
-      "invocations" : [ {
-        "return" : 1181763012,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1575651265,
+    "id" : 1796989016,
     "methodCalls" : [ {
       "methodName" : "getGamePhaseProperty",
       "invocations" : [ {
-        "return" : 613344456,
+        "return" : 568862664,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getDrivingPlayers",
       "invocations" : [ {
-        "return" : 205320627,
+        "return" : 306730707,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1162798928,
+    "id" : 340154545,
     "methodCalls" : [ {
-      "methodName" : "getState",
+      "methodName" : "canDrive",
       "invocations" : [ {
-        "return" : 1575651265,
+        "return" : 54879576,
         "parameter" : [ ]
       } ]
     } ]
@@ -739,135 +633,43 @@
       "name" : "hasConfirmedPath",
       "type" : "java.lang.Boolean",
       "value" : "false",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "hasPath",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "rentedEdges",
       "type" : "java.util.Set",
       "value" : [ ],
-      "id" : 816516896
+      "id" : 74701741
     }, {
       "name" : "buildingBudget",
       "type" : "java.lang.Integer",
       "value" : "0",
-      "id" : 521207494
+      "id" : 388122318
     }, {
       "name" : "playerObjective",
       "type" : "hProjekt.controller.PlayerObjective",
       "value" : "IDLE",
-      "id" : 1677544922
-    }, {
-      "name" : "playerStateProperty",
-      "type" : "javafx.beans.property.SimpleObjectProperty",
-      "fields" : [ {
-        "name" : "helper",
-        "type" : "null",
-        "id" : 0
-      }, {
-        "name" : "valid",
-        "type" : "java.lang.Boolean",
-        "value" : "true",
-        "id" : 955994360
-      }, {
-        "name" : "listener",
-        "id" : 0
-      }, {
-        "name" : "observable",
-        "id" : 0
-      }, {
-        "name" : "value",
-        "type" : "hProjekt.model.PlayerState",
-        "fields" : [ {
-          "name" : "buildingBudget",
-          "id" : 521207494
-        }, {
-          "name" : "drivableTiles",
-          "type" : "java.util.Map",
-          "value" : [ ],
-          "id" : 473250995
-        }, {
-          "name" : "hasPath",
-          "id" : 1181763012
-        }, {
-          "name" : "rentedEdges",
-          "id" : 816516896
-        }, {
-          "name" : "choosableEdges",
-          "id" : 816516896
-        }, {
-          "name" : "playerObjective",
-          "id" : 1677544922
-        }, {
-          "name" : "buildableRailEdges",
-          "id" : 816516896
-        } ],
-        "id" : 1245381541
-      }, {
-        "name" : "name",
-        "type" : "java.lang.String",
-        "value" : "",
-        "id" : 1075314220
-      }, {
-        "name" : "bean",
-        "id" : 0
-      } ],
-      "id" : 107367502
-    }, {
-      "name" : "actions",
-      "type" : "java.util.concurrent.LinkedBlockingDeque",
-      "fields" : [ {
-        "name" : "notFull",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
-          "fields" : [ {
-            "name" : "state",
-            "id" : 521207494
-          } ],
-          "id" : 677949240
-        } ],
-        "id" : 1658297168
-      }, {
-        "name" : "notEmpty",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "id" : 677949240
-        } ],
-        "id" : 942913890
-      }, {
-        "name" : "lock",
-        "type" : "java.util.concurrent.locks.ReentrantLock",
-        "fields" : [ {
-          "name" : "sync",
-          "id" : 677949240
-        } ],
-        "id" : 2123551113
-      }, {
-        "name" : "capacity",
-        "type" : "java.lang.Integer",
-        "value" : "2147483647",
-        "id" : 1659000724
-      } ],
-      "id" : 381050985
+      "id" : 1454922150
     }, {
       "name" : "gameController",
       "type" : "hProjekt.controller.GameController",
       "fields" : [ {
         "name" : "stopped",
-        "id" : 1181763012
+        "id" : 54879576
       }, {
         "name" : "activePlayerController",
         "type" : "javafx.beans.property.SimpleObjectProperty",
         "fields" : [ {
           "name" : "helper",
+          "type" : "null",
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -879,12 +681,14 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "type" : "java.lang.String",
+          "value" : "",
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1420756760
+        "id" : 330849841
       }, {
         "name" : "chosenCitiesProperty",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -893,7 +697,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -908,12 +712,12 @@
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Buchsbaum",
-              "id" : 1209004167
+              "id" : 1763906071
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
@@ -921,48 +725,48 @@
                 "name" : "r",
                 "type" : "java.lang.Integer",
                 "value" : "1",
-                "id" : 1068781783
+                "id" : 539249566
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 446584736
+              "id" : 1089970921
             } ],
-            "id" : 836627460
+            "id" : 543652802
           }, {
             "name" : "key",
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Grumannsbrücken",
-              "id" : 188634087
+              "id" : 1693136317
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
               "fields" : [ {
                 "name" : "r",
-                "id" : 521207494
+                "id" : 388122318
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 115164589
+              "id" : 1283992783
             } ],
-            "id" : 1054123527
+            "id" : 1019008066
           } ],
-          "id" : 1366968809
+          "id" : 2057979540
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 970075412
+        "id" : 532016551
       }, {
         "name" : "roundCounter",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -971,7 +775,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -980,15 +784,15 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 521207494
+          "id" : 388122318
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1006319488
+        "id" : 1097594211
       }, {
         "name" : "currentDiceRoll",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -997,7 +801,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -1006,34 +810,36 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 521207494
+          "id" : 388122318
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1158088991
+        "id" : 387395627
       }, {
         "name" : "dice",
         "type" : "java.util.function.Supplier",
         "fields" : [ ],
-        "id" : 1839841613
+        "id" : 2057389797
       }, {
         "name" : "aiControllers",
         "type" : "java.util.List",
         "value" : [ ],
-        "id" : 205320627
+        "id" : 306730707
       }, {
         "name" : "playerControllers",
-        "id" : 473250995
+        "type" : "java.util.Map",
+        "value" : [ ],
+        "id" : 1146701034
       }, {
         "name" : "state",
         "type" : "hProjekt.model.GameState",
         "fields" : [ {
           "name" : "chosenCities",
-          "id" : 816516896
+          "id" : 74701741
         }, {
           "name" : "gamePhaseProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -1042,7 +848,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "listener",
             "id" : 0
@@ -1053,15 +859,15 @@
             "name" : "value",
             "type" : "hProjekt.controller.GamePhase",
             "value" : "DRIVING_PHASE",
-            "id" : 997916804
+            "id" : 177436125
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 613344456
+          "id" : 568862664
         }, {
           "name" : "winnerProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -1070,7 +876,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 955994360
+            "id" : 1664927413
           }, {
             "name" : "listener",
             "id" : 0
@@ -1082,15 +888,15 @@
             "id" : 0
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 912657395
+          "id" : 977990184
         }, {
           "name" : "playerPointSurplus",
-          "id" : 473250995
+          "id" : 1146701034
         }, {
           "name" : "playerPositions",
           "type" : "java.util.Map",
@@ -1100,31 +906,31 @@
               "name" : "credits",
               "type" : "java.lang.Integer",
               "value" : "20",
-              "id" : 1933047934
+              "id" : 681746231
             }, {
               "name" : "id",
-              "id" : 521207494
+              "id" : 388122318
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Player0",
-              "id" : 1273522603
+              "id" : 167547238
             } ],
-            "id" : 1666891953
+            "id" : 2066748233
           }, {
-            "id" : 115164589
+            "id" : 1283992783
           } ] ],
-          "id" : 541743623
+          "id" : 742836488
         }, {
           "name" : "drivingPlayers",
-          "id" : 205320627
+          "id" : 306730707
         }, {
           "name" : "players",
           "type" : "java.util.List",
           "value" : [ {
-            "id" : 1666891953
+            "id" : 2066748233
           } ],
-          "id" : 1246018408
+          "id" : 437258089
         }, {
           "name" : "grid",
           "type" : "hProjekt.model.HexGridImpl",
@@ -1132,26 +938,26 @@
             "name" : "cities",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 115164589
+              "id" : 1283992783
             }, {
-              "id" : 1054123527
+              "id" : 1019008066
             } ], [ {
-              "id" : 446584736
+              "id" : 1089970921
             }, {
-              "id" : 836627460
+              "id" : 543652802
             } ] ],
-            "id" : 15622587
+            "id" : 1749250448
           }, {
             "name" : "edges",
             "type" : "java.util.Map",
             "value" : [ [ {
               "type" : "java.util.Set",
               "value" : [ {
-                "id" : 115164589
+                "id" : 1089970921
               }, {
-                "id" : 446584736
+                "id" : 1283992783
               } ],
-              "id" : 981943426
+              "id" : 1455826282
             }, {
               "type" : "hProjekt.model.EdgeImpl",
               "fields" : [ {
@@ -1162,7 +968,7 @@
                   "id" : 0
                 }, {
                   "name" : "valid",
-                  "id" : 955994360
+                  "id" : 1664927413
                 }, {
                   "name" : "listener",
                   "id" : 0
@@ -1171,73 +977,73 @@
                   "id" : 0
                 }, {
                   "name" : "value",
-                  "id" : 205320627
+                  "id" : 306730707
                 }, {
                   "name" : "name",
-                  "id" : 1075314220
+                  "id" : 236079849
                 }, {
                   "name" : "bean",
                   "id" : 0
                 } ],
-                "id" : 2023135173
+                "id" : 2042408824
               }, {
                 "name" : "position2",
-                "id" : 446584736
+                "id" : 1089970921
               }, {
                 "name" : "position1",
-                "id" : 115164589
+                "id" : 1283992783
               } ],
-              "id" : 367999879
+              "id" : 577654361
             } ] ],
-            "id" : 345505212
+            "id" : 995947718
           }, {
             "name" : "tiles",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 115164589
+              "id" : 1283992783
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 306817208
+                "id" : 937024294
               }, {
                 "name" : "type",
                 "type" : "hProjekt.model.Tile$Type",
                 "value" : "PLAIN",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 115164589
+                "id" : 1283992783
               } ],
-              "id" : 492966560
+              "id" : 1952093466
             } ], [ {
-              "id" : 446584736
+              "id" : 1089970921
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 306817208
+                "id" : 937024294
               }, {
                 "name" : "type",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 446584736
+                "id" : 1089970921
               } ],
-              "id" : 97149955
+              "id" : 957239610
             } ] ],
-            "id" : 429376190
+            "id" : 1282890644
           } ],
-          "id" : 306817208
+          "id" : 937024294
         } ],
-        "id" : 1575651265
+        "id" : 1796989016
       } ],
-      "id" : 1162798928
+      "id" : 1304345230
     }, {
       "name" : "player",
-      "id" : 1666891953
+      "id" : 2066748233
     } ],
-    "id" : 405419850
+    "id" : 340154545
   }, {
     "type" : "hProjekt.model.TileImpl",
     "fields" : [ {
@@ -1250,61 +1056,61 @@
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1068781783
+            "id" : 539249566
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 1584905731
+          "id" : 2041754663
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 1209004167
+            "id" : 1763906071
           }, {
             "name" : "position",
-            "id" : 1584905731
+            "id" : 2041754663
           } ],
-          "id" : 2066612502
+          "id" : 2097538453
         } ], [ {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 521207494
+            "id" : 388122318
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 694636491
+          "id" : 1315599779
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 188634087
+            "id" : 1693136317
           }, {
             "name" : "position",
-            "id" : 694636491
+            "id" : 1315599779
           } ],
-          "id" : 374104578
+          "id" : 1956205887
         } ] ],
-        "id" : 87357325
+        "id" : 1676498304
       }, {
         "name" : "edges",
         "type" : "java.util.Map",
         "value" : [ [ {
           "type" : "java.util.Set",
           "value" : [ {
-            "id" : 694636491
+            "id" : 2041754663
           }, {
-            "id" : 1584905731
+            "id" : 1315599779
           } ],
-          "id" : 1900079952
+          "id" : 1924825361
         }, {
           "type" : "hProjekt.model.EdgeImpl",
           "fields" : [ {
@@ -1315,7 +1121,7 @@
               "id" : 0
             }, {
               "name" : "valid",
-              "id" : 955994360
+              "id" : 1664927413
             }, {
               "name" : "listener",
               "id" : 0
@@ -1326,59 +1132,59 @@
               "name" : "value",
               "type" : "java.util.List",
               "value" : [ ],
-              "id" : 1655540012
+              "id" : 376865673
             }, {
               "name" : "name",
-              "id" : 1075314220
+              "id" : 236079849
             }, {
               "name" : "bean",
               "id" : 0
             } ],
-            "id" : 200957488
+            "id" : 1766056665
           }, {
             "name" : "position2",
-            "id" : 1584905731
+            "id" : 2041754663
           }, {
             "name" : "position1",
-            "id" : 694636491
+            "id" : 1315599779
           } ],
-          "id" : 691553042
+          "id" : 204650672
         } ] ],
-        "id" : 1435498611
+        "id" : 82301410
       }, {
         "name" : "tiles",
         "type" : "java.util.Map",
         "value" : [ [ {
-          "id" : 1584905731
+          "id" : 2041754663
         }, {
-          "id" : 2072286676
+          "id" : 1291603634
         } ], [ {
-          "id" : 694636491
+          "id" : 1315599779
         }, {
           "type" : "hProjekt.model.TileImpl",
           "fields" : [ {
             "name" : "hexGrid",
-            "id" : 1305436232
+            "id" : 736747440
           }, {
             "name" : "type",
-            "id" : 154482552
+            "id" : 1790585734
           }, {
             "name" : "position",
-            "id" : 694636491
+            "id" : 1315599779
           } ],
-          "id" : 826593220
+          "id" : 1624058626
         } ] ],
-        "id" : 1663813609
+        "id" : 532579730
       } ],
-      "id" : 1305436232
+      "id" : 736747440
     }, {
       "name" : "type",
-      "id" : 154482552
+      "id" : 1790585734
     }, {
       "name" : "position",
-      "id" : 1584905731
+      "id" : 2041754663
     } ],
-    "id" : 2072286676
+    "id" : 1291603634
   } ],
   "expected" : {
     "type" : "hProjekt.controller.actions.IllegalActionException",
@@ -1386,145 +1192,118 @@
       "name" : "suppressedExceptions",
       "type" : "java.util.List",
       "value" : [ ],
-      "id" : 817545888
+      "id" : 334337848
     }, {
       "name" : "cause",
-      "id" : 713193000
+      "id" : 1070296187
     }, {
       "name" : "detailMessage",
       "type" : "java.lang.String",
       "value" : "Player cannot drive",
-      "id" : 1735249620
+      "id" : 1502471871
     } ],
-    "id" : 713193000
+    "id" : 1070296187
   }
 }, {
-  "invoked" : 1224178200,
+  "invoked" : 636235590,
   "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
-  "arguments" : [ 1717171826 ],
+  "arguments" : [ 1371848682 ],
   "calls" : [ {
-    "id" : 1223256267,
-    "methodCalls" : [ {
-      "methodName" : "getRailOwners",
-      "invocations" : [ {
-        "return" : 1900876933,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "hasRail",
-      "invocations" : [ {
-        "return" : 955994360,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getRailOwnersProperty",
-      "invocations" : [ {
-        "return" : 1012745497,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 279583081,
+    "id" : 1235436743,
     "methodCalls" : [ {
       "methodName" : "getTileAt",
       "invocations" : [ {
-        "return" : 1686555884,
-        "parameter" : [ 1949995233 ]
+        "return" : 1860222958,
+        "parameter" : [ 1774039676 ]
       } ]
     }, {
       "methodName" : "getTiles",
       "invocations" : [ {
-        "return" : 1177420348,
+        "return" : 61700756,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRails",
       "invocations" : [ {
-        "return" : 242399847,
-        "parameter" : [ 1240758872 ]
+        "return" : 1123554509,
+        "parameter" : [ 556806606 ]
       } ]
     } ]
   }, {
-    "id" : 2062808327,
+    "id" : 245047935,
     "methodCalls" : [ {
       "methodName" : "getGrid",
       "invocations" : [ {
-        "return" : 279583081,
+        "return" : 1235436743,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getGamePhaseProperty",
       "invocations" : [ {
-        "return" : 1598535732,
+        "return" : 925956911,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPlayerPositions",
       "invocations" : [ {
-        "return" : 468613099,
+        "return" : 1508392944,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getDrivingPlayers",
       "invocations" : [ {
-        "return" : 1900876933,
+        "return" : 2076099020,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1686555884,
+    "id" : 95924865,
     "methodCalls" : [ {
-      "methodName" : "getConnectedNeighbours",
+      "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1124195906,
-        "parameter" : [ 164502008 ]
-      } ]
-    }, {
-      "methodName" : "getNeighbours",
-      "invocations" : [ {
-        "return" : 1124195906,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getHexGrid",
-      "invocations" : [ {
-        "return" : 279583081,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition",
-      "invocations" : [ {
-        "return" : 1949995233,
+        "return" : 1128976888,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 592464348,
+    "id" : 636235590,
     "methodCalls" : [ {
-      "methodName" : "getState",
-      "invocations" : [ {
-        "return" : 2062808327,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1224178200,
-    "methodCalls" : [ {
-      "methodName" : "getDrivableTiles",
-      "invocations" : [ {
-        "return" : 2112554942,
-        "parameter" : [ ]
-      } ]
-    }, {
       "methodName" : "getPlayer",
       "invocations" : [ {
-        "return" : 1240758872,
+        "return" : 556806606,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "canDrive",
       "invocations" : [ {
-        "return" : 955994360,
+        "return" : 1664927413,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1860222958,
+    "methodCalls" : [ {
+      "methodName" : "getConnectedNeighbours",
+      "invocations" : [ {
+        "return" : 1273260043,
+        "parameter" : [ 1312006665 ]
+      } ]
+    }, {
+      "methodName" : "getNeighbours",
+      "invocations" : [ {
+        "return" : 1273260043,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getHexGrid",
+      "invocations" : [ {
+        "return" : 1235436743,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition",
+      "invocations" : [ {
+        "return" : 1774039676,
         "parameter" : [ ]
       } ]
     } ]
@@ -1535,135 +1314,43 @@
       "name" : "hasConfirmedPath",
       "type" : "java.lang.Boolean",
       "value" : "false",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "hasPath",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "rentedEdges",
       "type" : "java.util.Set",
       "value" : [ ],
-      "id" : 1124195906
+      "id" : 1273260043
     }, {
       "name" : "buildingBudget",
       "type" : "java.lang.Integer",
       "value" : "0",
-      "id" : 521207494
+      "id" : 388122318
     }, {
       "name" : "playerObjective",
       "type" : "hProjekt.controller.PlayerObjective",
       "value" : "IDLE",
-      "id" : 1677544922
-    }, {
-      "name" : "playerStateProperty",
-      "type" : "javafx.beans.property.SimpleObjectProperty",
-      "fields" : [ {
-        "name" : "helper",
-        "type" : "null",
-        "id" : 0
-      }, {
-        "name" : "valid",
-        "type" : "java.lang.Boolean",
-        "value" : "true",
-        "id" : 955994360
-      }, {
-        "name" : "listener",
-        "id" : 0
-      }, {
-        "name" : "observable",
-        "id" : 0
-      }, {
-        "name" : "value",
-        "type" : "hProjekt.model.PlayerState",
-        "fields" : [ {
-          "name" : "buildingBudget",
-          "id" : 521207494
-        }, {
-          "name" : "drivableTiles",
-          "type" : "java.util.Map",
-          "value" : [ ],
-          "id" : 2112554942
-        }, {
-          "name" : "hasPath",
-          "id" : 1181763012
-        }, {
-          "name" : "rentedEdges",
-          "id" : 1124195906
-        }, {
-          "name" : "choosableEdges",
-          "id" : 1124195906
-        }, {
-          "name" : "playerObjective",
-          "id" : 1677544922
-        }, {
-          "name" : "buildableRailEdges",
-          "id" : 1124195906
-        } ],
-        "id" : 372001728
-      }, {
-        "name" : "name",
-        "type" : "java.lang.String",
-        "value" : "",
-        "id" : 1075314220
-      }, {
-        "name" : "bean",
-        "id" : 0
-      } ],
-      "id" : 565877983
-    }, {
-      "name" : "actions",
-      "type" : "java.util.concurrent.LinkedBlockingDeque",
-      "fields" : [ {
-        "name" : "notFull",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
-          "fields" : [ {
-            "name" : "state",
-            "id" : 521207494
-          } ],
-          "id" : 915571252
-        } ],
-        "id" : 322528388
-      }, {
-        "name" : "notEmpty",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "id" : 915571252
-        } ],
-        "id" : 1021593569
-      }, {
-        "name" : "lock",
-        "type" : "java.util.concurrent.locks.ReentrantLock",
-        "fields" : [ {
-          "name" : "sync",
-          "id" : 915571252
-        } ],
-        "id" : 249227692
-      }, {
-        "name" : "capacity",
-        "type" : "java.lang.Integer",
-        "value" : "2147483647",
-        "id" : 1498903032
-      } ],
-      "id" : 609575803
+      "id" : 1454922150
     }, {
       "name" : "gameController",
       "type" : "hProjekt.controller.GameController",
       "fields" : [ {
         "name" : "stopped",
-        "id" : 1181763012
+        "id" : 54879576
       }, {
         "name" : "activePlayerController",
         "type" : "javafx.beans.property.SimpleObjectProperty",
         "fields" : [ {
           "name" : "helper",
+          "type" : "null",
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -1675,12 +1362,14 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "type" : "java.lang.String",
+          "value" : "",
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 322402740
+        "id" : 47445734
       }, {
         "name" : "chosenCitiesProperty",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -1689,7 +1378,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -1704,12 +1393,12 @@
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Armstroffmeiler",
-              "id" : 963143131
+              "id" : 391597226
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
@@ -1717,48 +1406,48 @@
                 "name" : "r",
                 "type" : "java.lang.Integer",
                 "value" : "1",
-                "id" : 1068781783
+                "id" : 539249566
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 1731991322
+              "id" : 960487575
             } ],
-            "id" : 934616418
+            "id" : 964151268
           }, {
             "name" : "key",
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Gunkeln",
-              "id" : 993666706
+              "id" : 1432044474
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
               "fields" : [ {
                 "name" : "r",
-                "id" : 521207494
+                "id" : 388122318
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 1949995233
+              "id" : 1774039676
             } ],
-            "id" : 772265196
+            "id" : 740759177
           } ],
-          "id" : 1917512372
+          "id" : 292911380
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 29104645
+        "id" : 992930520
       }, {
         "name" : "roundCounter",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -1767,7 +1456,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -1776,15 +1465,15 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 521207494
+          "id" : 388122318
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 58796432
+        "id" : 1344994164
       }, {
         "name" : "currentDiceRoll",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -1793,7 +1482,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -1802,34 +1491,36 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 521207494
+          "id" : 388122318
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 403869317
+        "id" : 582910481
       }, {
         "name" : "dice",
         "type" : "java.util.function.Supplier",
         "fields" : [ ],
-        "id" : 575853652
+        "id" : 1754966907
       }, {
         "name" : "aiControllers",
         "type" : "java.util.List",
         "value" : [ ],
-        "id" : 279723194
+        "id" : 1021555062
       }, {
         "name" : "playerControllers",
-        "id" : 2112554942
+        "type" : "java.util.Map",
+        "value" : [ ],
+        "id" : 484695549
       }, {
         "name" : "state",
         "type" : "hProjekt.model.GameState",
         "fields" : [ {
           "name" : "chosenCities",
-          "id" : 1124195906
+          "id" : 1273260043
         }, {
           "name" : "gamePhaseProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -1838,7 +1529,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "listener",
             "id" : 0
@@ -1849,15 +1540,15 @@
             "name" : "value",
             "type" : "hProjekt.controller.GamePhase",
             "value" : "DRIVING_PHASE",
-            "id" : 997916804
+            "id" : 177436125
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1598535732
+          "id" : 925956911
         }, {
           "name" : "winnerProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -1866,7 +1557,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 955994360
+            "id" : 1664927413
           }, {
             "name" : "listener",
             "id" : 0
@@ -1878,15 +1569,15 @@
             "id" : 0
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1059169478
+          "id" : 813646371
         }, {
           "name" : "playerPointSurplus",
-          "id" : 2112554942
+          "id" : 484695549
         }, {
           "name" : "playerPositions",
           "type" : "java.util.Map",
@@ -1896,31 +1587,31 @@
               "name" : "credits",
               "type" : "java.lang.Integer",
               "value" : "20",
-              "id" : 1933047934
+              "id" : 681746231
             }, {
               "name" : "id",
-              "id" : 521207494
+              "id" : 388122318
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Player0",
-              "id" : 1328526877
+              "id" : 1962347131
             } ],
-            "id" : 1240758872
+            "id" : 556806606
           }, {
-            "id" : 1949995233
+            "id" : 1774039676
           } ] ],
-          "id" : 468613099
+          "id" : 1508392944
         }, {
           "name" : "drivingPlayers",
           "type" : "java.util.List",
           "value" : [ {
-            "id" : 1240758872
+            "id" : 556806606
           } ],
-          "id" : 1900876933
+          "id" : 2076099020
         }, {
           "name" : "players",
-          "id" : 1900876933
+          "id" : 2076099020
         }, {
           "name" : "grid",
           "type" : "hProjekt.model.HexGridImpl",
@@ -1928,26 +1619,26 @@
             "name" : "cities",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 1731991322
+              "id" : 1774039676
             }, {
-              "id" : 934616418
+              "id" : 740759177
             } ], [ {
-              "id" : 1949995233
+              "id" : 960487575
             }, {
-              "id" : 772265196
+              "id" : 964151268
             } ] ],
-            "id" : 579752895
+            "id" : 1517795276
           }, {
             "name" : "edges",
             "type" : "java.util.Map",
             "value" : [ [ {
               "type" : "java.util.Set",
               "value" : [ {
-                "id" : 1949995233
+                "id" : 960487575
               }, {
-                "id" : 1731991322
+                "id" : 1774039676
               } ],
-              "id" : 1449251323
+              "id" : 235960891
             }, {
               "type" : "hProjekt.model.EdgeImpl",
               "fields" : [ {
@@ -1958,7 +1649,7 @@
                   "id" : 0
                 }, {
                   "name" : "valid",
-                  "id" : 955994360
+                  "id" : 1664927413
                 }, {
                   "name" : "listener",
                   "id" : 0
@@ -1967,73 +1658,73 @@
                   "id" : 0
                 }, {
                   "name" : "value",
-                  "id" : 1900876933
+                  "id" : 2076099020
                 }, {
                   "name" : "name",
-                  "id" : 1075314220
+                  "id" : 236079849
                 }, {
                   "name" : "bean",
                   "id" : 0
                 } ],
-                "id" : 1012745497
+                "id" : 1128976888
               }, {
                 "name" : "position2",
-                "id" : 1731991322
+                "id" : 960487575
               }, {
                 "name" : "position1",
-                "id" : 1949995233
+                "id" : 1774039676
               } ],
-              "id" : 1223256267
+              "id" : 95924865
             } ] ],
-            "id" : 242399847
+            "id" : 1123554509
           }, {
             "name" : "tiles",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 1731991322
+              "id" : 1774039676
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 279583081
+                "id" : 1235436743
               }, {
                 "name" : "type",
                 "type" : "hProjekt.model.Tile$Type",
                 "value" : "PLAIN",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 1731991322
+                "id" : 1774039676
               } ],
-              "id" : 1265244407
+              "id" : 1860222958
             } ], [ {
-              "id" : 1949995233
+              "id" : 960487575
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 279583081
+                "id" : 1235436743
               }, {
                 "name" : "type",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 1949995233
+                "id" : 960487575
               } ],
-              "id" : 1686555884
+              "id" : 1793662475
             } ] ],
-            "id" : 1177420348
+            "id" : 61700756
           } ],
-          "id" : 279583081
+          "id" : 1235436743
         } ],
-        "id" : 2062808327
+        "id" : 245047935
       } ],
-      "id" : 592464348
+      "id" : 1246343791
     }, {
       "name" : "player",
-      "id" : 1240758872
+      "id" : 556806606
     } ],
-    "id" : 1224178200
+    "id" : 636235590
   }, {
     "type" : "hProjekt.model.TileImpl",
     "fields" : [ {
@@ -2046,61 +1737,61 @@
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 521207494
+            "id" : 388122318
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 1553171419
+          "id" : 915023581
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 993666706
+            "id" : 1432044474
           }, {
             "name" : "position",
-            "id" : 1553171419
+            "id" : 915023581
           } ],
-          "id" : 1018017510
+          "id" : 932956510
         } ], [ {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1068781783
+            "id" : 539249566
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 1784269585
+          "id" : 1858665047
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 963143131
+            "id" : 391597226
           }, {
             "name" : "position",
-            "id" : 1784269585
+            "id" : 1858665047
           } ],
-          "id" : 1748642807
+          "id" : 1771151341
         } ] ],
-        "id" : 1373312608
+        "id" : 1750761816
       }, {
         "name" : "edges",
         "type" : "java.util.Map",
         "value" : [ [ {
           "type" : "java.util.Set",
           "value" : [ {
-            "id" : 1553171419
+            "id" : 1858665047
           }, {
-            "id" : 1784269585
+            "id" : 915023581
           } ],
-          "id" : 529412262
+          "id" : 1082190345
         }, {
           "type" : "hProjekt.model.EdgeImpl",
           "fields" : [ {
@@ -2111,7 +1802,7 @@
               "id" : 0
             }, {
               "name" : "valid",
-              "id" : 955994360
+              "id" : 1664927413
             }, {
               "name" : "listener",
               "id" : 0
@@ -2125,75 +1816,75 @@
                 "type" : "hProjekt.model.PlayerImpl",
                 "fields" : [ {
                   "name" : "credits",
-                  "id" : 1933047934
+                  "id" : 681746231
                 }, {
                   "name" : "id",
-                  "id" : 521207494
+                  "id" : 388122318
                 }, {
                   "name" : "name",
-                  "id" : 1328526877
+                  "id" : 1962347131
                 } ],
-                "id" : 604869781
+                "id" : 1519590313
               } ],
-              "id" : 121102420
+              "id" : 1744025389
             }, {
               "name" : "name",
-              "id" : 1075314220
+              "id" : 236079849
             }, {
               "name" : "bean",
               "id" : 0
             } ],
-            "id" : 1913615286
+            "id" : 1036545539
           }, {
             "name" : "position2",
-            "id" : 1784269585
+            "id" : 1858665047
           }, {
             "name" : "position1",
-            "id" : 1553171419
+            "id" : 915023581
           } ],
-          "id" : 1850347798
+          "id" : 1811330132
         } ] ],
-        "id" : 777268962
+        "id" : 1525279242
       }, {
         "name" : "tiles",
         "type" : "java.util.Map",
         "value" : [ [ {
-          "id" : 1553171419
+          "id" : 915023581
         }, {
           "type" : "hProjekt.model.TileImpl",
           "fields" : [ {
             "name" : "hexGrid",
-            "id" : 1705974595
+            "id" : 1443897094
           }, {
             "name" : "type",
-            "id" : 154482552
+            "id" : 1790585734
           }, {
             "name" : "position",
-            "id" : 1553171419
+            "id" : 915023581
           } ],
-          "id" : 2061069630
+          "id" : 1111876617
         } ], [ {
-          "id" : 1784269585
+          "id" : 1858665047
         }, {
-          "id" : 1717171826
+          "id" : 1371848682
         } ] ],
-        "id" : 1683207707
+        "id" : 1537194698
       } ],
-      "id" : 1705974595
+      "id" : 1443897094
     }, {
       "name" : "type",
-      "id" : 154482552
+      "id" : 1790585734
     }, {
       "name" : "position",
-      "id" : 1784269585
+      "id" : 1858665047
     } ],
-    "id" : 1717171826
+    "id" : 1371848682
   }, {
     "type" : "java.util.Set",
     "value" : [ {
-      "id" : 1223256267
+      "id" : 95924865
     } ],
-    "id" : 164502008
+    "id" : 1312006665
   } ],
   "expected" : {
     "type" : "hProjekt.controller.actions.IllegalActionException",
@@ -2201,167 +1892,128 @@
       "name" : "suppressedExceptions",
       "type" : "java.util.List",
       "value" : [ ],
-      "id" : 817545888
+      "id" : 334337848
     }, {
       "name" : "cause",
-      "id" : 1278802871
+      "id" : 1318926629
     }, {
       "name" : "detailMessage",
       "type" : "java.lang.String",
       "value" : "Player cannot drive to the target tile",
-      "id" : 1351187275
+      "id" : 153405796
     } ],
-    "id" : 1278802871
+    "id" : 1318926629
   }
 }, {
-  "invoked" : 1141961194,
+  "invoked" : 1930714546,
   "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
-  "arguments" : [ 1014227087 ],
+  "arguments" : [ 1184585134 ],
   "calls" : [ {
-    "id" : 53795844,
+    "id" : 250676112,
     "methodCalls" : [ {
-      "methodName" : "getState",
-      "invocations" : [ {
-        "return" : 663410823,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 660653059,
-    "methodCalls" : [ {
-      "methodName" : "getTileAt",
-      "invocations" : [ {
-        "return" : 1510780389,
-        "parameter" : [ 327967600 ]
-      } ]
-    }, {
-      "methodName" : "getTiles",
-      "invocations" : [ {
-        "return" : 913280446,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getRails",
-      "invocations" : [ {
-        "return" : 1754311550,
-        "parameter" : [ 891051853 ]
-      } ]
-    } ]
-  }, {
-    "id" : 169276462,
-    "methodCalls" : [ {
-      "methodName" : "getRailOwners",
-      "invocations" : [ {
-        "return" : 767229290,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "hasRail",
-      "invocations" : [ {
-        "return" : 955994360,
-        "parameter" : [ ]
-      } ]
-    }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1801493963,
+        "return" : 1474851147,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1510780389,
+    "id" : 1498187897,
     "methodCalls" : [ {
       "methodName" : "getConnectedNeighbours",
       "invocations" : [ {
-        "return" : 217319925,
-        "parameter" : [ 244986287 ]
+        "return" : 360623143,
+        "parameter" : [ 724869600 ]
       } ]
     }, {
       "methodName" : "getNeighbours",
       "invocations" : [ {
-        "return" : 217319925,
+        "return" : 360623143,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getHexGrid",
       "invocations" : [ {
-        "return" : 660653059,
+        "return" : 1913984810,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition",
       "invocations" : [ {
-        "return" : 327967600,
+        "return" : 769416199,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1141961194,
+    "id" : 276384108,
     "methodCalls" : [ {
-      "methodName" : "getDrivableTiles",
-      "invocations" : [ {
-        "return" : 1279820028,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPlayer",
-      "invocations" : [ {
-        "return" : 891051853,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "canDrive",
-      "invocations" : [ {
-        "return" : 955994360,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1513597884,
-    "methodCalls" : [ {
-      "methodName" : "getRailOwners",
-      "invocations" : [ {
-        "return" : 767229290,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "hasRail",
-      "invocations" : [ {
-        "return" : 955994360,
-        "parameter" : [ ]
-      } ]
-    }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 1374270753,
+        "return" : 1270104866,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 663410823,
+    "id" : 2019787942,
     "methodCalls" : [ {
       "methodName" : "getGrid",
       "invocations" : [ {
-        "return" : 660653059,
+        "return" : 1913984810,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getGamePhaseProperty",
       "invocations" : [ {
-        "return" : 1394248316,
+        "return" : 37316493,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPlayerPositions",
       "invocations" : [ {
-        "return" : 434407716,
+        "return" : 1617685412,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getDrivingPlayers",
       "invocations" : [ {
-        "return" : 767229290,
+        "return" : 36541784,
         "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1930714546,
+    "methodCalls" : [ {
+      "methodName" : "getPlayer",
+      "invocations" : [ {
+        "return" : 101397436,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "canDrive",
+      "invocations" : [ {
+        "return" : 1664927413,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1913984810,
+    "methodCalls" : [ {
+      "methodName" : "getTileAt",
+      "invocations" : [ {
+        "return" : 1498187897,
+        "parameter" : [ 769416199 ]
+      } ]
+    }, {
+      "methodName" : "getTiles",
+      "invocations" : [ {
+        "return" : 1249675506,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRails",
+      "invocations" : [ {
+        "return" : 1665313451,
+        "parameter" : [ 101397436 ]
       } ]
     } ]
   } ],
@@ -2371,135 +2023,43 @@
       "name" : "hasConfirmedPath",
       "type" : "java.lang.Boolean",
       "value" : "false",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "hasPath",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "rentedEdges",
       "type" : "java.util.Set",
       "value" : [ ],
-      "id" : 217319925
+      "id" : 360623143
     }, {
       "name" : "buildingBudget",
       "type" : "java.lang.Integer",
       "value" : "0",
-      "id" : 521207494
+      "id" : 388122318
     }, {
       "name" : "playerObjective",
       "type" : "hProjekt.controller.PlayerObjective",
       "value" : "IDLE",
-      "id" : 1677544922
-    }, {
-      "name" : "playerStateProperty",
-      "type" : "javafx.beans.property.SimpleObjectProperty",
-      "fields" : [ {
-        "name" : "helper",
-        "type" : "null",
-        "id" : 0
-      }, {
-        "name" : "valid",
-        "type" : "java.lang.Boolean",
-        "value" : "true",
-        "id" : 955994360
-      }, {
-        "name" : "listener",
-        "id" : 0
-      }, {
-        "name" : "observable",
-        "id" : 0
-      }, {
-        "name" : "value",
-        "type" : "hProjekt.model.PlayerState",
-        "fields" : [ {
-          "name" : "buildingBudget",
-          "id" : 521207494
-        }, {
-          "name" : "drivableTiles",
-          "type" : "java.util.Map",
-          "value" : [ ],
-          "id" : 1279820028
-        }, {
-          "name" : "hasPath",
-          "id" : 1181763012
-        }, {
-          "name" : "rentedEdges",
-          "id" : 217319925
-        }, {
-          "name" : "choosableEdges",
-          "id" : 217319925
-        }, {
-          "name" : "playerObjective",
-          "id" : 1677544922
-        }, {
-          "name" : "buildableRailEdges",
-          "id" : 217319925
-        } ],
-        "id" : 1143536451
-      }, {
-        "name" : "name",
-        "type" : "java.lang.String",
-        "value" : "",
-        "id" : 1075314220
-      }, {
-        "name" : "bean",
-        "id" : 0
-      } ],
-      "id" : 534073881
-    }, {
-      "name" : "actions",
-      "type" : "java.util.concurrent.LinkedBlockingDeque",
-      "fields" : [ {
-        "name" : "notFull",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
-          "fields" : [ {
-            "name" : "state",
-            "id" : 521207494
-          } ],
-          "id" : 935717212
-        } ],
-        "id" : 686717937
-      }, {
-        "name" : "notEmpty",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "id" : 935717212
-        } ],
-        "id" : 1371179583
-      }, {
-        "name" : "lock",
-        "type" : "java.util.concurrent.locks.ReentrantLock",
-        "fields" : [ {
-          "name" : "sync",
-          "id" : 935717212
-        } ],
-        "id" : 1604517000
-      }, {
-        "name" : "capacity",
-        "type" : "java.lang.Integer",
-        "value" : "2147483647",
-        "id" : 1573515086
-      } ],
-      "id" : 1736752259
+      "id" : 1454922150
     }, {
       "name" : "gameController",
       "type" : "hProjekt.controller.GameController",
       "fields" : [ {
         "name" : "stopped",
-        "id" : 1181763012
+        "id" : 54879576
       }, {
         "name" : "activePlayerController",
         "type" : "javafx.beans.property.SimpleObjectProperty",
         "fields" : [ {
           "name" : "helper",
+          "type" : "null",
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -2511,12 +2071,14 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "type" : "java.lang.String",
+          "value" : "",
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1690529724
+        "id" : 273589106
       }, {
         "name" : "chosenCitiesProperty",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -2525,7 +2087,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -2540,12 +2102,12 @@
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "St. Martini",
-              "id" : 612184068
+              "id" : 894544430
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
@@ -2553,25 +2115,25 @@
                 "name" : "r",
                 "type" : "java.lang.Integer",
                 "value" : "1",
-                "id" : 1068781783
+                "id" : 539249566
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 1431210916
+              "id" : 678156546
             } ],
-            "id" : 671182639
+            "id" : 1787140327
           }, {
             "name" : "key",
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Châteauprix",
-              "id" : 135554232
+              "id" : 479778696
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
@@ -2579,24 +2141,24 @@
                 "name" : "r",
                 "type" : "java.lang.Integer",
                 "value" : "-1",
-                "id" : 1898469011
+                "id" : 1008355031
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 327967600
+              "id" : 769416199
             } ],
-            "id" : 751466214
+            "id" : 63010542
           } ],
-          "id" : 1962509912
+          "id" : 833133396
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 295765154
+        "id" : 458447265
       }, {
         "name" : "roundCounter",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -2605,7 +2167,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -2614,15 +2176,15 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 521207494
+          "id" : 388122318
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 816916410
+        "id" : 1317071692
       }, {
         "name" : "currentDiceRoll",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -2631,7 +2193,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 1181763012
+          "id" : 54879576
         }, {
           "name" : "listener",
           "id" : 0
@@ -2640,34 +2202,36 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 1068781783
+          "id" : 539249566
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1968008814
+        "id" : 1143070413
       }, {
         "name" : "dice",
         "type" : "java.util.function.Supplier",
         "fields" : [ ],
-        "id" : 1525770154
+        "id" : 1826517502
       }, {
         "name" : "aiControllers",
         "type" : "java.util.List",
         "value" : [ ],
-        "id" : 1403352707
+        "id" : 1374808369
       }, {
         "name" : "playerControllers",
-        "id" : 1279820028
+        "type" : "java.util.Map",
+        "value" : [ ],
+        "id" : 1154415985
       }, {
         "name" : "state",
         "type" : "hProjekt.model.GameState",
         "fields" : [ {
           "name" : "chosenCities",
-          "id" : 217319925
+          "id" : 360623143
         }, {
           "name" : "gamePhaseProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -2676,7 +2240,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "listener",
             "id" : 0
@@ -2687,15 +2251,15 @@
             "name" : "value",
             "type" : "hProjekt.controller.GamePhase",
             "value" : "DRIVING_PHASE",
-            "id" : 997916804
+            "id" : 177436125
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 1394248316
+          "id" : 37316493
         }, {
           "name" : "winnerProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -2704,7 +2268,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 955994360
+            "id" : 1664927413
           }, {
             "name" : "listener",
             "id" : 0
@@ -2716,15 +2280,15 @@
             "id" : 0
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 223611656
+          "id" : 1144884557
         }, {
           "name" : "playerPointSurplus",
-          "id" : 1279820028
+          "id" : 1154415985
         }, {
           "name" : "playerPositions",
           "type" : "java.util.Map",
@@ -2734,31 +2298,31 @@
               "name" : "credits",
               "type" : "java.lang.Integer",
               "value" : "20",
-              "id" : 1933047934
+              "id" : 681746231
             }, {
               "name" : "id",
-              "id" : 521207494
+              "id" : 388122318
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Player0",
-              "id" : 1200229799
+              "id" : 1490238813
             } ],
-            "id" : 891051853
+            "id" : 101397436
           }, {
-            "id" : 327967600
+            "id" : 769416199
           } ] ],
-          "id" : 434407716
+          "id" : 1617685412
         }, {
           "name" : "drivingPlayers",
           "type" : "java.util.List",
           "value" : [ {
-            "id" : 891051853
+            "id" : 101397436
           } ],
-          "id" : 767229290
+          "id" : 36541784
         }, {
           "name" : "players",
-          "id" : 767229290
+          "id" : 36541784
         }, {
           "name" : "grid",
           "type" : "hProjekt.model.HexGridImpl",
@@ -2766,15 +2330,15 @@
             "name" : "cities",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 1431210916
+              "id" : 678156546
             }, {
-              "id" : 671182639
+              "id" : 1787140327
             } ], [ {
-              "id" : 327967600
+              "id" : 769416199
             }, {
-              "id" : 751466214
+              "id" : 63010542
             } ] ],
-            "id" : 395451513
+            "id" : 1548438605
           }, {
             "name" : "edges",
             "type" : "java.util.Map",
@@ -2784,16 +2348,16 @@
                 "type" : "hProjekt.model.TilePosition",
                 "fields" : [ {
                   "name" : "r",
-                  "id" : 521207494
+                  "id" : 388122318
                 }, {
                   "name" : "q",
-                  "id" : 521207494
+                  "id" : 388122318
                 } ],
-                "id" : 663480838
+                "id" : 1039036738
               }, {
-                "id" : 1431210916
+                "id" : 769416199
               } ],
-              "id" : 605557195
+              "id" : 574249547
             }, {
               "type" : "hProjekt.model.EdgeImpl",
               "fields" : [ {
@@ -2804,7 +2368,7 @@
                   "id" : 0
                 }, {
                   "name" : "valid",
-                  "id" : 955994360
+                  "id" : 1664927413
                 }, {
                   "name" : "listener",
                   "id" : 0
@@ -2813,31 +2377,31 @@
                   "id" : 0
                 }, {
                   "name" : "value",
-                  "id" : 767229290
+                  "id" : 36541784
                 }, {
                   "name" : "name",
-                  "id" : 1075314220
+                  "id" : 236079849
                 }, {
                   "name" : "bean",
                   "id" : 0
                 } ],
-                "id" : 1374270753
+                "id" : 1474851147
               }, {
                 "name" : "position2",
-                "id" : 1431210916
+                "id" : 1039036738
               }, {
                 "name" : "position1",
-                "id" : 663480838
+                "id" : 769416199
               } ],
-              "id" : 1513597884
+              "id" : 250676112
             } ], [ {
               "type" : "java.util.Set",
               "value" : [ {
-                "id" : 327967600
+                "id" : 678156546
               }, {
-                "id" : 663480838
+                "id" : 1039036738
               } ],
-              "id" : 2082721402
+              "id" : 1288936449
             }, {
               "type" : "hProjekt.model.EdgeImpl",
               "fields" : [ {
@@ -2848,7 +2412,7 @@
                   "id" : 0
                 }, {
                   "name" : "valid",
-                  "id" : 955994360
+                  "id" : 1664927413
                 }, {
                   "name" : "listener",
                   "id" : 0
@@ -2857,88 +2421,88 @@
                   "id" : 0
                 }, {
                   "name" : "value",
-                  "id" : 767229290
+                  "id" : 36541784
                 }, {
                   "name" : "name",
-                  "id" : 1075314220
+                  "id" : 236079849
                 }, {
                   "name" : "bean",
                   "id" : 0
                 } ],
-                "id" : 1801493963
+                "id" : 1270104866
               }, {
                 "name" : "position2",
-                "id" : 663480838
+                "id" : 678156546
               }, {
                 "name" : "position1",
-                "id" : 327967600
+                "id" : 1039036738
               } ],
-              "id" : 169276462
+              "id" : 276384108
             } ] ],
-            "id" : 1754311550
+            "id" : 1665313451
           }, {
             "name" : "tiles",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 1431210916
+              "id" : 678156546
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 660653059
+                "id" : 1913984810
               }, {
                 "name" : "type",
                 "type" : "hProjekt.model.Tile$Type",
                 "value" : "PLAIN",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 1431210916
+                "id" : 678156546
               } ],
-              "id" : 452179860
+              "id" : 358187830
             } ], [ {
-              "id" : 327967600
+              "id" : 769416199
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 660653059
+                "id" : 1913984810
               }, {
                 "name" : "type",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 327967600
+                "id" : 769416199
               } ],
-              "id" : 1510780389
+              "id" : 1498187897
             } ], [ {
-              "id" : 663480838
+              "id" : 1039036738
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 660653059
+                "id" : 1913984810
               }, {
                 "name" : "type",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 663480838
+                "id" : 1039036738
               } ],
-              "id" : 1691484106
+              "id" : 1738050962
             } ] ],
-            "id" : 913280446
+            "id" : 1249675506
           } ],
-          "id" : 660653059
+          "id" : 1913984810
         } ],
-        "id" : 663410823
+        "id" : 2019787942
       } ],
-      "id" : 53795844
+      "id" : 692827632
     }, {
       "name" : "player",
-      "id" : 891051853
+      "id" : 101397436
     } ],
-    "id" : 1141961194
+    "id" : 1930714546
   }, {
     "type" : "hProjekt.model.TileImpl",
     "fields" : [ {
@@ -2951,69 +2515,69 @@
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1068781783
+            "id" : 539249566
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 1718851753
+          "id" : 562269859
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 612184068
+            "id" : 894544430
           }, {
             "name" : "position",
-            "id" : 1718851753
+            "id" : 562269859
           } ],
-          "id" : 798525723
+          "id" : 783541000
         } ], [ {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1898469011
+            "id" : 1008355031
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 975807735
+          "id" : 835384913
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 135554232
+            "id" : 479778696
           }, {
             "name" : "position",
-            "id" : 975807735
+            "id" : 835384913
           } ],
-          "id" : 43735457
+          "id" : 556630323
         } ] ],
-        "id" : 1329412492
+        "id" : 812948968
       }, {
         "name" : "edges",
         "type" : "java.util.Map",
         "value" : [ [ {
           "type" : "java.util.Set",
           "value" : [ {
-            "id" : 975807735
-          }, {
             "type" : "hProjekt.model.TilePosition",
             "fields" : [ {
               "name" : "r",
-              "id" : 521207494
+              "id" : 388122318
             }, {
               "name" : "q",
-              "id" : 521207494
+              "id" : 388122318
             } ],
-            "id" : 609453540
+            "id" : 773087099
+          }, {
+            "id" : 835384913
           } ],
-          "id" : 1928017342
+          "id" : 316983006
         }, {
           "type" : "hProjekt.model.EdgeImpl",
           "fields" : [ {
@@ -3024,7 +2588,7 @@
               "id" : 0
             }, {
               "name" : "valid",
-              "id" : 955994360
+              "id" : 1664927413
             }, {
               "name" : "listener",
               "id" : 0
@@ -3038,41 +2602,41 @@
                 "type" : "hProjekt.model.PlayerImpl",
                 "fields" : [ {
                   "name" : "credits",
-                  "id" : 1933047934
+                  "id" : 681746231
                 }, {
                   "name" : "id",
-                  "id" : 521207494
+                  "id" : 388122318
                 }, {
                   "name" : "name",
-                  "id" : 1200229799
+                  "id" : 1490238813
                 } ],
-                "id" : 1550490166
+                "id" : 1592409961
               } ],
-              "id" : 1799741261
+              "id" : 1974738931
             }, {
               "name" : "name",
-              "id" : 1075314220
+              "id" : 236079849
             }, {
               "name" : "bean",
               "id" : 0
             } ],
-            "id" : 1209549380
+            "id" : 1663124280
           }, {
             "name" : "position2",
-            "id" : 609453540
+            "id" : 773087099
           }, {
             "name" : "position1",
-            "id" : 975807735
+            "id" : 835384913
           } ],
-          "id" : 1038750242
+          "id" : 1240784398
         } ], [ {
           "type" : "java.util.Set",
           "value" : [ {
-            "id" : 609453540
+            "id" : 562269859
           }, {
-            "id" : 1718851753
+            "id" : 773087099
           } ],
-          "id" : 1800071931
+          "id" : 1639667568
         }, {
           "type" : "hProjekt.model.EdgeImpl",
           "fields" : [ {
@@ -3083,7 +2647,7 @@
               "id" : 0
             }, {
               "name" : "valid",
-              "id" : 955994360
+              "id" : 1664927413
             }, {
               "name" : "listener",
               "id" : 0
@@ -3092,82 +2656,82 @@
               "id" : 0
             }, {
               "name" : "value",
-              "id" : 1799741261
+              "id" : 1974738931
             }, {
               "name" : "name",
-              "id" : 1075314220
+              "id" : 236079849
             }, {
               "name" : "bean",
               "id" : 0
             } ],
-            "id" : 169908234
+            "id" : 1224483735
           }, {
             "name" : "position2",
-            "id" : 1718851753
+            "id" : 562269859
           }, {
             "name" : "position1",
-            "id" : 609453540
+            "id" : 773087099
           } ],
-          "id" : 1611073607
+          "id" : 655855061
         } ] ],
-        "id" : 2043233064
+        "id" : 1761796799
       }, {
         "name" : "tiles",
         "type" : "java.util.Map",
         "value" : [ [ {
-          "id" : 609453540
-        }, {
-          "id" : 1014227087
-        } ], [ {
-          "id" : 1718851753
+          "id" : 562269859
         }, {
           "type" : "hProjekt.model.TileImpl",
           "fields" : [ {
             "name" : "hexGrid",
-            "id" : 60375781
+            "id" : 681891967
           }, {
             "name" : "type",
-            "id" : 154482552
+            "id" : 1790585734
           }, {
             "name" : "position",
-            "id" : 1718851753
+            "id" : 562269859
           } ],
-          "id" : 1949170444
+          "id" : 795528652
         } ], [ {
-          "id" : 975807735
+          "id" : 835384913
         }, {
           "type" : "hProjekt.model.TileImpl",
           "fields" : [ {
             "name" : "hexGrid",
-            "id" : 60375781
+            "id" : 681891967
           }, {
             "name" : "type",
-            "id" : 154482552
+            "id" : 1790585734
           }, {
             "name" : "position",
-            "id" : 975807735
+            "id" : 835384913
           } ],
-          "id" : 1037984111
+          "id" : 769717219
+        } ], [ {
+          "id" : 773087099
+        }, {
+          "id" : 1184585134
         } ] ],
-        "id" : 1928374234
+        "id" : 525485794
       } ],
-      "id" : 60375781
+      "id" : 681891967
     }, {
       "name" : "type",
-      "id" : 154482552
+      "id" : 1790585734
     }, {
       "name" : "position",
-      "id" : 609453540
+      "id" : 773087099
     } ],
-    "id" : 1014227087
+    "id" : 1184585134
   }, {
     "type" : "java.util.Set",
     "value" : [ {
-      "id" : 169276462
+      "id" : 250676112
     }, {
-      "id" : 1513597884
+      "id" : 276384108
     } ],
-    "id" : 244986287
+    "id" : 724869600
   } ],
   "expected" : {
     "type" : "hProjekt.controller.actions.IllegalActionException",
@@ -3175,166 +2739,127 @@
       "name" : "suppressedExceptions",
       "type" : "java.util.List",
       "value" : [ ],
-      "id" : 817545888
+      "id" : 334337848
     }, {
       "name" : "cause",
-      "id" : 445489893
+      "id" : 1595347981
     }, {
       "name" : "detailMessage",
       "type" : "java.lang.String",
       "value" : "Player cannot drive to the target tile",
-      "id" : 1351187275
+      "id" : 153405796
     } ],
-    "id" : 445489893
+    "id" : 1595347981
   }
 }, {
-  "invoked" : 347524927,
+  "invoked" : 2125101298,
   "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
-  "arguments" : [ 1663554206 ],
+  "arguments" : [ 1281365127 ],
   "calls" : [ {
-    "id" : 1306281996,
+    "id" : 549102827,
     "methodCalls" : [ {
-      "methodName" : "getRailOwners",
-      "invocations" : [ {
-        "return" : 1825984684,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "hasRail",
-      "invocations" : [ {
-        "return" : 955994360,
-        "parameter" : [ ]
-      } ]
-    }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 193811922,
+        "return" : 723512572,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1300042780,
-    "methodCalls" : [ {
-      "methodName" : "getRailOwners",
-      "invocations" : [ {
-        "return" : 1825984684,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "hasRail",
-      "invocations" : [ {
-        "return" : 955994360,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getRailOwnersProperty",
-      "invocations" : [ {
-        "return" : 1648779239,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 726216461,
-    "methodCalls" : [ {
-      "methodName" : "getTileAt",
-      "invocations" : [ {
-        "return" : 1771757124,
-        "parameter" : [ 1161788550 ]
-      } ]
-    }, {
-      "methodName" : "getTiles",
-      "invocations" : [ {
-        "return" : 787039585,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getRails",
-      "invocations" : [ {
-        "return" : 1915408567,
-        "parameter" : [ 2074307168 ]
-      } ]
-    } ]
-  }, {
-    "id" : 1657201633,
+    "id" : 1795982619,
     "methodCalls" : [ {
       "methodName" : "getGrid",
       "invocations" : [ {
-        "return" : 726216461,
+        "return" : 592555354,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getGamePhaseProperty",
       "invocations" : [ {
-        "return" : 568532823,
+        "return" : 1201173937,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPlayerPositions",
       "invocations" : [ {
-        "return" : 1152345151,
+        "return" : 1923171143,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getDrivingPlayers",
       "invocations" : [ {
-        "return" : 1825984684,
+        "return" : 148229552,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 347524927,
+    "id" : 2125101298,
     "methodCalls" : [ {
-      "methodName" : "getDrivableTiles",
-      "invocations" : [ {
-        "return" : 1780521229,
-        "parameter" : [ ]
-      } ]
-    }, {
       "methodName" : "getPlayer",
       "invocations" : [ {
-        "return" : 2074307168,
+        "return" : 1215929222,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "canDrive",
       "invocations" : [ {
-        "return" : 955994360,
+        "return" : 1664927413,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1120714870,
+    "id" : 592555354,
     "methodCalls" : [ {
-      "methodName" : "getState",
+      "methodName" : "getTileAt",
       "invocations" : [ {
-        "return" : 1657201633,
+        "return" : 31224179,
+        "parameter" : [ 670082845 ]
+      } ]
+    }, {
+      "methodName" : "getTiles",
+      "invocations" : [ {
+        "return" : 1154393787,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getRails",
+      "invocations" : [ {
+        "return" : 1433598417,
+        "parameter" : [ 1215929222 ]
+      } ]
+    } ]
+  }, {
+    "id" : 412644533,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1652268803,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1771757124,
+    "id" : 31224179,
     "methodCalls" : [ {
       "methodName" : "getConnectedNeighbours",
       "invocations" : [ {
-        "return" : 1611827596,
-        "parameter" : [ 784690554 ]
+        "return" : 1025277563,
+        "parameter" : [ 911870224 ]
       } ]
     }, {
       "methodName" : "getNeighbours",
       "invocations" : [ {
-        "return" : 1611827596,
+        "return" : 1025277563,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getHexGrid",
       "invocations" : [ {
-        "return" : 726216461,
+        "return" : 592555354,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPosition",
       "invocations" : [ {
-        "return" : 1161788550,
+        "return" : 670082845,
         "parameter" : [ ]
       } ]
     } ]
@@ -3345,135 +2870,43 @@
       "name" : "hasConfirmedPath",
       "type" : "java.lang.Boolean",
       "value" : "false",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "hasPath",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "rentedEdges",
       "type" : "java.util.Set",
       "value" : [ ],
-      "id" : 1611827596
+      "id" : 1025277563
     }, {
       "name" : "buildingBudget",
       "type" : "java.lang.Integer",
       "value" : "0",
-      "id" : 521207494
+      "id" : 388122318
     }, {
       "name" : "playerObjective",
       "type" : "hProjekt.controller.PlayerObjective",
       "value" : "IDLE",
-      "id" : 1677544922
-    }, {
-      "name" : "playerStateProperty",
-      "type" : "javafx.beans.property.SimpleObjectProperty",
-      "fields" : [ {
-        "name" : "helper",
-        "type" : "null",
-        "id" : 0
-      }, {
-        "name" : "valid",
-        "type" : "java.lang.Boolean",
-        "value" : "true",
-        "id" : 955994360
-      }, {
-        "name" : "listener",
-        "id" : 0
-      }, {
-        "name" : "observable",
-        "id" : 0
-      }, {
-        "name" : "value",
-        "type" : "hProjekt.model.PlayerState",
-        "fields" : [ {
-          "name" : "buildingBudget",
-          "id" : 521207494
-        }, {
-          "name" : "drivableTiles",
-          "type" : "java.util.Map",
-          "value" : [ ],
-          "id" : 1780521229
-        }, {
-          "name" : "hasPath",
-          "id" : 1181763012
-        }, {
-          "name" : "rentedEdges",
-          "id" : 1611827596
-        }, {
-          "name" : "choosableEdges",
-          "id" : 1611827596
-        }, {
-          "name" : "playerObjective",
-          "id" : 1677544922
-        }, {
-          "name" : "buildableRailEdges",
-          "id" : 1611827596
-        } ],
-        "id" : 1338577758
-      }, {
-        "name" : "name",
-        "type" : "java.lang.String",
-        "value" : "",
-        "id" : 1075314220
-      }, {
-        "name" : "bean",
-        "id" : 0
-      } ],
-      "id" : 2129938119
-    }, {
-      "name" : "actions",
-      "type" : "java.util.concurrent.LinkedBlockingDeque",
-      "fields" : [ {
-        "name" : "notFull",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
-          "fields" : [ {
-            "name" : "state",
-            "id" : 521207494
-          } ],
-          "id" : 1610062343
-        } ],
-        "id" : 710823703
-      }, {
-        "name" : "notEmpty",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "id" : 1610062343
-        } ],
-        "id" : 117708757
-      }, {
-        "name" : "lock",
-        "type" : "java.util.concurrent.locks.ReentrantLock",
-        "fields" : [ {
-          "name" : "sync",
-          "id" : 1610062343
-        } ],
-        "id" : 1931370903
-      }, {
-        "name" : "capacity",
-        "type" : "java.lang.Integer",
-        "value" : "2147483647",
-        "id" : 538505903
-      } ],
-      "id" : 611738390
+      "id" : 1454922150
     }, {
       "name" : "gameController",
       "type" : "hProjekt.controller.GameController",
       "fields" : [ {
         "name" : "stopped",
-        "id" : 1181763012
+        "id" : 54879576
       }, {
         "name" : "activePlayerController",
         "type" : "javafx.beans.property.SimpleObjectProperty",
         "fields" : [ {
           "name" : "helper",
+          "type" : "null",
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -3485,12 +2918,14 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "type" : "java.lang.String",
+          "value" : "",
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 16458924
+        "id" : 1762891424
       }, {
         "name" : "chosenCitiesProperty",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -3499,7 +2934,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -3514,12 +2949,12 @@
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "h_da",
-              "id" : 450097353
+              "id" : 1159354435
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
@@ -3527,25 +2962,25 @@
                 "name" : "r",
                 "type" : "java.lang.Integer",
                 "value" : "1",
-                "id" : 1068781783
+                "id" : 539249566
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 503381892
+              "id" : 42519721
             } ],
-            "id" : 523898409
+            "id" : 644119240
           }, {
             "name" : "key",
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "TU Darmstadt",
-              "id" : 1808597577
+              "id" : 1283734095
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
@@ -3553,24 +2988,24 @@
                 "name" : "r",
                 "type" : "java.lang.Integer",
                 "value" : "-1",
-                "id" : 1898469011
+                "id" : 1008355031
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 1161788550
+              "id" : 670082845
             } ],
-            "id" : 476493496
+            "id" : 408513863
           } ],
-          "id" : 927569453
+          "id" : 1898858991
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1647965190
+        "id" : 1229876667
       }, {
         "name" : "roundCounter",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -3579,7 +3014,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -3588,15 +3023,15 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 521207494
+          "id" : 388122318
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 374057840
+        "id" : 644338942
       }, {
         "name" : "currentDiceRoll",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -3605,7 +3040,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 1181763012
+          "id" : 54879576
         }, {
           "name" : "listener",
           "id" : 0
@@ -3614,34 +3049,36 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 1068781783
+          "id" : 539249566
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 1658196571
+        "id" : 1469036152
       }, {
         "name" : "dice",
         "type" : "java.util.function.Supplier",
         "fields" : [ ],
-        "id" : 1573179760
+        "id" : 1781922301
       }, {
         "name" : "aiControllers",
         "type" : "java.util.List",
         "value" : [ ],
-        "id" : 185856187
+        "id" : 2026615104
       }, {
         "name" : "playerControllers",
-        "id" : 1780521229
+        "type" : "java.util.Map",
+        "value" : [ ],
+        "id" : 798539794
       }, {
         "name" : "state",
         "type" : "hProjekt.model.GameState",
         "fields" : [ {
           "name" : "chosenCities",
-          "id" : 1611827596
+          "id" : 1025277563
         }, {
           "name" : "gamePhaseProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -3650,7 +3087,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "listener",
             "id" : 0
@@ -3661,15 +3098,15 @@
             "name" : "value",
             "type" : "hProjekt.controller.GamePhase",
             "value" : "DRIVING_PHASE",
-            "id" : 997916804
+            "id" : 177436125
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 568532823
+          "id" : 1201173937
         }, {
           "name" : "winnerProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -3678,7 +3115,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 955994360
+            "id" : 1664927413
           }, {
             "name" : "listener",
             "id" : 0
@@ -3690,15 +3127,15 @@
             "id" : 0
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 721510473
+          "id" : 1110439174
         }, {
           "name" : "playerPointSurplus",
-          "id" : 1780521229
+          "id" : 798539794
         }, {
           "name" : "playerPositions",
           "type" : "java.util.Map",
@@ -3708,31 +3145,31 @@
               "name" : "credits",
               "type" : "java.lang.Integer",
               "value" : "20",
-              "id" : 1933047934
+              "id" : 681746231
             }, {
               "name" : "id",
-              "id" : 521207494
+              "id" : 388122318
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Player0",
-              "id" : 1499214713
+              "id" : 1701762320
             } ],
-            "id" : 2074307168
+            "id" : 1215929222
           }, {
-            "id" : 1161788550
+            "id" : 670082845
           } ] ],
-          "id" : 1152345151
+          "id" : 1923171143
         }, {
           "name" : "drivingPlayers",
           "type" : "java.util.List",
           "value" : [ {
-            "id" : 2074307168
+            "id" : 1215929222
           } ],
-          "id" : 1825984684
+          "id" : 148229552
         }, {
           "name" : "players",
-          "id" : 1825984684
+          "id" : 148229552
         }, {
           "name" : "grid",
           "type" : "hProjekt.model.HexGridImpl",
@@ -3740,34 +3177,34 @@
             "name" : "cities",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 503381892
+              "id" : 42519721
             }, {
-              "id" : 523898409
+              "id" : 644119240
             } ], [ {
-              "id" : 1161788550
+              "id" : 670082845
             }, {
-              "id" : 476493496
+              "id" : 408513863
             } ] ],
-            "id" : 883594044
+            "id" : 766585947
           }, {
             "name" : "edges",
             "type" : "java.util.Map",
             "value" : [ [ {
               "type" : "java.util.Set",
               "value" : [ {
-                "id" : 1161788550
+                "id" : 42519721
               }, {
                 "type" : "hProjekt.model.TilePosition",
                 "fields" : [ {
                   "name" : "r",
-                  "id" : 521207494
+                  "id" : 388122318
                 }, {
                   "name" : "q",
-                  "id" : 521207494
+                  "id" : 388122318
                 } ],
-                "id" : 1586001275
+                "id" : 242685966
               } ],
-              "id" : 548334568
+              "id" : 1185378362
             }, {
               "type" : "hProjekt.model.EdgeImpl",
               "fields" : [ {
@@ -3778,7 +3215,7 @@
                   "id" : 0
                 }, {
                   "name" : "valid",
-                  "id" : 955994360
+                  "id" : 1664927413
                 }, {
                   "name" : "listener",
                   "id" : 0
@@ -3787,31 +3224,31 @@
                   "id" : 0
                 }, {
                   "name" : "value",
-                  "id" : 1825984684
+                  "id" : 148229552
                 }, {
                   "name" : "name",
-                  "id" : 1075314220
+                  "id" : 236079849
                 }, {
                   "name" : "bean",
                   "id" : 0
                 } ],
-                "id" : 1648779239
+                "id" : 1652268803
               }, {
                 "name" : "position2",
-                "id" : 1586001275
+                "id" : 42519721
               }, {
                 "name" : "position1",
-                "id" : 1161788550
+                "id" : 242685966
               } ],
-              "id" : 1300042780
+              "id" : 412644533
             } ], [ {
               "type" : "java.util.Set",
               "value" : [ {
-                "id" : 1586001275
+                "id" : 242685966
               }, {
-                "id" : 503381892
+                "id" : 670082845
               } ],
-              "id" : 1672533465
+              "id" : 1614388499
             }, {
               "type" : "hProjekt.model.EdgeImpl",
               "fields" : [ {
@@ -3822,7 +3259,7 @@
                   "id" : 0
                 }, {
                   "name" : "valid",
-                  "id" : 955994360
+                  "id" : 1664927413
                 }, {
                   "name" : "listener",
                   "id" : 0
@@ -3831,90 +3268,90 @@
                   "id" : 0
                 }, {
                   "name" : "value",
-                  "id" : 1825984684
+                  "id" : 148229552
                 }, {
                   "name" : "name",
-                  "id" : 1075314220
+                  "id" : 236079849
                 }, {
                   "name" : "bean",
                   "id" : 0
                 } ],
-                "id" : 193811922
+                "id" : 723512572
               }, {
                 "name" : "position2",
-                "id" : 503381892
+                "id" : 242685966
               }, {
                 "name" : "position1",
-                "id" : 1586001275
+                "id" : 670082845
               } ],
-              "id" : 1306281996
+              "id" : 549102827
             } ] ],
-            "id" : 1915408567
+            "id" : 1433598417
           }, {
             "name" : "tiles",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 1586001275
+              "id" : 42519721
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 726216461
-              }, {
-                "name" : "type",
-                "type" : "hProjekt.model.Tile$Type",
-                "value" : "MOUNTAIN",
-                "id" : 1781071780
-              }, {
-                "name" : "position",
-                "id" : 1586001275
-              } ],
-              "id" : 568632466
-            } ], [ {
-              "id" : 503381892
-            }, {
-              "type" : "hProjekt.model.TileImpl",
-              "fields" : [ {
-                "name" : "hexGrid",
-                "id" : 726216461
+                "id" : 592555354
               }, {
                 "name" : "type",
                 "type" : "hProjekt.model.Tile$Type",
                 "value" : "PLAIN",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 503381892
+                "id" : 42519721
               } ],
-              "id" : 1284472484
+              "id" : 1623028322
             } ], [ {
-              "id" : 1161788550
+              "id" : 242685966
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 726216461
+                "id" : 592555354
               }, {
                 "name" : "type",
-                "id" : 154482552
+                "type" : "hProjekt.model.Tile$Type",
+                "value" : "MOUNTAIN",
+                "id" : 22600334
               }, {
                 "name" : "position",
-                "id" : 1161788550
+                "id" : 242685966
               } ],
-              "id" : 1771757124
+              "id" : 551706599
+            } ], [ {
+              "id" : 670082845
+            }, {
+              "type" : "hProjekt.model.TileImpl",
+              "fields" : [ {
+                "name" : "hexGrid",
+                "id" : 592555354
+              }, {
+                "name" : "type",
+                "id" : 1790585734
+              }, {
+                "name" : "position",
+                "id" : 670082845
+              } ],
+              "id" : 31224179
             } ] ],
-            "id" : 787039585
+            "id" : 1154393787
           } ],
-          "id" : 726216461
+          "id" : 592555354
         } ],
-        "id" : 1657201633
+        "id" : 1795982619
       } ],
-      "id" : 1120714870
+      "id" : 1179392200
     }, {
       "name" : "player",
-      "id" : 2074307168
+      "id" : 1215929222
     } ],
-    "id" : 347524927
+    "id" : 2125101298
   }, {
     "type" : "hProjekt.model.TileImpl",
     "fields" : [ {
@@ -3927,69 +3364,69 @@
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1898469011
+            "id" : 539249566
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 674512304
+          "id" : 1599049016
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 1808597577
+            "id" : 1159354435
           }, {
             "name" : "position",
-            "id" : 674512304
+            "id" : 1599049016
           } ],
-          "id" : 1820438363
+          "id" : 1850508675
         } ], [ {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1068781783
+            "id" : 1008355031
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 922476964
+          "id" : 1077138013
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 450097353
+            "id" : 1283734095
           }, {
             "name" : "position",
-            "id" : 922476964
+            "id" : 1077138013
           } ],
-          "id" : 1819188655
+          "id" : 305453558
         } ] ],
-        "id" : 978123183
+        "id" : 1444157902
       }, {
         "name" : "edges",
         "type" : "java.util.Map",
         "value" : [ [ {
           "type" : "java.util.Set",
           "value" : [ {
+            "id" : 1599049016
+          }, {
             "type" : "hProjekt.model.TilePosition",
             "fields" : [ {
               "name" : "r",
-              "id" : 521207494
+              "id" : 388122318
             }, {
               "name" : "q",
-              "id" : 521207494
+              "id" : 388122318
             } ],
-            "id" : 811912421
-          }, {
-            "id" : 922476964
+            "id" : 510241222
           } ],
-          "id" : 734890073
+          "id" : 2044178045
         }, {
           "type" : "hProjekt.model.EdgeImpl",
           "fields" : [ {
@@ -4000,7 +3437,7 @@
               "id" : 0
             }, {
               "name" : "valid",
-              "id" : 955994360
+              "id" : 1664927413
             }, {
               "name" : "listener",
               "id" : 0
@@ -4014,41 +3451,41 @@
                 "type" : "hProjekt.model.PlayerImpl",
                 "fields" : [ {
                   "name" : "credits",
-                  "id" : 1933047934
+                  "id" : 681746231
                 }, {
                   "name" : "id",
-                  "id" : 521207494
+                  "id" : 388122318
                 }, {
                   "name" : "name",
-                  "id" : 1499214713
+                  "id" : 1701762320
                 } ],
-                "id" : 2059788263
+                "id" : 1150751337
               } ],
-              "id" : 735355485
+              "id" : 1459615753
             }, {
               "name" : "name",
-              "id" : 1075314220
+              "id" : 236079849
             }, {
               "name" : "bean",
               "id" : 0
             } ],
-            "id" : 1472168472
+            "id" : 1719532866
           }, {
             "name" : "position2",
-            "id" : 922476964
+            "id" : 1599049016
           }, {
             "name" : "position1",
-            "id" : 811912421
+            "id" : 510241222
           } ],
-          "id" : 1995187784
+          "id" : 194252068
         } ], [ {
           "type" : "java.util.Set",
           "value" : [ {
-            "id" : 674512304
+            "id" : 510241222
           }, {
-            "id" : 811912421
+            "id" : 1077138013
           } ],
-          "id" : 2078331806
+          "id" : 550719857
         }, {
           "type" : "hProjekt.model.EdgeImpl",
           "fields" : [ {
@@ -4059,7 +3496,7 @@
               "id" : 0
             }, {
               "name" : "valid",
-              "id" : 955994360
+              "id" : 1664927413
             }, {
               "name" : "listener",
               "id" : 0
@@ -4068,82 +3505,82 @@
               "id" : 0
             }, {
               "name" : "value",
-              "id" : 735355485
+              "id" : 1459615753
             }, {
               "name" : "name",
-              "id" : 1075314220
+              "id" : 236079849
             }, {
               "name" : "bean",
               "id" : 0
             } ],
-            "id" : 1993055497
+            "id" : 1729263102
           }, {
             "name" : "position2",
-            "id" : 811912421
+            "id" : 510241222
           }, {
             "name" : "position1",
-            "id" : 674512304
+            "id" : 1077138013
           } ],
-          "id" : 2033561037
+          "id" : 854326753
         } ] ],
-        "id" : 708672697
+        "id" : 1768385436
       }, {
         "name" : "tiles",
         "type" : "java.util.Map",
         "value" : [ [ {
-          "id" : 811912421
-        }, {
-          "id" : 1663554206
-        } ], [ {
-          "id" : 674512304
+          "id" : 1599049016
         }, {
           "type" : "hProjekt.model.TileImpl",
           "fields" : [ {
             "name" : "hexGrid",
-            "id" : 1892324818
+            "id" : 599922000
           }, {
             "name" : "type",
-            "id" : 154482552
+            "id" : 1790585734
           }, {
             "name" : "position",
-            "id" : 674512304
+            "id" : 1599049016
           } ],
-          "id" : 928335355
+          "id" : 1821666068
         } ], [ {
-          "id" : 922476964
+          "id" : 1077138013
         }, {
           "type" : "hProjekt.model.TileImpl",
           "fields" : [ {
             "name" : "hexGrid",
-            "id" : 1892324818
+            "id" : 599922000
           }, {
             "name" : "type",
-            "id" : 154482552
+            "id" : 1790585734
           }, {
             "name" : "position",
-            "id" : 922476964
+            "id" : 1077138013
           } ],
-          "id" : 1649673354
+          "id" : 213594864
+        } ], [ {
+          "id" : 510241222
+        }, {
+          "id" : 1281365127
         } ] ],
-        "id" : 779596974
+        "id" : 1924851068
       } ],
-      "id" : 1892324818
+      "id" : 599922000
     }, {
       "name" : "type",
-      "id" : 1781071780
+      "id" : 22600334
     }, {
       "name" : "position",
-      "id" : 811912421
+      "id" : 510241222
     } ],
-    "id" : 1663554206
+    "id" : 1281365127
   }, {
     "type" : "java.util.Set",
     "value" : [ {
-      "id" : 1306281996
+      "id" : 549102827
     }, {
-      "id" : 1300042780
+      "id" : 412644533
     } ],
-    "id" : 784690554
+    "id" : 911870224
   } ],
   "expected" : {
     "type" : "hProjekt.controller.actions.IllegalActionException",
@@ -4151,167 +3588,128 @@
       "name" : "suppressedExceptions",
       "type" : "java.util.List",
       "value" : [ ],
-      "id" : 817545888
+      "id" : 334337848
     }, {
       "name" : "cause",
-      "id" : 649246799
+      "id" : 360140288
     }, {
       "name" : "detailMessage",
       "type" : "java.lang.String",
       "value" : "Player cannot drive to the target tile",
-      "id" : 1351187275
+      "id" : 153405796
     } ],
-    "id" : 649246799
+    "id" : 360140288
   }
 }, {
-  "invoked" : 688385214,
+  "invoked" : 525107298,
   "entryPoint" : "hProjekt.controller.PlayerController#drive(hProjekt.model.Tile)",
-  "arguments" : [ 1060512613 ],
+  "arguments" : [ 51079645 ],
   "calls" : [ {
-    "id" : 1129969466,
-    "methodCalls" : [ {
-      "methodName" : "getRailOwners",
-      "invocations" : [ {
-        "return" : 1522064091,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "hasRail",
-      "invocations" : [ {
-        "return" : 955994360,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getRailOwnersProperty",
-      "invocations" : [ {
-        "return" : 2063773641,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1239939553,
-    "methodCalls" : [ {
-      "methodName" : "getConnectedNeighbours",
-      "invocations" : [ {
-        "return" : 437078879,
-        "parameter" : [ 1644021752 ]
-      } ]
-    }, {
-      "methodName" : "getNeighbours",
-      "invocations" : [ {
-        "return" : 437078879,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getHexGrid",
-      "invocations" : [ {
-        "return" : 1992221763,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPosition",
-      "invocations" : [ {
-        "return" : 175417591,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1099674573,
+    "id" : 492493402,
     "methodCalls" : [ {
       "methodName" : "getGrid",
       "invocations" : [ {
-        "return" : 1992221763,
+        "return" : 1211133128,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getGamePhaseProperty",
       "invocations" : [ {
-        "return" : 165388284,
+        "return" : 2077242722,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getPlayerPositions",
       "invocations" : [ {
-        "return" : 1075796255,
+        "return" : 686013624,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getDrivingPlayers",
       "invocations" : [ {
-        "return" : 1522064091,
+        "return" : 225492460,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 688385214,
+    "id" : 69692374,
     "methodCalls" : [ {
-      "methodName" : "getDrivableTiles",
-      "invocations" : [ {
-        "return" : 40117437,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "getPlayer",
-      "invocations" : [ {
-        "return" : 1004205626,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "canDrive",
-      "invocations" : [ {
-        "return" : 955994360,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 1829878152,
-    "methodCalls" : [ {
-      "methodName" : "getState",
-      "invocations" : [ {
-        "return" : 1099674573,
-        "parameter" : [ ]
-      } ]
-    } ]
-  }, {
-    "id" : 20067273,
-    "methodCalls" : [ {
-      "methodName" : "getRailOwners",
-      "invocations" : [ {
-        "return" : 1522064091,
-        "parameter" : [ ]
-      } ]
-    }, {
-      "methodName" : "hasRail",
-      "invocations" : [ {
-        "return" : 955994360,
-        "parameter" : [ ]
-      } ]
-    }, {
       "methodName" : "getRailOwnersProperty",
       "invocations" : [ {
-        "return" : 134983244,
+        "return" : 492522075,
         "parameter" : [ ]
       } ]
     } ]
   }, {
-    "id" : 1992221763,
+    "id" : 171391457,
+    "methodCalls" : [ {
+      "methodName" : "getRailOwnersProperty",
+      "invocations" : [ {
+        "return" : 1839151903,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 173708546,
+    "methodCalls" : [ {
+      "methodName" : "getConnectedNeighbours",
+      "invocations" : [ {
+        "return" : 203134694,
+        "parameter" : [ 85046947 ]
+      } ]
+    }, {
+      "methodName" : "getNeighbours",
+      "invocations" : [ {
+        "return" : 203134694,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getHexGrid",
+      "invocations" : [ {
+        "return" : 1211133128,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "getPosition",
+      "invocations" : [ {
+        "return" : 476648155,
+        "parameter" : [ ]
+      } ]
+    } ]
+  }, {
+    "id" : 1211133128,
     "methodCalls" : [ {
       "methodName" : "getTileAt",
       "invocations" : [ {
-        "return" : 1239939553,
-        "parameter" : [ 175417591 ]
+        "return" : 173708546,
+        "parameter" : [ 476648155 ]
       } ]
     }, {
       "methodName" : "getTiles",
       "invocations" : [ {
-        "return" : 81758915,
+        "return" : 321431006,
         "parameter" : [ ]
       } ]
     }, {
       "methodName" : "getRails",
       "invocations" : [ {
-        "return" : 365439665,
-        "parameter" : [ 1004205626 ]
+        "return" : 1320365396,
+        "parameter" : [ 10126063 ]
+      } ]
+    } ]
+  }, {
+    "id" : 525107298,
+    "methodCalls" : [ {
+      "methodName" : "getPlayer",
+      "invocations" : [ {
+        "return" : 10126063,
+        "parameter" : [ ]
+      } ]
+    }, {
+      "methodName" : "canDrive",
+      "invocations" : [ {
+        "return" : 1664927413,
+        "parameter" : [ ]
       } ]
     } ]
   } ],
@@ -4321,135 +3719,43 @@
       "name" : "hasConfirmedPath",
       "type" : "java.lang.Boolean",
       "value" : "false",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "hasPath",
-      "id" : 1181763012
+      "id" : 54879576
     }, {
       "name" : "rentedEdges",
       "type" : "java.util.Set",
       "value" : [ ],
-      "id" : 437078879
+      "id" : 203134694
     }, {
       "name" : "buildingBudget",
       "type" : "java.lang.Integer",
       "value" : "0",
-      "id" : 521207494
+      "id" : 388122318
     }, {
       "name" : "playerObjective",
       "type" : "hProjekt.controller.PlayerObjective",
       "value" : "IDLE",
-      "id" : 1677544922
-    }, {
-      "name" : "playerStateProperty",
-      "type" : "javafx.beans.property.SimpleObjectProperty",
-      "fields" : [ {
-        "name" : "helper",
-        "type" : "null",
-        "id" : 0
-      }, {
-        "name" : "valid",
-        "type" : "java.lang.Boolean",
-        "value" : "true",
-        "id" : 955994360
-      }, {
-        "name" : "listener",
-        "id" : 0
-      }, {
-        "name" : "observable",
-        "id" : 0
-      }, {
-        "name" : "value",
-        "type" : "hProjekt.model.PlayerState",
-        "fields" : [ {
-          "name" : "buildingBudget",
-          "id" : 521207494
-        }, {
-          "name" : "drivableTiles",
-          "type" : "java.util.Map",
-          "value" : [ ],
-          "id" : 40117437
-        }, {
-          "name" : "hasPath",
-          "id" : 1181763012
-        }, {
-          "name" : "rentedEdges",
-          "id" : 437078879
-        }, {
-          "name" : "choosableEdges",
-          "id" : 437078879
-        }, {
-          "name" : "playerObjective",
-          "id" : 1677544922
-        }, {
-          "name" : "buildableRailEdges",
-          "id" : 437078879
-        } ],
-        "id" : 1065329620
-      }, {
-        "name" : "name",
-        "type" : "java.lang.String",
-        "value" : "",
-        "id" : 1075314220
-      }, {
-        "name" : "bean",
-        "id" : 0
-      } ],
-      "id" : 1019568945
-    }, {
-      "name" : "actions",
-      "type" : "java.util.concurrent.LinkedBlockingDeque",
-      "fields" : [ {
-        "name" : "notFull",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "type" : "java.util.concurrent.locks.ReentrantLock$NonfairSync",
-          "fields" : [ {
-            "name" : "state",
-            "id" : 521207494
-          } ],
-          "id" : 1930314302
-        } ],
-        "id" : 1307823670
-      }, {
-        "name" : "notEmpty",
-        "type" : "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
-        "fields" : [ {
-          "name" : "this$0",
-          "id" : 1930314302
-        } ],
-        "id" : 1269892924
-      }, {
-        "name" : "lock",
-        "type" : "java.util.concurrent.locks.ReentrantLock",
-        "fields" : [ {
-          "name" : "sync",
-          "id" : 1930314302
-        } ],
-        "id" : 2052356865
-      }, {
-        "name" : "capacity",
-        "type" : "java.lang.Integer",
-        "value" : "2147483647",
-        "id" : 375042692
-      } ],
-      "id" : 547191875
+      "id" : 1454922150
     }, {
       "name" : "gameController",
       "type" : "hProjekt.controller.GameController",
       "fields" : [ {
         "name" : "stopped",
-        "id" : 1181763012
+        "id" : 54879576
       }, {
         "name" : "activePlayerController",
         "type" : "javafx.beans.property.SimpleObjectProperty",
         "fields" : [ {
           "name" : "helper",
+          "type" : "null",
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "type" : "java.lang.Boolean",
+          "value" : "true",
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -4461,12 +3767,14 @@
           "id" : 0
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "type" : "java.lang.String",
+          "value" : "",
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 830144042
+        "id" : 1554197786
       }, {
         "name" : "chosenCitiesProperty",
         "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -4475,7 +3783,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -4490,12 +3798,12 @@
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Winterberg",
-              "id" : 1265499289
+              "id" : 213380140
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
@@ -4503,25 +3811,25 @@
                 "name" : "r",
                 "type" : "java.lang.Integer",
                 "value" : "1",
-                "id" : 1068781783
+                "id" : 539249566
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 1176832266
+              "id" : 1580155039
             } ],
-            "id" : 685606039
+            "id" : 848252486
           }, {
             "name" : "key",
             "type" : "hProjekt.model.CityImpl",
             "fields" : [ {
               "name" : "isStartingCity",
-              "id" : 1181763012
+              "id" : 54879576
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Kosseneck",
-              "id" : 1600866575
+              "id" : 1581847861
             }, {
               "name" : "position",
               "type" : "hProjekt.model.TilePosition",
@@ -4529,24 +3837,24 @@
                 "name" : "r",
                 "type" : "java.lang.Integer",
                 "value" : "-1",
-                "id" : 1898469011
+                "id" : 1008355031
               }, {
                 "name" : "q",
-                "id" : 521207494
+                "id" : 388122318
               } ],
-              "id" : 175417591
+              "id" : 476648155
             } ],
-            "id" : 309565754
+            "id" : 652004929
           } ],
-          "id" : 596230622
+          "id" : 667971646
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 531201541
+        "id" : 173321045
       }, {
         "name" : "roundCounter",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -4555,7 +3863,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 955994360
+          "id" : 1664927413
         }, {
           "name" : "listener",
           "id" : 0
@@ -4564,15 +3872,15 @@
           "id" : 0
         }, {
           "name" : "value",
-          "id" : 521207494
+          "id" : 388122318
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 730620794
+        "id" : 124576487
       }, {
         "name" : "currentDiceRoll",
         "type" : "javafx.beans.property.SimpleIntegerProperty",
@@ -4581,7 +3889,7 @@
           "id" : 0
         }, {
           "name" : "valid",
-          "id" : 1181763012
+          "id" : 54879576
         }, {
           "name" : "listener",
           "id" : 0
@@ -4592,34 +3900,36 @@
           "name" : "value",
           "type" : "java.lang.Integer",
           "value" : "6",
-          "id" : 1349185367
+          "id" : 1302506145
         }, {
           "name" : "name",
-          "id" : 1075314220
+          "id" : 236079849
         }, {
           "name" : "bean",
           "id" : 0
         } ],
-        "id" : 425405365
+        "id" : 1382315525
       }, {
         "name" : "dice",
         "type" : "java.util.function.Supplier",
         "fields" : [ ],
-        "id" : 604847041
+        "id" : 1413055148
       }, {
         "name" : "aiControllers",
         "type" : "java.util.List",
         "value" : [ ],
-        "id" : 737436520
+        "id" : 1435791952
       }, {
         "name" : "playerControllers",
-        "id" : 40117437
+        "type" : "java.util.Map",
+        "value" : [ ],
+        "id" : 836701411
       }, {
         "name" : "state",
         "type" : "hProjekt.model.GameState",
         "fields" : [ {
           "name" : "chosenCities",
-          "id" : 437078879
+          "id" : 203134694
         }, {
           "name" : "gamePhaseProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -4628,7 +3938,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "listener",
             "id" : 0
@@ -4639,15 +3949,15 @@
             "name" : "value",
             "type" : "hProjekt.controller.GamePhase",
             "value" : "DRIVING_PHASE",
-            "id" : 997916804
+            "id" : 177436125
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 165388284
+          "id" : 2077242722
         }, {
           "name" : "winnerProperty",
           "type" : "javafx.beans.property.SimpleObjectProperty",
@@ -4656,7 +3966,7 @@
             "id" : 0
           }, {
             "name" : "valid",
-            "id" : 955994360
+            "id" : 1664927413
           }, {
             "name" : "listener",
             "id" : 0
@@ -4668,15 +3978,15 @@
             "id" : 0
           }, {
             "name" : "name",
-            "id" : 1075314220
+            "id" : 236079849
           }, {
             "name" : "bean",
             "id" : 0
           } ],
-          "id" : 820197238
+          "id" : 1027042715
         }, {
           "name" : "playerPointSurplus",
-          "id" : 40117437
+          "id" : 836701411
         }, {
           "name" : "playerPositions",
           "type" : "java.util.Map",
@@ -4686,31 +3996,31 @@
               "name" : "credits",
               "type" : "java.lang.Integer",
               "value" : "20",
-              "id" : 1933047934
+              "id" : 681746231
             }, {
               "name" : "id",
-              "id" : 521207494
+              "id" : 388122318
             }, {
               "name" : "name",
               "type" : "java.lang.String",
               "value" : "Player0",
-              "id" : 170478319
+              "id" : 453436164
             } ],
-            "id" : 1004205626
+            "id" : 10126063
           }, {
-            "id" : 175417591
+            "id" : 476648155
           } ] ],
-          "id" : 1075796255
+          "id" : 686013624
         }, {
           "name" : "drivingPlayers",
           "type" : "java.util.List",
           "value" : [ {
-            "id" : 1004205626
+            "id" : 10126063
           } ],
-          "id" : 1522064091
+          "id" : 225492460
         }, {
           "name" : "players",
-          "id" : 1522064091
+          "id" : 225492460
         }, {
           "name" : "grid",
           "type" : "hProjekt.model.HexGridImpl",
@@ -4718,34 +4028,34 @@
             "name" : "cities",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 175417591
+              "id" : 1580155039
             }, {
-              "id" : 309565754
+              "id" : 848252486
             } ], [ {
-              "id" : 1176832266
+              "id" : 476648155
             }, {
-              "id" : 685606039
+              "id" : 652004929
             } ] ],
-            "id" : 1937698863
+            "id" : 2072008928
           }, {
             "name" : "edges",
             "type" : "java.util.Map",
             "value" : [ [ {
               "type" : "java.util.Set",
               "value" : [ {
-                "id" : 175417591
+                "id" : 1580155039
               }, {
                 "type" : "hProjekt.model.TilePosition",
                 "fields" : [ {
                   "name" : "r",
-                  "id" : 521207494
+                  "id" : 388122318
                 }, {
                   "name" : "q",
-                  "id" : 521207494
+                  "id" : 388122318
                 } ],
-                "id" : 1753283198
+                "id" : 1100551705
               } ],
-              "id" : 382650034
+              "id" : 1652685125
             }, {
               "type" : "hProjekt.model.EdgeImpl",
               "fields" : [ {
@@ -4756,7 +4066,7 @@
                   "id" : 0
                 }, {
                   "name" : "valid",
-                  "id" : 955994360
+                  "id" : 1664927413
                 }, {
                   "name" : "listener",
                   "id" : 0
@@ -4765,31 +4075,31 @@
                   "id" : 0
                 }, {
                   "name" : "value",
-                  "id" : 1522064091
+                  "id" : 225492460
                 }, {
                   "name" : "name",
-                  "id" : 1075314220
+                  "id" : 236079849
                 }, {
                   "name" : "bean",
                   "id" : 0
                 } ],
-                "id" : 134983244
+                "id" : 1839151903
               }, {
                 "name" : "position2",
-                "id" : 1753283198
+                "id" : 1580155039
               }, {
                 "name" : "position1",
-                "id" : 175417591
+                "id" : 1100551705
               } ],
-              "id" : 20067273
+              "id" : 171391457
             } ], [ {
               "type" : "java.util.Set",
               "value" : [ {
-                "id" : 1753283198
+                "id" : 1100551705
               }, {
-                "id" : 1176832266
+                "id" : 476648155
               } ],
-              "id" : 2017816646
+              "id" : 1779873572
             }, {
               "type" : "hProjekt.model.EdgeImpl",
               "fields" : [ {
@@ -4800,7 +4110,7 @@
                   "id" : 0
                 }, {
                   "name" : "valid",
-                  "id" : 955994360
+                  "id" : 1664927413
                 }, {
                   "name" : "listener",
                   "id" : 0
@@ -4809,88 +4119,88 @@
                   "id" : 0
                 }, {
                   "name" : "value",
-                  "id" : 1522064091
+                  "id" : 225492460
                 }, {
                   "name" : "name",
-                  "id" : 1075314220
+                  "id" : 236079849
                 }, {
                   "name" : "bean",
                   "id" : 0
                 } ],
-                "id" : 2063773641
+                "id" : 492522075
               }, {
                 "name" : "position2",
-                "id" : 1176832266
+                "id" : 1100551705
               }, {
                 "name" : "position1",
-                "id" : 1753283198
+                "id" : 476648155
               } ],
-              "id" : 1129969466
+              "id" : 69692374
             } ] ],
-            "id" : 365439665
+            "id" : 1320365396
           }, {
             "name" : "tiles",
             "type" : "java.util.Map",
             "value" : [ [ {
-              "id" : 175417591
+              "id" : 1100551705
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 1992221763
+                "id" : 1211133128
               }, {
                 "name" : "type",
                 "type" : "hProjekt.model.Tile$Type",
                 "value" : "PLAIN",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 175417591
+                "id" : 1100551705
               } ],
-              "id" : 1239939553
+              "id" : 168060110
             } ], [ {
-              "id" : 1753283198
+              "id" : 1580155039
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 1992221763
+                "id" : 1211133128
               }, {
                 "name" : "type",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 1753283198
+                "id" : 1580155039
               } ],
-              "id" : 180301221
+              "id" : 212189
             } ], [ {
-              "id" : 1176832266
+              "id" : 476648155
             }, {
               "type" : "hProjekt.model.TileImpl",
               "fields" : [ {
                 "name" : "hexGrid",
-                "id" : 1992221763
+                "id" : 1211133128
               }, {
                 "name" : "type",
-                "id" : 154482552
+                "id" : 1790585734
               }, {
                 "name" : "position",
-                "id" : 1176832266
+                "id" : 476648155
               } ],
-              "id" : 1975974009
+              "id" : 173708546
             } ] ],
-            "id" : 81758915
+            "id" : 321431006
           } ],
-          "id" : 1992221763
+          "id" : 1211133128
         } ],
-        "id" : 1099674573
+        "id" : 492493402
       } ],
-      "id" : 1829878152
+      "id" : 1718491493
     }, {
       "name" : "player",
-      "id" : 1004205626
+      "id" : 10126063
     } ],
-    "id" : 688385214
+    "id" : 525107298
   }, {
     "type" : "hProjekt.model.TileImpl",
     "fields" : [ {
@@ -4903,50 +4213,50 @@
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1898469011
+            "id" : 1008355031
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 2057269801
+          "id" : 988376411
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 1600866575
+            "id" : 1581847861
           }, {
             "name" : "position",
-            "id" : 2057269801
+            "id" : 988376411
           } ],
-          "id" : 517757023
+          "id" : 461511302
         } ], [ {
           "type" : "hProjekt.model.TilePosition",
           "fields" : [ {
             "name" : "r",
-            "id" : 1068781783
+            "id" : 539249566
           }, {
             "name" : "q",
-            "id" : 521207494
+            "id" : 388122318
           } ],
-          "id" : 168708008
+          "id" : 472141361
         }, {
           "type" : "hProjekt.model.CityImpl",
           "fields" : [ {
             "name" : "isStartingCity",
-            "id" : 1181763012
+            "id" : 54879576
           }, {
             "name" : "name",
-            "id" : 1265499289
+            "id" : 213380140
           }, {
             "name" : "position",
-            "id" : 168708008
+            "id" : 472141361
           } ],
-          "id" : 1093454002
+          "id" : 243166868
         } ] ],
-        "id" : 388833169
+        "id" : 1503649365
       }, {
         "name" : "edges",
         "type" : "java.util.Map",
@@ -4956,16 +4266,16 @@
             "type" : "hProjekt.model.TilePosition",
             "fields" : [ {
               "name" : "r",
-              "id" : 521207494
+              "id" : 388122318
             }, {
               "name" : "q",
-              "id" : 521207494
+              "id" : 388122318
             } ],
-            "id" : 1159243481
+            "id" : 1545548275
           }, {
-            "id" : 168708008
+            "id" : 988376411
           } ],
-          "id" : 1534937965
+          "id" : 888358026
         }, {
           "type" : "hProjekt.model.EdgeImpl",
           "fields" : [ {
@@ -4976,7 +4286,7 @@
               "id" : 0
             }, {
               "name" : "valid",
-              "id" : 955994360
+              "id" : 1664927413
             }, {
               "name" : "listener",
               "id" : 0
@@ -4990,41 +4300,41 @@
                 "type" : "hProjekt.model.PlayerImpl",
                 "fields" : [ {
                   "name" : "credits",
-                  "id" : 1933047934
+                  "id" : 681746231
                 }, {
                   "name" : "id",
-                  "id" : 521207494
+                  "id" : 388122318
                 }, {
                   "name" : "name",
-                  "id" : 170478319
+                  "id" : 453436164
                 } ],
-                "id" : 1816722058
+                "id" : 1654583020
               } ],
-              "id" : 115016501
+              "id" : 1390919377
             }, {
               "name" : "name",
-              "id" : 1075314220
+              "id" : 236079849
             }, {
               "name" : "bean",
               "id" : 0
             } ],
-            "id" : 76509117
+            "id" : 1194053459
           }, {
             "name" : "position2",
-            "id" : 168708008
+            "id" : 1545548275
           }, {
             "name" : "position1",
-            "id" : 1159243481
+            "id" : 988376411
           } ],
-          "id" : 1103946095
+          "id" : 6961018
         } ], [ {
           "type" : "java.util.Set",
           "value" : [ {
-            "id" : 2057269801
+            "id" : 472141361
           }, {
-            "id" : 1159243481
+            "id" : 1545548275
           } ],
-          "id" : 1796072004
+          "id" : 1974321070
         }, {
           "type" : "hProjekt.model.EdgeImpl",
           "fields" : [ {
@@ -5035,7 +4345,7 @@
               "id" : 0
             }, {
               "name" : "valid",
-              "id" : 955994360
+              "id" : 1664927413
             }, {
               "name" : "listener",
               "id" : 0
@@ -5044,82 +4354,82 @@
               "id" : 0
             }, {
               "name" : "value",
-              "id" : 115016501
+              "id" : 1390919377
             }, {
               "name" : "name",
-              "id" : 1075314220
+              "id" : 236079849
             }, {
               "name" : "bean",
               "id" : 0
             } ],
-            "id" : 182264731
+            "id" : 38411467
           }, {
             "name" : "position2",
-            "id" : 1159243481
+            "id" : 472141361
           }, {
             "name" : "position1",
-            "id" : 2057269801
+            "id" : 1545548275
           } ],
-          "id" : 46757552
+          "id" : 1405755439
         } ] ],
-        "id" : 332543401
+        "id" : 774673
       }, {
         "name" : "tiles",
         "type" : "java.util.Map",
         "value" : [ [ {
-          "id" : 1159243481
+          "id" : 988376411
         }, {
           "type" : "hProjekt.model.TileImpl",
           "fields" : [ {
             "name" : "hexGrid",
-            "id" : 282225798
+            "id" : 190107608
           }, {
             "name" : "type",
-            "id" : 154482552
+            "id" : 1790585734
           }, {
             "name" : "position",
-            "id" : 1159243481
+            "id" : 988376411
           } ],
-          "id" : 394385520
+          "id" : 1660202586
         } ], [ {
-          "id" : 2057269801
+          "id" : 472141361
+        }, {
+          "id" : 51079645
+        } ], [ {
+          "id" : 1545548275
         }, {
           "type" : "hProjekt.model.TileImpl",
           "fields" : [ {
             "name" : "hexGrid",
-            "id" : 282225798
+            "id" : 190107608
           }, {
             "name" : "type",
-            "id" : 154482552
+            "id" : 1790585734
           }, {
             "name" : "position",
-            "id" : 2057269801
+            "id" : 1545548275
           } ],
-          "id" : 1362301901
-        } ], [ {
-          "id" : 168708008
-        }, {
-          "id" : 1060512613
+          "id" : 1905790887
         } ] ],
-        "id" : 772453060
+        "id" : 728260688
       } ],
-      "id" : 282225798
+      "id" : 190107608
     }, {
       "name" : "type",
-      "id" : 154482552
+      "id" : 1790585734
     }, {
       "name" : "position",
-      "id" : 168708008
+      "id" : 472141361
     } ],
-    "id" : 1060512613
+    "id" : 51079645
   }, {
     "type" : "java.util.Set",
     "value" : [ {
-      "id" : 1129969466
+      "id" : 69692374
     }, {
-      "id" : 20067273
+      "id" : 171391457
     } ],
-    "id" : 1644021752
+    "id" : 85046947
   } ],
   "expected" : {
     "type" : "hProjekt.controller.actions.IllegalActionException",
@@ -5127,16 +4437,16 @@
       "name" : "suppressedExceptions",
       "type" : "java.util.List",
       "value" : [ ],
-      "id" : 817545888
+      "id" : 334337848
     }, {
       "name" : "cause",
-      "id" : 1965452125
+      "id" : 1145329355
     }, {
       "name" : "detailMessage",
       "type" : "java.lang.String",
       "value" : "Player cannot drive to the target tile",
-      "id" : 1351187275
+      "id" : 153405796
     } ],
-    "id" : 1965452125
+    "id" : 1145329355
   }
 } ]

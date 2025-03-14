@@ -12,6 +12,7 @@ import org.tudalgo.algoutils.tutor.general.json.JsonParameterSet;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import hProjekt.controller.GameControllerTest;
 import hProjekt.controller.LeaderboardControllerTests;
 import hProjekt.controller.PlayerControllerTest;
 import hProjekt.model.EdgeImplTest;
@@ -60,10 +61,8 @@ public class HProjekt_RubricProviderPublic implements RubricProvider {
             .maxPoints(6)
             .minPoints(0)
             .addChildCriteria(
-                    criterion(
-                            "Die Methode getRails gibt eine unveränderbare Sicht auf die Schienen des Spielers zurück.",
-                            JUnitTestRef.ofMethod(
-                                    () -> HexGridImplTest.class.getDeclaredMethod("testGetRails", ObjectNode.class))),
+                    privateCriterion(
+                            "Die Methode getRails gibt eine unveränderbare Sicht auf die Schienen des Spielers zurück."),
                     criterion(
                             "Die Methode connectsTo gibt genau dann true zurück, wenn beide Edges ein gemeinsames Tile besitzen.",
                             JUnitTestRef.ofMethod(
@@ -164,8 +163,11 @@ public class HProjekt_RubricProviderPublic implements RubricProvider {
             .maxPoints(4)
             .minPoints(0)
             .addChildCriteria(
-                    privateCriterion(
-                            "Die Methode executeBuildingPhase ist vollständig und korrekt implementiert.", 4))
+                    criterion(
+                            "Die Methode executeBuildingPhase ist vollständig und korrekt implementiert.", 4,
+                            JUnitTestRef.ofMethod(
+                                    () -> GameControllerTest.class.getDeclaredMethod("testExecuteBuildingPhase",
+                                            ObjectNode.class))))
             .build();
 
     private static final Criterion HProjekt_2_4 = Criterion.builder()
@@ -173,8 +175,11 @@ public class HProjekt_RubricProviderPublic implements RubricProvider {
             .maxPoints(2)
             .minPoints(0)
             .addChildCriteria(
-                    privateCriterion(
-                            "Die Methode chooseCities ist vollständig und korrekt implementiert.", 2))
+                    criterion(
+                            "Die Methode chooseCities ist vollständig und korrekt implementiert.", 2,
+                            JUnitTestRef.ofMethod(
+                                    () -> GameControllerTest.class.getDeclaredMethod("testChooseCities",
+                                            ObjectNode.class))))
             .build();
 
     private static final Criterion HProjekt_2_5 = Criterion.builder()
@@ -197,8 +202,11 @@ public class HProjekt_RubricProviderPublic implements RubricProvider {
             .maxPoints(2)
             .minPoints(0)
             .addChildCriteria(
-                    privateCriterion(
-                            "Die Methode letPlayersChoosePath ist vollständig und korrekt implementiert.", 2))
+                    criterion(
+                            "Die Methode letPlayersChoosePath ist vollständig und korrekt implementiert.", 2,
+                            JUnitTestRef.ofMethod(
+                                    () -> GameControllerTest.class.getDeclaredMethod("testLetPlayersChoosePath",
+                                            ObjectNode.class))))
             .build();
 
     private static final Criterion HProjekt_2_7 = Criterion.builder()
@@ -206,7 +214,7 @@ public class HProjekt_RubricProviderPublic implements RubricProvider {
             .maxPoints(3)
             .minPoints(0)
             .addChildCriteria(
-                    privateCriterion(
+                    manualCriterion(
                             "Die Methode handleDriving ist vollständig und korrekt implementiert.", 3))
             .build();
 
@@ -215,8 +223,11 @@ public class HProjekt_RubricProviderPublic implements RubricProvider {
             .maxPoints(2)
             .minPoints(0)
             .addChildCriteria(
-                    privateCriterion(
-                            "Die Methode getWinners ist vollständig und korrekt implementiert.", 2))
+                    criterion(
+                            "Die Methode getWinners ist vollständig und korrekt implementiert.", 2,
+                            JUnitTestRef.ofMethod(
+                                    () -> GameControllerTest.class.getDeclaredMethod("testGetWinners",
+                                            ObjectNode.class))))
             .build();
 
     private static final Criterion HProjekt_2_9 = Criterion.builder()
@@ -224,7 +235,7 @@ public class HProjekt_RubricProviderPublic implements RubricProvider {
             .maxPoints(3)
             .minPoints(0)
             .addChildCriteria(
-                    privateCriterion(
+                    manualCriterion(
                             "Die Methode executeDrivingPhase ist vollständig und korrekt implementiert.", 3))
             .build();
 
