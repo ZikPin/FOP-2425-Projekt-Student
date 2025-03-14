@@ -12,18 +12,13 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+import hProjekt.model.*;
 import org.tudalgo.algoutils.student.annotation.DoNotTouch;
 import org.tudalgo.algoutils.student.annotation.StudentImplementationRequired;
 
 import hProjekt.Config;
 import hProjekt.controller.actions.IllegalActionException;
 import hProjekt.controller.actions.PlayerAction;
-import hProjekt.model.Edge;
-import hProjekt.model.GameState;
-import hProjekt.model.Player;
-import hProjekt.model.PlayerState;
-import hProjekt.model.Tile;
-import hProjekt.model.TilePosition;
 import javafx.beans.property.Property;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.util.Pair;
@@ -313,7 +308,17 @@ public class PlayerController {
     @StudentImplementationRequired("P2.1")
     public boolean canBuildRail(Edge edge) {
         // TODO: P2.1
-        return org.tudalgo.algoutils.student.Student.crash("P2.1 - Remove if implemented");
+        // Den Grundfall bedecken, dass Spieler auf der Kante nicht gebaut hat
+        if (!(edge.hasRail() && edge.getRailOwners().contains(player))) {
+            // Basisbaukosten
+            if (edge.getBaseBuildingCost() <= getPlayerState().buildingBudget()) {
+                if (getState().getGamePhaseProperty().getValue().equals(GamePhase.BUILDING_PHASE) &&
+                    getPlayer().getCredits() >= edge.getTotalParallelCost(getPlayer())) {
+                    return true;
+                } return getPlayer().getCredits() >= edge.getTotalBuildingCost(getPlayer());
+            }
+        }
+        return false;
     }
 
     /**
@@ -324,7 +329,14 @@ public class PlayerController {
     @StudentImplementationRequired("P2.1")
     public Set<Edge> getBuildableRails() {
         // TODO: P2.1
-        return org.tudalgo.algoutils.student.Student.crash("P2.1 - Remove if implemented");
+        if (getPlayer().getRails().isEmpty()) {
+            Map<TilePosition, City> startingCities = getState().getGrid().getStartingCities();
+            return startingCities.keySet().stream().
+                flatMap(tilePosition -> {return getState().getGrid().getTileAt(tilePosition).getEdges().stream();}).
+                collect(Collectors.toSet());
+        } else {
+            return getPlayer().getRails()
+        }
     }
 
     /**
