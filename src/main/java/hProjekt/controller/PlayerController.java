@@ -335,7 +335,10 @@ public class PlayerController {
                 flatMap(tilePosition -> {return getState().getGrid().getTileAt(tilePosition).getEdges().stream();}).
                 collect(Collectors.toSet());
         } else {
-            return getPlayer().getRails()
+            return getState().getGrid().getEdges().values().stream().
+                filter(Edge::hasRail).
+                flatMap(edge -> edge.getConnectedEdges().stream()).
+                collect(Collectors.toSet());
         }
     }
 
