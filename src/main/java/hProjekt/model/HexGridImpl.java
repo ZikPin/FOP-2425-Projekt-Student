@@ -300,8 +300,12 @@ public class HexGridImpl implements HexGrid {
         // TODO: P1.3
         Map<Set<TilePosition>, Edge> res = new HashMap<>();
         for (Map.Entry<Set<TilePosition>, Edge> pair : edges.entrySet()){
-            if (pair.getValue())
+            if (pair.getValue().hasRail()){ //does the edge überhaupt have a rail?
+                if (pair.getValue().getRailOwners().contains(player)) res.put(pair.getKey(), pair.getValue()); //is the given player in the list of owners of this edge?
+            }
         }
+
+        return Collections.unmodifiableMap(res);
     }
 
     @Override

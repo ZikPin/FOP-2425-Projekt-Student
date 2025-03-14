@@ -1,10 +1,6 @@
 package hProjekt.model;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -49,7 +45,15 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
     @StudentImplementationRequired("P1.3")
     public Set<Edge> getConnectedRails(final Player player) {
         // TODO: P1.3
-        return org.tudalgo.algoutils.student.Student.crash("P1.3 - Remove if implemented");
+        Set<Edge> edges=this.getConnectedEdges();
+        Set<Edge> res = new HashSet<>();
+        for (Edge edge : edges){
+            if(edge.hasRail()){
+                if(edge.getRailOwners().contains(player)) res.add(edge);
+            }
+        }
+
+        return res;
     }
 
     @Override
@@ -137,7 +141,11 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
     @StudentImplementationRequired("P1.3")
     public boolean connectsTo(Edge other) {
         // TODO: P1.3
-        return org.tudalgo.algoutils.student.Student.crash("P1.3 - Remove if implemented");
+        return this.getPosition1().equals(other.getPosition1()) ||
+            this.getPosition1().equals(other.getPosition2()) ||
+            this.getPosition2().equals(other.getPosition1()) ||
+            this.getPosition2().equals(other.getPosition2());
+
     }
 
     @Override
@@ -149,6 +157,10 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
     @StudentImplementationRequired("P1.3")
     public Set<Edge> getConnectedEdges() {
         // TODO: P1.3
-        return org.tudalgo.algoutils.student.Student.crash("P1.3 - Remove if implemented");
+        //useful methods: Tile::getEdges; HexGridImpl::getTileAt
+        Set<Edge> edges = new HashSet<>();
+        edges.addAll(getHexGrid().getTileAt(position1).getEdges()); //add edges at Pos1
+        edges.addAll(getHexGrid().getTileAt(position2).getEdges()); //add the edges at Pos2
+        return edges;
     }
 }
