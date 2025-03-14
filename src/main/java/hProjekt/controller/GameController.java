@@ -287,7 +287,25 @@ public class GameController {
     @StudentImplementationRequired("P2.4")
     public void chooseCities() {
         // TODO: P2.4
-        org.tudalgo.algoutils.student.Student.crash("P2.4 - Remove if implemented");
+        // Wählen einer Stadt
+        List<City> cities = getState().getGrid().getCities().values()
+            .stream()
+            .filter(getState().getChosenCities()::contains)
+            .toList();
+
+        City cityStart = cities.get(Config.RANDOM.nextInt(cities.size()));
+        getState().addChosenCity(cityStart);
+
+        // Wählen anderer Stadt
+        cities = getState().getGrid().getCities().values()
+            .stream()
+            .filter(getState().getChosenCities()::contains)
+            .toList();
+
+        City cityEnd = cities.get(Config.RANDOM.nextInt(cities.size()));
+        getState().addChosenCity(cityStart);
+
+        chosenCitiesProperty.setValue(new Pair<City, City>(cityStart, cityEnd));
     }
 
     /**
