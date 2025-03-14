@@ -257,7 +257,26 @@ public class GameController {
     @StudentImplementationRequired("P2.3")
     private void executeBuildingPhase() {
         // TODO: P2.3
-        org.tudalgo.algoutils.student.Student.crash("P2.3 - Remove if implemented");
+        int indexActivePlayer = 0;
+        // Schleife
+        while (getState().getGrid().getUnconnectedCities().size() > Config.UNCONNECTED_CITIES_START_THRESHOLD) {
+            // Erhöhen von der Runde
+            roundCounter.set(roundCounter.get() + 1);
+
+            // Spielerindex erhöhen und Würfeln ausführen
+            indexActivePlayer = (roundCounter.get() - 1) % playerControllers.size();
+            activePlayerController.setValue(getPlayerControllers().get(getState().getPlayers().get(indexActivePlayer)));
+            activePlayerController.getValue().setPlayerObjective(PlayerObjective.ROLL_DICE);
+
+            // Setzen des neuen Baubudgets
+            playerControllers.values()
+                .forEach(
+                    playerController -> {
+                        playerController.setBuildingBudget(getCurrentDiceRoll());
+                        waitForBuild(playerController);
+                    }
+                );
+        }
     }
 
     /**
