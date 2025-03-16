@@ -418,7 +418,19 @@ public class GameController {
     @StudentImplementationRequired("P2.8")
     private List<Player> getWinners() {
         // TODO: P2.8
-        return org.tudalgo.algoutils.student.Student.crash("P2.8 - Remove if implemented");
+        List<Player> playersSorted = getState().getPlayerPointSurplus().keySet()
+            .stream()
+            .sorted(Comparator.comparing(getState().getPlayerPointSurplus()::get))
+            .toList();
+
+        List<Player> winners = new ArrayList<>(playersSorted);
+
+        for (int i = 0; i < Config.WINNING_CREDITS.size(); i++) {
+            playersSorted.get(i).addCredits(Config.WINNING_CREDITS.get(i));
+            winners.add(playersSorted.get(i));
+        }
+
+        return winners;
     }
 
     /**
