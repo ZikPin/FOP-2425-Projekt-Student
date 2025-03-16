@@ -81,11 +81,16 @@ public record TileImpl(TilePosition position, Type type, ObservableDoubleValue h
                 .map(Map.Entry::getValue).collect(Collectors.toSet());
     }
 
+    /**
+     * Gives the neighbor Tile in the given direction
+     * @param direction the direction of the edge
+     * @return
+     */
     @Override
     @StudentImplementationRequired("P1.4")
     public Tile getNeighbour(final EdgeDirection direction) {
         // TODO: P1.4
-        return org.tudalgo.algoutils.student.Student.crash("P1.4 - Remove if implemented");
+        return hexGrid.getTileAt(TilePosition.add(this.position, direction.position)); //we add the direction pos with position of our this tile
     }
 
     @Override

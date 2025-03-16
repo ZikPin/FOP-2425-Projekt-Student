@@ -24,9 +24,9 @@ submission {
     // studentId = "ab12cdef"
     // firstName = "sol_first"
     // lastName = "sol_last"
-    studentId = ""
-    firstName = ""
-    lastName = ""
+    studentId = "nm18lego"
+    firstName = "Nazrin"
+    lastName = "Murshudli"
 
     // Optionally require own tests for mainBuildSubmission task. Default is false
     requireTests = false
