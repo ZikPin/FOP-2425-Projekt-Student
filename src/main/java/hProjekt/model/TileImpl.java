@@ -55,7 +55,7 @@ public record TileImpl(TilePosition position, Type type, ObservableDoubleValue h
     @StudentImplementationRequired("P1.4")
     public Edge getEdge(final EdgeDirection direction) {
         // TODO: P1.4
-        return org.tudalgo.algoutils.student.Student.crash("P1.4 - Remove if implemented");
+        return hexGrid.getEdge(this.position, TilePosition.add(this.position, direction.position));
     }
 
     @Override
@@ -98,11 +98,22 @@ public record TileImpl(TilePosition position, Type type, ObservableDoubleValue h
         return getNeighbours().size() < 6;
     }
 
+    /**
+     * Returns a set of Tiles that are connected to this Tile over at least one out of given set of Edges
+     * @param connectingEdges the edges connecting the tiles
+     * @return set of Tiles that are connected to this Tile over at least one out of given set of Edges
+     */
     @Override
     @StudentImplementationRequired("P1.4")
     public Set<Tile> getConnectedNeighbours(Set<Edge> connectingEdges) {
         // TODO: P1.4
-        return org.tudalgo.algoutils.student.Student.crash("P1.4 - Remove if implemented");
+        //nützliche Methoden: TilePosition::neighbours(TilePosition),
+         return TilePosition.neighbours(position)
+                .stream()
+                .map(tilepos -> this.hexGrid.getTileAt(tilepos))
+             .filter(tile -> tile!=null)
+                .filter(tile -> connectingEdges.contains(this.hexGrid.getEdge(position, tile.getPosition())))
+                .collect(Collectors.toSet());
     }
 
     @Override

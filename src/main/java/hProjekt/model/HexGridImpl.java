@@ -11,6 +11,7 @@ import java.util.Random;
 import java.util.Set;
 import java.util.function.BiFunction;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 import org.tudalgo.algoutils.student.annotation.DoNotTouch;
 import org.tudalgo.algoutils.student.annotation.StudentImplementationRequired;
@@ -328,21 +329,56 @@ public class HexGridImpl implements HexGrid {
     @StudentImplementationRequired("P1.4")
     public Map<TilePosition, City> getConnectedCities() {
         // TODO: P1.4
-        return org.tudalgo.algoutils.student.Student.crash("P1.4 - Remove if implemented");
+        return Collections.unmodifiableMap(
+            cities
+            .entrySet()
+            .stream()
+            .filter(pair -> !(this.getTileAt(pair.getKey())
+                .getEdges().stream()
+                .filter(edge->edge!=null)
+                .filter(edge -> edge.hasRail())
+                .collect(Collectors.toSet())
+                .isEmpty())
+            )
+            .collect(Collectors.toMap(pair->pair.getKey(), pair-> pair.getValue()))
+        );
+
     }
 
     @Override
     @StudentImplementationRequired("P1.4")
     public Map<TilePosition, City> getUnconnectedCities() {
         // TODO: P1.4
-        return org.tudalgo.algoutils.student.Student.crash("P1.4 - Remove if implemented");
+        return Collections.unmodifiableMap(
+            cities
+            .entrySet()
+            .stream()
+            .filter(pair -> this.getTileAt(pair.getKey())
+                .getEdges().stream()
+                .filter(edge ->edge!=null)
+                .filter(edge -> edge.hasRail())
+                .collect(Collectors.toSet())
+                .isEmpty()
+            )
+            .collect(Collectors.toMap(pair->pair.getKey(), pair-> pair.getValue()))
+        );
+
     }
 
+    /**
+     *
+     * @return Starting cities
+     */
     @Override
     @StudentImplementationRequired("P1.4")
     public Map<TilePosition, City> getStartingCities() {
         // TODO: P1.4
-        return org.tudalgo.algoutils.student.Student.crash("P1.4 - Remove if implemented");
+        //filter out all cities so that only starting cities are left
+        return cities
+            .entrySet()
+            .stream()
+            .filter(pair -> pair.getValue().isStartingCity())
+            .collect(Collectors.toMap(pair->pair.getKey(), pair->pair.getValue()));
     }
 
     @Override
