@@ -1,10 +1,7 @@
 package hProjekt.controller;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Supplier;
 
 import org.tudalgo.algoutils.student.annotation.DoNotTouch;
@@ -339,7 +336,9 @@ public class GameController {
             // Einen Pfad wählen
             while (!pc.hasConfirmedPath()) {
                 pc.setPlayerObjective(PlayerObjective.CHOOSE_PATH); // Nicht sicher
+                pc.waitForNextAction(PlayerObjective.CHOOSE_PATH);
                 pc.setPlayerObjective(PlayerObjective.CONFIRM_PATH);
+                pc.waitForNextAction(PlayerObjective.CONFIRM_PATH);
             }
         }
     }
@@ -358,7 +357,54 @@ public class GameController {
     @StudentImplementationRequired("P2.7")
     private void handleDriving() {
         // TODO: P2.7
-        org.tudalgo.algoutils.student.Student.crash("P2.7 - Remove if implemented");
+        if (!getState().getDrivingPlayers().isEmpty()) {
+            if (getState().getDrivingPlayers().size() == 1) {
+                Player player = getState().getDrivingPlayers().getFirst();
+                getState().setPlayerPositon(player, getTargetCity().getPosition());
+            } else {
+                // Spieler, die Zielstadt erreicht haben
+                List<Player> reachedTargetCity = getState().getPlayerPositions().keySet()
+                    .stream()
+                    .filter(player -> {return getState().getPlayerPositions().get(player).equals(getTargetCity().getPosition());})
+                    .toList();
+
+                // Subtrahieren den Wert von DICE_SIDES vom Surplus
+                getState().getDrivingPlayers()
+                    .stream()
+                    .filter(player -> !reachedTargetCity.contains(player))
+                    .forEach(player -> getState().addPlayerPointSurplus(player, getState().getPlayerPointSurplus().get(player) - Config.DICE_SIDES));
+
+                // Sortieren nach Credits
+                List<Player> drivingPlayers = getState().getDrivingPlayers()
+                    .stream()
+                    .sorted(Comparator.comparing(Player::getCredits))
+                    .toList();
+
+                // Updating the list of driving players
+                getState().resetDrivingPlayers();
+                drivingPlayers.forEach(getState()::addDrivingPlayer);
+
+                // Schleife bis Ende der Fahrphase
+                while(reachedTargetCity.size() < Config.WINNING_CREDITS.size() || reachedTargetCity.size() != getState().getDrivingPlayers().size()) {
+                    // Schleife für jeden Spieler, der die Zielstadt noch nicht erreicht hat
+                    for (Player drivingPlayer: getState().getDrivingPlayers()) {
+                        if (!reachedTargetCity.contains(drivingPlayer)) {
+                            // Würfeln und fahren
+                            PlayerController pc = playerControllers.get(drivingPlayer);
+                            pc.setPlayerObjective(PlayerObjective.ROLL_DICE);
+                            pc.waitForNextAction(PlayerObjective.ROLL_DICE);
+                            pc.setPlayerObjective(PlayerObjective.DRIVE);
+                            pc.waitForNextAction(PlayerObjective.DRIVE);
+
+                            // Update die Liste mit den die Stadt erreichten Spielern
+                            if (getState().getPlayerPositions().get(drivingPlayer).equals(getTargetCity().getPosition())) {
+                                reachedTargetCity.add(drivingPlayer);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     /**
