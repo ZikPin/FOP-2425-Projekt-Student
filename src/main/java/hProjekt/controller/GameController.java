@@ -4,17 +4,13 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.function.Supplier;
 
+import hProjekt.model.*;
 import org.tudalgo.algoutils.student.annotation.DoNotTouch;
 import org.tudalgo.algoutils.student.annotation.StudentImplementationRequired;
 
 import hProjekt.Config;
 import hProjekt.controller.actions.ConfirmBuildAction;
 import hProjekt.controller.actions.PlayerAction;
-import hProjekt.model.City;
-import hProjekt.model.GameState;
-import hProjekt.model.HexGrid;
-import hProjekt.model.HexGridImpl;
-import hProjekt.model.Player;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.Property;
 import javafx.beans.property.ReadOnlyProperty;
@@ -426,7 +422,6 @@ public class GameController {
         List<Player> winners = new ArrayList<>(playersSorted);
 
         for (int i = 0; i < Config.WINNING_CREDITS.size(); i++) {
-            playersSorted.get(i).addCredits(Config.WINNING_CREDITS.get(i));
             winners.add(playersSorted.get(i));
         }
 
@@ -448,7 +443,51 @@ public class GameController {
     @StudentImplementationRequired("P2.9")
     private void executeDrivingPhase() {
         // TODO: P2.9
-        org.tudalgo.algoutils.student.Student.crash("P2.9 - Remove if implemented");
+        // Die Liste mit nicht gewählten Städten
+        List<TilePosition> cities = getState().getGrid().getCities()
+            .keySet()
+            .stream()
+            .filter(tilePosition -> getState().getChosenCities().contains(getState().getGrid().getCityAt(tilePosition)))
+            .toList();
+
+        while (!cities.isEmpty()) {
+            // 1. Schritt
+            roundCounter.set(roundCounter.get() + 1);
+
+            // 2. Schritt
+            getState().resetDrivingPlayers();
+            getState().resetPlayerSurplus();
+            getState().resetPlayerPositions();
+
+            // 3. Schritt
+            if (roundCounter.get() % 3 == 0) {
+                buildingDuringDrivingPhase();
+            }
+
+            // 4. Schritt
+            PlayerController pcCityChooser = playerControllers.values().stream().findFirst().get();
+
+            for (Player players: playerControllers.keySet()) {
+                if (players.getID() == (roundCounter.get() - 1) % state.getPlayers().size()) {
+                    pcCityChooser = playerControllers.get(players);
+                }
+            }
+
+            pcCityChooser.setPlayerObjective(PlayerObjective.CHOOSE_CITIES);
+            pcCityChooser.waitForNextAction(PlayerObjective.CHOOSE_CITIES);
+
+            // 5. Schritt
+            letPlayersChoosePath();
+
+            // 6. Schritt
+            handleDriving();
+
+            // 7. Schritt
+            List<Player> winners = getWinners();
+            for (int i = 0; i < Config.WINNING_CREDITS.size(); i++) {
+                winners.get(i).addCredits(Config.WINNING_CREDITS.get(i));
+            }
+        }
     }
 
     /**
