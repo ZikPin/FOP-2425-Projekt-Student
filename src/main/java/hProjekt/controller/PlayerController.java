@@ -547,7 +547,11 @@ public class PlayerController {
     @StudentImplementationRequired("P2.5")
     public boolean canDrive() {
         // TODO: P2.5
-        return org.tudalgo.algoutils.student.Student.crash("P2.5 - Remove if implemented");
+        if (getState().getGamePhaseProperty().getValue().equals(GamePhase.DRIVING_PHASE)) {
+            return getState().getDrivingPlayers().contains(getPlayer());
+        }
+
+        return false;
     }
 
     /**
@@ -630,6 +634,19 @@ public class PlayerController {
     @StudentImplementationRequired("P2.5")
     public void drive(final Tile targetTile) throws IllegalActionException {
         // TODO: P2.5
-        org.tudalgo.algoutils.student.Student.crash("P2.5 - Remove if implemented");
+        if (!canDrive()) {
+            throw new IllegalActionException("The player " + getPlayer().getName() + " cannot drive");
+        } else if (getDrivableTiles().containsKey(targetTile)) {
+            throw new IllegalActionException("The tile is not reachable");
+        }
+
+        List<Tile> path = getDrivableTiles().get(targetTile);
+        for (int i = 0; i < path.size(); i++) {
+            getState().setPlayerPositon(player, path.get(i).getPosition());
+            if (getState().getPlayerPositions().get(player).equals(gameController.getTargetCity().getPosition())) {
+                getState().addPlayerPointSurplus(player, gameController.getCurrentDiceRoll() - i);
+                break;
+            }
+        }
     }
 }
