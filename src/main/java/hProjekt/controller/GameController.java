@@ -331,7 +331,17 @@ public class GameController {
     @StudentImplementationRequired("P2.6")
     private void letPlayersChoosePath() {
         // TODO: P2.6
-        org.tudalgo.algoutils.student.Student.crash("P2.6 - Remove if implemented");
+        for (PlayerController pc : playerControllers.values()) {
+            // Zurücksetzen und Position ändern
+            pc.resetDrivingPhase();
+            getState().setPlayerPositon(pc.getPlayer(), getStartingCity().getPosition());
+
+            // Einen Pfad wählen
+            while (!pc.hasConfirmedPath()) {
+                pc.setPlayerObjective(PlayerObjective.CHOOSE_PATH); // Nicht sicher
+                pc.setPlayerObjective(PlayerObjective.CONFIRM_PATH);
+            }
+        }
     }
 
     /**
