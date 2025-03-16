@@ -175,7 +175,7 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
     /**
      * Checks the 1st and 2nd positions of this and given Edges in pairs on equality
      * @param other the other edge
-     * @return {@code true} if the given ynd this edge has a common {@link TilePosition} as pos1 or pos2
+     * @return {@code true} if the given and this edge has a common {@link TilePosition} as pos1 or pos2
      *          {@code false} if otherwise
      */
     @Override
@@ -203,6 +203,7 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
     public Set<Edge> getConnectedEdges() {
         // TODO: P1.3
         //useful methods: Tile::getEdges; HexGridImpl::getTileAt
+
         Set<Edge> edges = new HashSet<>();
         edges.addAll(getHexGrid().getTileAt(position1).getEdges()); //add edges at Pos1
         edges.addAll(getHexGrid().getTileAt(position2).getEdges()); //add the edges at Pos2
