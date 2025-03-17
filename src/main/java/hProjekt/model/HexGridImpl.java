@@ -305,14 +305,35 @@ public class HexGridImpl implements HexGrid {
     @StudentImplementationRequired("P1.3")
     public Map<Set<TilePosition>, Edge> getRails(final Player player) {
         // TODO: P1.3
-        Map<Set<TilePosition>, Edge> res = new HashMap<>();
-        for (Map.Entry<Set<TilePosition>, Edge> pair : edges.entrySet()){
-            if (pair.getValue().hasRail()){ //does the edge überhaupt have a rail?
-                if (pair.getValue().getRailOwners().contains(player)) res.put(pair.getKey(), pair.getValue()); //is the given player in the list of owners of this edge?
-            }
-        }
+        //trying smth new
+        return edges.entrySet().stream()
+            .filter(edge -> edge.getValue().getRailOwners().contains(player))
+            .collect(Collectors.toUnmodifiableMap(pair->pair.getKey(), pair -> pair.getValue()));
 
-        return Collections.unmodifiableMap(res);
+        /* debugging
+
+        return edges.entrySet().stream()
+            .filter(edge ->{
+                boolean contain=false;
+                for(Player owner : edge.getValue().getRailOwners()){
+                    System.out.println("Owner: "+owner.toString());
+                    if (owner.getName()==player.getName() &&
+                        owner.getID()==player.getID() &&
+                        owner.getColor()==player.getColor() &&
+                        owner.isAi()== player.isAi()) {
+                        contain=true;
+                    } else{
+                        if (owner.getName()!=player.getName()) System.out.println("name");
+                        if (owner.getID()!=player.getID()) System.out.println("id");
+                        if (owner.getColor()!=player.getColor()) System.out.println("color");
+                        if (owner.getHexGrid()!=player.getHexGrid()) System.out.println("grid");
+                        if (owner.isAi()!= player.isAi()) System.out.println("ai");
+                        System.out.println(owner.getName()+"("+owner.getID()+")"+" is not same as "+player.getName()+"("+player.getID()+")");
+                    }
+                }
+                return contain;
+            })
+            .collect(Collectors.toUnmodifiableMap(pair->pair.getKey(), pair -> pair.getValue()));*/
     }
 
     @Override

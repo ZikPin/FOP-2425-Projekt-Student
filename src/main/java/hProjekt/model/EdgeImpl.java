@@ -142,27 +142,24 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
     @StudentImplementationRequired("P1.3")
     public boolean addRail(Player player) {
         // TODO: P1.3
+            if (getRailOwners().contains(player)) return false;
 
-        if (getRailOwners().contains(player)) {
-            return false;
-        }
+            Map<Set<TilePosition>, Edge> rails = grid.getRails(player);
+            if (rails.isEmpty()) { //player has no other rails
+                // Zik: changed because getCity returns null
+                if (!(grid.getStartingCities().containsKey(position1)
+                    || grid.getStartingCities().containsKey(position2)))
+                    return false;
+            } else { //player already has rail(-s)
+                // Zik: Just experimenting to solve the error
+                if (rails
+                    .values()
+                    .stream()
+                    .filter(this::connectsTo)
+                    .toList().isEmpty())
+                    return false; //the "new" rails is not connected to the Rail net of the player
 
-        Map<Set<TilePosition>, Edge> rails = grid.getRails(player);
-        if(rails.isEmpty()){ //player has no other rails
-            // Zik: changed because getCity returns null
-            if (!(grid.getStartingCities().containsKey(position1) ||
-                grid.getStartingCities().containsKey(position2)))
-                return false;
-        } else{ //player already has rail(-s)
-
-            // Zik: Just experimenting to solve the error
-            if (rails
-                .values()
-                .stream()
-                .filter(this::connectsTo)
-                .toList().isEmpty())
-                return false; //the "new" rails is not connected to the Rail net of the player
-        }
+            }
 
         //"all tests succeeded" so we can go further with building the rail
         railOwners.getValue().add(player);
