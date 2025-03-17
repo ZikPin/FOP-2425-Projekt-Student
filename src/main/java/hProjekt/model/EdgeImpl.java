@@ -142,24 +142,25 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
     @StudentImplementationRequired("P1.3")
     public boolean addRail(Player player) {
         // TODO: P1.3
-        if(getRailOwners().contains(player)) return false; //if player already has a rail here
+        if (getRailOwners().contains(player)) {
+            return false;
+        }
 
-
-        HexGrid grid = this.getHexGrid();
         Map<Set<TilePosition>, Edge> rails = grid.getRails(player);
         if(rails.isEmpty()){ //player has no other rails
-            if(!grid.getCityAt(position1).isStartingCity() //Position 1 is not a starting city
-            && !grid.getCityAt(position2).isStartingCity() //Position 2 is not a starting city
-            ) return false;
+            // Zik: changed because getCity returns null
+            if (!(grid.getStartingCities().containsKey(position1) ||
+                grid.getStartingCities().containsKey(position2)))
+                return false;
         } else{ //player already has rail(-s)
-            boolean connected=false;
-            for (Map.Entry<Set<TilePosition>, Edge> pair : rails.entrySet()){ //check for all the rails of the player if it connects to the "new" rail
-                if(connectsTo(pair.getValue())) {
-                    connected=true;
-                    break;
-                }
-            }
-            if(!connected) return false; //the "new" rails is not connected to the Railnet of the player
+
+            // Zik: Just experimenting to solve the error
+            if (rails
+                .values()
+                .stream()
+                .filter(this::connectsTo)
+                .toList().isEmpty())
+                return false; //the "new" rails is not connected to the Rail net of the player
         }
 
         //"all tests succeeded" so we can go further with building the rail
