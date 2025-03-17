@@ -311,7 +311,7 @@ public class PlayerController {
         // Den Grundfall bedecken, dass Spieler auf der Kante nicht gebaut hat
         if (!(edge.hasRail() && edge.getRailOwners().contains(player))) {
             // Basisbaukosten
-            if (edge.getBaseBuildingCost() <= getPlayerState().buildingBudget()) {
+            if (edge.getBaseBuildingCost() <= buildingBudget) {
                 if (getState().getGamePhaseProperty().getValue().equals(GamePhase.BUILDING_PHASE) &&
                     getPlayer().getCredits() >= edge.getTotalParallelCost(getPlayer())) {
                     return true;
@@ -332,13 +332,19 @@ public class PlayerController {
         if (getPlayer().getRails().isEmpty()) {
             Map<TilePosition, City> startingCities = getState().getGrid().getStartingCities();
             return startingCities.keySet().stream().
-                flatMap(tilePosition -> {return getState().getGrid().getTileAt(tilePosition).getEdges().stream();}).
-                collect(Collectors.toSet());
+                flatMap(tilePosition -> {return getState().getGrid().getTileAt(tilePosition).getEdges().stream();})
+                .filter(this::canBuildRail)
+                .collect(Collectors.toSet());
         } else {
-            return getState().getGrid().getEdges().values().stream().
-                filter(Edge::hasRail).
-                flatMap(edge -> edge.getConnectedEdges().stream()).
-                collect(Collectors.toSet());
+            return getState().getGrid()
+                .getEdges()
+                .values()
+                .stream()
+                .filter(Edge::hasRail)
+                .filter(edge -> edge.getRailOwners().contains(getPlayer()))
+                .flatMap(edge -> edge.getConnectedEdges().stream())
+                .filter(this::canBuildRail)
+                .collect(Collectors.toSet());
         }
     }
 
@@ -372,10 +378,10 @@ public class PlayerController {
             creditCosts += edge.getTotalParallelCost(getPlayer());
         }
 
-        if (creditCosts <= getPlayer().getCredits() && diceCosts <= getPlayerState().buildingBudget()) {
+        if (creditCosts <= getPlayer().getCredits() && diceCosts <= buildingBudget) {
             // Subtrahieren die Kosten
             getPlayer().removeCredits(creditCosts);
-            setBuildingBudget(getPlayerState().buildingBudget() - diceCosts);
+            setBuildingBudget(buildingBudget - diceCosts);
             // Gutschreiben an andere Spieler
             if (edge.hasRail()) {
                 edge.getParallelCostPerPlayer(getPlayer())
