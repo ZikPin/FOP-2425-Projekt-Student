@@ -142,21 +142,29 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
     @StudentImplementationRequired("P1.3")
     public boolean addRail(Player player) {
         // TODO: P1.3
-        if(getRailOwners().contains(player)) return false; //if player already has a rail here
-
+        if (player ==null) return false; //player is null
+        if (getRailOwners().contains(player)) return false; //if player already has a rail here
 
         HexGrid grid = this.getHexGrid();
         Map<Set<TilePosition>, Edge> rails = grid.getRails(player);
         if(rails.isEmpty()){ //player has no other rails
-            if(!grid.getCityAt(position1).isStartingCity() //Position 1 is not a starting city
+            boolean startingCity = false;
+            for (Map.Entry<TilePosition, City> pair : grid.getStartingCities().entrySet()){
+                if (pair.getKey().equals(position1) || pair.getKey().equals(position2)){
+                    startingCity = true;
+                }
+            }
+
+            if (!startingCity) return false;
+            /*if(!grid.getCityAt(position1).isStartingCity() //Position 1 is not a starting city
             && !grid.getCityAt(position2).isStartingCity() //Position 2 is not a starting city
-            ) return false;
+            ) return false;*/
         } else{ //player already has rail(-s)
             boolean connected=false;
             for (Map.Entry<Set<TilePosition>, Edge> pair : rails.entrySet()){ //check for all the rails of the player if it connects to the "new" rail
                 if(connectsTo(pair.getValue())) {
                     connected=true;
-                    break;
+                    //break;
                 }
             }
             if(!connected) return false; //the "new" rails is not connected to the Railnet of the player
