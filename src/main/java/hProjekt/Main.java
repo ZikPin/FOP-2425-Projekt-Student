@@ -14,6 +14,6 @@ public class Main {
     public static void main(String[] args) {
         Application.launch(MyApplication.class, args);
 
-        System.out.println("bla bla bla");
+        System.out.println("KW-ULTRAS RIIIISE!!!");
     }
 }
