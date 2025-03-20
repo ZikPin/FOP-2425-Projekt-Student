@@ -2,8 +2,8 @@
 Die Methode hat einen Edge als Parameter, und gibt zurück, ob wir auf dieser Kante eine Schiene bauen dürfen.
 
 Dafür sehen wir, ob eine Schiene schon auf der Kante liegt und ob es dem Spieler gehört.
-Wenn das nicht der Fall ist, prüfen wir, ob Spieler über genugend Guthaben verfügt, um die Schiene zu bauen
-Wenn das Spiel sich in der Bauphase befindet, damit Spieler einige Kosten durch Würfelergebnisse bedeckt, sonst wird alles vom Credit abgezogen.
+Wenn das nicht der Fall ist, prüfen wir, ob Spieler über genügend Guthaben verfügt, um die Schiene zu bauen,
+wenn das Spiel sich in der Bauphase befindet, damit Spieler einige Kosten durch Würfelergebnisse bedeckt, sonst wird alles vom Credit abgezogen.
 
 - PlayerController.getBuildableRails(): -
 Die Methode gibt zurück alle Kanten, auf denen der Spieler bauen darf.
@@ -18,3 +18,39 @@ Falls der Spieler Schienen gebaut hat, darf er nur an Netz liegen Kanten etwas b
     1) Wir sammeln alle Kanten auf dem Spielbrett, die Schienen haben, und filtrieren dadurch, ob sie Spieler als Besitzer haben
     2) Wir sammeln alle dabei liegende Kanten
     3) Schließlich filtrieren wir durch canBuild()
+
+- PlayerController.buildRail(final Edge edge) -
+die Methode prüft, ob wir auf die Kante eine Schiene bauen dürfen und wenn es möglich ist bauen wir. Sonst werfen eine Fehlermeldung.
+
+Nach dem ersten canBuild-Test berechnen wir die Baukosten. Wenn der Spieler die Kosten bedecken kann:
+    1) Subtrahieren wir die Kosten vom Guthaben
+    2) Für alle parallele Schienen den anderen Spielern Credits gutschreiben
+    3) Dann schreiben wir dem Spieler Credit gut, für Verbinden unverbundenen Städten
+    4) Addieren wir den Spieler als Besitzer.
+Sonst gibt es eine Fehlermeldung
+
+- GameController.executeBuildingPhase() -
+Die Methode führt die Bauphase aus, indem Spieler abwechselnd würfeln und Schienen bauen, bis bestimmte Anzahl von Städten unverbunden sind.
+Mit jeder Aufruf der Schleife inkrementieren wir den RoundCounter. Dann dementsprechend den Spieler wechseln. Der gewählte Spieler würfelt und für jeden Spieler wird ausgeführt:
+    1) Baubudget wird aktualisiert
+    2) Spieler muss bauen.
+
+- GameController.chooseCities() -
+Die Methode wählt zwei Städte (Anfang und Zielstadt) für die Fahrphase.
+
+Das machen wir in dem wir Stream von allen Städten filtrieren dadurch, ob sie schon gewählt waren. Dann wählen wir eine Zufällige und markieren es als gewählt.
+Danach machen wir dasselbe, um die Zielstadt zu wählen.
+
+- PlayerController.canDrive() -
+Die Methode entscheidet, ob ein Spieler fahren darf. Dafür prüfen wir, ob die Phase jetzt Fahrphase ist, und ob der Spieler in der Liste von Fahrenden ist.
+
+- PlayerController.drive(final Tile targetTile) -
+Die Methode führt Fahren aus, indem die Position und Überschuss (beim Erreichen der Stadt) aktualisiert werden.
+Als Erstes behandeln wir Fehlermeldungen für die Fälle:
+    1) Spieler darf nicht fahren
+    2) Der Zielkachel ist nicht erreichbar.
+
+Dann itererieren wir über Tiles in path (Pfad bis Zielkachel):
+    1) Aktualisieren der Spielerposition
+    2) Beim Erreichen des Zielkachels überschuss aktualisieren.
+

@@ -642,7 +642,7 @@ public class PlayerController {
         // TODO: P2.5
         if (!canDrive()) {
             throw new IllegalActionException("The player " + getPlayer().getName() + " cannot drive");
-        } else if (getDrivableTiles().containsKey(targetTile)) {
+        } else if (!getDrivableTiles().containsKey(targetTile)) {
             throw new IllegalActionException("The tile is not reachable");
         }
 

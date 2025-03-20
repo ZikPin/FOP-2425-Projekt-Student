@@ -214,7 +214,7 @@ public class GameController {
      *
      * The game consists of two phases: the building phase and the driving phase.
      *
-     * @throws IllegalStateException if there are not enough playerss
+     * @throws IllegalStateException if there are not enough players
      */
     public void startGame() {
         if (this.state.getPlayers().size() < Config.MIN_PLAYERS) {
@@ -260,6 +260,7 @@ public class GameController {
             indexActivePlayer = (roundCounter.get() - 1) % playerControllers.size();
             activePlayerController.setValue(getPlayerControllers().get(getState().getPlayers().get(indexActivePlayer)));
             activePlayerController.getValue().setPlayerObjective(PlayerObjective.ROLL_DICE);
+            activePlayerController.getValue().waitForNextAction(PlayerObjective.ROLL_DICE);
 
             // Setzen des neuen Baubudgets
             playerControllers.values()
