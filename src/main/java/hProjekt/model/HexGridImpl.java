@@ -12,6 +12,7 @@ import java.util.Set;
 import java.util.function.BiFunction;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.tudalgo.algoutils.student.annotation.DoNotTouch;
 import org.tudalgo.algoutils.student.annotation.StudentImplementationRequired;
@@ -306,9 +307,15 @@ public class HexGridImpl implements HexGrid {
     public Map<Set<TilePosition>, Edge> getRails(final Player player) {
         // TODO: P1.3
         //trying smth new
-        return edges.entrySet().stream()
-            .filter(edge -> edge.getValue().getRailOwners().contains(player))
-            .collect(Collectors.toUnmodifiableMap(pair->pair.getKey(), pair -> pair.getValue()));
+        Map<Set<TilePosition>, Edge> result = new HashMap<>();
+
+        edges.values().forEach(edge -> {
+            edge.getRailOwners().forEach(owner -> {
+                if (owner.toString().equals(player.toString())) result.put(edge.getAdjacentTilePositions(), edge);
+            });
+        });
+
+        return Collections.unmodifiableMap(result);
 
         /* debugging
 

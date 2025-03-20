@@ -123,7 +123,8 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
 
     @Override
     public List<Player> getRailOwners() {
-        return getRailOwnersProperty().getValue();
+        Property<List<Player>> railOwnersProperty = railOwners;
+        return railOwnersProperty.getValue();
     }
 
     @Override
@@ -145,6 +146,7 @@ public record EdgeImpl(HexGrid grid, TilePosition position1, TilePosition positi
             if (getRailOwners().contains(player)) return false;
 
             Map<Set<TilePosition>, Edge> rails = grid.getRails(player);
+
             if (rails.isEmpty()) { //player has no other rails
                 // Zik: changed because getCity returns null
                 if (!(grid.getStartingCities().containsKey(position1)

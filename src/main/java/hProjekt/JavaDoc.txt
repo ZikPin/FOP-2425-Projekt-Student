@@ -1,0 +1,20 @@
+- PlayerController.canBuildRail(Edge edge): -
+Die Methode hat einen Edge als Parameter, und gibt zurück, ob wir auf dieser Kante eine Schiene bauen dürfen.
+
+Dafür sehen wir, ob eine Schiene schon auf der Kante liegt und ob es dem Spieler gehört.
+Wenn das nicht der Fall ist, prüfen wir, ob Spieler über genugend Guthaben verfügt, um die Schiene zu bauen
+Wenn das Spiel sich in der Bauphase befindet, damit Spieler einige Kosten durch Würfelergebnisse bedeckt, sonst wird alles vom Credit abgezogen.
+
+- PlayerController.getBuildableRails(): -
+Die Methode gibt zurück alle Kanten, auf denen der Spieler bauen darf.
+
+Falls der Spieler keine Schienen hat, darf er nur an Anfangsstädten bauen. Diese Kanten nehmen durch:
+    1) Sammeln aller Anfangsstädten
+    2) Umwandeln zu Stream von Cities
+    3) Sammeln aller Kanten an diesen Städten
+    4) Und Filtrieren durch canBuildRail();
+
+Falls der Spieler Schienen gebaut hat, darf er nur an Netz liegen Kanten etwas bauen:
+    1) Wir sammeln alle Kanten auf dem Spielbrett, die Schienen haben, und filtrieren dadurch, ob sie Spieler als Besitzer haben
+    2) Wir sammeln alle dabei liegende Kanten
+    3) Schließlich filtrieren wir durch canBuild()

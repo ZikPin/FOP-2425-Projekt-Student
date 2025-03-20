@@ -1,6 +1,7 @@
 package hProjekt.model;
 
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 
 import org.jetbrains.annotations.Nullable;
@@ -128,6 +129,37 @@ public class PlayerImpl implements Player {
     @Override
     public String toString() {
         return String.format("Player %d %s (%s)", getID(), getName(), getColor());
+    }
+
+    // Trying the equal Override solution, to solve the Problem with getRails
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            System.out.println("The objects are same");
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            System.out.println("The objects are not equal");
+            return false;
+        }
+
+        Player player = (Player) obj;
+
+        String currentName = this.toString().trim();
+        String otherName = player.toString().trim();
+
+        if (currentName.equals(otherName)) return true;
+        else {
+            for (int i = 0; i < Math.min(currentName.length(), otherName.length()); i++) {
+                if(otherName.charAt(i) != currentName.charAt(i)) System.out.print(i);
+            }
+            return false;
+        }
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.toString().trim());
     }
 
     @Override
