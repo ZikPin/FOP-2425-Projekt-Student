@@ -54,3 +54,27 @@ Dann itererieren wir über Tiles in path (Pfad bis Zielkachel):
     1) Aktualisieren der Spielerposition
     2) Beim Erreichen des Zielkachels überschuss aktualisieren.
 
+- GameController.letPlayersChoosePath() -
+Für jeden Spieler wird seine Position zurückgesetzt und der Spieler wird aufgefordert einen Pfad wählen und bestätigen.
+
+- GameController.handleDriving() -
+Die Methode behandelt die Fahrphase.
+Wenn kein Spieler fährt, wird nichts gemacht.
+Wenn nur ein Spieler fährt, wird er automatisch zum Gewinner.
+
+Sonst sammeln wir alle Spieler, die die Zielstadt erreicht haben. Wir aktualisieren den Überschuss von Spielern, die den Zielkachel nicht erreicht haben. Dann sortieren wir nach Credits und aktualisieren die Liste von Fahrenden.
+Danach machen wir eine Schleife bis entweder Config.WINNING_CREDITS.size() Spieler die Zielstadt erreicht haben, oder alle Spieler.
+In dieser Schleife iterieren wir über jeden Spieler und fordern sie zu würfeln und fahren. Beim Erreichen des Ziels fügen wir den Spieler zur Liste hinzu.
+
+- GameController.getWinners() -
+Die Methode gibt zurück am höchsten Config.WINNING_CREDITS.size() Spieler, die das Ziel erreicht haben.
+
+Es sortiert die Spieler nach Würfelüberschuss und fügt die Gewinner zur Liste hinzu
+
+- GameController.executeDrivingPhase() -
+Die Methode behandelt die Fahrphase:
+    1) Wir sammeln alle nicht gewählte Städte und itererien durch eine Schleife, bis alle Städte gewählt sind.
+    2) Wir inkrementrieren den Rundenzähler und setzen alle relevanten Daten (Position, Überschuss und Spieler) zurück
+    3) Für jede 3. Runde wird eine Bauphase initialisiert
+    4) Der ((roundCounter.get() - 1) % state.getPlayers().size()). Spieler wählt die Städte
+    5) Die Spieler wählen Pfad, das Fahren fängt an und zuletz werden Gewinner ermittelt.

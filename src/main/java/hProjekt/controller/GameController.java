@@ -451,7 +451,7 @@ public class GameController {
             .filter(tilePosition -> getState().getChosenCities().contains(getState().getGrid().getCityAt(tilePosition)))
             .toList();
 
-        while (!cities.isEmpty()) {
+        while (cities.size() >= 2) {
             // 1. Schritt
             roundCounter.set(roundCounter.get() + 1);
 
